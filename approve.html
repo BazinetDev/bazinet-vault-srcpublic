@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="robots" content="noindex, nofollow"/>
+  <meta name="theme-color" content="#0f1320"/>
+  <title>Approval request — Bazinet</title>
+  <link rel="icon" href="/favicon.svg"/>
+  <script src="/theme.js"></script>
+  <link rel="stylesheet" href="/styles.css"/>
+  <link rel="stylesheet" href="/approve.css"/>
+</head>
+<body class="ap">
+  <main class="ap-wrap">
+    <header class="ap-brand">
+      <svg viewBox="0 0 48 48" width="28" height="28" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c97ff"/><stop offset="1" stop-color="#4f6bf0"/></linearGradient></defs><path d="M24 3 6 10v12c0 11 7.7 18.6 18 23 10.3-4.4 18-12 18-23V10L24 3Z" fill="url(#lg)"/><path d="m16.5 24 5 5 10-10.5" fill="none" stroke="#0f1320" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="ap-name">Bazinet</span><span class="ap-sub">Approval request</span>
+    </header>
+    <section class="ap-card" aria-live="polite">
+      <p id="ap-loading" class="muted">Loading the request…</p>
+      <div id="ap-body" class="hidden">
+        <h1 id="ap-title" class="ap-h"></h1>
+        <p id="ap-who" class="ap-who"></p>
+        <div class="ap-label" id="ap-target-label"></div>
+        <div id="ap-target" class="ap-target"></div>
+        <div class="ap-label">What the scanner found</div>
+        <div id="ap-summary" class="ap-summary"></div>
+        <p id="ap-when" class="muted small"></p>
+        <div id="ap-actions" class="ap-actions">
+          <button id="ap-deny" class="primary" type="button">Deny</button>
+          <button id="ap-approve" class="ghost danger-text" type="button">Approve once</button>
+        </div>
+        <p id="ap-state" class="ap-state hidden"></p>
+      </div>
+      <p id="ap-error" class="error hidden"></p>
+    </section>
+    <p class="muted small ap-foot">Approving lets that console member open this one link or file, once, within 10 minutes. Nothing else changes.</p>
+  </main>
+  <script src="/approve.js"></script>
+</body>
+</html>
