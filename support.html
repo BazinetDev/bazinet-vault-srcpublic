@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="Bazinet support: help articles for Bazinet Vault, Horaire CVM and the Aim Trainer, live chat, and support requests."/>
+  <meta name="theme-color" content="#0e1220"/>
+  <title>Support — Bazinet</title>
+  <link rel="canonical" href="https://bazinet.net/support"/>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon-vault.svg">
+  <script src="/i18n-strings.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/theme.js"></script>
+  <script src="/console-warn.js" defer="defer"></script>
+  <script src="/dom.js" defer="defer"></script>
+  <script src="/support-articles.js" defer="defer"></script>
+  <script src="/support.js" defer="defer"></script>
+  <link rel="stylesheet" href="/styles.css"/>
+  <link rel="stylesheet" href="/support.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="topbar-brand" aria-label="Bazinet home">
+        <svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8aa2ff"/><stop offset="1" stop-color="#4f6bf0"/></linearGradient></defs><path d="M24 3 6 10v12c0 11 7.7 18.6 18 23 10.3-4.4 18-12 18-23V10L24 3Z" fill="url(#tg)"/><path d="M24 15 31 23 24 31 17 23Z" fill="#0f1320"/><path d="M24 15 31 23 24 23Z" fill="#0f1320" opacity=".5"/></svg>
+        <span class="brand-text">Bazinet</span>
+      </a>
+      <nav class="topbar-nav">
+        <a href="/vault" class="nav-hide" data-i18n="nav.vault">Vault</a>
+        <a href="/horaire" class="nav-hide" data-i18n="t.fe3af23b">Horaire CVM</a>
+        <a href="/valorant" class="nav-hide" data-i18n="nav.aim">Aim Trainer</a>
+        <a href="/about" class="nav-hide" data-i18n="nav.about">About</a>
+        <a href="/support" class="nav-help" data-i18n-attr="aria-label:nav.support,title:nav.support" aria-label="Support" title="Support"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6"/><path d="M12 17h.01"/></svg><span data-i18n="nav.support">Support</span></a>
+        <button class="lang-toggle" type="button" data-lang-toggle>FR</button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light or dark mode" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+        </button>
+        <a href="/account" data-i18n="nav.account">Account</a>
+        <a href="/app" class="topbar-cta" data-i18n="nav.openVault">Open Vault</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="sp">
+    <section class="sp-hero">
+      <h1 data-i18n="t.d9961547">How can we help?</h1>
+      <p class="sp-lead" data-i18n="t.ffa53b7e">Search the help centre, or talk to us. We answer in English and French.</p>
+      <div class="sp-search">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="sp-q" type="search" autocomplete="off" data-i18n-attr="placeholder:t.24e5bd33,aria-label:t.24e5bd33" placeholder="Search the help centre" aria-label="Search the help centre"/>
+      </div>
+      <p id="sp-status" class="sp-status" role="status"></p>
+    </section>
+
+    <section class="sp-sec" id="help" aria-labelledby="sp-list-title">
+      <div id="sp-topics" class="sp-topics" role="group" data-i18n-attr="aria-label:t.07e4f9c2" aria-label="Topics"></div>
+      <h2 id="sp-list-title" class="sp-h2"></h2>
+      <div id="sp-list" class="sp-list"></div>
+      <article id="sp-article" class="sp-article hidden"></article>
+    </section>
+
+    <section class="sp-sec" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="sp-h2" data-i18n="t.2b658ffd">Contact support</h2>
+      <p class="sp-sub" data-i18n="t.93c543f9">Couldn't find the answer? We read every message.</p>
+      <div class="sp-ways">
+        
+        <div class="sp-way">
+          <span class="sp-way-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg></span>
+          <h3 data-i18n="t.fd7b155d">Chat with us</h3>
+          <p class="sp-muted" data-i18n="t.ce72f3a0">Quick questions, answered live while you're on this page.</p>
+          <p id="sp-chat-state" class="sp-way-state"></p>
+          <button id="sp-start-chat" class="sp-way-btn" type="button" data-i18n="t.8958a8e3">Chat now</button>
+        </div>
+        <div class="sp-way">
+          <span class="sp-way-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <h3 data-i18n="t.32d5db4c">Write to us</h3>
+          <p class="sp-muted" data-i18n="t.9a38b960">For detailed problems. We answer by email, usually within one business day.</p>
+          <p class="sp-way-state" data-i18n="t.e32fd9ee">No need to stay on the page.</p>
+          <button id="sp-start-ticket" class="sp-way-btn" type="button" data-i18n="t.46bfc6e8">Write a message</button>
+        </div>
+        <div class="sp-way">
+          <span class="sp-way-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M16 12v1.5a2.5 2.5 0 0 0 5 0V12a9 9 0 1 0-3.5 7.1"/></svg></span>
+          <h3 data-i18n="t.84add5b2">Email</h3>
+          <p class="sp-muted" data-i18n="t.9bcd18c3">Prefer your own inbox? Write to us directly.</p>
+          <a class="sp-mail" href="mailto:support@bazinet.net">support@bazinet.net</a>
+        </div>
+      </div>
+
+      <form id="sp-form" class="sp-form hidden" novalidate>
+        <h3 data-i18n="t.46bfc6e8">Write a message</h3>
+        <div id="sp-guest" class="sp-row">
+          <label class="sp-field"><span data-i18n="t.32861acd">Your name (optional)</span><input id="sp-name" autocomplete="name" maxlength="80"/></label>
+          <label class="sp-field"><span data-i18n="t.84add5b2">Email</span><input id="sp-email" type="email" autocomplete="email" maxlength="254"/></label>
+        </div>
+        <p id="sp-signed" class="sp-muted hidden"></p>
+        <label class="sp-field"><span data-i18n="t.23a5beeb">What is it about?</span>
+          <select id="sp-product">
+            <option value="vault" data-i18n="t.3b2418e1">Bazinet Vault</option>
+            <option value="horaire" data-i18n="t.fe3af23b">Horaire CVM</option>
+            <option value="aim" data-i18n="t.0a972f9a">Aim Trainer</option>
+            <option value="account" data-i18n="t.6801a4cc">My account or signing in</option>
+            <option value="billing" data-i18n="t.4f8bffd1">Pro and billing</option>
+            <option value="privacy" data-i18n="t.48f4bbdd">Privacy and security</option>
+            <option value="other" data-i18n="t.48f88ac3">Something else</option>
+          </select>
+        </label>
+        <label id="sp-subject-wrap" class="sp-field"><span data-i18n="t.8d183dbd">Subject</span><input id="sp-subject" maxlength="140"/></label>
+        <label class="sp-field"><span data-i18n="t.68f4145f">Message</span><textarea id="sp-message" rows="6" maxlength="5000"></textarea></label>
+        <p class="sp-warn" data-i18n="t.6550f33c">Never include a password, your master password or a recovery key. Support can read what you write here.</p>
+        <div class="sp-actions">
+          <button id="sp-send" class="primary" type="submit" data-i18n="t.c70a890d">Send message</button>
+          <button id="sp-cancel" class="ghost-btn" type="button" data-i18n="t.77dfd213">Cancel</button>
+        </div>
+        <p id="sp-form-error" class="sp-error" role="alert"></p>
+      </form>
+    </section>
+
+
+    <section class="sp-sec" id="how" aria-labelledby="how-title">
+      <h2 id="how-title" class="sp-h2" data-i18n="t.67d84024">How support works</h2>
+      <div class="sp-how">
+        <div>
+          <h3 data-i18n="t.6ef0dd10">Response times</h3>
+          <p data-i18n="t.6f605407">Live chat: right away when someone is online. Tickets: usually within one business day. Security reports: acknowledged within 3 business days.</p>
+        </div>
+        <div>
+          <h3 data-i18n="t.bb838bd6">What we will never ask for</h3>
+          <p data-i18n="t.f0589bc5">Your password, your master password, your recovery key, or a code we sent you. Anyone who asks for one is not us.</p>
+        </div>
+        <div>
+          <h3 data-i18n="t.eb05dddd">What support can see</h3>
+          <p data-i18n="t.44d483c0">Your messages here and your account details. Never your vault or your agenda: they are encrypted on your device.</p>
+        </div>
+        <div>
+          <h3 data-i18n="t.0b0a72a6">Security issues</h3>
+          <p data-i18n="t.a6787f63">Email support@bazinet.net with SECURITY in the subject, and please don't post them publicly.</p>
+        </div>
+        <div>
+          <h3 data-i18n="t.ba374bf1">Privacy requests</h3>
+          <p data-i18n="t.a84a3beb">Ask to see, correct or delete your personal information. We answer within 30 days, as Québec's Law 25 requires.</p>
+        </div>
+        <div>
+          <h3 data-i18n="t.db07be18">Languages</h3>
+          <p data-i18n="t.98edb761">English and French, in chat, tickets and email.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <nav class="foot-links">
+        <a href="/vault" data-i18n="nav.vault">Vault</a><span>·</span>
+        <a href="/horaire" data-i18n="t.fe3af23b">Horaire CVM</a><span>·</span>
+        <a href="/valorant" data-i18n="nav.aim">Aim Trainer</a><span>·</span>
+        <a href="/about" data-i18n="nav.about">About</a><span>·</span>
+        <a href="/terms.html" data-i18n="nav.terms">Terms</a><span>·</span>
+        <a href="/privacy.html" data-i18n="nav.privacy">Privacy</a><span>·</span>
+        <a href="/support" data-i18n="nav.support">Support</a><span>·</span>
+        <a href="mailto:support@bazinet.net" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <p class="copyright" data-i18n="t.1d0a6ee1">© 2026 Bazinet.net</p>
+    </footer>
+  </main>
+
+  
+  <section id="sp-chat" class="sp-chat hidden" aria-labelledby="sp-chat-title">
+    <header class="sp-chat-head">
+      <button id="sp-chat-back" class="sp-icon-btn hidden" type="button" data-i18n-attr="aria-label:t.b52b36b7,title:t.b52b36b7" aria-label="Back" title="Back">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <div class="sp-chat-titles">
+        <h2 id="sp-chat-title" class="sp-chat-title">Bazinet</h2>
+        <span id="sp-chat-sub" class="sp-chat-sub"></span>
+      </div>
+      <button id="sp-chat-full" class="sp-icon-btn sp-full-btn" type="button" aria-pressed="false" data-i18n-attr="aria-label:t.d15f886d,title:t.d15f886d" aria-label="Full screen" title="Full screen">
+        <svg class="i-grow" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+        <svg class="i-shrink" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></svg>
+      </button>
+      <button id="sp-chat-close" class="sp-icon-btn" type="button" data-i18n-attr="aria-label:t.bbfa773e,title:t.bbfa773e" aria-label="Close" title="Close">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </header>
+    <div id="sp-chat-body" class="sp-chat-body"></div>
+  </section>
+
+  <button id="sp-fab" class="sp-fab" type="button" data-i18n-attr="aria-label:t.4c12318a" aria-label="Chat with support">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg>
+    <span data-i18n="t.2ced57f1">Chat</span>
+    <span id="sp-fab-badge" class="sp-fab-badge hidden"></span>
+  </button>
+</body>
+</html>

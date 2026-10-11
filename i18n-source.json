@@ -1,0 +1,6203 @@
+{
+  "acct.agreeAnd": {
+    "en": "and",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "acct.agreePre": {
+    "en": "I agree to the",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "acct.termsLangNote": {
+    "en": "Ces conditions sont aussi offertes en français — utilisez le bouton « FR » en haut de la page.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "btn.continue": {
+    "en": "Continue",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "btn.signOut": {
+    "en": "Sign out",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "ext.notice.body": {
+    "en": "The browser extension autofills saved logins, captures new ones, and generates passwords inline — your vault key never leaves its background worker.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "ext.notice.cta": {
+    "en": "Get the extension",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "ext.notice.title": {
+    "en": "Fill passwords without opening this tab.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "menu.health": {
+    "en": "Password health",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "nav.about": {
+    "en": "About",
+    "pages": [
+      "about.html",
+      "breach.html",
+      "download.html",
+      "extension.html",
+      "generator.html",
+      "index.html",
+      "privacy.html",
+      "support.html",
+      "terms.html"
+    ]
+  },
+  "nav.account": {
+    "en": "Account",
+    "pages": [
+      "about.html",
+      "breach.html",
+      "download.html",
+      "extension.html",
+      "generator.html",
+      "index.html",
+      "privacy.html",
+      "support.html",
+      "terms.html",
+      "vault.html"
+    ]
+  },
+  "nav.aim": {
+    "en": "Aim Trainer",
+    "pages": [
+      "index.html",
+      "support.html"
+    ]
+  },
+  "nav.blog": {
+    "en": "Blog",
+    "pages": [
+      "about.html",
+      "breach.html",
+      "download.html",
+      "generator.html",
+      "index.html",
+      "privacy.html",
+      "terms.html",
+      "vault.html"
+    ]
+  },
+  "nav.breach": {
+    "en": "Breach check",
+    "pages": [
+      "about.html",
+      "breach.html",
+      "generator.html",
+      "index.html",
+      "privacy.html",
+      "terms.html",
+      "vault.html"
+    ]
+  },
+  "nav.contact": {
+    "en": "Contact",
+    "pages": [
+      "about.html",
+      "app.html",
+      "breach.html",
+      "download.html",
+      "extension.html",
+      "generator.html",
+      "horaire.html",
+      "index.html",
+      "privacy.html",
+      "support.html",
+      "terms.html",
+      "vault.html"
+    ]
+  },
+  "nav.download": {
+    "en": "Download",
+    "pages": [
+      "about.html",
+      "app.html",
+      "breach.html",
+      "extension.html",
+      "generator.html",
+      "index.html",
+      "privacy.html",
+      "terms.html",
+      "valorant.html",
+      "vault.html"
+    ],
+    "conflict": true
+  },
+  "nav.extension": {
+    "en": "Extension",
+    "pages": [
+      "about.html",
+      "breach.html",
+      "generator.html",
+      "index.html",
+      "privacy.html",
+      "terms.html",
+      "vault.html"
+    ]
+  },
+  "nav.generator": {
+    "en": "Generator",
+    "pages": [
+      "about.html",
+      "breach.html",
+      "generator.html",
+      "index.html",
+      "privacy.html",
+      "terms.html",
+      "vault.html"
+    ]
+  },
+  "nav.home": {
+    "en": "Products",
+    "pages": [
+      "about.html",
+      "breach.html",
+      "generator.html",
+      "horaire.html",
+      "privacy.html",
+      "terms.html",
+      "vault.html"
+    ]
+  },
+  "nav.openVault": {
+    "en": "Open app",
+    "pages": [
+      "about.html",
+      "breach.html",
+      "download.html",
+      "extension.html",
+      "generator.html",
+      "privacy.html",
+      "support.html",
+      "terms.html",
+      "vault.html"
+    ],
+    "conflict": true
+  },
+  "nav.privacy": {
+    "en": "Privacy",
+    "pages": [
+      "about.html",
+      "account.html",
+      "app.html",
+      "breach.html",
+      "download.html",
+      "extension.html",
+      "generator.html",
+      "horaire.html",
+      "index.html",
+      "privacy.html",
+      "support.html",
+      "terms.html",
+      "valorant.html",
+      "vault.html"
+    ],
+    "conflict": true
+  },
+  "nav.support": {
+    "en": "Support",
+    "pages": [
+      "about.html",
+      "account.html",
+      "app.html",
+      "breach.html",
+      "download.html",
+      "extension.html",
+      "generator.html",
+      "horaire.html",
+      "index.html",
+      "privacy.html",
+      "support.html",
+      "terms.html",
+      "vault.html"
+    ]
+  },
+  "nav.terms": {
+    "en": "Terms",
+    "pages": [
+      "about.html",
+      "account.html",
+      "app.html",
+      "breach.html",
+      "download.html",
+      "extension.html",
+      "generator.html",
+      "horaire.html",
+      "index.html",
+      "privacy.html",
+      "support.html",
+      "terms.html",
+      "valorant.html",
+      "vault.html"
+    ]
+  },
+  "nav.vault": {
+    "en": "Vault",
+    "pages": [
+      "download.html",
+      "extension.html",
+      "index.html",
+      "support.html"
+    ]
+  },
+  "rk.backToMaster": {
+    "en": "Back to master password",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "rk.useTitle": {
+    "en": "Use your recovery key",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "sa.approve": {
+    "en": "Approve",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.back": {
+    "en": "Go to your account",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.can": {
+    "en": "What they would be able to see",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.can1": {
+    "en": "Sign-ins, sign-outs and errors your account has recorded",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.can2": {
+    "en": "Devices and sessions, including ones that have ended",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.can3": {
+    "en": "When items were created or changed — never what is in them",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.can4": {
+    "en": "Technical checks on whether your account is in a healthy state",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.can5": {
+    "en": "Diagnostic logs your devices record while syncing — which steps ran and what failed. Never your agenda, your messages, or any password.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.cannot": {
+    "en": "What they still cannot see",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.cannot1": {
+    "en": "Any password, note or file inside your vault",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.cannot2": {
+    "en": "Your master password, or anything derived from it",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.cannot3": {
+    "en": "Approving this cannot change that — the key was never ours to use",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.deny": {
+    "en": "Decline",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.end": {
+    "en": "End this access now",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.lead": {
+    "en": "Nothing has been shared yet. This starts only if you approve it.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.notyou": {
+    "en": "If you did not contact support, decline — that tells us straight away.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.reasonLabel": {
+    "en": "The reason they gave",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.terms": {
+    "en": "Every time support opens your log it is recorded in your own account history, so you can check exactly when it was read.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "sa.title": {
+    "en": "Support is asking to read your account log",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "set.aliases": {
+    "en": "Email aliases",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.aliasesDesc": {
+    "en": "Hand out a masked address instead of your real inbox, so a leak never exposes it.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.autolock": {
+    "en": "Auto-lock",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.backup": {
+    "en": "Backup & transfer",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.changeMaster": {
+    "en": "Change master password",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.danger": {
+    "en": "Danger zone",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.emergency": {
+    "en": "Emergency access",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.encBackup": {
+    "en": "Encrypted backup",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.exportPlain": {
+    "en": "Export as plaintext (JSON)",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.importCsv": {
+    "en": "Import from NordPass CSV",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.importJson": {
+    "en": "Import from JSON",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.mission": {
+    "en": "Mission Mode",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.otherManagers": {
+    "en": "Other password managers",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.prefs": {
+    "en": "Preferences",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.recommended": {
+    "en": "Recommended",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.recovery": {
+    "en": "Recovery key",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.restore": {
+    "en": "Restore from backup",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.rotate": {
+    "en": "Rotate vault key",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.security": {
+    "en": "Security",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.title": {
+    "en": "Vault settings",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.unencrypted": {
+    "en": "Unencrypted",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.unprotected": {
+    "en": "Unprotected",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "set.wipe": {
+    "en": "Wipe this device",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "setup.create": {
+    "en": "Create vault",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "setup.generate": {
+    "en": "Generate a passphrase",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "setup.title": {
+    "en": "Create your master password",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.009485b3": {
+    "en": "Sign in once and you’re done. Every time you open Horaire, it checks Omnivox for you and brings back what’s new. Nothing to download, nothing to copy, no plan de cours to add one by one.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.00b59224": {
+    "en": "Security activity",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.00bcde67": {
+    "en": "Omnivox sent you a code by email",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.00bed843": {
+    "en": "Should I store my most critical secrets here?",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.00d90605": {
+    "en": "Key made here from your master password. Never sent.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.00fb203c": {
+    "en": "Free to start",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.016390c2": {
+    "en": "Export and print",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.02127c01": {
+    "en": "Stored · encrypted",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.023328d4": {
+    "en": "Browser extensions are readable by design — a downloaded extension is a folder of JavaScript, and anyone who installs one can open it. We don't obfuscate ours, for the same reason the desktop app ships its cryptographic code unminified.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.03aad260": {
+    "en": "Clear about the trade-offs",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.04057474": {
+    "en": "First launch:",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.04270ed6": {
+    "en": "Riot API match stats",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.042c862e": {
+    "en": "Try again",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.046dacd3": {
+    "en": "It runs on every site",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.04880b1d": {
+    "en": "Argon2id KDF",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.04a21221": {
+    "en": "Confirm",
+    "pages": [
+      "account.html",
+      "app.html"
+    ]
+  },
+  "t.04ef4a37": {
+    "en": "2FA · Google",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.04f3ea12": {
+    "en": "and a",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.04f77974": {
+    "en": "macOS · available now",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.0505b32e": {
+    "en": "Import your schedule from Omnivox and get your week, your day and everything that’s due, with homework and exams beside the classes they belong to.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.052269b2": {
+    "en": "Open in browser",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.055dc933": {
+    "en": "People who trust you",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.059293e5": {
+    "en": "A second step at sign-in keeps your account safe even if your password leaks.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.05a698ad": {
+    "en": "Horaire de cours → Consulter mon horaire → Version imprimable. We show you every click.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.06b0fb83": {
+    "en": "Chrome Web Store · Chrome, Edge & Brave",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.06e56f23": {
+    "en": "The agenda for Cégep du Vieux Montréal",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.076fce3e": {
+    "en": "Send my plans de cours to support",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.07e4f9c2": {
+    "en": "Topics",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.0827109d": {
+    "en": "Connect the Bazinet Vault browser extension to autofill logins. The pairing code grants the extension API access; your vault still needs your master password, so the code alone can't decrypt anything.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.082bc378": {
+    "en": "Month",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.084644b2": {
+    "en": "Automatic sync",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.08c35203": {
+    "en": "Confirm you're human to keep checking passwords.",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.090ec5f5": {
+    "en": "Tasks",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.0913d00c": {
+    "en": "← Start over",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.09180189": {
+    "en": "Your courses are checked every time you open your agenda — the Bazinet extension reads LÉA in your own browser, on the session you are already signed in to. Your Omnivox password is never involved, and nothing is added here until you say so.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.09620453": {
+    "en": "Read your teachers’ messages and reply, right from Horaire.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.09706c41": {
+    "en": "also",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.09ad9df4": {
+    "en": "3 days",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.09ca55ca": {
+    "en": "Share",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.0a8dd6ad": {
+    "en": "7 days",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.0a972f9a": {
+    "en": "Aim Trainer",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.0aebe9e9": {
+    "en": "Reused or simple passwords are the No. 1 cause of account takeovers. A long, random password — different for every site — is the single best thing you can do for your online security. This tool builds one using your browser's cryptographically secure random generator, so each character is truly unpredictable and never leaves your device.",
+    "pages": [
+      "generator.html"
+    ]
+  },
+  "t.0b0a72a6": {
+    "en": "Security issues",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.0b3278e1": {
+    "en": "Week, day and month views, with the room, the teacher and how long until your next class.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.0b8a19ed": {
+    "en": "Frequently asked",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.0bd52457": {
+    "en": "or click to choose the file. It never leaves your device.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.0bfccafd": {
+    "en": "Password to check",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.0c43edd6": {
+    "en": "Course colours",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.0c6b16eb": {
+    "en": "No. Horaire encrypts your agenda on your device before it is saved to your account, with a key only your password can produce. The schedule PDF you import is read in your browser and never uploaded.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.0c743116": {
+    "en": "Bazinet Vault vs. the usual habits",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.0c8e2d0c": {
+    "en": "Search your vault",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.0cfe5f56": {
+    "en": "⏱️",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.0d1fcc38": {
+    "en": "Time limit",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.0d36487d": {
+    "en": "Read-only access through emergency recovery. Handle these credentials with care.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.0dab8f64": {
+    "en": "Select everything in the PDF, copy it, and paste it here.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.0daca495": {
+    "en": "Add a passkey",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.0ddaff9f": {
+    "en": "Security that gets out of your way",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.0def8c53": {
+    "en": "Generate pairing code",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.0e185755": {
+    "en": "A second way in, held only by you, if the master password is ever forgotten.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.0e230a00": {
+    "en": "AES-256 encryption",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.0eb7008d": {
+    "en": "Each new assignment shows up in your agenda with its due date. You don’t lift a finger.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.0ece2df5": {
+    "en": "No hype",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.0eda2517": {
+    "en": "End-to-end (zero-knowledge) encryption",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.0efc2e6b": {
+    "en": "Overview",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.0f393fb6": {
+    "en": "every password saved in your vault",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.0f75577f": {
+    "en": "Open mission",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.0fa4967a": {
+    "en": "Your keys never leave your browser",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.10931058": {
+    "en": "Set a time limit; the session — and its data on our servers — self-destructs when it's up.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.114f60b0": {
+    "en": "Every plan de cours, read for you",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.11500bcc": {
+    "en": "Add extension",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.11df9461": {
+    "en": "Horaire fetches everything from Omnivox.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.11fe717f": {
+    "en": "Get my plans de cours from Omnivox",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.12b8d447": {
+    "en": "The app keeps itself current, but only with packages we signed. Each one is checked against a key built into the app before anything installs.",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.134bfe69": {
+    "en": "Always on. There is no unencrypted mode to forget about.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.1367fa1e": {
+    "en": "No aliases yet. Create one below.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.13888bab": {
+    "en": "the mission. Make it different from your master password: that is the entire point.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.14186c33": {
+    "en": "Create alias",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.145caf29": {
+    "en": "Due",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.14843ecd": {
+    "en": "DESKTOP",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.14b5768c": {
+    "en": "📎 Encrypted attachments",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.14bb227a": {
+    "en": "Refuses the look-alike.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.14ee8a15": {
+    "en": "Automatically.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.15141eab": {
+    "en": "Edit profile",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.1526a17e": {
+    "en": "Unlock",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.15272cc0": {
+    "en": "This encrypts your vault on your device. It is",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.1534fc00": {
+    "en": "Homework and exams",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.1605f32b": {
+    "en": "against Valorant's rules and is",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.16154aac": {
+    "en": "No score, no threshold, no override: a different domain never gets your password.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.1616867a": {
+    "en": "Questions, feedback, or a security report? Reach us at",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.16f16fcb": {
+    "en": "Sign in anywhere and your vault is decrypted there, locally, again.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.17031821": {
+    "en": "Replaces the encryption key itself and re-encrypts every entry. Use after a key you no longer trust.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.173d236c": {
+    "en": "Add anything you need to do and colour it by how much work it is.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.1758356d": {
+    "en": "or",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.1764b404": {
+    "en": "Used wherever you haven’t picked a theme with the sun and moon button.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.176e595a": {
+    "en": "14 days",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.17745d4c": {
+    "en": "I understand that if I forget my master password, my vault data is",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.17835e2c": {
+    "en": "Your whole term,",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.17857134": {
+    "en": "Permission",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.1798b3ba": {
+    "en": "Completed",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.17b2b838": {
+    "en": "New task",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.182aef64": {
+    "en": "Independent, not enterprise",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.1840bd95": {
+    "en": "Up to 10 aliases per account. Mail sent to an alias is forwarded to",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.18707151": {
+    "en": "New: Horaire syncs with Omnivox automatically",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.18e9bf1d": {
+    "en": "When you sign in, your master password is stretched with Argon2id into a key that never leaves your browser. That key wraps a random vault key, and that vault key encrypts every entry. The server only ever receives sealed, unreadable blobs.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.18f45500": {
+    "en": "Classes, rooms, homework, exams and what’s due next, laid out the way your week really goes. Ready in under a minute.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.191800b7": {
+    "en": "8 hours",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.19cd6c5f": {
+    "en": "Three steps to a safer digital life",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.19dff4da": {
+    "en": "Current password",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.1a05f99d": {
+    "en": "Confirm you're human to continue.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.1a2d089f": {
+    "en": "For the moments that matter most — a border crossing, a protest, a source meeting.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.1ae5a4f8": {
+    "en": "Your profile, how Bazinet looks, and your account itself.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.1aef7966": {
+    "en": "🔑",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.1b06be20": {
+    "en": "Strong, unique passwords generated in a click",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.1b220ac9": {
+    "en": "📍",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.1b3e4006": {
+    "en": "Can view",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.1ba70b59": {
+    "en": "$2.99/month · 7 days free",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.1bc4d666": {
+    "en": "Sometimes",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.1be5092b": {
+    "en": "Your term starts now.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.1c6d29c7": {
+    "en": "Days with no classes (holidays, pedagogical days)",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.1c970f72": {
+    "en": "Can’t read it",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.1cd5589f": {
+    "en": "This is your",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.1d0a6ee1": {
+    "en": "© 2026 Bazinet.net",
+    "pages": [
+      "app.html",
+      "generator.html",
+      "index.html",
+      "support.html",
+      "vault.html"
+    ]
+  },
+  "t.1d0c1bd0": {
+    "en": "Verification is only as strong as the channel you use. Confirming by email, to an address this app told you about, proves nothing.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.1d3cb8a9": {
+    "en": "Resend code",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.1db0a2c3": {
+    "en": "Can you see my schedule?",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.1dd6a17c": {
+    "en": "How it works",
+    "pages": [
+      "app.html",
+      "vault.html"
+    ]
+  },
+  "t.1def0aa6": {
+    "en": "I have saved this recovery key somewhere safe.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.1e83ae49": {
+    "en": "Set a new password",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.1e92c74d": {
+    "en": "Only the entries you curated are available. The rest of your vault stays sealed.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.1f15a43c": {
+    "en": "Open Horaire",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.1f81c9ef": {
+    "en": "The PDF will not open. Can I paste instead?",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.20e099ad": {
+    "en": "Lock vault",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.218f37ac": {
+    "en": "Under the hood",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.2286ef71": {
+    "en": "Which entries go in?",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.22bc982b": {
+    "en": "Small utilities you can use right now — the heavy lifting happens on your device, so nothing sensitive is ever sent to us.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.22c5a196": {
+    "en": "A Valorant companion that coaches your counter-strafe timing in real time, analyzes your real matches, and shows a live in-game overlay — without ever touching the game.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.2393466b": {
+    "en": "Your CVM schedule, on every device",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.23a5beeb": {
+    "en": "What is it about?",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.23b29c01": {
+    "en": "are a Pro feature —",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.23b72125": {
+    "en": "Everything you need",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.23ba214d": {
+    "en": "Free quick tools",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.23cb0ae5": {
+    "en": "Bazinet.net builds simple, private software for everyday use. All of its products work with a single Bazinet account.",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.23f522ed": {
+    "en": "A fast web app on any modern browser — your encrypted vault syncs across your devices.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.24345a14": {
+    "en": "Today",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.24b6d5ec": {
+    "en": "Download →",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.24e5bd33": {
+    "en": "Search the help centre",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.2541d1c5": {
+    "en": "Secure note",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.257806d8": {
+    "en": "Sign in with your Omnivox account and Horaire reads your schedule for you. Your password is used for this one sign-in and is not saved.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.25911d48": {
+    "en": "Show more",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.25e90cad": {
+    "en": "Free · Windows",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.261298f5": {
+    "en": "These dates come from your plans de cours and your timetable. Untick anything that does not apply to you, then add the rest.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.263bbdba": {
+    "en": "Verified, bot-proof sign-up",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.2675f090": {
+    "en": "A saved login is offered only on the site it was saved for, matched by its real domain. A fake page that looks identical gets nothing, and you’re told why.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.26d96c9f": {
+    "en": "account password",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.277f2ae8": {
+    "en": "Same zero-knowledge vault: encryption still happens on your device.",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.27851878": {
+    "en": "Recent security events",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.27eeb7a2": {
+    "en": "Rejected",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.282ef67b": {
+    "en": "Private by default",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.2856620d": {
+    "en": "View full log →",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.2886ba74": {
+    "en": ", but you are on",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.28f5badf": {
+    "en": "Same encryption, same account, same zero-knowledge design — just a tougher shell around it.",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.2a177256": {
+    "en": "Last day",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.2ab7554f": {
+    "en": "We sent a 6-digit code to",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.2ae3a019": {
+    "en": "Delete my account",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.2b349de5": {
+    "en": "You can read the code",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.2b52f37d": {
+    "en": "Generator options",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.2b658ffd": {
+    "en": "Contact support",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.2b7d938e": {
+    "en": "Sync now",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.2c709552": {
+    "en": "Sign in at cvm.omnivox.ca. It’s in your list of services.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.2c74789f": {
+    "en": "A file only your backup passphrase can open. This is the safe way to keep a copy.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.2cc4bce5": {
+    "en": "Take it anywhere",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.2ced57f1": {
+    "en": "Chat",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.2d8883ea": {
+    "en": "Omnivox may occasionally ask for a CAPTCHA when a sign-in comes from a server. If that happens, sync stops and tells you — sign in on Omnivox once and it resumes.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.2d8a6f7c": {
+    "en": "1 day",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.2daa1a44": {
+    "en": "Clears everything stored on this device and signs you out everywhere. Your vault is not deleted — it reopens with your master password.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.2e026239": {
+    "en": "Continue",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.2e524a4f": {
+    "en": "Recovery key",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.2e837b38": {
+    "en": "Check my connection",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.2ef172ce": {
+    "en": "Help and support",
+    "pages": [
+      "account.html",
+      "app.html",
+      "horaire.html"
+    ]
+  },
+  "t.2f17e5fe": {
+    "en": "Email aliases",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.2f95eb8d": {
+    "en": "The core app is read-only — it uses the official Riot API and reads your own running client, exactly like public rank-trackers, and never touches the game process. It ships with one clearly-labelled optional \"Snap Tap\" toggle that",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.2feaecb5": {
+    "en": "It is encrypted on this device with your Bazinet account key, the same way your agenda is. Our server stores it only as ciphertext it cannot read.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.303176bd": {
+    "en": "Not affiliated with the Cégep du Vieux Montréal or with Omnivox. Your agenda is encrypted on your device before it is stored on your account.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.309e30fc": {
+    "en": "Pairing code",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.31f8d328": {
+    "en": "recovery key",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.321ec253": {
+    "en": "How your name appears across Bazinet.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.32394b06": {
+    "en": "master password",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.324d3ff6": {
+    "en": "No credit card, no trial that expires into a paywall. The core of every tool is free — an optional Pro plan just funds the servers.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.3259090c": {
+    "en": "Sign in to Bazinet",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.326f1da0": {
+    "en": "Is Bazinet really free?",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.32861acd": {
+    "en": "Your name (optional)",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.32d5db4c": {
+    "en": "Write to us",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.330ebbd9": {
+    "en": "Free security tools",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.334c115f": {
+    "en": "Everything's free and takes a minute to start. Your data stays yours.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.338492d6": {
+    "en": "Sign up with Google",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.33acdbd6": {
+    "en": "Master password",
+    "pages": [
+      "app.html",
+      "breach.html",
+      "vault.html"
+    ]
+  },
+  "t.33ce3192": {
+    "en": "at once. Your vault is unlocked and decrypted right here in your browser — your master password and entries never reach our servers.",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.33ce4174": {
+    "en": "Loading…",
+    "pages": [
+      "account.html",
+      "app.html"
+    ]
+  },
+  "t.33f57cd7": {
+    "en": "link) and Bazinet will generate the 6-digit codes for you — on this device only.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.34091ce4": {
+    "en": "Prefer a native app?",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.344178b4": {
+    "en": "Session in the Keychain",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.34495766": {
+    "en": "Save to vault",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.347f3a61": {
+    "en": "How is the breach check private?",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.350c355e": {
+    "en": "Update password",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.3563655c": {
+    "en": "Argon2id master-key hardening",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.35879452": {
+    "en": "Your vault, as a",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.35e2b18e": {
+    "en": "How this vault is locked, and who else can ever open it.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.3642226b": {
+    "en": "Server stores ciphertext only — a breach reveals nothing usable",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.382d7fb0": {
+    "en": "Add to my agenda",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.3844a087": {
+    "en": "See if a password has leaked in a known breach — privately, using k-anonymity. Only the first five hash characters ever leave your browser.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.3952e048": {
+    "en": "One account for everything",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.3a67c53e": {
+    "en": "🔍 Breach check",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.3b2418e1": {
+    "en": "Bazinet Vault",
+    "pages": [
+      "about.html",
+      "support.html"
+    ]
+  },
+  "t.3bb7ac69": {
+    "en": "Get my schedule",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.3bc708ef": {
+    "en": "A password manager you can actually reason about — including where it draws the line.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.3bff55ae": {
+    "en": "bazinet.net/app",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.3c04a552": {
+    "en": "Chrome asks to read and change data on every site the first time. That's what lets it find a login form wherever one is — what it does with that access is exactly what's below.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.3c287b7e": {
+    "en": "Curate a small kit of entries. Everything else in your vault stays invisible — and undisclosed.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.3c4bc790": {
+    "en": "Pick a strong master password and verify your email. Setup takes under a minute.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.3d5c11cb": {
+    "en": "Every password is encrypted on your own device with Argon2id and AES-256 before it’s saved. The server only ever holds ciphertext it can’t read.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.3d925ada": {
+    "en": "You are about to encrypt your vault key so that",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.3dab5e10": {
+    "en": "Reused passwords are how one leaked site becomes ten compromised accounts. Give every login its own strong key — and forget about it.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.3df08944": {
+    "en": "Encrypted on your device",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.3e1358be": {
+    "en": "How you sign in, where you’re signed in, and everything that happened to your account.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.3e45bcda": {
+    "en": "Theme preference for this browser.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.3e4dbc27": {
+    "en": "128 ms",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.3e8248e3": {
+    "en": "Price",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.3ebcbc03": {
+    "en": "Look-alike protection",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.3ebe5155": {
+    "en": "Free for every student. Encrypted on your device.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.3f1825e2": {
+    "en": "Same zero-knowledge vault",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.40d39151": {
+    "en": "password generator",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.40f07323": {
+    "en": "Personal",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.416bbc1b": {
+    "en": "My Bazinet account",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.41def7a0": {
+    "en": "Appearance",
+    "pages": [
+      "account.html",
+      "horaire.html"
+    ]
+  },
+  "t.41f41aac": {
+    "en": "People you add see your timetable and tasks, updated live. Your Omnivox sign-in, your name and your DA are never shared, and the copy they get is encrypted end to end.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.42700eaa": {
+    "en": "What happens to your password",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.4325ae73": {
+    "en": "Sign-ins, failed attempts, and changes to your account or vault. If something here wasn't you, change your password and sign out other sessions.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.4335d6ec": {
+    "en": "It also has to resist",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.433ab97b": {
+    "en": "Export to Google Calendar or Apple Calendar, or print a clean copy.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.4377f512": {
+    "en": "I already have an account",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.44d483c0": {
+    "en": "Your messages here and your account details. Never your vault or your agenda: they are encrypted on your device.",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.45bba479": {
+    "en": "Sensitivity advisor",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.45cf2811": {
+    "en": "New in LÉA",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.45e16301": {
+    "en": "When does the term run?",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.45f777a5": {
+    "en": "Set up a mission",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.467f2c20": {
+    "en": "stores your sites' 2FA codes right next to their logins. It's a Pro feature —",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.46bc0e1d": {
+    "en": "Every password in readable text. Anyone who opens the file can read it — prefer an encrypted backup.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.46bfc6e8": {
+    "en": "Write a message",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.46dd93c1": {
+    "en": "Safety phrase",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.47460bf7": {
+    "en": "Length:",
+    "pages": [
+      "app.html",
+      "generator.html"
+    ]
+  },
+  "t.47a3040d": {
+    "en": "This is not the key you verified before.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.47c77bf0": {
+    "en": "See less",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.48116970": {
+    "en": "Four steps, once a term.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.483c895d": {
+    "en": "1 · Create your account",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.48b57cb4": {
+    "en": "Omnivox sign-in, Mio, cancelled classes, dates from your plans de cours and live sharing in Horaire; more devices, file attachments, email aliases and emergency access in the Vault.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.48dad762": {
+    "en": "Without Horaire",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.48f4bbdd": {
+    "en": "Privacy and security",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.48f88ac3": {
+    "en": "Something else",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.48faa67c": {
+    "en": "Check your inbox",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.490ae772": {
+    "en": "One Bazinet Pro plan covers both.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.4925e655": {
+    "en": "Plan & billing",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.494d6e3b": {
+    "en": "Your sign-in token lives in the macOS Keychain — never in browser storage or on disk in plaintext.",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.4950babb": {
+    "en": "Horaire CVM · made for Cégep du Vieux Montréal",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.49a164ae": {
+    "en": "This clears the timetable and the colours. Your tasks and your account are not touched, and you can import a new schedule right after.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.49dcb7f7": {
+    "en": "How long the vault stays open without activity. Click to cycle.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.49fd2a6b": {
+    "en": "— a modern, memory-hard algorithm built to resist password cracking",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.4a0b7281": {
+    "en": "Sign in with Google",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.4a6ddb69": {
+    "en": "Quick security check",
+    "pages": [
+      "account.html",
+      "breach.html"
+    ]
+  },
+  "t.4a7c565d": {
+    "en": "Confirm password",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.4ab29102": {
+    "en": "Your account",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.4b200591": {
+    "en": "Nothing was installed.",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.4b5e84be": {
+    "en": "Check",
+    "pages": [
+      "breach.html",
+      "vault.html"
+    ]
+  },
+  "t.4b65eab2": {
+    "en": "Homework from LÉA",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.4bbd74a7": {
+    "en": "Built for journalists, activists, and anyone who travels with secrets. Zero-knowledge throughout — encrypted on your device.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.4bdfbff1": {
+    "en": "Is Horaire made by the Cégep?",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.4c12318a": {
+    "en": "Chat with support",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.4c29f7f0": {
+    "en": "Forgot password?",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.4c3e749c": {
+    "en": "Autofill blocked",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.4c64ebd3": {
+    "en": "k-anonymity · password never sent to server",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.4c853e93": {
+    "en": "On your Mac",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.4c956c45": {
+    "en": "Up to 512 KB each · encrypted on your device.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.4cce5f23": {
+    "en": "Zero-knowledge by design:",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.4e0ea3f4": {
+    "en": "With Horaire",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.4e21a124": {
+    "en": "Use the button above, or open the listing in the store. Chrome asks you to confirm, then it's installed.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.4e5a2893": {
+    "en": "Login",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.4ea55ff8": {
+    "en": "What happens if I forget my master password?",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.4ee8a9d4": {
+    "en": "We use k-anonymity: your browser hashes the password with SHA-1 and sends only the first five characters of that hash to look up matches. The full password and full hash never leave your device.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.4f8bffd1": {
+    "en": "Pro and billing",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.4f8d9941": {
+    "en": "Light or dark theme",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.503a916f": {
+    "en": "Windows · coming soon",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.503c35e7": {
+    "en": "Connected to Omnivox",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.50b8c332": {
+    "en": "One Bazinet account, everywhere",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.50d6325b": {
+    "en": "A-Z",
+    "pages": [
+      "app.html",
+      "generator.html"
+    ]
+  },
+  "t.50f94286": {
+    "en": "Previous",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.51749277": {
+    "en": "Add it from the Chrome Web Store",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.51b406a0": {
+    "en": "Hardened native shell",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.51dd91dc": {
+    "en": "Start over",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.5224cb6f": {
+    "en": "john@example.com",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.522d680c": {
+    "en": "Don't reply",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.5249db76": {
+    "en": "AES-256 encrypted · keys never leave this device",
+    "pages": [
+      "download.html",
+      "vault.html"
+    ]
+  },
+  "t.528dc0fe": {
+    "en": "Each login, note and 2FA secret is sealed before it’s saved.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.528e1831": {
+    "en": "Forget trusted devices",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.52d11d6d": {
+    "en": "Scan my vault",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.52e5c079": {
+    "en": "The server deletes the mission when the time is up — not the app. Choose the shortest window you can live with.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.5366ba0e": {
+    "en": "Free, for good.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.548e91c2": {
+    "en": "Your master password and encryption keys",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.555fd411": {
+    "en": "upgrade →",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.556f5195": {
+    "en": "Know before you leave home. The teacher’s note comes with it.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.557e20cc": {
+    "en": "Encryption still happens on your device; the server only ever sees ciphertext. Nothing about that changes.",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.55aead11": {
+    "en": "Independent software, made in Montréal",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.563eee8a": {
+    "en": "Homework and messages",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.56481789": {
+    "en": "You see your passwords. What reaches our servers was sealed with AES-256 on your device first, with a key only your master password can make. We store it. We can’t open it.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.569715c6": {
+    "en": "Zero-knowledge, shown working",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.56d812f0": {
+    "en": "Unreadable when it gets to us.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.56e22caa": {
+    "en": "📎 Attach a file",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.56e2f5d3": {
+    "en": "Later",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.587cd0e4": {
+    "en": "Your passwords deserve better than a sticky note.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.58fd445f": {
+    "en": "Homework from LÉA, added for you",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.594725a6": {
+    "en": "Autofill and save logins as you browse, keys held only in memory.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.5962b205": {
+    "en": "Signature check",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.598835a7": {
+    "en": "Showing your last saved copy. Enter your account password to sync.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.59c179cc": {
+    "en": "Export to your calendar",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.59fe709c": {
+    "en": "Create a recovery key",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.5a94729c": {
+    "en": "on time",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.5aa075b7": {
+    "en": "Import & export",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.5b221e9c": {
+    "en": "Print",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.5b2c4813": {
+    "en": "Bazinet Vault",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.5b48c95f": {
+    "en": "Only what you need.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.5b4a04ac": {
+    "en": "Keys are wiped when the browser closes and after 10 minutes idle. Re-opening asks for your master password again.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.5b5baade": {
+    "en": "Your vault is encrypted on your device. We literally cannot read it — not your logins, not your notes.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.5be321d9": {
+    "en": "john.smith@gmail.com",
+    "pages": [
+      "download.html",
+      "vault.html"
+    ]
+  },
+  "t.5c00462d": {
+    "en": "Advisory only: the check runs on your device, so treat it as a convenience, not a lock.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.5c0090c3": {
+    "en": "⚠ Pwned 3×",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.5c9890f8": {
+    "en": "Pick the current term, for example Automne 2026.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.5d0f64e8": {
+    "en": "Account password",
+    "pages": [
+      "account.html",
+      "horaire.html"
+    ]
+  },
+  "t.5d3d2b0a": {
+    "en": "Let a trusted contact reach this vault after a waiting period you set.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.5f21e0f7": {
+    "en": "Verify & continue",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.602522e5": {
+    "en": "Your schedule is encrypted on your device first. We store it; we can’t read it.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.60eb52b4": {
+    "en": "Has your password leaked?",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.60f5a30c": {
+    "en": "Account menu",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.618c69f5": {
+    "en": "Your own tasks, by effort",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.61a0ae3b": {
+    "en": "Limits",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.61cc55aa": {
+    "en": "Add",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.61d08be1": {
+    "en": "Enter your email and we'll send a reset link. Your vault stays safe — the master password is separate and never affected.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.62ca9244": {
+    "en": "The same zero-knowledge vault, in a hardened desktop app — isolated from your browser and extensions, with your session kept in the OS keychain. It opens straight to your vault and keeps itself current with signature-verified updates.",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.62d2bd7f": {
+    "en": "Your agenda and your vault are encrypted on your device, so we can’t read either one. No product sells or profiles your data.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.62ee7e38": {
+    "en": "Omnivox emailed you a verification code. Enter it to finish.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.6330aea9": {
+    "en": "Vault scan",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.63914269": {
+    "en": "Get help →",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.6396aa00": {
+    "en": "Disconnect extension",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.63a3455d": {
+    "en": "Why it's different",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.64c85433": {
+    "en": "and nowhere else. Argon2id runs on your device; your master password is never sent.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.64c9abd6": {
+    "en": "to store your first password.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.64e9f64c": {
+    "en": "Changing your password re-wraps the vault, never re-exposes it",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.6503cacd": {
+    "en": "2 · Add your logins",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.65292c6f": {
+    "en": "Pick a tool and go.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.65384e88": {
+    "en": "Zero-knowledge by design",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.6550f33c": {
+    "en": "Never include a password, your master password or a recovery key. Support can read what you write here.",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.656456f9": {
+    "en": "© 2026 Bazinet.net — All rights reserved.",
+    "pages": [
+      "about.html",
+      "download.html",
+      "extension.html"
+    ]
+  },
+  "t.659087d3": {
+    "en": "Extension",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.65e5b31c": {
+    "en": "Create a free account",
+    "pages": [
+      "horaire.html",
+      "index.html"
+    ]
+  },
+  "t.66480519": {
+    "en": "Your device",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.66c47573": {
+    "en": "Read the pasted text",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.6771ade6": {
+    "en": "Attachments",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.67d84024": {
+    "en": "How support works",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.67f1b7bf": {
+    "en": "Write it down or download it before you close this.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.6801a4cc": {
+    "en": "My account or signing in",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.6842ae31": {
+    "en": "You sign in with Google. Add a password so you can",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.6884bdb5": {
+    "en": "Confirm master password",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.68b7340b": {
+    "en": "Sign in with Face ID, Touch ID, Windows Hello, or a security key — phishing-resistant and password-free.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.68cb30e4": {
+    "en": "Runs in its own hardened window — not a tab. Malicious extensions and other sites can't reach into it.",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.68f4145f": {
+    "en": "Message",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.696e631c": {
+    "en": "© 2026 Bazinet.net · Breach data via Have I Been Pwned (k-anonymity)",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.698ea83b": {
+    "en": "Review them again",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.69f294fe": {
+    "en": "Anyone can publish an extension called Bazinet Vault. The id cannot be faked — open chrome://extensions and check that the id shown under Bazinet Vault is exactly this:",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.6a13f175": {
+    "en": "Your master password becomes a 256-bit key right here, in your browser. It never travels.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.6a29f5b9": {
+    "en": ". It is 32 random characters generated in your browser and shown once, and it opens the same vault your master password does. Create one from the vault menu and keep it somewhere physically safe. Without a recovery key, forgetting your master password means the vault cannot be decrypted by anyone, including us.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.6a505ce5": {
+    "en": "Open a mission without your master password, so you never reveal a full vault even exists.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.6a6b7d53": {
+    "en": "— a companion app for Valorant players.",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.6a870137": {
+    "en": "Browser-saved",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.6a9193da": {
+    "en": "private by design.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.6ad9039e": {
+    "en": "Continue to my vault",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.6b336aca": {
+    "en": "Share your schedule",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.6b6c2ccd": {
+    "en": "a-z",
+    "pages": [
+      "app.html",
+      "generator.html"
+    ]
+  },
+  "t.6c11ee5c": {
+    "en": "Bazinet Vault encrypts everything on your own device with a key derived from your master password. We store only ciphertext — your passwords, notes, and master password never reach our servers.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.6c190760": {
+    "en": "Good security shouldn't feel like a second job. Save a login once, and it's there the next time you need it — on your laptop, your phone, wherever you are. The hard cryptography happens quietly in the background.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.6c590c23": {
+    "en": "Plans de cours",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.6c6d8ef5": {
+    "en": "right-click the app → Open",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.6c78698d": {
+    "en": "This permanently erases your account, your entire vault, and all data. It cannot be undone.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.6c981ba4": {
+    "en": "Read chapter 4",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.6d00202f": {
+    "en": "Your Omnivox password is used to sign in, then forgotten. Our servers never store it.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.6d3cdab5": {
+    "en": "Passwords & secure notes",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.6d4a09cc": {
+    "en": "Free Password Generator",
+    "pages": [
+      "generator.html"
+    ]
+  },
+  "t.6d4c95c6": {
+    "en": "+ New mission",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.6d4cd586": {
+    "en": "I have confirmed this safety phrase with this person through a channel other than this app.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.6da00819": {
+    "en": "Open vault →",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.6dd016a6": {
+    "en": "Sign in once",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.6dff9418": {
+    "en": "Privacy-first breach check",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.6e49505f": {
+    "en": "— keep it unremarkable",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.6ef0dd10": {
+    "en": "Response times",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.6f605407": {
+    "en": "Live chat: right away when someone is online. Tickets: usually within one business day. Security reports: acknowledged within 3 business days.",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.6f804a1f": {
+    "en": "These are separated because they are hard or impossible to undo. Nothing here deletes vault data from the server.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.6fb46f7c": {
+    "en": "Breach checking",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.703676f9": {
+    "en": "Shown on your account and in your agenda. Cropped to a square and shrunk on this device before it is uploaded.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.70440046": {
+    "en": "Notes",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.709a2322": {
+    "en": "Name",
+    "pages": [
+      "account.html",
+      "app.html",
+      "vault.html"
+    ]
+  },
+  "t.70f8bb9a": {
+    "en": "Home",
+    "pages": [
+      "app.html",
+      "breach.html",
+      "generator.html"
+    ]
+  },
+  "t.7113a8db": {
+    "en": "Drop your horaire PDF here",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.71140601": {
+    "en": "Yes. It runs on Cloudflare's free tier and is supported by unobtrusive ads on these public pages (never on your vault). No credit card, no trial, no upsell.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.7160f914": {
+    "en": "Why go native",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.719ea396": {
+    "en": "Clear",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.71bc336a": {
+    "en": "The same account signs you in to Horaire, the vault and the apps — with a password, 2FA, a passkey or Google. Sign-in always happens on bazinet.net.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.7227f9df": {
+    "en": "Altered in transit",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.729130ab": {
+    "en": "Note · Wi-Fi",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.72f2b0df": {
+    "en": "Shared with you",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.737deb9e": {
+    "en": "Autofill saved logins, capture new ones as you sign up, and generate strong passwords inline. Your vault key stays in the extension's background worker — pages never see it, and it is wiped when the browser closes.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.73e6053e": {
+    "en": "The zero-knowledge password manager",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.7502ba97": {
+    "en": "How a zero-knowledge vault compares to the two most common ways people manage passwords today.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.75046291": {
+    "en": "Isolated from your browser",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.7512ea92": {
+    "en": "for the full details.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.752ca6a6": {
+    "en": "Download for Mac",
+    "pages": [
+      "download.html",
+      "index.html"
+    ]
+  },
+  "t.75368390": {
+    "en": "Bring in entries from a NordPass CSV export.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.7545b03a": {
+    "en": "HORAIRE DE COURS - Automne 2026…",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.7574d746": {
+    "en": "Reads the Omnivox PDF",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.75818c1d": {
+    "en": "Not found in any known breach",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.75f52718": {
+    "en": "Free",
+    "pages": [
+      "download.html",
+      "extension.html",
+      "index.html",
+      "vault.html"
+    ]
+  },
+  "t.764c1dfc": {
+    "en": "this early build isn't notarized by Apple yet, so macOS may warn you the first time —",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.76fc2f25": {
+    "en": "Works everywhere",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.77488bf0": {
+    "en": "Drop it into Horaire",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.776ae93e": {
+    "en": "This is shown once.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.77947d93": {
+    "en": "78%",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.77a914c0": {
+    "en": "The Omnivox PDF has your weekly pattern but no dates at all — it never says which Monday the term starts. Set that once and every week fills in.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.77dfd213": {
+    "en": "Cancel",
+    "pages": [
+      "account.html",
+      "app.html",
+      "horaire.html",
+      "support.html"
+    ]
+  },
+  "t.780555bd": {
+    "en": "we only ever store scrambled data that we cannot read",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.78246fe5": {
+    "en": "Current master password",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.7832942b": {
+    "en": "Day-to-day behaviour.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.78569a7b": {
+    "en": "Encrypted vault",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.78702269": {
+    "en": "It talks to",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.788070fb": {
+    "en": "Bazinet makes Horaire CVM, the agenda for Cégep du Vieux Montréal students, and Bazinet Vault, a zero-knowledge password manager. One account for both, encrypted on your device, free to start.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.7884a0c1": {
+    "en": "Our principles",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.798a2a45": {
+    "en": "Confirm passcode",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.79a6337e": {
+    "en": "Code from Omnivox",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.79cbc5eb": {
+    "en": "Click",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.79fc372d": {
+    "en": "Good to know",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.7a353787": {
+    "en": "Sign in to Omnivox once",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.7b47150d": {
+    "en": "4 hours",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.7b4f6712": {
+    "en": "Phone, laptop or the desktop app. It works without a connection and syncs when you’re back.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.7b7ed108": {
+    "en": "Bring in passwords from a JSON export, or take an encrypted backup of your vault any time. Your data is never locked in.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.7b9fb6c7": {
+    "en": "Your vault locks itself after inactivity, so a walked-away screen stays a closed door.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.7bae6665": {
+    "en": "Your Mio messages",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.7bb4405c": {
+    "en": "Installed",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.7bd41cd6": {
+    "en": "you'll set to encrypt your vault — and unlike the master password, this one is resettable by email.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.7c47e9be": {
+    "en": "Search, favorites, and notes built in",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.7d20d248": {
+    "en": "Built on technology trusted around the world",
+    "pages": [
+      "index.html",
+      "vault.html"
+    ]
+  },
+  "t.7d4278a8": {
+    "en": "30 days",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.7d80a55f": {
+    "en": "Fills the real site.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.7dc6ae96": {
+    "en": "Mac desktop app",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.7de27ac6": {
+    "en": "Active sessions & devices",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.7e5a975b": {
+    "en": "Identity",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.7e60db9b": {
+    "en": "Encrypted on this device",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.7eaca198": {
+    "en": "Import another schedule",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.7eda08a4": {
+    "en": "Your key is derived in the browser; only ciphertext ever reaches the server.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.7edc6a6c": {
+    "en": "••••••••••••",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.7f2030d9": {
+    "en": "Password generator",
+    "pages": [
+      "index.html",
+      "vault.html"
+    ]
+  },
+  "t.7f5a6512": {
+    "en": "End-to-end encrypted",
+    "pages": [
+      "horaire.html",
+      "index.html"
+    ]
+  },
+  "t.7f5b0472": {
+    "en": "Your master password never leaves your device — the key is derived locally.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.804fa9b4": {
+    "en": "Pages never receive your vault key, only the one login they asked for.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.80c3052d": {
+    "en": "Never",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.80f2f298": {
+    "en": "Verification code",
+    "pages": [
+      "account.html",
+      "horaire.html"
+    ]
+  },
+  "t.810750ce": {
+    "en": "It expires.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.8137ffb4": {
+    "en": "Signed auto-updates",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.81a8b204": {
+    "en": "Horaire and the vault run right in your browser — nothing to install.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.81cbf8b7": {
+    "en": "Open the extension, sign in with your Bazinet account, and unlock with your master password — it never leaves your device.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.8210aaf9": {
+    "en": "It means the encryption and decryption of your vault happen on your device, not on our servers. We receive and store only encrypted blobs. Because your master password and keys never leave your browser, we have no technical way to read your data — even if we wanted to, or were compelled to.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.824d76b1": {
+    "en": "Learn more",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.82582b11": {
+    "en": "Lock a mission to a location, so it only opens where you meant it to.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.826f4832": {
+    "en": "✓ Safe",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.829ea2ed": {
+    "en": "On the web",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.82a6ee5b": {
+    "en": "Write it down and keep it somewhere safe until you have it memorised. Losing it means losing the vault.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.82ac333f": {
+    "en": "is a Pro feature —",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.82c0bc1c": {
+    "en": "cannot be recovered",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.82cf8a5f": {
+    "en": "Account settings",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.82f189e0": {
+    "en": "Argon2id, on your device",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.82fb1d51": {
+    "en": "Up to date",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.83246a76": {
+    "en": "Zero-knowledge",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.832f1e9b": {
+    "en": "It takes 30 seconds. Use any email you like.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.8337093e": {
+    "en": "(for signing in). It's separate from the",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.835f3b50": {
+    "en": "selected",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.83b314a3": {
+    "en": "Reusing passwords",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.83d7413b": {
+    "en": "In Omnivox, click",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.8410e19f": {
+    "en": "Your agenda syncs to every device you sign in on. It is encrypted here before it is uploaded, so the server stores it without being able to read it.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.8460ae0e": {
+    "en": "Create a long, random password with your browser's secure RNG. Choose length and character sets. Nothing leaves your device.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.84add5b2": {
+    "en": "Email",
+    "pages": [
+      "account.html",
+      "extension.html",
+      "support.html"
+    ]
+  },
+  "t.84c29015": {
+    "en": "Username",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.851f6996": {
+    "en": "Scan my saved passwords",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.854f9e39": {
+    "en": "Tied to a place (optional).",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.856bc0df": {
+    "en": "3 · Relax",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.85dfa32c": {
+    "en": "Account",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.860044e6": {
+    "en": "Your sign-in token",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.8665aed3": {
+    "en": "To do",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.879e3232": {
+    "en": "Year",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.87c814f6": {
+    "en": "Unlock with one password. Your vault is always encrypted, always yours, and only you hold the key.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.87e98738": {
+    "en": "We keep what we can’t read. Not your logins, not your notes.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.880544d7": {
+    "en": "Click the puzzle-piece icon in Chrome's toolbar and pin Bazinet Vault, so it's one click away on any page.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.885334b0": {
+    "en": "Yes. Horaire, the vault, the quick tools and the Aim Trainer are free to start, with no credit card. An optional Pro plan ($2.99/month, 7 days free) adds extras to Horaire and the vault and helps cover server costs.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.88a0b037": {
+    "en": "Download each plan de cours",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.89511a76": {
+    "en": "What is it?",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.8958a8e3": {
+    "en": "Chat now",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.897e331c": {
+    "en": "How long should it last?",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.89843574": {
+    "en": "Your homework, added by itself",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.89af1eb3": {
+    "en": "Your timetable, done right",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.89b86ab0": {
+    "en": "Language",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.89cf6058": {
+    "en": "breach checker",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.89edbb64": {
+    "en": "Hiding it wouldn't make it safer. It would only stop you from checking that it does what this page claims, while a determined attacker reads it anyway.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.8ab0d45b": {
+    "en": "28%",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.8ac18353": {
+    "en": "A temporary, separately-locked subset of entries for travel or higher-risk situations.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.8af56de6": {
+    "en": "you",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.8b5522a2": {
+    "en": "Built and run by one developer — no investors, no data to sell, and no roadmap set by anyone but the people using it.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.8be3c943": {
+    "en": "Password",
+    "pages": [
+      "account.html",
+      "app.html",
+      "extension.html",
+      "vault.html"
+    ]
+  },
+  "t.8c07785f": {
+    "en": "Set a mission passcode",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.8c6465b7": {
+    "en": "Web pages never receive your vault key — including this one. The part that runs on a page asks for one specific credential and gets only that.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.8c6a8ea2": {
+    "en": "Add entry",
+    "pages": [
+      "app.html",
+      "vault.html"
+    ]
+  },
+  "t.8c788c92": {
+    "en": "Mission session active",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.8c974bc6": {
+    "en": "Effort",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.8d183dbd": {
+    "en": "Subject",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.8d236ba1": {
+    "en": "Make sure it's ours",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.8d5e22ed": {
+    "en": "Tick what belongs in your agenda. You can change this any time in Settings.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.8d679447": {
+    "en": "Everything else happens automatically",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.8e37c84a": {
+    "en": "Ciphertext only, on our side",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.8ecd33e2": {
+    "en": "19 MiB memory-hard key derivation in your browser",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.8f29a3b6": {
+    "en": "Bring in entries from a plaintext JSON export.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.8f31b8a2": {
+    "en": "Free forever",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.8f47fda1": {
+    "en": "Your agenda for the Cégep",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.902328f8": {
+    "en": "Open Horaire →",
+    "pages": [
+      "account.html",
+      "index.html"
+    ]
+  },
+  "t.9025f6f4": {
+    "en": "john@gmail.com",
+    "pages": [
+      "download.html",
+      "vault.html"
+    ]
+  },
+  "t.902b8df7": {
+    "en": "What it can and can't see",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.90bd2810": {
+    "en": "Choose a photo",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.90e3a592": {
+    "en": "Your key stays in the background",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.91032ad7": {
+    "en": "20",
+    "pages": [
+      "app.html",
+      "generator.html"
+    ]
+  },
+  "t.91353f3f": {
+    "en": "One destination",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.91437e09": {
+    "en": "Is Bazinet Vault really free?",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.91df4eec": {
+    "en": "Authenticator (2FA)",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.923b4fe8": {
+    "en": "Questions about either product, billing or your account.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.9286da75": {
+    "en": "Checked on this device only — nothing about your passwords is sent anywhere.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.93370add": {
+    "en": "Old email",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.936cfc14": {
+    "en": "Open Vault →",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.93c43ed3": {
+    "en": ", then click",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.93c543f9": {
+    "en": "Couldn't find the answer? We read every message.",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.940a179c": {
+    "en": "Varies",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.94408e41": {
+    "en": "Set password",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.9503c9e4": {
+    "en": "Ready in under a minute",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.95d52d16": {
+    "en": "— a password manager with a browser extension and a desktop app.",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.9617fc6d": {
+    "en": "— that they see the same safety phrase in their own account.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.963a652e": {
+    "en": "Danger zone",
+    "pages": [
+      "account.html",
+      "horaire.html"
+    ]
+  },
+  "t.96ca02e2": {
+    "en": "0-9",
+    "pages": [
+      "app.html",
+      "generator.html"
+    ]
+  },
+  "t.97729b41": {
+    "en": "Omnivox password",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.9817a3aa": {
+    "en": "sign in with your email and password.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.9820d9fe": {
+    "en": "First day",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.98233e83": {
+    "en": "It talks to bazinet.net and nowhere else.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.987b9ced": {
+    "en": "Day",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.98edb761": {
+    "en": "English and French, in chat, tickets and email.",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.98f5aa85": {
+    "en": "See if a password has appeared in a known data breach — privately, using k-anonymity.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.99116fdc": {
+    "en": "Once a term, and you’re set.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.993e174d": {
+    "en": "by phone, in person, or any channel that is not this app",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.997e6ab9": {
+    "en": "Mandatory email verification plus Cloudflare Turnstile and rate limiting keep automated abuse and fake accounts out.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.9996c558": {
+    "en": "Search entries…",
+    "pages": [
+      "download.html",
+      "vault.html"
+    ]
+  },
+  "t.9a1fc173": {
+    "en": "Questions",
+    "pages": [
+      "index.html",
+      "vault.html"
+    ]
+  },
+  "t.9a38b960": {
+    "en": "For detailed problems. We answer by email, usually within one business day.",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.9ab39cff": {
+    "en": "Confirm new master password",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.9ab476ff": {
+    "en": "Omnivox will email you a code the first time, because the sync runs from our server and not your phone. We keep the “remember this device” cookie it gives us afterwards, encrypted, so it only asks once. Disconnecting deletes it.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.9ab6f2eb": {
+    "en": "Signed by Bazinet",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.9af5addc": {
+    "en": "Open Omnivox, then LÉA, course by course",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.9afad26f": {
+    "en": "10-minute auto-lock",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.9b3b395b": {
+    "en": "Add it to Chrome",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.9b8f30ef": {
+    "en": "never leave your device",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.9bcd18c3": {
+    "en": "Prefer your own inbox? Write to us directly.",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.9c18e2a4": {
+    "en": "Get the desktop app",
+    "pages": [
+      "extension.html",
+      "horaire.html"
+    ]
+  },
+  "t.9c6e694c": {
+    "en": "zero-knowledge",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.9d015202": {
+    "en": "Horaire checks LÉA for new plans de cours once a day. Check now to get them right away.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.9d1afc1f": {
+    "en": "k-anonymity",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.9d6df395": {
+    "en": "For everyday logins, yes — your vault is end-to-end encrypted and only you hold the key. Two honest caveats, though: Bazinet Vault is an independent project that hasn't yet had a formal third-party security audit, and there's no password-recovery backdoor — if you forget your master password and haven't set up a recovery key, the data can't be recovered by anyone. So set up a recovery key, and for irreplaceable, high-stakes secrets also keep a separate backup and don't rely on any single tool. See our",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.9df02064": {
+    "en": "without leaving the page",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.9df0e620": {
+    "en": "This opens the mission — and",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.9dfd349e": {
+    "en": "Preferences",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.9fb9dcd8": {
+    "en": "IDEAL",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.9ffd1ae1": {
+    "en": "241",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.a02107c3": {
+    "en": "Signed in as",
+    "pages": [
+      "app.html",
+      "horaire.html"
+    ]
+  },
+  "t.a0c03abc": {
+    "en": "Student number (DA)",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.a0d96cb6": {
+    "en": "Everywhere you’re signed in right now. A website session you don’t use for 14 days ends on its own.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.a0ed7320": {
+    "en": "Save and open my agenda",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.a124947c": {
+    "en": "Low",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.a12a815f": {
+    "en": "Peace of mind",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.a16536d7": {
+    "en": "Courses",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.a1a7c7b3": {
+    "en": "Open my agenda",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.a1a8e418": {
+    "en": "Each tool does one job well instead of a hundred things poorly. No upsell popups, no dark patterns, no nagging.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.a1bee30e": {
+    "en": "🛰️ Mission Mode",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.a1c8e09a": {
+    "en": "Disconnect Omnivox",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.a225c654": {
+    "en": "Generate fresh passwords or import what you have. Everything is encrypted before it's saved.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.a26dc1a6": {
+    "en": "No credit card",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.a3b3f222": {
+    "en": "Days with no classes",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.a4566b08": {
+    "en": "Your passwords, encrypted",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.a47928e5": {
+    "en": "I understand that these entries could not be verified and are not shown with their contents.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.a48b16c4": {
+    "en": "🛰️ Open a Mission",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.a56a7734": {
+    "en": "Because a login form can be on any site. It looks for password fields and does nothing else. bazinet.net itself is excluded.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.a62c1599": {
+    "en": "One Bazinet Pro plan adds the extras to Horaire CVM and Bazinet Vault.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.a64a5fc1": {
+    "en": "Create free account",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.a672aeba": {
+    "en": "Prefer dark mode by default",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.a6787f63": {
+    "en": "Email support@bazinet.net with SECURITY in the subject, and please don't post them publicly.",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.a68524bf": {
+    "en": "Backup passphrase",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.a6eaaa0f": {
+    "en": "Cancelled classes, crossed out",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.a7419509": {
+    "en": "Filled",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.a84a3beb": {
+    "en": "Ask to see, correct or delete your personal information. We answer within 30 days, as Québec's Law 25 requires.",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.a85c2bc3": {
+    "en": "When both are available the extension is used first, because it keeps your password out of it entirely. Connecting Omnivox changes nothing on a computer that already has the extension — it is there for your phone.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.a86a40d4": {
+    "en": "Each alias is a masked",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.a8a720f5": {
+    "en": "Your missions",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.a8b48253": {
+    "en": "Authenticated encryption (GCM) on every entry",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.a8cd5e50": {
+    "en": "Your trusted contacts",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.a8e7d773": {
+    "en": "Mark as favorite",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.a935c72d": {
+    "en": "New master password",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.a9514317": {
+    "en": "Independent software company · Montréal, Québec",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.a9d5ae87": {
+    "en": "Share and shared schedules",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.aa2c96da": {
+    "en": "Basic",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.aaaccddb": {
+    "en": "AES-256-GCM on every entry",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.aaf0d2f4": {
+    "en": "Nothing is uploaded. The file is read on your device and never leaves it — which matters, because it carries your name, your DA and where you are every hour of the week.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.aaf37447": {
+    "en": "Create account",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.ac28f2ab": {
+    "en": "Bazinet Aim Trainer",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.acc9f23c": {
+    "en": "⭐ Built-in authenticator",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.ad15d234": {
+    "en": "Bazinet Account",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.ad565d9d": {
+    "en": "Feature",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.ada2e9e9": {
+    "en": "Sign in",
+    "pages": [
+      "account.html",
+      "extension.html",
+      "vault.html"
+    ]
+  },
+  "t.adac6937": {
+    "en": "Code",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.addcfaa7": {
+    "en": "Do I need an account to use the tools?",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.ae088a0a": {
+    "en": "Try it free for 7 days",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.aeb83710": {
+    "en": "Profile picture",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.aed331a1": {
+    "en": "Check a password against billions of records from real data breaches. Thanks to",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.af71b9c9": {
+    "en": "📧 Email aliases",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.af74f7c5": {
+    "en": "Copy",
+    "pages": [
+      "account.html",
+      "app.html",
+      "extension.html",
+      "generator.html",
+      "vault.html"
+    ]
+  },
+  "t.afd3334a": {
+    "en": "A real vault, minus the things that watch you",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.afeaf9c4": {
+    "en": "Isolated from your browser & extensions",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.b0624f21": {
+    "en": "Provider can read your data",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.b0d63113": {
+    "en": "Personal content is encrypted on your device. No advertising, no third-party tracking, and no selling of data.",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.b0d74f1b": {
+    "en": "Fracture · 6 — 4",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.b136609f": {
+    "en": "Invite",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.b13bdd17": {
+    "en": "example.com — john@example.com",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.b180b0a6": {
+    "en": "1.2.1 · signature valid",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.b19159f1": {
+    "en": "Works offline, on every device",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.b1a5954a": {
+    "en": "High",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.b1ac2122": {
+    "en": "Check this password",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.b1b147a5": {
+    "en": "Chrome, Edge, Brave · Manifest V3 ·",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.b1f9bfea": {
+    "en": "Two-factor verification",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.b304d12b": {
+    "en": "Privacy.",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.b3117020": {
+    "en": "I understand and agree",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.b3151db2": {
+    "en": "Where your homework and your Mio messages come from. You only need one of these.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.b330cef0": {
+    "en": "A password manager in your browser is a lot of trust. Here's exactly what this one does.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.b37456c4": {
+    "en": "Contact",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.b3da7025": {
+    "en": "Unlocked",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.b42c98a7": {
+    "en": "Kept in the macOS Keychain",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.b45ebd80": {
+    "en": "5 min",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.b45f3f1a": {
+    "en": "can open it. Confirm with them —",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.b47f363e": {
+    "en": "is",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.b4aef54f": {
+    "en": "in one agenda you’ll actually open.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.b4be85be": {
+    "en": "Honest about what it is",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.b4e0ba56": {
+    "en": "Copy every exam date by hand",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.b52b36b7": {
+    "en": "Back",
+    "pages": [
+      "app.html",
+      "support.html"
+    ]
+  },
+  "t.b55e9877": {
+    "en": "Every entry is sealed with AES-256-GCM — the same authenticated-encryption standard used across the security industry.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.b5671c7c": {
+    "en": "Re-locks the vault under a new password. Entries are not re-encrypted.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.b5eb447b": {
+    "en": "Auto-lock",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.b5efcb0a": {
+    "en": "Read entries back in from an encrypted backup file.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.b614e7aa": {
+    "en": "A small, separately-locked copy of a few entries, that expires on its own. Opening it never reveals the rest of your vault.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.b65463cb": {
+    "en": "Connect",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.b6687dc8": {
+    "en": "Built-in strong generator",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.b724706c": {
+    "en": "Sign in to GitHub",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.b73cdaab": {
+    "en": "Nothing to install",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.b7640142": {
+    "en": "How much work it is. Colours its dot: red high, amber medium, green low.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.b77b9caf": {
+    "en": ", the encryption standard trusted by banks and governments",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.b80ded59": {
+    "en": "Use this",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.b82c1386": {
+    "en": "— the student agenda for Cégep du Vieux Montréal: classes, homework, exams and due dates in one place.",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.b8a1a737": {
+    "en": "Create strong, unique passwords with one click — try our free generator, no account needed.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.b8ec5543": {
+    "en": "Send reset link",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.ba374bf1": {
+    "en": "Privacy requests",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.bb5857ac": {
+    "en": "Often",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.bb597d44": {
+    "en": "End mission & lock",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.bb838bd6": {
+    "en": "What we will never ask for",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.bbe73371": {
+    "en": "Don't add",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.bbfa773e": {
+    "en": "Close",
+    "pages": [
+      "app.html",
+      "horaire.html",
+      "support.html"
+    ]
+  },
+  "t.bc981983": {
+    "en": "Next",
+    "pages": [
+      "app.html",
+      "horaire.html"
+    ]
+  },
+  "t.bce06414": {
+    "en": "Search",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.bd004d09": {
+    "en": "Course plans found in LÉA",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.bd2cab10": {
+    "en": "Two ways to read the same school account. You only need one, and Bazinet picks for you.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.bd4cc1d3": {
+    "en": "Everyday tools,",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.bd7907e4": {
+    "en": "Actually free",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.bd8b61d1": {
+    "en": "Live agent overlay",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.bd9773dd": {
+    "en": "Breach check",
+    "pages": [
+      "index.html",
+      "vault.html"
+    ]
+  },
+  "t.bdd5aa14": {
+    "en": "Open the Vault",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.be011097": {
+    "en": "Omnivox sign-in (DA)",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.be281544": {
+    "en": "Agenda settings",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.bea0eec6": {
+    "en": "Your products",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.bf049782": {
+    "en": "Security status",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.bf7c0411": {
+    "en": "shopping@bazinet.net",
+    "pages": [
+      "download.html",
+      "vault.html"
+    ]
+  },
+  "t.bf8804f0": {
+    "en": "Reset your password",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.c008f9f6": {
+    "en": "Why use a generated password?",
+    "pages": [
+      "generator.html"
+    ]
+  },
+  "t.c03d23a1": {
+    "en": "It locks itself",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.c077fbb8": {
+    "en": "Help articles and live chat",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.c0908b35": {
+    "en": "Used to sign in to your Bazinet account. Separate from your vault's master password.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.c092e6ca": {
+    "en": "Passwords on our servers we could ever read",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.c1e2ad92": {
+    "en": "A recovery key is a second way into this vault, held only by you. It opens the same vault your master password does, so keep it somewhere a thief would not look — printed and filed, not in a note on the same laptop.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.c1f9adb7": {
+    "en": "Enter it once. After that this device is remembered and you will not be asked again.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.c245b715": {
+    "en": "Who makes Bazinet?",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.c24bf517": {
+    "en": "Week, day and month views",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.c277873e": {
+    "en": "Only open near where I am now",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.c31d3f01": {
+    "en": "Create a strong, random password right in your browser. Nothing is sent anywhere — it's generated on your device.",
+    "pages": [
+      "generator.html"
+    ]
+  },
+  "t.c3b0c04f": {
+    "en": "filled",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.c42e0ca0": {
+    "en": "Account overview",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.c4588044": {
+    "en": "@bazinet-dev",
+    "pages": [
+      "download.html",
+      "vault.html"
+    ]
+  },
+  "t.c49bb4c2": {
+    "en": "Get in touch",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.c502deec": {
+    "en": "Mission passcode",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.c510d6c0": {
+    "en": "See more",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.c52fa923": {
+    "en": "For Valorant players",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.c5baa93d": {
+    "en": "Create mission",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.c5bfb1ce": {
+    "en": "Try the generator",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.c5c9f963": {
+    "en": ", where everything is encrypted on your device with Argon2id + AES-256 before it's ever saved.",
+    "pages": [
+      "generator.html"
+    ]
+  },
+  "t.c660ead1": {
+    "en": "Chrome installs it and keeps it updated. Edge and Brave install from the same listing.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.c6faab68": {
+    "en": ", your password never leaves your browser — we only ever see the first five characters of its hash.",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.c70a890d": {
+    "en": "Send message",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.c7605581": {
+    "en": "No outside investors. The products are free to use, with an optional Pro subscription.",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.c7874aaa": {
+    "en": "Display name",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.c7f73bb5": {
+    "en": "Settings",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.c915d505": {
+    "en": "Your schedule",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.c928b735": {
+    "en": "Breach scanning",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.c9936be6": {
+    "en": "Will the Aim Trainer get my Valorant account banned?",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.ca14caa6": {
+    "en": "Master password is never transmitted or stored",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.caab7827": {
+    "en": "Passkeys",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.cac372cb": {
+    "en": "Remove this schedule from this account",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.cb4780f8": {
+    "en": "24 hours",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.cba409dd": {
+    "en": "Horaire finds the plan for each of your courses on its own and pulls out every exam and deadline. You just confirm.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.cc65b1f3": {
+    "en": ", with no account needed.",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.cccc7095": {
+    "en": "Hardened against common web attacks with a strict Content-Security-Policy and tamper protection",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.ccd351cc": {
+    "en": "Getting data out of this vault, and back into it.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.ccdb608e": {
+    "en": "A free Bazinet account is required (it keeps this service from being abused and lets us email your report). You'll be asked to sign in when you run a check.",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.cce01e56": {
+    "en": "support@bazinet.net",
+    "pages": [
+      "about.html",
+      "extension.html",
+      "index.html",
+      "vault.html"
+    ]
+  },
+  "t.cced5b53": {
+    "en": "off by default",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.ccffc414": {
+    "en": "Start free",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.cd1334ca": {
+    "en": "Passcode",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.cd447955": {
+    "en": "Get your schedule PDF from Omnivox",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.cd6216cd": {
+    "en": "You can change all of this later.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.cd651995": {
+    "en": "Encrypted before it leaves your device.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.cd92edcd": {
+    "en": "Your vault is sealed with",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.cdd48dde": {
+    "en": "Save this entry first, then reopen it to attach files.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.ce052306": {
+    "en": "SHA-256 of their public key",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.ce6b5c29": {
+    "en": "Built-in defense against bots, brute-force attempts, and automated attacks",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.ce72f3a0": {
+    "en": "Quick questions, answered live while you're on this page.",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.cf04df27": {
+    "en": "↻ New",
+    "pages": [
+      "generator.html"
+    ]
+  },
+  "t.cf1c7263": {
+    "en": "Sign in with a passkey",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.cf846870": {
+    "en": "Strong",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.cf9b7706": {
+    "en": "Open",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.cffa50a3": {
+    "en": "and",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.d071448e": {
+    "en": "upgrade to unlock →",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.d1137a9e": {
+    "en": "Encryption & decryption done on your device",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.d150d371": {
+    "en": "Verify & sign in",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.d15821fb": {
+    "en": "What does \"zero-knowledge\" actually mean?",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.d15f886d": {
+    "en": "Full screen",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.d16c78ab": {
+    "en": "Sign out on this device",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.d17bb082": {
+    "en": "HS",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.d1d195f1": {
+    "en": "Add to Chrome",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.d22ce133": {
+    "en": "Web Crypto API",
+    "pages": [
+      "index.html",
+      "vault.html"
+    ]
+  },
+  "t.d244b7f5": {
+    "en": "— there is no reset, no support override, and no copy anywhere else. If you forget it, the vault is gone.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.d26d55c7": {
+    "en": "Words",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.d2c5a133": {
+    "en": "Updates are verified against an embedded key before they install — a spoofed or tampered update is rejected.",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.d392751d": {
+    "en": "vault-…",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.d3d96b02": {
+    "en": "Independence.",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.d3e633f2": {
+    "en": "Counter-strafe coach",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.d3f0ab15": {
+    "en": "Include affected entry names in my emailed report (never passwords).",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.d404968e": {
+    "en": "Medium",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.d410dad1": {
+    "en": "Choose “Horaire de la session en version abrégée” — the full-format one can't be read.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.d56b82dd": {
+    "en": "Connect Omnivox",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.d60aac24": {
+    "en": "Keys are wiped when the browser closes and after 10 minutes idle.",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.d61d5a0c": {
+    "en": "What’s due next is always in view, so nothing sneaks up on you.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.d634af03": {
+    "en": "Create your free account",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.d673d941": {
+    "en": "ACS",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.d70076db": {
+    "en": "Can edit tasks",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.d701709a": {
+    "en": "Exams and due dates at a glance",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.d70f93df": {
+    "en": "Address",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.d7837cad": {
+    "en": "permanently lost",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.d7e4cb80": {
+    "en": "Export to my calendar (.ics)",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.d82b56ca": {
+    "en": "Course",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.d8339862": {
+    "en": "Native app · macOS (Apple Silicon)",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.d83afca5": {
+    "en": "••••••••••",
+    "pages": [
+      "download.html",
+      "vault.html"
+    ]
+  },
+  "t.d850ee18": {
+    "en": "New password",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.d86e1d5a": {
+    "en": "!@#$",
+    "pages": [
+      "generator.html"
+    ]
+  },
+  "t.d8b436ff": {
+    "en": "The term dates, the days off, and a colour for each course.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.d8ba636e": {
+    "en": "Focused, not bloated",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.d9109bf9": {
+    "en": "Download the PDF that opens, or print it and choose “Save as PDF”.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.d933efb9": {
+    "en": "No. The vault is",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.d97d1ee3": {
+    "en": "Show",
+    "pages": [
+      "app.html",
+      "breach.html"
+    ]
+  },
+  "t.d9961547": {
+    "en": "How can we help?",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.d9d447cb": {
+    "en": "Your secrets never leave your device unencrypted",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.dab58a4b": {
+    "en": "Generate a strong password",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.db07be18": {
+    "en": "Languages",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.db284546": {
+    "en": "🛟 Emergency access",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.dba6a081": {
+    "en": "Can you read my passwords or vault data?",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.dc1649a1": {
+    "en": "Sign out",
+    "pages": [
+      "account.html",
+      "app.html",
+      "horaire.html"
+    ]
+  },
+  "t.dcdf4373": {
+    "en": "Fill passwords",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.dce05274": {
+    "en": "Industry-leading security, in plain terms",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.dd71f853": {
+    "en": "Lock this agenda",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.dd7c5c96": {
+    "en": "The password generator and the breach check need nothing at all. Horaire, the vault and the Aim Trainer use one free Bazinet account (email, Google or a passkey) that works on the website, the browser extension and the desktop apps.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.dda6ac27": {
+    "en": "Verify",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.dda931ba": {
+    "en": "Get your schedule from Omnivox",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.de3ad803": {
+    "en": "offline guessing",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.dedcf993": {
+    "en": "Connecting Omnivox does the sign-in on our server instead, which is the only way this can work on iPhone and Android, where a browser extension cannot exist. Your password is kept encrypted and is decrypted for one sign-in at a time.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.df88b84d": {
+    "en": "blocked",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.dfcb0df0": {
+    "en": "Hashed on your device — only a 5-character prefix is ever sent. Nothing is stored.",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.e00ac23f": {
+    "en": "Kind",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.e088edba": {
+    "en": "One master password unlocks everything",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.e0a24e82": {
+    "en": "Safer than a browser tab",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.e0a7129a": {
+    "en": "If it doesn't match, remove it and email",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.e0e1e4f7": {
+    "en": "Enter your account password to open your agenda. It never leaves this device — it is what decrypts your schedule.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.e1c24cd9": {
+    "en": "No download, runs in your browser",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.e2bb1028": {
+    "en": "!@#",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.e2c04cdf": {
+    "en": "Built the way tools should be",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.e32fd9ee": {
+    "en": "No need to stay on the page.",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.e38bf64d": {
+    "en": "A separate passcode.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.e38e5198": {
+    "en": "Sign out everywhere else",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.e3f39f7f": {
+    "en": "Let a trusted person reach your vault if you can't — only after a waiting period you control, during which you can decline.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.e420fb72": {
+    "en": "Support access is on for your account. Send what Horaire reads from your plans de cours — course names, evaluations and the dates they land on — so support can check them.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.e44ca220": {
+    "en": "otpauth://",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.e4571490": {
+    "en": "Not now",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.e463767f": {
+    "en": "Paste the site's 2FA setup key (or its",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.e464a049": {
+    "en": "The email Omnivox sends about the new sign-in may say it came from an iPhone in the United States. That's our server, not someone else.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.e56772b8": {
+    "en": "separate from your account password",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.e6310f3d": {
+    "en": ": your data is encrypted in your browser with a key derived from your master password (Argon2id → AES-256-GCM) before anything is sent. We only ever store ciphertext, so we have no technical way to read it — even if compelled to.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.e7196b23": {
+    "en": "The principles",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.e73ea3fa": {
+    "en": "1.2.1 · signature invalid",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.e7446268": {
+    "en": "Update server",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.e76e23a0": {
+    "en": "I verified this — add the contact",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.e7dd0240": {
+    "en": "All the essentials of a modern password manager — built so that the secrets stay secret, even from us.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.e87d86d2": {
+    "en": "bazinet.net",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.e88c3e20": {
+    "en": "can unlock.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.e963907d": {
+    "en": "Remove",
+    "pages": [
+      "account.html",
+      "app.html"
+    ]
+  },
+  "t.e99fb770": {
+    "en": "Jump to a date",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.e9b450d1": {
+    "en": "Done",
+    "pages": [
+      "app.html",
+      "horaire.html"
+    ]
+  },
+  "t.e9c0d442": {
+    "en": "Enter the recovery key you saved when you set it up. You will choose a new master password straight afterwards.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.ea69a1a4": {
+    "en": "address that forwards to your real email. Keep your real email private when signing up to services.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.ea6e9391": {
+    "en": "Stop reusing the same password everywhere.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.ea73df25": {
+    "en": "About Bazinet.net",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.eae1b241": {
+    "en": "Every class, room and teacher of your term appears, week by week.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.eb05dddd": {
+    "en": "What support can see",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.eb1228e8": {
+    "en": "Passwords only",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.eb97906e": {
+    "en": "New homework, all by itself",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.ebaac0cf": {
+    "en": "Confirm passphrase",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.ebd1b418": {
+    "en": "Matched by real domain",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.ec330441": {
+    "en": "The crypto and its trade-offs are written up plainly on the blog.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.ec54fff2": {
+    "en": "Opens on every device",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.ec80469c": {
+    "en": "This password was saved for",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.eca15992": {
+    "en": "To fetch your homework, your password is decrypted here and sent to our server for that one sign-in. The server uses it and keeps nothing.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.eca71ab0": {
+    "en": "256-bit key",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.ed54d86f": {
+    "en": "K#9mX@qzL!p2Rw$v",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.ed5c43a8": {
+    "en": "Native apps for Apple Silicon:",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.edfd617a": {
+    "en": "Two-factor authentication",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.ee1c5768": {
+    "en": "← Back to sign in",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.ee3533a6": {
+    "en": "🎯",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.ee4c7c62": {
+    "en": "Take your timetable somewhere else, or put it on paper.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.ee92fca2": {
+    "en": "Previously verified fingerprint:",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.eeb843b8": {
+    "en": "bazinet.net servers",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.efc007a3": {
+    "en": "Save",
+    "pages": [
+      "account.html",
+      "app.html",
+      "horaire.html"
+    ]
+  },
+  "t.f030c3d6": {
+    "en": "1 hour",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.f056d0d5": {
+    "en": "Entries",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.f0589bc5": {
+    "en": "Your password, your master password, your recovery key, or a code we sent you. Anyone who asks for one is not us.",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.f0d35cda": {
+    "en": "Unique password per site",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.f0f9130e": {
+    "en": "Your master password is hardened with",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.f12d91b7": {
+    "en": "Workload view",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.f1702b46": {
+    "en": "Messages",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.f1f8a8f9": {
+    "en": "Your data is encrypted with a key derived from that password, and there is no recovery backdoor by design — we cannot reset it for you, and support cannot be talked into it. There is one way back in, and only you can set it up: a",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.f2077073": {
+    "en": "Download for Mac →",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.f21ecd99": {
+    "en": "Every update is checked.",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.f258818e": {
+    "en": "— paste this into the extension, then it disappears",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.f25ce1b8": {
+    "en": "Security",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.f3895993": {
+    "en": "← Back to account",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.f402ac0a": {
+    "en": "Password health",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.f409d800": {
+    "en": "to allow it. After that it launches normally and updates itself automatically, with every update signature-verified before it installs.",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.f4956e35": {
+    "en": "Pin it to your toolbar",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.f4afa57c": {
+    "en": "Pick only what you would need while the mission is open. Everything you leave out stays sealed in your vault.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.f580763f": {
+    "en": "Save it as a PDF and drop it above",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.f5f2e31b": {
+    "en": "No. Horaire CVM is an independent app built for Cégep du Vieux Montréal students. It isn't affiliated with or endorsed by the Cégep, Omnivox or Skytech — always check Omnivox for anything that matters, like an exam date.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.f60d4319": {
+    "en": "Generate one here, then store it (and the rest of your logins) in your free",
+    "pages": [
+      "generator.html"
+    ]
+  },
+  "t.f6310d9c": {
+    "en": "Your Bazinet account signs you in to Horaire CVM and Bazinet Vault.",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.f6570a58": {
+    "en": "It's an independent project — small tools built and maintained by one person, not a company chasing your data. Questions or bugs go straight to",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.f6a88090": {
+    "en": ": the attack that matters is someone who has stolen a copy of the encrypted database and can guess for as long as they like, without us being able to slow them down. Length and unpredictability are what defeat that. A generated passphrase is the easy way to get both.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.f6fdbe48": {
+    "en": "Delete",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.f768ea10": {
+    "en": "Check one password",
+    "pages": [
+      "breach.html"
+    ]
+  },
+  "t.f780d949": {
+    "en": "— a",
+    "pages": [
+      "about.html"
+    ]
+  },
+  "t.f7f1997c": {
+    "en": "Session",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.f82be68a": {
+    "en": "Week",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.f85039fd": {
+    "en": "Confirm new password",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.f8969a18": {
+    "en": "only",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.f89b7ebf": {
+    "en": "View the Chrome Web Store listing →",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.f8c1b44f": {
+    "en": "Choose the session, then",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.f8e34bc5": {
+    "en": "Create your free, zero-knowledge vault in under a minute. Only you hold the key.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.f9de503c": {
+    "en": "to forwarded mail — a reply is sent from your real address and would reveal it.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.f9e4e497": {
+    "en": "native app",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.f9f1a974": {
+    "en": "Browser extension",
+    "pages": [
+      "account.html",
+      "index.html"
+    ]
+  },
+  "t.fa22f804": {
+    "en": "How is this different from the browser extension?",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.fa92e135": {
+    "en": "Tampered ones never install.",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.fb0d5f0d": {
+    "en": "AES-256-GCM",
+    "pages": [
+      "index.html",
+      "vault.html"
+    ]
+  },
+  "t.fb449e23": {
+    "en": "See the products ↓",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.fb67ba41": {
+    "en": "Their email address",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.fc168a63": {
+    "en": "Forget your master password and the data is gone — the cost of a design where no one else can read it. We'll always tell you what it is and isn't.",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.fc45f9b7": {
+    "en": "Generate",
+    "pages": [
+      "app.html",
+      "vault.html"
+    ]
+  },
+  "t.fcd08ef1": {
+    "en": "Mandatory email verification and trusted sign-up keep accounts clean",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.fcffad35": {
+    "en": "A changed key is what a compromised server substituting its own key looks like. It can also happen legitimately if your contact reset their vault. Do not continue until they confirm the new phrase over a channel you trust.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "t.fd3e3d92": {
+    "en": "loading…",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.fd73d35e": {
+    "en": "The extension reads LÉA and Mio inside your own browser, on the Omnivox session you are already signed in to. Your Omnivox password is never involved and nothing about your school account leaves this computer. It only works in a desktop browser with the extension installed.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.fd7b155d": {
+    "en": "Chat with us",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "t.fd8dc20e": {
+    "en": "Zero-knowledge · End-to-end encrypted",
+    "pages": [
+      "vault.html"
+    ]
+  },
+  "t.fdc60c87": {
+    "en": "Keys never touch the page",
+    "pages": [
+      "extension.html"
+    ]
+  },
+  "t.fe0a091f": {
+    "en": "Products",
+    "pages": [
+      "about.html",
+      "account.html",
+      "index.html"
+    ]
+  },
+  "t.fe12b16b": {
+    "en": "Save passwords to your free vault →",
+    "pages": [
+      "generator.html"
+    ]
+  },
+  "t.fe3af23b": {
+    "en": "Horaire CVM",
+    "pages": [
+      "about.html",
+      "index.html",
+      "support.html"
+    ]
+  },
+  "t.fe4f0df4": {
+    "en": "macOS 10.15+ · Apple Silicon · version 1.2.0",
+    "pages": [
+      "download.html"
+    ]
+  },
+  "t.ff089fde": {
+    "en": "; don't enable that one for Valorant. Everything else is safe by design.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.ff218124": {
+    "en": "or import the PDF",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.ff4fc027": {
+    "en": "Profile",
+    "pages": [
+      "account.html"
+    ]
+  },
+  "t.ff8cbc05": {
+    "en": "Everything your week needs",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.ffa53b7e": {
+    "en": "Search the help centre, or talk to us. We answer in English and French.",
+    "pages": [
+      "support.html"
+    ]
+  },
+  "vault.empty": {
+    "en": "Your vault is empty.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vault.search": {
+    "en": "Search entries…",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vault.unlock": {
+    "en": "Unlock",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vault.unlockTitle": {
+    "en": "Unlock your vault",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vault.useRecovery": {
+    "en": "Use a recovery key instead",
+    "pages": [
+      "app.html"
+    ]
+  }
+}
