@@ -12,3 +12,10 @@ Licensed under the Apache License, Version 2.0. Full text: /vendor/pdfjs/LICENSE
 
 vendor/postal-mime.js — postal-mime 3.0.1, Copyright (c) 2021-2025 Andris Reinman
 Licensed under the MIT No Attribution License (MIT-0): https://opensource.org/license/mit-0
+
+vendor/image-decode.js — jpeg-js 0.4.4, Copyright (c) 2011 notmasteryet / Eugene Ware, BSD 3-Clause License;
+upng-js 2.1.0, Copyright (c) 2017 Photopea, MIT License; pako 1.0.11, (c) Vitaly Puzrin and Andrei Tuputcyn, MIT and Zlib Licenses
+
+vendor/libheif.js — libheif-js 1.19.8: libheif (Copyright (c) struktur AG) and libde265, compiled to WebAssembly,
+served unmodified apart from comment removal and replaceable as a separate file. Licensed under the GNU Lesser
+General Public License v3. Full text: /vendor/libheif-LICENSE.txt. Source: https://github.com/catdad-experiments/libheif-js
