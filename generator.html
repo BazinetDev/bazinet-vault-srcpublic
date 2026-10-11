@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon-vault.svg">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="Free strong password generator. Create random, secure passwords in your browser — nothing is sent anywhere. Choose length and character types."/>
+  <meta name="theme-color" content="#0f1320"/>
+  <title>Password Generator — Bazinet</title>
+  <link rel="icon" href="/favicon.svg"/>
+  <script src="/i18n-strings.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/theme.js"></script>
+  <script src="/console-warn.js" defer="defer"></script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="topbar-brand" aria-label="Bazinet home">
+        <svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c97ff"/><stop offset="1" stop-color="#4f6bf0"/></linearGradient></defs><path d="M24 3 6 10v12c0 11 7.7 18.6 18 23 10.3-4.4 18-12 18-23V10L24 3Z" fill="url(#tg)"/><circle cx="24" cy="21" r="5" fill="#0f1320"/><rect x="21.6" y="23" width="4.8" height="8" rx="2.4" fill="#0f1320"/></svg>
+        <span class="brand-text">Bazinet</span>
+      </a>
+      <nav class="topbar-nav">
+        <a href="/" class="nav-hide" data-i18n="nav.home">Products</a>
+        <a href="/about.html" class="nav-hide" data-i18n="nav.about">About</a>
+        <a href="/blog/" class="nav-hide" data-blog data-i18n="nav.blog">Blog</a>
+        <a href="/generator.html" class="nav-hide" data-i18n="nav.generator">Generator</a>
+        <a href="/breach.html" class="nav-hide" data-i18n="nav.breach">Breach check</a>
+        <a href="/terms.html" class="nav-hide" data-i18n="nav.terms">Terms</a>
+        <a href="/privacy.html" class="nav-hide" data-i18n="nav.privacy">Privacy</a>
+        <a href="/support" class="nav-help" data-i18n-attr="aria-label:nav.support,title:nav.support" aria-label="Support" title="Support"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6"/><path d="M12 17h.01"/></svg><span data-i18n="nav.support">Support</span></a>
+        <button class="lang-toggle" type="button" data-lang-toggle>FR</button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light or dark mode" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+        </button>
+        <a href="/download" class="nav-hide" data-i18n="nav.download">Download</a>
+        <a href="/extension" class="nav-hide" data-i18n="nav.extension">Extension</a>
+        <a href="/account" data-i18n="nav.account">Account</a>
+        <a href="/app" class="topbar-cta" data-i18n="nav.openVault">Open app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="card gen-page">
+      <div class="gen-illus" aria-hidden="true">
+        <svg viewBox="0 0 120 120" width="84" height="84">
+          <defs>
+            <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#7c97ff"/><stop offset="1" stop-color="#8a6dff"/>
+            </linearGradient>
+          </defs>
+          <circle cx="42" cy="46" r="18" fill="none" stroke="url(#gg)" stroke-width="6"/>
+          <path d="M55 59 84 88" stroke="url(#gg)" stroke-width="8" stroke-linecap="round"/>
+          <path d="M84 88l8-3M88 84l3 8" stroke="url(#gg)" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="36" cy="40" r="3" fill="#0f1320"/>
+          <circle cx="48" cy="40" r="3" fill="#0f1320"/>
+          <circle cx="42" cy="52" r="3" fill="#0f1320"/>
+        </svg>
+      </div>
+      <h2 class="screen-title center" data-i18n="t.6d4a09cc">Free Password Generator</h2>
+      <p class="muted center" data-i18n="t.c31d3f01">Create a strong, random password right in your browser.
+        Nothing is sent anywhere — it's generated on your device.</p>
+
+      <div class="gen-out-row">
+        <code id="out" class="gen-out" aria-live="polite"></code>
+        <button id="copy" class="ghost" type="button" data-i18n="t.af74f7c5">Copy</button>
+        <button id="regen" class="ghost regen" type="button" aria-label="Generate a new password" data-i18n="t.cf04df27">↻ New</button>
+      </div>
+      <div class="meter show" id="meter" aria-hidden="true"><div class="bar" id="meterbar"></div><span class="label" id="meterlabel"></span></div>
+
+      <div class="gen-controls">
+        <label class="range-row"><span data-i18n="t.47460bf7">Length:</span> <span id="lenval" data-i18n="t.91032ad7">20</span>
+          <input id="len" type="range" min="6" max="64" value="20"/>
+        </label>
+        <div class="gen-opts">
+          <label class="chk"><input id="lower" type="checkbox" checked="checked"/> <span data-i18n="t.6b6c2ccd">a-z</span></label>
+          <label class="chk"><input id="upper" type="checkbox" checked="checked"/> <span data-i18n="t.50d6325b">A-Z</span></label>
+          <label class="chk"><input id="digits" type="checkbox" checked="checked"/> <span data-i18n="t.96ca02e2">0-9</span></label>
+          <label class="chk"><input id="symbols" type="checkbox" checked="checked"/> <span data-i18n="t.d86e1d5a">!@#$</span></label>
+        </div>
+      </div>
+
+      <a href="/app?new=1" class="primary gen-cta" data-i18n="t.fe12b16b">Save passwords to your free vault →</a>
+    </section>
+
+    <section class="card gen-info">
+      <h3 class="sec-title center" data-i18n="t.c008f9f6">Why use a generated password?</h3>
+      <p class="muted" data-i18n="t.0aebe9e9">Reused or simple passwords are the No. 1 cause of account takeovers.
+        A long, random password — different for every site — is the single best thing you can
+        do for your online security. This tool builds one using your browser's cryptographically
+        secure random generator, so each character is truly unpredictable and never leaves your
+        device.</p>
+      <p class="muted"><span><span data-i18n="t.f60d4319">Generate one here, then store it (and the rest of your logins) in your
+        free</span></span> <a href="/app">Bazinet Vault</a><span><span data-i18n="t.c5c9f963">, where everything is encrypted on your device with
+        Argon2id + AES-256 before it's ever saved.</span></span></p>
+    </section>
+
+    <footer class="site-footer">
+      <nav class="foot-links">
+        <a href="/vault" data-i18n="t.70f8bb9a">Home</a><span>·</span>
+        <a href="/app" data-i18n="nav.openVault">Open app</a><span>·</span>
+        <a href="/blog/" data-blog data-i18n="nav.blog">Blog</a><span data-blog>·</span>
+        <a href="/breach.html" data-i18n="nav.breach">Breach check</a><span>·</span>
+        <a href="/about.html" data-i18n="nav.about">About</a><span>·</span>
+        <a href="/extension" data-i18n="nav.extension">Extension</a><span>·</span>
+        <a href="/terms.html" data-i18n="nav.terms">Terms</a><span>·</span>
+        <a href="/privacy.html" data-i18n="nav.privacy">Privacy</a><span>·</span>
+        <a href="/support" data-i18n="nav.support">Support</a><span>·</span>
+        <a href="mailto:support@bazinet.net" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <p class="copyright" data-i18n="t.1d0a6ee1">© 2026 Bazinet.net</p>
+    </footer>
+  </main>
+
+  <script src="/generator-page.js"></script>
+</body>
+</html>

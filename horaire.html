@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+  <meta name="description" content="Agenda scolaire pour les étudiants du Cégep du Vieux Montréal. Importez votre horaire Omnivox et suivez vos cours, devoirs et examens. Tout reste sur votre appareil."/>
+  <title>Horaire CVM — agenda pour le Cégep du Vieux Montréal</title>
+  <script src="/i18n-strings.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/theme.js"></script>
+  <script src="/console-warn.js" defer="defer"></script>
+  <link rel="stylesheet" href="/styles.css"/>
+  <link rel="stylesheet" href="/horaire.css"/>
+</head>
+<body class="horaire">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="topbar-brand" aria-label="Bazinet">
+        <svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8aa2ff"/><stop offset="1" stop-color="#4f6bf0"/></linearGradient></defs><path d="M24 3 6 10v12c0 11 7.7 18.6 18 23 10.3-4.4 18-12 18-23V10L24 3Z" fill="url(#tg)"/><circle cx="24" cy="21" r="5" fill="#0f1320"/><rect x="21.6" y="23" width="4.8" height="8" rx="2.4" fill="#0f1320"/></svg>
+        <span class="brand-text">Bazinet</span><span class="sub">Horaire</span>
+      </a>
+      <nav class="topbar-nav">
+        <a href="/support" class="nav-help" data-i18n-attr="aria-label:nav.support,title:nav.support" aria-label="Support" title="Support"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6"/><path d="M12 17h.01"/></svg><span data-i18n="nav.support">Support</span></a>
+        <button class="lang-toggle" type="button" data-lang-toggle>FR</button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light or dark mode" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+        </button>
+        <button id="btn-settings" class="ghost-btn small hidden" type="button" data-i18n="t.c7f73bb5">Settings</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+    <section id="screen-signin" class="hz-wrap hidden">
+      
+      <div id="si-signedout" class="hz-welcome hidden">
+        <div class="hz-hero">
+          <div class="hz-hero-copy">
+            <span class="hz-eyebrow" data-i18n="t.4950babb">Horaire CVM · made for Cégep du Vieux Montréal</span>
+            <h1 class="hz-h1 hz-hero-h1"><span data-i18n="t.17835e2c">Your whole term,</span> <span class="hz-grad" data-i18n="t.b4aef54f">in one agenda you’ll actually open.</span></h1>
+            <p class="hz-lead" data-i18n="t.18f45500">Classes, rooms, homework, exams and what’s due next, laid out the way your week really goes. Ready in under a minute.</p>
+            <div class="hz-welcome-ctas">
+              <a class="primary hz-cta-big" href="/account?signup&amp;next=/horaire" data-i18n="t.65e5b31c">Create a free account</a>
+              <a class="ghost-btn hz-cta-big" href="/account?next=/horaire" data-i18n="t.4377f512">I already have an account</a>
+            </div>
+            <p class="hz-welcome-fine"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-i18n="t.3ebe5155">Free for every student. Encrypted on your device.</span></p>
+            <a class="hz-ox-chip" href="#hz-ox"><span class="hz-ox-chip-led"></span><span data-i18n="t.18707151">New: Horaire syncs with Omnivox automatically</span><span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hz-hero-art" aria-hidden="true">
+            <div class="hz-pv">
+              <div class="hz-pv-head"><span>Lun</span><span>Mar</span><span>Mer</span><span>Jeu</span><span>Ven</span></div>
+              <div class="hz-pv-grid">
+                <span class="hz-mb b1">Français</span><span class="hz-mb b2">Maths</span><span class="hz-mb b3">Philo</span>
+                <span class="hz-mb b4">Anglais</span><span class="hz-mb b5">Maths</span><span class="hz-mb b6">Chimie</span>
+                <span class="hz-mb b7">Éduc.</span><span class="hz-mb b8">Français</span><span class="hz-pv-now"></span>
+              </div>
+            </div>
+            <div class="hz-float f1"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v15H4z"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><b>Maths</b> · 934 · 14 h 25</div>
+            <div class="hz-float f2"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M9 12h6M9 16h4"/></svg><b>Labo 3</b> · ven.</div>
+          </div>
+        </div>
+
+        
+        <section id="hz-ox" class="hz-oxshow" aria-labelledby="hz-ox-title">
+          <div class="hz-ox-head">
+            <span class="hz-ox-tag"><span class="hz-pro-badge">PRO</span><span data-i18n="t.503c35e7">Connected to Omnivox</span><span class="hz-ox-auto"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7"/><path d="M21 12a9 9 0 0 1-15 6.7"/><path d="M18 3v3h-3"/><path d="M6 21v-3h3"/></svg><span data-i18n="t.084644b2">Automatic sync</span></span></span>
+            <h2 id="hz-ox-title" class="hz-ox-h2"><span data-i18n="t.11df9461">Horaire fetches everything from Omnivox.</span> <span class="hz-grad" data-i18n="t.14ee8a15">Automatically.</span></h2>
+            <p class="hz-ox-lead" data-i18n="t.009485b3">Sign in once and you’re done. Every time you open Horaire, it checks Omnivox for you and brings back what’s new. Nothing to download, nothing to copy, no plan de cours to add one by one.</p>
+          </div>
+          <div class="hz-ox-art" aria-hidden="true">
+            <div class="hz-ox-portal">
+              <div class="hz-ox-bar"><span class="hz-ox-led"></span>Omnivox · CVM</div>
+              <div class="hz-ox-row r1"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M9 12h6"/><path d="M9 16h4"/></svg><b>LÉA</b><em>3 nouveaux travaux</em></div>
+              <div class="hz-ox-row r2"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg><b>Mio</b><em>2 messages</em></div>
+              <div class="hz-ox-row r3"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12v16H6z"/><path d="M9 9l6 6"/><path d="M15 9l-6 6"/></svg><b>Absences</b><em>1 cours annulé</em></div>
+              <div class="hz-ox-row r4"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v15H4z"/><path d="M4 10h16"/><path d="M9 3v4"/><path d="M15 3v4"/><path d="m9 15 2 2 4-4"/></svg><b>Plans de cours</b><em>6 sur 6 lus pour vous</em></div>
+            </div>
+            <div class="hz-ox-pipe"><span class="hz-ox-pk p1"></span><span class="hz-ox-pk p2"></span><span class="hz-ox-pk p3"></span><span class="hz-ox-hubcap">Automatique</span><span class="hz-ox-hub"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7"/><path d="M21 12a9 9 0 0 1-15 6.7"/><path d="M18 3v3h-3"/><path d="M6 21v-3h3"/></svg></span></div>
+            <div class="hz-ox-agenda">
+              <div class="hz-ox-ahead"><b>Horaire</b><span><i class="hz-ox-led"></i>Synchro auto · à l’instant</span></div>
+              <div class="hz-ox-item i1 it-lea"><span class="hz-ox-kind">LÉA</span><b>TP 2 · Chimie</b><span>Remise ven. 23 h 59</span></div>
+              <div class="hz-ox-item i2 it-mio"><span class="hz-ox-kind">Mio</span><b>Mme Gagnon</b><span>Le labo est déplacé au A-3.12.</span></div>
+              <div class="hz-ox-item i3 it-can"><span class="hz-ox-kind">Annulé</span><b class="hz-ox-strike">Philosophie · 8 h 15</b><span>« Je suis malade, lisez le ch. 4. »</span></div>
+              <div class="hz-ox-item i4 it-plan"><span class="hz-ox-kind">Plan de cours</span><b>Examen intra · Maths</b><span>Mar. 14 oct.</span></div>
+            </div>
+          </div>
+          <div class="hz-ox-foot">
+            <ul class="hz-ox-list">
+              <li><span class="hz-ox-ico it-lea"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M9 12h6"/><path d="M9 16h4"/></svg></span><div><strong data-i18n="t.eb97906e">New homework, all by itself</strong><span data-i18n="t.0eb7008d">Each new assignment shows up in your agenda with its due date. You don’t lift a finger.</span></div></li>
+              <li><span class="hz-ox-ico it-mio"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span><div><strong data-i18n="t.7bae6665">Your Mio messages</strong><span data-i18n="t.09620453">Read your teachers’ messages and reply, right from Horaire.</span></div></li>
+              <li><span class="hz-ox-ico it-can"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12v16H6z"/><path d="M9 9l6 6"/><path d="M15 9l-6 6"/></svg></span><div><strong data-i18n="t.a6eaaa0f">Cancelled classes, crossed out</strong><span data-i18n="t.556f5195">Know before you leave home. The teacher’s note comes with it.</span></div></li>
+              <li><span class="hz-ox-ico it-plan"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v15H4z"/><path d="M4 10h16"/><path d="M9 3v4"/><path d="M15 3v4"/><path d="m9 15 2 2 4-4"/></svg></span><div><strong data-i18n="t.114f60b0">Every plan de cours, read for you</strong><span data-i18n="t.cba409dd">Horaire finds the plan for each of your courses on its own and pulls out every exam and deadline. You just confirm.</span></div></li>
+            </ul>
+            <div class="hz-ox-vs">
+              <div class="hz-ox-vs-col without">
+                <strong data-i18n="t.48dad762">Without Horaire</strong>
+                <ul>
+                  <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg><span data-i18n="t.9af5addc">Open Omnivox, then LÉA, course by course</span></li>
+                  <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg><span data-i18n="t.88a0b037">Download each plan de cours</span></li>
+                  <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg><span data-i18n="t.b4e0ba56">Copy every exam date by hand</span></li>
+                </ul>
+              </div>
+              <div class="hz-ox-vs-col with">
+                <strong data-i18n="t.4e0ea3f4">With Horaire</strong>
+                <ul>
+                  <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span data-i18n="t.7a353787">Sign in to Omnivox once</span></li>
+                  <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span data-i18n="t.8d679447">Everything else happens automatically</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="hz-welcome-ctas">
+              <a class="hz-pro-cta hz-cta-big" href="/account?signup&amp;next=/horaire" data-i18n="t.ae088a0a">Try it free for 7 days</a>
+            </div>
+            <p class="hz-welcome-fine"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-i18n="t.6d00202f">Your Omnivox password is used to sign in, then forgotten. Our servers never store it.</span></p>
+          </div>
+        </section>
+
+        <div class="hz-howto-head">
+          <h2 class="hz-howto-title" data-i18n="t.9503c9e4">Ready in under a minute</h2>
+          <span class="hz-note" data-i18n="t.99116fdc">Once a term, and you’re set.</span>
+        </div>
+        <ol class="hz-steps3">
+          <li class="hz-step3"><span class="hz-stepnum">1</span><div class="hz-stepbody"><strong data-i18n="t.d634af03">Create your free account</strong><span class="hz-stepsub" data-i18n="t.832f1e9b">It takes 30 seconds. Use any email you like.</span></div></li>
+          <li class="hz-step3"><span class="hz-stepnum">2</span><div class="hz-stepbody"><strong data-i18n="t.cd447955">Get your schedule PDF from Omnivox</strong><span class="hz-stepsub" data-i18n="t.05a698ad">Horaire de cours → Consulter mon horaire → Version imprimable. We show you every click.</span></div></li>
+          <li class="hz-step3"><span class="hz-stepnum">3</span><div class="hz-stepbody"><strong data-i18n="t.77488bf0">Drop it into Horaire</strong><span class="hz-stepsub" data-i18n="t.eae1b241">Every class, room and teacher of your term appears, week by week.</span></div></li>
+        </ol>
+
+        <div class="hz-howto-head">
+          <h2 class="hz-howto-title" data-i18n="t.ff8cbc05">Everything your week needs</h2>
+          <span class="hz-note" data-i18n="t.5366ba0e">Free, for good.</span>
+        </div>
+        <div class="hz-featgrid">
+          <div class="hz-feat"><span class="hz-profeat-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v15H4z"/><path d="M4 10h16"/><path d="M9 3v4"/><path d="M15 3v4"/></svg></span><div class="hz-profeat-body"><strong data-i18n="t.89af1eb3">Your timetable, done right</strong><span data-i18n="t.0b3278e1">Week, day and month views, with the room, the teacher and how long until your next class.</span></div></div>
+          <div class="hz-feat"><span class="hz-profeat-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11"/><path d="M9 12h11"/><path d="M9 18h11"/><path d="M4 6h.01"/><path d="M4 12h.01"/><path d="M4 18h.01"/></svg></span><div class="hz-profeat-body"><strong data-i18n="t.618c69f5">Your own tasks, by effort</strong><span data-i18n="t.173d236c">Add anything you need to do and colour it by how much work it is.</span></div></div>
+          <div class="hz-feat"><span class="hz-profeat-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3"/><path d="M12 18v3"/><path d="M3 12h3"/><path d="M18 12h3"/><path d="M12 7a5 5 0 1 0 0 10a5 5 0 1 0 0-10"/></svg></span><div class="hz-profeat-body"><strong data-i18n="t.d701709a">Exams and due dates at a glance</strong><span data-i18n="t.d61d5a0c">What’s due next is always in view, so nothing sneaks up on you.</span></div></div>
+          <div class="hz-feat"><span class="hz-profeat-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7"/><path d="M21 12a9 9 0 0 1-15 6.7"/><path d="M18 3v3h-3"/><path d="M6 21v-3h3"/></svg></span><div class="hz-profeat-body"><strong data-i18n="t.b19159f1">Works offline, on every device</strong><span data-i18n="t.7b4f6712">Phone, laptop or the desktop app. It works without a connection and syncs when you’re back.</span></div></div>
+          <div class="hz-feat"><span class="hz-profeat-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><div class="hz-profeat-body"><strong data-i18n="t.7f5a6512">End-to-end encrypted</strong><span data-i18n="t.602522e5">Your schedule is encrypted on your device first. We store it; we can’t read it.</span></div></div>
+          <div class="hz-feat"><span class="hz-profeat-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M4 20h16"/></svg></span><div class="hz-profeat-body"><strong data-i18n="t.2cc4bce5">Take it anywhere</strong><span data-i18n="t.433ab97b">Export to Google Calendar or Apple Calendar, or print a clean copy.</span></div></div>
+        </div>
+
+        <div class="hz-welcome-end">
+          <strong data-i18n="t.1be5092b">Your term starts now.</strong>
+          <div class="hz-welcome-ctas">
+            <a class="primary hz-cta-big" href="/account?signup&amp;next=/horaire" data-i18n="t.65e5b31c">Create a free account</a>
+            <a class="ghost-btn hz-cta-big" href="/account?next=/horaire" data-i18n="t.3259090c">Sign in to Bazinet</a>
+          </div>
+        </div>
+      </div>
+      <div id="si-unlock" class="hidden">
+        <h1 class="hz-h1" data-i18n="t.2393466b">Your CVM schedule, on every device</h1>
+        <p class="hz-lead" data-i18n="t.e0e1e4f7">Enter your account password to open your agenda. It never leaves this device — it is what decrypts your schedule.</p>
+        <p class="hz-note" id="si-who"></p>
+        <div class="hz-row">
+          <label class="hz-field"><span data-i18n="t.5d0f64e8">Account password</span>
+            <input id="si-pw" type="password" autocomplete="current-password"/></label>
+          <button id="si-go" class="primary" type="button" data-i18n="t.a1a7c7b3">Open my agenda</button>
+        </div>
+        <p id="si-error" class="hz-error"></p>
+      </div>
+    </section>
+
+    
+    <section id="screen-import" class="hz-wrap hz-import">
+      
+      <div id="import-acct" class="hz-acctbar hidden">
+        <span class="hz-acctbar-who"><span data-i18n="t.a02107c3">Signed in as</span> <b id="import-acct-who"></b></span>
+        <button id="import-signout" class="ghost-btn small" type="button" data-i18n="t.dc1649a1">Sign out</button>
+      </div>
+      
+      <div id="import-shared" class="hz-importshared hidden"></div>
+      <div class="hz-hero">
+        <div class="hz-hero-copy">
+          <span class="hz-eyebrow" data-i18n="t.4950babb">Horaire CVM · made for Cégep du Vieux Montréal</span>
+          <h1 class="hz-h1 hz-hero-h1"><span data-i18n="t.17835e2c">Your whole term,</span> <span class="hz-grad" data-i18n="t.b4aef54f">in one agenda you’ll actually open.</span></h1>
+          <p class="hz-lead" data-i18n="t.18f45500">Classes, rooms, homework, exams and what’s due next, laid out the way your week really goes. Ready in under a minute.</p>
+          <ul class="hz-perks">
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v15H4z"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><span data-i18n="t.c24bf517">Week, day and month views</span></li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M9 12h6M9 16h4"/></svg><span data-i18n="t.58fd445f">Homework from LÉA, added for you</span></li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="5"/></svg><span data-i18n="t.d701709a">Exams and due dates at a glance</span></li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7M21 12a9 9 0 0 1-15 6.7"/><path d="M18 3v3h-3M6 21v-3h3"/></svg><span data-i18n="t.b19159f1">Works offline, on every device</span></li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-i18n="t.7f5a6512">End-to-end encrypted</span></li>
+          </ul>
+        </div>
+        <div class="hz-hero-art" aria-hidden="true">
+          <div class="hz-pv">
+            <div class="hz-pv-head"><span>Lun</span><span>Mar</span><span>Mer</span><span>Jeu</span><span>Ven</span></div>
+            <div class="hz-pv-grid">
+              <span class="hz-mb b1">Français</span><span class="hz-mb b2">Maths</span><span class="hz-mb b3">Philo</span>
+              <span class="hz-mb b4">Anglais</span><span class="hz-mb b5">Maths</span><span class="hz-mb b6">Chimie</span>
+              <span class="hz-mb b7">Éduc.</span><span class="hz-mb b8">Français</span><span class="hz-pv-now"></span>
+            </div>
+          </div>
+          <div class="hz-float f1"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v15H4z"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><b>Maths</b> · 934 · 14 h 25</div>
+          <div class="hz-float f2"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M9 12h6M9 16h4"/></svg><b>Labo 3</b> · ven.</div>
+        </div>
+      </div>
+
+      
+      <div id="ovxi" class="hz-ovxi" role="group" aria-labelledby="ovxi-title">
+        <div class="hz-ovxi-head">
+          <span class="hz-ovxi-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v15H4z"/><path d="M4 10h16M9 3v4M15 3v4"/><path d="m9 15 2 2 4-4"/></svg></span>
+          <div>
+            <h2 id="ovxi-title" class="hz-ovxi-title" data-i18n="t.dda931ba">Get your schedule from Omnivox</h2>
+            <p class="hz-note" data-i18n="t.257806d8">Sign in with your Omnivox account and Horaire reads your schedule for you. Your password is used for this one sign-in and is not saved.</p>
+          </div>
+        </div>
+        <form id="ovxi-form" class="hz-ovxi-form" novalidate>
+          <label class="hz-field"><span data-i18n="t.a0c03abc">Student number (DA)</span><input id="ovxi-da" type="text" inputmode="numeric" autocomplete="username" maxlength="64"/></label>
+          <label class="hz-field"><span data-i18n="t.97729b41">Omnivox password</span><input id="ovxi-pw" type="password" autocomplete="current-password" maxlength="256"/></label>
+          <button id="ovxi-go" class="primary" type="submit" data-i18n="t.3bb7ac69">Get my schedule</button>
+        </form>
+        <form id="ovxi-code-form" class="hz-ovxi-form hidden" novalidate>
+          <p class="hz-note" data-i18n="t.62ee7e38">Omnivox emailed you a verification code. Enter it to finish.</p>
+          <label class="hz-field"><span data-i18n="t.79a6337e">Code from Omnivox</span><input id="ovxi-code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="32"/></label>
+          <button id="ovxi-code-go" class="primary" type="submit" data-i18n="t.2e026239">Continue</button>
+        </form>
+        <div id="ovxi-status" class="hz-ovxi-status hidden"></div>
+        <p id="ovxi-error" class="hz-error" role="alert"></p>
+      </div>
+
+      <div class="hz-or"><span data-i18n="t.ff218124">or import the PDF</span></div>
+
+      <div id="drop" class="hz-drop hz-drop-big" tabindex="0" role="button" aria-labelledby="drop-label">
+        <span class="hz-drop-ico"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M12 18v-6m0 0-2.5 2.5M12 12l2.5 2.5"/></svg></span>
+        <span id="drop-label" class="hz-drop-main" data-i18n="t.7113a8db">Drop your horaire PDF here</span>
+        <span class="hz-drop-sub" data-i18n="t.0bd52457">or click to choose the file. It never leaves your device.</span>
+        <input id="file" type="file" accept="application/pdf,.pdf" hidden/>
+      </div>
+
+      <div class="hz-howto-head">
+        <h2 class="hz-howto-title" data-i18n="t.cd447955">Get your schedule PDF from Omnivox</h2>
+        <span class="hz-note" data-i18n="t.48116970">Four steps, once a term.</span>
+      </div>
+      <ol class="hz-howto">
+        <li class="hz-howstep">
+          <span class="hz-stepnum">1</span>
+          <div class="hz-stepbody">
+            <strong><span data-i18n="t.83d7413b">In Omnivox, click</span> <span class="hz-ovx">Horaire de cours</span></strong>
+            <span class="hz-stepsub" data-i18n="t.2c709552">Sign in at cvm.omnivox.ca. It’s in your list of services.</span>
+          </div>
+          <div class="hz-mock" aria-hidden="true"><div class="hz-mock-tile"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v15H4z"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><span>Horaire de cours</span></div></div>
+        </li>
+        <li class="hz-howstep">
+          <span class="hz-stepnum">2</span>
+          <div class="hz-stepbody">
+            <strong><span data-i18n="t.f8c1b44f">Choose the session, then</span> <span class="hz-ovx">Consulter mon horaire</span></strong>
+            <span class="hz-stepsub" data-i18n="t.5c9890f8">Pick the current term, for example Automne 2026.</span>
+          </div>
+          <div class="hz-mock" aria-hidden="true">
+            <div class="hz-mock-row"><b>Session:</b><span class="hz-mock-select">Automne 2026</span></div>
+            <span class="hz-mock-btn">Consulter mon horaire</span>
+          </div>
+        </li>
+        <li class="hz-howstep">
+          <span class="hz-stepnum">3</span>
+          <div class="hz-stepbody">
+            <strong><span data-i18n="t.cf9b7706">Open</span> <span class="hz-ovx">Version imprimable</span><span data-i18n="t.93c43ed3">, then click</span> <span class="hz-ovx">Visualiser</span></strong>
+            <span class="hz-stepsub" data-i18n="t.d410dad1">Choose “Horaire de la session en version abrégée” — the full-format one can't be read.</span>
+          </div>
+          <div class="hz-mock" aria-hidden="true">
+            <div class="hz-mock-radio">Horaire de la session en version abrégée</div>
+            <span class="hz-mock-btn">Visualiser</span>
+          </div>
+        </li>
+        <li class="hz-howstep">
+          <span class="hz-stepnum">4</span>
+          <div class="hz-stepbody">
+            <strong><span data-i18n="t.f580763f">Save it as a PDF and drop it above</span></strong>
+            <span class="hz-stepsub" data-i18n="t.d9109bf9">Download the PDF that opens, or print it and choose “Save as PDF”.</span>
+          </div>
+          <div class="hz-mock hz-mock-pdf" aria-hidden="true">
+            <span class="hz-mock-file"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span>horaire.pdf</span></span>
+            <span class="hz-mock-arrow">→</span>
+            <span class="hz-mock-drop"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4m0 0L8 8m4-4 4 4"/><path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
+          </div>
+        </li>
+      </ol>
+
+      <p class="hz-privacy"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-i18n="t.aaf0d2f4">Nothing is uploaded. The file is read on your device and never leaves it — which matters, because it carries your name, your DA and where you are every hour of the week.</span></p>
+
+      <details class="hz-how">
+        <summary data-i18n="t.1f81c9ef">The PDF will not open. Can I paste instead?</summary>
+        <p class="hz-note" data-i18n="t.0dab8f64">Select everything in the PDF, copy it, and paste it here.</p>
+        <textarea id="paste" rows="6" data-i18n-attr="placeholder:t.7545b03a" placeholder="HORAIRE DE COURS - Automne 2026…"></textarea>
+        <button id="btn-paste" class="ghost-btn" type="button" data-i18n="t.66c47573">Read the pasted text</button>
+      </details>
+
+      <p id="import-error" class="hz-error" role="alert"></p>
+    </section>
+
+    
+    <section id="screen-term" class="hz-wrap hidden">
+      
+      <div id="term-acct" class="hz-acctbar hidden">
+        <span class="hz-acctbar-who"><span data-i18n="t.a02107c3">Signed in as</span> <b id="term-acct-who"></b></span>
+        <button id="term-signout" class="ghost-btn small" type="button" data-i18n="t.dc1649a1">Sign out</button>
+      </div>
+      <h2 class="hz-h2" data-i18n="t.45e16301">When does the term run?</h2>
+      <p class="hz-lead small" data-i18n="t.77a914c0">The Omnivox PDF has your weekly pattern but no dates at all — it never says which Monday the term starts. Set that once and every week fills in.</p>
+      <div class="hz-row">
+        <label class="hz-field"><span data-i18n="t.9820d9fe">First day</span><input id="term-start" type="date"/></label>
+        <label class="hz-field"><span data-i18n="t.2a177256">Last day</span><input id="term-end" type="date"/></label>
+      </div>
+      
+      <div class="hz-field">
+        <span id="term-off-label" data-i18n="t.1c6d29c7">Days with no classes (holidays, pedagogical days)</span>
+        <div id="term-off" class="hz-doff" role="group" aria-labelledby="term-off-label"></div>
+      </div>
+      <p class="hz-note" data-i18n="t.cd6216cd">You can change all of this later.</p>
+      <p id="term-source" class="hz-note"></p>
+      <div class="hz-row">
+        <button id="btn-term-save" class="primary" type="button" data-i18n="t.a0ed7320">Save and open my agenda</button>
+      </div>
+      <p id="term-error" class="hz-error" role="alert"></p>
+    </section>
+
+    
+    <section id="screen-agenda" class="hidden">
+      
+      <header class="hz-head">
+        
+        <div class="hz-headnav">
+          <span class="hz-navcal">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            <input id="jump-date" type="date" data-i18n-attr="aria-label:t.e99fb770" aria-label="Jump to a date"/>
+          </span>
+          <button id="btn-prev" class="hz-icon" type="button" data-i18n-attr="aria-label:t.50f94286" aria-label="Previous">‹</button>
+          <button id="btn-today" class="hz-today" type="button" data-i18n="t.24345a14">Today</button>
+          <button id="btn-next" class="hz-icon" type="button" data-i18n-attr="aria-label:t.bc981983" aria-label="Next">›</button>
+        </div>
+        <div class="hz-headdate">
+          <span id="head-big" class="hz-bignum"></span>
+          <div class="hz-headtext">
+            <strong id="range-label" class="hz-range"></strong>
+            <span id="head-sub" class="hz-headsub"></span>
+          </div>
+        </div>
+        <div class="hz-headright">
+          <span id="term-progress" class="hz-progress hidden"></span>
+          <div class="hz-tools">
+            <button id="sync-badge" class="hz-sync off" type="button">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a4.2 4.2 0 0 1-.3-8.4 5.6 5.6 0 0 1 10.8-1.2A3.9 3.9 0 0 1 17.6 18Z"/></svg>
+              <span id="sync-text" class="hz-syncword"></span>
+            </button>
+            
+            <button id="btn-share" class="hz-tool hz-sharebtn" type="button" data-i18n-attr="aria-label:t.09ca55ca,title:t.09ca55ca" aria-label="Share" title="Share"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 19.5a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.2a5 5 0 0 1 5.5 5"/></svg><span id="share-count" class="hz-sharecount hidden"></span></button>
+            <button id="btn-settings-top" class="hz-tool" type="button" data-i18n-attr="aria-label:t.c7f73bb5" aria-label="Settings">⋯</button>
+          </div>
+          <button id="btn-add" class="hz-add" type="button" data-i18n-attr="title:t.17b2b838" title="New task">+</button>
+          
+          
+          <div class="hz-whowrap">
+            <button id="hz-who" class="hz-who hidden" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="who-menu" data-i18n-attr="aria-label:t.60f5a30c" aria-label="Account menu">
+              <span class="hz-whotext"><strong id="who-name"></strong><span id="who-school"></span></span>
+              <span id="who-avatar" class="hz-avatar" aria-hidden="true"></span>
+            </button>
+            <div id="who-menu" class="hz-whomenu hidden" role="menu" aria-labelledby="hz-who">
+              <div class="hz-whohead">
+                <strong id="who-menu-name"></strong>
+                <span id="who-menu-email"></span>
+                <span id="who-menu-school"></span>
+              </div>
+              <a class="hz-whoitem" role="menuitem" href="/account#prefs"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"/></svg><span data-i18n="t.15141eab">Edit profile</span></a>
+              <a class="hz-whoitem" role="menuitem" href="/account"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span data-i18n="t.416bbc1b">My Bazinet account</span></a>
+              <button class="hz-whoitem" role="menuitem" type="button" data-who="share"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 19.5a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.2a5 5 0 0 1 5.5 5"/></svg><span data-i18n="t.a9d5ae87">Share and shared schedules</span></button>
+              <button class="hz-whoitem" role="menuitem" type="button" data-who="settings"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2.2"/><circle cx="9" cy="17" r="2.2"/></svg><span data-i18n="t.be281544">Agenda settings</span></button>
+              <a class="hz-whoitem hidden" role="menuitem" id="who-download" href="/horaire-desktop/latest/mac"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg><span data-i18n="t.9c18e2a4">Get the desktop app</span></a>
+              <a class="hz-whoitem" role="menuitem" href="/support"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6"/><path d="M12 17h.01"/></svg><span data-i18n="t.2ef172ce">Help and support</span></a>
+              <hr class="hz-whosep"/>
+              <button class="hz-whoitem" role="menuitem" type="button" data-theme-toggle><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg><span data-i18n="t.4f8d9941">Light or dark theme</span></button>
+              <button class="hz-whoitem" role="menuitem" type="button" data-lang-toggle-menu><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-i18n="t.89b86ab0">Language</span><span class="hz-whokbd" id="who-lang"></span></button>
+              <hr class="hz-whosep"/>
+              <button class="hz-whoitem" role="menuitem" type="button" data-who="lock"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-i18n="t.dd71f853">Lock this agenda</span></button>
+              <button class="hz-whoitem danger" role="menuitem" type="button" data-who="signout"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3"/><path d="M10 16l-4-4 4-4M6 12h10"/></svg><span data-i18n="t.dc1649a1">Sign out</span></button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      
+      
+      <div id="crsa-bar" class="hz-crsa hidden" role="alert"></div>
+      
+      <div id="pro-strip" class="hz-prostrip hidden"></div>
+      
+      <div id="share-bar" class="hz-sharebar hidden" role="status"></div>
+      <div id="day-banner" class="hz-daybanner hidden"></div>
+
+      <div id="key-strip" class="hz-keystrip hidden">
+        <span data-i18n="t.598835a7">Showing your last saved copy. Enter your account password to sync.</span>
+        <input id="key-pw" type="password" autocomplete="current-password"/>
+        <button id="key-go" class="primary small" type="button" data-i18n="t.1526a17e">Unlock</button>
+        <span id="key-error" class="hz-error"></span>
+      </div>
+      <p id="warn-bar" class="hz-warn hidden"></p>
+
+      
+      <div id="hz-scroll" class="hz-scroll">
+      <div id="view-week" class="hz-view-panel"></div>
+      <div id="view-courses" class="hz-view-panel hidden"></div>
+      <div id="view-day" class="hz-view-panel hidden"></div>
+      <div id="view-month" class="hz-view-panel hidden"></div>
+      
+      <div id="work-toolbar" class="hz-worktools hidden">
+        <label class="hz-search">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+          <input id="work-q" type="search" data-i18n-attr="placeholder:t.bce06414" placeholder="Search"/>
+        </label>
+        <div class="hz-tabs" role="tablist">
+          <button class="hz-tab on" data-tab="todo" type="button" data-i18n="t.8665aed3">To do</button>
+          <button class="hz-tab" data-tab="done" type="button" data-i18n="t.1798b3ba">Completed</button>
+        </div>
+      </div>
+      <div id="view-work" class="hz-view-panel hidden"></div>
+      
+      <div id="view-mio" class="hz-view-panel hidden"></div>
+      <div id="view-year" class="hz-view-panel hidden"></div>
+      </div>
+
+      
+      <nav class="hz-dock" role="tablist">
+        <button class="hz-view on" data-view="day" type="button" data-i18n-attr="aria-label:t.987b9ced" aria-label="Day">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          <span data-i18n="t.987b9ced">Day</span>
+        </button>
+        <button class="hz-view" data-view="week" type="button" data-i18n-attr="aria-label:t.f82be68a" aria-label="Week">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M9 10v11M15 10v11"/></svg>
+          <span data-i18n="t.f82be68a">Week</span>
+        </button>
+        <button class="hz-view" data-view="month" type="button" data-i18n-attr="aria-label:t.082bc378" aria-label="Month">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M9 14h1M14 14h1M9 18h1M14 18h1"/></svg>
+          <span data-i18n="t.082bc378">Month</span>
+        </button>
+        <button class="hz-view" data-view="year" type="button" data-i18n-attr="aria-label:t.879e3232" aria-label="Year">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M7 9h3M14 9h3M7 13h3M14 13h3M7 17h3M14 17h3"/></svg>
+          <span data-i18n="t.879e3232">Year</span>
+        </button>
+        <button class="hz-view" data-view="work" type="button" data-i18n-attr="aria-label:t.090ec5f5" aria-label="Tasks">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span data-i18n="t.090ec5f5">Tasks</span>
+          <span id="dock-count" class="hz-dockbadge hidden"></span>
+        </button>
+        <button class="hz-view" data-view="mio" type="button" data-i18n-attr="aria-label:t.f1702b46" aria-label="Messages">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+          <span data-i18n="t.f1702b46">Messages</span>
+          <span id="mio-count" class="hz-dockbadge hidden"></span>
+          <span id="mio-pro" class="hz-propill hidden" aria-hidden="true">PRO</span>
+        </button>
+        <button class="hz-view" data-view="courses" type="button" data-i18n-attr="aria-label:t.a16536d7" aria-label="Courses">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h6v14H4zM14 5h6v14h-6z"/></svg>
+          <span data-i18n="t.a16536d7">Courses</span>
+        </button>
+      </nav>
+    </section>
+
+    
+    <div id="task-overlay" class="hz-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="task-title">
+      <div class="hz-modal">
+        <p id="task-context" class="hz-taskctx"></p>
+        <h3 id="task-title" data-i18n="t.17b2b838">New task</h3>
+        <label class="hz-field"><span data-i18n="t.89511a76">What is it?</span>
+          <input id="task-what" type="text" maxlength="120" data-i18n-attr="placeholder:t.6c981ba4" placeholder="Read chapter 4"/></label>
+        <div class="hz-row">
+          <label class="hz-field"><span data-i18n="t.d82b56ca">Course</span><select id="task-course"></select></label>
+          <label class="hz-field"><span data-i18n="t.e00ac23f">Kind</span><select id="task-kind"></select></label>
+        </div>
+        <div class="hz-row">
+          <label class="hz-field"><span data-i18n="t.145caf29">Due</span><input id="task-due" type="date"/></label>
+          
+          <div class="hz-field"><span id="task-effort-label" data-i18n="t.8c974bc6">Effort</span>
+            <div id="task-effort" class="hz-effort" role="radiogroup" aria-labelledby="task-effort-label" title="How much work it is. Colours its dot: red high, amber medium, green low." data-i18n-attr="title:t.b7640142">
+              <button type="button" role="radio" aria-checked="false" data-effort="high"><span class="hz-edot"></span><span data-i18n="t.b1a5954a">High</span></button>
+              <button type="button" role="radio" aria-checked="false" data-effort="medium"><span class="hz-edot"></span><span data-i18n="t.d404968e">Medium</span></button>
+              <button type="button" role="radio" aria-checked="false" data-effort="low"><span class="hz-edot"></span><span data-i18n="t.a124947c">Low</span></button>
+            </div>
+          </div>
+        </div>
+        <label class="hz-field"><span data-i18n="t.70440046">Notes</span><textarea id="task-notes" rows="2" maxlength="500"></textarea></label>
+        <p id="task-error" class="hz-error" role="alert"></p>
+        <div class="hz-row end">
+          <button id="task-delete" class="ghost-btn danger hidden" type="button" data-i18n="t.f6fdbe48">Delete</button>
+          <button id="task-cancel" class="ghost-btn" type="button" data-i18n="t.77dfd213">Cancel</button>
+          <button id="task-save" class="primary" type="button" data-i18n="t.efc007a3">Save</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="lea-overlay" class="hz-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="lea-title">
+      <div class="hz-modal">
+        <h3 id="lea-title" data-i18n="t.45cf2811">New in LÉA</h3>
+        <p class="hz-note" data-i18n="t.8d5e22ed">Tick what belongs in your agenda. You can change this any time in Settings.</p>
+        <div id="lea-new" class="hz-lealist"></div>
+        <div class="hz-row end">
+          <button id="lea-later" class="ghost-btn" type="button" data-i18n="t.56e2f5d3">Later</button>
+          <button id="lea-add" class="primary" type="button" data-i18n="t.61cc55aa">Add</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="plan-overlay" class="hz-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="plan-title">
+      <div class="hz-modal">
+        <h3 id="plan-title" data-i18n="t.bd004d09">Course plans found in LÉA</h3>
+        <p class="hz-note" data-i18n="t.261298f5">These dates come from your plans de cours and your timetable. Untick anything that does not apply to you, then add the rest.</p>
+        <div id="plan-list" class="hz-planlist"></div>
+        <div class="hz-row end">
+          <button id="plan-ignore" class="ghost-btn" type="button" data-i18n="t.bbe73371">Don't add</button>
+          <button id="plan-later" class="ghost-btn" type="button" data-i18n="t.56e2f5d3">Later</button>
+          <button id="plan-add" class="primary" type="button" data-i18n="t.382d7fb0">Add to my agenda</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="pro-overlay" class="hz-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="pro-title">
+      <div id="pro-modal" class="hz-modal hz-promodal"></div>
+    </div>
+
+    <div id="set-overlay" class="hz-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="set-title">
+      <div class="hz-modal">
+        <h3 id="set-title" data-i18n="t.c7f73bb5">Settings</h3>
+        <div id="set-info" class="hz-note"></div>
+        <div id="set-pro"></div>
+        
+        <div class="hz-appearance">
+          <span class="hz-note" data-i18n="t.41def7a0">Appearance</span>
+          <span class="hz-appbtns">
+            <button class="lang-toggle" type="button" data-lang-toggle>FR</button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light or dark mode" title="Toggle theme">
+              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+            </button>
+          </span>
+        </div>
+        
+        <section class="hz-set-sec">
+          <h4 data-i18n="t.c915d505">Your schedule</h4>
+          <p class="hz-secnote" data-i18n="t.d8b436ff">The term dates, the days off, and a colour for each course.</p>
+          <div class="hz-row">
+            <label class="hz-field"><span data-i18n="t.9820d9fe">First day</span><input id="set-start" type="date"/></label>
+            <label class="hz-field"><span data-i18n="t.2a177256">Last day</span><input id="set-end" type="date"/></label>
+          </div>
+          <div class="hz-field">
+            <span id="set-off-label" data-i18n="t.a3b3f222">Days with no classes</span>
+            <div id="set-off" class="hz-doff" role="group" aria-labelledby="set-off-label"></div>
+          </div>
+          <div class="hz-row stack">
+            <button id="set-cal" class="ghost-btn small hidden" type="button"></button>
+            <button id="btn-replace" class="ghost-btn small" type="button" data-i18n="t.7eaca198">Import another schedule</button>
+          </div>
+          <h5 class="hz-subhead" data-i18n="t.0c43edd6">Course colours</h5>
+          <div id="set-colors" class="hz-colors"></div>
+        </section>
+
+        <section class="hz-set-sec">
+          <h4 data-i18n="t.563eee8a">Homework and messages</h4>
+          <p class="hz-secnote" data-i18n="t.b3151db2">Where your homework and your Mio messages come from. You only need one of these.</p>
+        
+        <div class="hz-lea-box">
+          <h4 data-i18n="t.4b65eab2">Homework from LÉA</h4>
+          
+          <p class="hz-src" id="lea-source"></p>
+          
+          <p class="hz-note" data-i18n="t.09180189">Your courses are checked every time you open your agenda — the Bazinet extension reads LÉA in your own browser, on the session you are already signed in to. Your Omnivox password is never involved, and nothing is added here until you say so.</p>
+          <p class="hz-leastat" id="lea-status"></p>
+          <div class="hz-row stack">
+            <button id="lea-check" class="ghost-btn small" type="button" data-i18n="t.2e837b38">Check my connection</button>
+          </div>
+          <div id="lea-items" class="hz-lealist"></div>
+        </div>
+        
+        <div class="hz-ovx-box">
+          <h4 data-i18n="t.d56b82dd">Connect Omnivox</h4>
+          <p class="hz-note" data-i18n="t.89843574">Your homework, added by itself</p>
+          <p class="hz-src" id="ovx-source"></p>
+          
+          <details class="hz-how">
+            <summary data-i18n="t.fa22f804">How is this different from the browser extension?</summary>
+            <p data-i18n="t.bd2cab10">Two ways to read the same school account. You only need one, and Bazinet picks for you.</p>
+            <p data-i18n="t.fd73d35e">The extension reads LÉA and Mio inside your own browser, on the Omnivox session you are already signed in to. Your Omnivox password is never involved and nothing about your school account leaves this computer. It only works in a desktop browser with the extension installed.</p>
+            <p data-i18n="t.dedcf993">Connecting Omnivox does the sign-in on our server instead, which is the only way this can work on iPhone and Android, where a browser extension cannot exist. Your password is kept encrypted and is decrypted for one sign-in at a time.</p>
+            <p data-i18n="t.a85c2bc3">When both are available the extension is used first, because it keeps your password out of it entirely. Connecting Omnivox changes nothing on a computer that already has the extension — it is there for your phone.</p>
+          </details>
+          <p class="hz-leastat" id="ovx-state"></p>
+          <div id="ovx-pro" class="hidden"></div>
+          <div id="ovx-setup" class="hidden">
+            <label class="hz-field"><span data-i18n="t.be011097">Omnivox sign-in (DA)</span><input id="ovx-da" type="text" autocomplete="off" inputmode="numeric"/></label>
+            <label class="hz-field"><span data-i18n="t.97729b41">Omnivox password</span><input id="ovx-pw" type="password" autocomplete="off"/></label>
+            <div class="hz-ovx-consent">
+              <strong data-i18n="t.42700eaa">What happens to your password</strong>
+              <p data-i18n="t.2feaecb5">It is encrypted on this device with your Bazinet account key, the same way your agenda is. Our server stores it only as ciphertext it cannot read.</p>
+              <p data-i18n="t.eca15992">To fetch your homework, your password is decrypted here and sent to our server for that one sign-in. The server uses it and keeps nothing.</p>
+              <p data-i18n="t.2d8883ea">Omnivox may occasionally ask for a CAPTCHA when a sign-in comes from a server. If that happens, sync stops and tells you — sign in on Omnivox once and it resumes.</p>
+              <p data-i18n="t.9ab476ff">Omnivox will email you a code the first time, because the sync runs from our server and not your phone. We keep the “remember this device” cookie it gives us afterwards, encrypted, so it only asks once. Disconnecting deletes it.</p>
+              <p data-i18n="t.e464a049">The email Omnivox sends about the new sign-in may say it came from an iPhone in the United States. That's our server, not someone else.</p>
+              <label class="hz-ovx-agree"><input id="ovx-agree" type="checkbox"/><span data-i18n="t.b3117020">I understand and agree</span></label>
+            </div>
+            <div class="hz-row stack">
+              <button id="ovx-connect" class="primary small" type="button" data-i18n="t.b65463cb">Connect</button>
+            </div>
+          </div>
+          <div id="ovx-verify" class="hz-ovx-verify hidden">
+            <strong data-i18n="t.00bcde67">Omnivox sent you a code by email</strong>
+            <p class="hz-note" data-i18n="t.c1f9adb7">Enter it once. After that this device is remembered and you will not be asked again.</p>
+            <label class="hz-field"><span data-i18n="t.80f2f298">Verification code</span><input id="ovx-code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="12"/></label>
+            <div class="hz-row stack">
+              <button id="ovx-submit-code" class="primary small" type="button" data-i18n="t.dda6ac27">Verify</button>
+            </div>
+          </div>
+          <div class="hz-row stack">
+            <button id="ovx-retry" class="ghost-btn small hidden" type="button" data-i18n="t.042c862e">Try again</button>
+            <button id="ovx-forget" class="ghost-btn small danger hidden" type="button" data-i18n="t.a1c8e09a">Disconnect Omnivox</button>
+          </div>
+        </div>
+        </section>
+
+        
+        <section class="hz-set-sec">
+          <h4 data-i18n="t.6c590c23">Plans de cours</h4>
+          <p class="hz-secnote" data-i18n="t.9d015202">Horaire checks LÉA for new plans de cours once a day. Check now to get them right away.</p>
+          <div class="hz-row stack">
+            <button id="plans-fetch" class="ghost-btn" type="button" data-i18n="t.11fe717f">Get my plans de cours from Omnivox</button>
+          </div>
+          
+          <div id="plans-support" class="hz-plans-support hidden">
+            <p class="hz-note" data-i18n="t.e420fb72">Support access is on for your account. Send what Horaire reads from your plans de cours — course names, evaluations and the dates they land on — so support can check them.</p>
+            <button id="plans-send" class="ghost-btn small" type="button" data-i18n="t.076fce3e">Send my plans de cours to support</button>
+          </div>
+        </section>
+
+        <section class="hz-set-sec">
+          <h4 data-i18n="t.4ab29102">Your account</h4>
+          <p class="hz-secnote" data-i18n="t.8410e19f">Your agenda syncs to every device you sign in on. It is encrypted here before it is uploaded, so the server stores it without being able to read it.</p>
+          <p class="hz-note" id="set-who"></p>
+          <div class="hz-row stack">
+            <button id="sync-now" class="ghost-btn" type="button" data-i18n="t.2b7d938e">Sync now</button>
+            
+            <button id="set-lock" class="ghost-btn" type="button" data-i18n="t.dd71f853">Lock this agenda</button>
+            <button id="set-signout" class="ghost-btn" type="button" data-i18n="t.d16c78ab">Sign out on this device</button>
+          </div>
+        </section>
+
+        <section class="hz-set-sec">
+          <h4 data-i18n="t.016390c2">Export and print</h4>
+          <p class="hz-secnote" data-i18n="t.ee4c7c62">Take your timetable somewhere else, or put it on paper.</p>
+          <div class="hz-row stack">
+            <button id="btn-ics" class="ghost-btn" type="button" data-i18n="t.d7e4cb80">Export to my calendar (.ics)</button>
+            <button id="btn-print" class="ghost-btn" type="button" data-i18n="t.5b221e9c">Print</button>
+          </div>
+        </section>
+
+        
+        <section class="hz-set-sec hz-danger">
+          <h4 data-i18n="t.963a652e">Danger zone</h4>
+          <p class="hz-secnote" data-i18n="t.49a164ae">This clears the timetable and the colours. Your tasks and your account are not touched, and you can import a new schedule right after.</p>
+          <div class="hz-row stack">
+            <button id="btn-wipe" class="ghost-btn danger" type="button" data-i18n="t.cac372cb">Remove this schedule from this account</button>
+          </div>
+        </section>
+
+        <div class="hz-row end">
+          <button id="set-close" class="primary" type="button" data-i18n="t.e9b450d1">Done</button>
+        </div>
+        
+        <nav class="foot-links hz-modal-legal">
+          <a href="/" data-i18n="nav.home">Products</a><span>·</span>
+          <a href="/terms.html" data-i18n="nav.terms">Terms</a><span>·</span>
+          <a href="/privacy.html" data-i18n="nav.privacy">Privacy</a><span>·</span>
+          <a href="/support" data-i18n="nav.support">Support</a><span>·</span>
+          <a href="mailto:support@bazinet.net" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <p class="hz-note" data-i18n="t.303176bd">Not affiliated with the Cégep du Vieux Montréal or with Omnivox. Your agenda is encrypted on your device before it is stored on your account.</p>
+      </div>
+    </div>
+
+    
+    <div id="plans-overlay" class="hz-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="plans-title">
+      <div class="hz-modal">
+        <h3 id="plans-title" data-i18n="t.6c590c23">Plans de cours</h3>
+        
+        <div id="plans-status" class="hz-plans-status">
+          <div id="plans-progress" class="hz-plans-progress hidden"></div>
+          <p id="plans-msg" class="hz-note" role="status" aria-live="polite"></p>
+        </div>
+        <div class="hz-row end">
+          <button id="plans-again" class="ghost-btn hidden" type="button" data-i18n="t.698ea83b">Review them again</button>
+          <button id="plans-close" class="primary" type="button" data-i18n="t.bbfa773e">Close</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="share-overlay" class="hz-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="share-title">
+      <div class="hz-modal hz-share">
+        <h3 id="share-title" data-i18n="t.6b336aca">Share your schedule</h3>
+        <p class="hz-secnote" data-i18n="t.41f41aac">People you add see your timetable and tasks, updated live. Your Omnivox sign-in, your name and your DA are never shared, and the copy they get is encrypted end to end.</p>
+        <div id="share-pro"></div>
+        <form id="share-form" class="hz-shareform" novalidate>
+          <input id="share-email" type="email" autocomplete="off" maxlength="254" data-i18n-attr="placeholder:t.fb67ba41,aria-label:t.fb67ba41" placeholder="Their email address" aria-label="Their email address"/>
+          <select id="share-perm" data-i18n-attr="aria-label:t.17857134" aria-label="Permission">
+            <option value="view" data-i18n="t.1b3e4006">Can view</option>
+            <option value="edit" data-i18n="t.d70076db">Can edit tasks</option>
+          </select>
+          <button id="share-add" class="primary" type="submit" data-i18n="t.09ca55ca">Share</button>
+        </form>
+        <p id="share-error" class="hz-error" role="alert"></p>
+        <div id="share-members" class="hz-sharelist"></div>
+        <h4 class="hz-shareh" data-i18n="t.72f2b0df">Shared with you</h4>
+        <div id="share-incoming" class="hz-sharelist"></div>
+        <div class="hz-row end">
+          <button id="share-close" class="primary" type="button" data-i18n="t.bbfa773e">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer hz-wrap">
+      <nav class="foot-links">
+        <a href="/" data-i18n="nav.home">Products</a><span>·</span>
+        <a href="/terms.html" data-i18n="nav.terms">Terms</a><span>·</span>
+        <a href="/privacy.html" data-i18n="nav.privacy">Privacy</a><span>·</span>
+        <a href="/support" data-i18n="nav.support">Support</a><span>·</span>
+        <a href="mailto:support@bazinet.net" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <p class="copyright hz-note" data-i18n="t.303176bd">Not affiliated with the Cégep du Vieux Montréal or with Omnivox. Your agenda is encrypted on your device before it is stored on your account.</p>
+    </footer>
+  </main>
+
+  <div id="hz-toast" class="hz-toast"></div>
+
+  <script src="/hash-wasm-argon2.js"></script>
+  <script src="/crypto.js"></script>
+  <script src="/horaire-net.js"></script>
+  <script src="/horaire-key.js"></script>
+  <script src="/horaire-parse.js"></script>
+  <script src="/horaire-calendar.js"></script>
+  <script src="/horaire-lea.js"></script>
+  <script src="/horaire-mio.js"></script>
+  <script src="/horaire-crsa.js"></script>
+  <script src="/horaire-plans.js"></script>
+  
+  <script src="/lea-extract.js"></script>
+  <script src="/mio-extract.js"></script>
+  <script src="/crsa-extract.js"></script>
+  <script src="/lea-docs.js"></script>
+  <script src="/plan-extract.js"></script>
+  <script src="/horaire-omnivox.js"></script>
+  <script src="/horaire-share.js"></script>
+  <script src="/bz-loader.js" defer="defer"></script>
+  <script src="/horaire-app.js" defer="defer"></script>
+</body>
+</html>

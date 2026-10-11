@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="Check whether your passwords have appeared in a known data breach — privately, using k-anonymity. Your password never leaves your browser. Free with a Bazinet Vault account."/>
+  <meta name="theme-color" content="#0f1320"/>
+  <title>Breach Check — Bazinet</title>
+  <link rel="icon" href="/favicon.svg"/>
+  <script src="/i18n-strings.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/theme.js"></script>
+  <script src="/console-warn.js" defer="defer"></script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="topbar-brand" aria-label="Bazinet home">
+        <svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c97ff"/><stop offset="1" stop-color="#4f6bf0"/></linearGradient></defs><path d="M24 3 6 10v12c0 11 7.7 18.6 18 23 10.3-4.4 18-12 18-23V10L24 3Z" fill="url(#tg)"/><circle cx="24" cy="21" r="5" fill="#0f1320"/><rect x="21.6" y="23" width="4.8" height="8" rx="2.4" fill="#0f1320"/></svg>
+        <span class="brand-text">Bazinet</span>
+      </a>
+      <nav class="topbar-nav">
+        <a href="/" class="nav-hide" data-i18n="nav.home">Products</a>
+        <a href="/about.html" class="nav-hide" data-i18n="nav.about">About</a>
+        <a href="/blog/" class="nav-hide" data-blog data-i18n="nav.blog">Blog</a>
+        <a href="/generator.html" class="nav-hide" data-i18n="nav.generator">Generator</a>
+        <a href="/breach.html" class="nav-hide" data-i18n="nav.breach">Breach check</a>
+        <a href="/terms.html" class="nav-hide" data-i18n="nav.terms">Terms</a>
+        <a href="/privacy.html" class="nav-hide" data-i18n="nav.privacy">Privacy</a>
+        <a href="/support" class="nav-help" data-i18n-attr="aria-label:nav.support,title:nav.support" aria-label="Support" title="Support"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6"/><path d="M12 17h.01"/></svg><span data-i18n="nav.support">Support</span></a>
+        <button class="lang-toggle" type="button" data-lang-toggle>FR</button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light or dark mode" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+        </button>
+        <a href="/download" class="nav-hide" data-i18n="nav.download">Download</a>
+        <a href="/extension" class="nav-hide" data-i18n="nav.extension">Extension</a>
+        <a href="/account" data-i18n="nav.account">Account</a>
+        <a href="/app" class="topbar-cta" data-i18n="nav.openVault">Open app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="gen-page" style="">
+      <span class="eyebrow" data-i18n="t.6dff9418">Privacy-first breach check</span>
+      <h1 class="hero-title" style="" data-i18n="t.60eb52b4">Has your password leaked?</h1>
+      <p class="muted" style=""><span><span data-i18n="t.aed331a1">Check a password against billions of records from
+        real data breaches. Thanks to</span></span> <strong><span><span data-i18n="t.9d1afc1f">k-anonymity</span></span></strong><span><span data-i18n="t.c6faab68">, your password never leaves your browser —
+        we only ever see the first five characters of its hash.</span></span></p>
+      <p id="signed-as" class="hint hidden" style=""></p>
+    </section>
+
+    
+    <div class="tabs" id="breach-tabs" style="">
+      <button class="tab active" data-tab="one" type="button" data-i18n="t.f768ea10">Check one password</button>
+      <button class="tab" data-tab="vault" type="button" data-i18n="t.851f6996">Scan my saved passwords</button>
+    </div>
+
+    
+    <section id="pane-one" class="card breach-pane" style="">
+      <form id="single-form" class="panel" autocomplete="off">
+        <label><span data-i18n="t.0bfccafd">Password to check</span>
+          <div class="pw-row">
+            <input id="single-pw" type="password" placeholder="Type or paste a password" maxlength="128" autocomplete="off"/>
+            <button id="single-toggle" class="ghost" type="button" aria-label="Show password" data-i18n="t.d97d1ee3">Show</button>
+          </div>
+        </label>
+        <p class="hint" data-i18n="t.dfcb0df0">Hashed on your device — only a 5-character prefix is ever sent. Nothing is stored.</p>
+        <button id="single-check" class="primary" type="submit" style="" data-i18n="t.b1ac2122">Check this password</button>
+        <p id="single-error" class="error" role="alert"></p>
+      </form>
+      <div id="single-result" class="breach-result hidden"></div>
+    </section>
+
+    
+    <section id="pane-vault" class="card breach-pane hidden" style="">
+      <p class="muted" style=""><span><span data-i18n="t.4b5e84be">Check</span></span> <strong><span><span data-i18n="t.0f393fb6">every password saved in your vault</span></span></strong> <span><span data-i18n="t.33ce3192">at once.
+        Your vault is unlocked and decrypted right here in your browser — your master password and entries
+        never reach our servers.</span></span></p>
+      <form id="scan-form" class="panel" autocomplete="off" style="">
+        <label><span data-i18n="t.33acdbd6">Master password</span>
+          <input id="scan-pw" type="password" placeholder="Your vault master password" autocomplete="current-password"/>
+        </label>
+        <label class="chk agree-row">
+          <input id="scan-include-names" type="checkbox" checked="checked"/>
+          <span data-i18n="t.d3f0ab15">Include affected entry names in my emailed report (never passwords).</span>
+        </label>
+        <button id="scan-run" class="primary" type="submit" style="" data-i18n="t.52d11d6d">Scan my vault</button>
+        <p id="scan-error" class="error" role="alert"></p>
+      </form>
+      <div id="scan-progress" class="hint hidden" style=""></div>
+      <div id="scan-result" class="hidden" style=""></div>
+    </section>
+
+    <p class="hint center" style="" data-i18n="t.ccdb608e">A free Bazinet account is required (it
+      keeps this service from being abused and lets us email your report). You'll be asked to sign in when you
+      run a check.</p>
+
+    <footer class="site-footer">
+      <nav class="foot-links">
+        <a href="/vault" data-i18n="t.70f8bb9a">Home</a><span>·</span>
+        <a href="/app" data-i18n="nav.openVault">Open app</a><span>·</span>
+        <a href="/blog/" data-blog data-i18n="nav.blog">Blog</a><span data-blog>·</span>
+        <a href="/about.html" data-i18n="nav.about">About</a><span>·</span>
+        <a href="/extension" data-i18n="nav.extension">Extension</a><span>·</span>
+        <a href="/terms.html" data-i18n="nav.terms">Terms</a><span>·</span>
+        <a href="/privacy.html" data-i18n="nav.privacy">Privacy</a><span>·</span>
+        <a href="/support" data-i18n="nav.support">Support</a><span>·</span>
+        <a href="mailto:support@bazinet.net" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <p class="copyright" data-i18n="t.696e631c">© 2026 Bazinet.net · Breach data via Have I Been Pwned (k-anonymity)</p>
+    </footer>
+  </main>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <div id="ts-overlay" class="ts-overlay">
+    <div class="ts-card">
+      <p class="ts-cap" data-i18n="t.4a6ddb69">Quick security check</p>
+      <p class="ts-sub" data-i18n="t.08c35203">Confirm you're human to keep checking passwords.</p>
+      <div id="ts-breach"></div>
+    </div>
+  </div>
+
+  <script src="/dom.js"></script>
+  <script src="/hash-wasm-argon2.js"></script>
+  <script src="/crypto.js"></script>
+  <script src="/api.js"></script>
+  <script src="/breach.js"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onBreachTurnstile&render=explicit" async defer="defer"></script>
+</body>
+</html>

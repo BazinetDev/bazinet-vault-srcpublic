@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="robots" content="noindex"/>
+  <meta name="theme-color" content="#0f1320"/>
+  <title>Your Account — Bazinet</title>
+  <link rel="icon" href="/favicon-vault.svg"/>
+  <script src="/i18n-strings.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/theme.js"></script>
+  <script src="/console-warn.js" defer="defer"></script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+  <button class="lang-toggle app-lang-toggle" type="button" data-lang-toggle>FR</button>
+  <button class="theme-toggle app-theme-toggle" type="button" data-theme-toggle aria-label="Toggle light or dark mode" title="Toggle theme">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+  </button>
+
+  
+  <main class="wrap" id="preauth">
+    <h1 class="brand">
+      <a href="/" class="brand-link" aria-label="Bazinet home">
+        <svg class="logo" viewBox="0 0 48 48" width="34" height="34" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c97ff"/><stop offset="1" stop-color="#4f6bf0"/></linearGradient></defs><path d="M24 3 6 10v12c0 11 7.7 18.6 18 23 10.3-4.4 18-12 18-23V10L24 3Z" fill="url(#lg)"/><circle cx="24" cy="21" r="5" fill="#0f1320"/><rect x="21.6" y="23" width="4.8" height="8" rx="2.4" fill="#0f1320"/></svg>
+        <span class="brand-text"><span data-i18n="t.ad15d234">Bazinet&nbsp;Account</span></span>
+      </a>
+    </h1>
+
+    <div id="boot" class="bzl-busy is-page" role="status"><div class="bzl-row"><span class="bzl-ico" aria-hidden="true"><span class="bzl-spin"></span></span><span class="bzl-title" data-i18n="t.33ce4174">Loading…</span></div><span class="bzl-track is-indet" aria-hidden="true"><i></i></span></div>
+
+    
+    <section id="screen-signup" class="card screen hidden" style="">
+      <div class="tabs">
+        <button id="tab-login" class="tab" type="button" data-i18n="t.ada2e9e9">Sign in</button>
+        <button id="tab-signup" class="tab active" type="button" data-i18n="t.aaf37447">Create account</button>
+      </div>
+      <form id="signup-form" class="panel" autocomplete="off">
+        <label><span data-i18n="t.709a2322">Name</span><input id="su-name" type="text" maxlength="60" autocomplete="name" required/></label>
+        <label><span data-i18n="t.84add5b2">Email</span><input id="su-email" type="email" autocomplete="username" required/></label>
+        <label><span data-i18n="t.8be3c943">Password</span>
+          <input id="su-pw" type="password" autocomplete="new-password" placeholder="At least 10 characters" required/>
+        </label>
+        <div class="meter" id="su-strength" aria-hidden="true"><div class="bar"></div><span class="label"></span></div>
+        <p class="hint"><span data-i18n="t.1cd5589f">This is your</span> <strong><span data-i18n="t.26d96c9f">account password</span></strong> <span data-i18n="t.8337093e">(for signing in). It's separate from the</span>
+          <strong><span data-i18n="t.32394b06">master password</span></strong> <span data-i18n="t.7bd41cd6">you'll set to encrypt your vault — and unlike the master password,
+          this one is resettable by email.</span></p>
+        <label class="chk agree-row"><input id="su-agree" type="checkbox" required/>
+          
+          <span><span data-i18n="acct.agreePre">I agree to the</span>
+            <a href="/terms.html" target="_blank" rel="noopener"><span data-i18n="nav.terms">Terms</span></a>
+            <span data-i18n="acct.agreeAnd">and</span>
+            <a href="/privacy.html" target="_blank" rel="noopener"><span data-i18n="nav.privacy">Privacy Policy</span></a>.</span></label>
+        
+        <p id="su-lang-note" class="hint" data-i18n="acct.termsLangNote">Ces conditions sont aussi
+          offertes en français — utilisez le bouton « FR » en haut de la page.</p>
+        <button class="primary" type="submit" data-i18n="t.aaf37447">Create account</button>
+        <p id="su-error" class="error" role="alert"></p>
+      </form>
+      <div class="oauth-sep hidden" id="su-oauth-sep"><span data-i18n="t.1758356d">or</span></div>
+      <a id="su-google" class="ghost-btn signin-btn hidden" href="#"><svg class="signin-ico" width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg> <span data-i18n="t.338492d6">Sign up with Google</span></a>
+    </section>
+
+    
+    <section id="screen-login" class="card screen hidden" style="">
+      <div class="tabs">
+        <button id="tab-login2" class="tab active" type="button" data-i18n="t.ada2e9e9">Sign in</button>
+        <button id="tab-signup2" class="tab" type="button" data-i18n="t.aaf37447">Create account</button>
+      </div>
+      <form id="login-form" class="panel" autocomplete="off">
+        <label><span data-i18n="t.84add5b2">Email</span><input id="li-email" type="email" autocomplete="username" required/></label>
+        <label><span data-i18n="t.8be3c943">Password</span><input id="li-pw" type="password" autocomplete="current-password" required/></label>
+        <button class="primary" type="submit" data-i18n="t.ada2e9e9">Sign in</button>
+        <p id="li-error" class="error" role="alert"></p>
+      </form>
+      <div class="oauth-sep hidden" id="li-oauth-sep"><span data-i18n="t.1758356d">or</span></div>
+      <a id="li-google" class="ghost-btn signin-btn hidden" href="#"><svg class="signin-ico" width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg> <span data-i18n="t.4a0b7281">Sign in with Google</span></a>
+      <button id="li-passkey" class="ghost-btn signin-btn" type="button"><svg class="signin-ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="m10.85 12.15 8.15-8.15M16 5l3 3M14 7l1.5 1.5"/></svg> <span data-i18n="t.cf1c7263">Sign in with a passkey</span></button>
+      <button id="li-forgot" class="link back-link" type="button" data-i18n="t.4c29f7f0">Forgot password?</button>
+    </section>
+
+    
+    <section id="screen-verify" class="card screen hidden" style="">
+      <h2 class="screen-title" data-i18n="t.48faa67c">Check your inbox</h2>
+      <p class="muted"><span data-i18n="t.2ab7554f">We sent a 6-digit code to</span> <strong id="vf-email"></strong>.</p>
+      <form id="verify-form" autocomplete="off">
+        <label><span data-i18n="t.80f2f298">Verification code</span><input id="vf-code" class="code-input" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" placeholder="000000" required/></label>
+        <button class="primary" type="submit" style="" data-i18n="t.5f21e0f7">Verify &amp; continue</button>
+        <p id="vf-dev" class="dev-hint hidden"></p>
+        <p id="vf-error" class="error" role="alert"></p>
+      </form>
+      <div class="verify-actions"><button id="vf-resend" class="link" type="button" data-i18n="t.1d3cb8a9">Resend code</button>
+        <button id="vf-back" class="link" type="button" data-i18n="t.51dd91dc">Start over</button></div>
+    </section>
+
+    
+    <section id="screen-2fa" class="card screen hidden" style="">
+      <h2 class="screen-title" data-i18n="t.b1f9bfea">Two-factor verification</h2>
+      <p class="muted" id="tf-hint">Enter the code to finish signing in.</p>
+      <form id="twofa-form" autocomplete="off">
+        <label><span data-i18n="t.adac6937">Code</span><input id="tf-code" class="code-input" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" placeholder="000000" required/></label>
+        <button class="primary" type="submit" style="" data-i18n="t.d150d371">Verify &amp; sign in</button>
+        <p id="tf-dev" class="dev-hint hidden"></p>
+        <p id="tf-error" class="error" role="alert"></p>
+      </form>
+      <button id="tf-back" class="link back-link" type="button" data-i18n="t.0913d00c">← Start over</button>
+    </section>
+
+    
+    <section id="screen-reset-req" class="card screen hidden" style="">
+      <h2 class="screen-title" data-i18n="t.bf8804f0">Reset your password</h2>
+      <p class="muted" data-i18n="t.61d08be1">Enter your email and we'll send a reset link. Your vault stays safe — the master
+        password is separate and never affected.</p>
+      <form id="resetreq-form" autocomplete="off">
+        <label><span data-i18n="t.84add5b2">Email</span><input id="rr-email" type="email" autocomplete="username" required/></label>
+        <button class="primary" type="submit" style="" data-i18n="t.b8ec5543">Send reset link</button>
+        <p id="rr-ok" class="hint" style=""></p>
+        <p id="rr-dev" class="dev-hint hidden"></p>
+        <p id="rr-error" class="error" role="alert"></p>
+      </form>
+      <button id="rr-back" class="link back-link" type="button" data-i18n="t.ee1c5768">← Back to sign in</button>
+    </section>
+
+    
+    <section id="screen-reset-confirm" class="card screen hidden" style="">
+      <h2 class="screen-title" data-i18n="t.1e83ae49">Set a new password</h2>
+      <form id="resetconf-form" autocomplete="off">
+        <label><span data-i18n="t.d850ee18">New password</span><input id="rc-pw" type="password" autocomplete="new-password" placeholder="At least 10 characters" required/></label>
+        <div class="meter" id="rc-strength" aria-hidden="true"><div class="bar"></div><span class="label"></span></div>
+        <label><span data-i18n="t.4a7c565d">Confirm password</span><input id="rc-pw2" type="password" autocomplete="new-password" required/></label>
+        <button class="primary" type="submit" style="" data-i18n="t.350c355e">Update password</button>
+        <p id="rc-error" class="error" role="alert"></p>
+      </form>
+    </section>
+
+    
+    <section id="screen-support-access" class="card screen sa-card hidden">
+      <h2 class="screen-title" data-i18n="sa.title">Support is asking to read your account log</h2>
+      <p class="muted" data-i18n="sa.lead">Nothing has been shared yet. This starts only if you approve it.</p>
+
+      <div id="sa-intro" class="sa-intro"></div>
+      <div class="sa-reason">
+        <div class="sa-reason-label" data-i18n="sa.reasonLabel">The reason they gave</div>
+        <blockquote id="sa-reason"></blockquote>
+      </div>
+
+      <div class="sa-cols">
+        <div class="sa-col sa-col-yes">
+          <h3 data-i18n="sa.can">What they would be able to see</h3>
+          <ul>
+            <li data-i18n="sa.can1">Sign-ins, sign-outs and errors your account has recorded</li>
+            <li data-i18n="sa.can2">Devices and sessions, including ones that have ended</li>
+            <li data-i18n="sa.can3">When items were created or changed — never what is in them</li>
+            <li data-i18n="sa.can4">Technical checks on whether your account is in a healthy state</li>
+            <li data-i18n="sa.can5">Diagnostic logs your devices record while syncing — which steps ran and what failed. Never your agenda, your messages, or any password.</li>
+          </ul>
+        </div>
+        <div class="sa-col sa-col-no">
+          <h3 data-i18n="sa.cannot">What they still cannot see</h3>
+          <ul>
+            <li data-i18n="sa.cannot1">Any password, note or file inside your vault</li>
+            <li data-i18n="sa.cannot2">Your master password, or anything derived from it</li>
+            <li data-i18n="sa.cannot3">Approving this cannot change that — the key was never ours to use</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="muted small" data-i18n="sa.terms">Every time support opens your log it is recorded in your own account history, so you can check exactly when it was read.</p>
+      <div id="sa-window" class="muted small"></div>
+
+      <div id="sa-actions" class="row">
+        <button id="sa-approve" class="primary" type="button" data-i18n="sa.approve">Approve</button>
+        <button id="sa-deny" class="ghost" type="button" data-i18n="sa.deny">Decline</button>
+      </div>
+      <p class="muted small" data-i18n="sa.notyou">If you did not contact support, decline — that tells us straight away.</p>
+
+      <div id="sa-decided" class="hidden">
+        <div id="sa-decided-text" class="sa-decided-text"></div>
+        <button id="sa-end" class="ghost danger-text hidden" type="button" data-i18n="sa.end">End this access now</button>
+      </div>
+      <p id="sa-error" class="error" role="alert"></p>
+      <p><a href="/account" data-i18n="sa.back">Go to your account</a></p>
+    </section>
+  </main>
+
+  
+  <div id="shell" class="admin-shell acct-shell hidden">
+    <aside class="admin-side">
+      <a href="/" class="admin-brand" aria-label="Bazinet home">
+        <svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true"><defs><linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c97ff"/><stop offset="1" stop-color="#4f6bf0"/></linearGradient></defs><path d="M24 3 6 10v12c0 11 7.7 18.6 18 23 10.3-4.4 18-12 18-23V10L24 3Z" fill="url(#lg2)"/><circle cx="24" cy="21" r="5" fill="#0f1320"/><rect x="21.6" y="23" width="4.8" height="8" rx="2.4" fill="#0f1320"/></svg>
+        <span class="brand-text">Bazinet</span><span class="ac-brand-sub" data-i18n="t.85dfa32c">Account</span>
+      </a>
+      <nav class="admin-nav">
+        <button class="anav active" data-view="overview"><svg class="anav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span><span data-i18n="t.0efc2e6b">Overview</span></span></button>
+        <button class="anav" data-view="plan"><svg class="anav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 9.5h19"/></svg><span><span data-i18n="t.4925e655">Plan &amp; billing</span></span></button>
+        <button class="anav" data-view="security"><svg class="anav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 2.5v5c0 4.6-3.1 7.8-7 9.5-3.9-1.7-7-4.9-7-9.5v-5L12 3Z"/><path d="M9.2 11.9l1.9 1.9 3.7-3.7"/></svg><span><span data-i18n="t.f25ce1b8">Security</span></span></button>
+        <button class="anav" data-view="prefs"><svg class="anav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2.2"/><circle cx="9" cy="17" r="2.2"/></svg><span><span data-i18n="t.9dfd349e">Preferences</span></span></button>
+        <span class="ac-nav-label" data-i18n="t.fe0a091f">Products</span>
+        <a class="anav" href="/horaire"><svg class="anav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8.5 3v4M15.5 3v4"/></svg><span>Horaire CVM</span><span class="anav-arrow" aria-hidden="true">→</span></a>
+        <a class="anav" href="/app"><svg class="anav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="9.5" rx="2.5"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg><span>Bazinet Vault</span><span class="anav-arrow" aria-hidden="true">→</span></a>
+        <a class="anav" href="/support"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" class="anav-ico" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6"/><path d="M12 17h.01"/></svg><span><span data-i18n="t.2ef172ce">Help and support</span></span><span class="anav-arrow" aria-hidden="true">→</span></a>
+      </nav>
+      <div class="admin-side-foot">
+        <div class="ac-who">
+          <span id="who-avatar" class="ac-who-avatar" aria-hidden="true"></span>
+          <div class="ac-who-text">
+            <div class="ac-who-name" id="who-name"></div>
+            
+            <div class="ac-who-email" id="who"></div>
+          </div>
+        </div>
+        <button id="btn-logout" class="ghost" type="button"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg><span data-i18n="t.dc1649a1">Sign out</span></button>
+      </div>
+    </aside>
+    <main class="admin-main">
+      
+      <section id="v-overview" class="adminview">
+        <div class="ac-head">
+          <h2 class="av-title" data-i18n="t.c42e0ca0">Account overview</h2>
+          <p class="ac-lead" data-i18n="t.f6310d9c">Your Bazinet account signs you in to Horaire CVM and Bazinet Vault.</p>
+        </div>
+        <div class="acct-hero card" id="acct-hero"></div>
+        <div class="vault-cta card hidden" id="pw-prompt"></div>
+
+        <h3 class="ac-section" data-i18n="t.bea0eec6">Your products</h3>
+        <div class="ov-products">
+          <article class="ov-prod ov-horaire">
+            <div class="ov-prod-top">
+              <span class="ov-prod-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+              <div class="ov-prod-name"><h4>Horaire CVM</h4><span class="ov-prod-for" data-i18n="t.8f47fda1">Your agenda for the Cégep</span></div>
+            </div>
+            <p class="ov-prod-status" id="ov-horaire-status"></p>
+            <a class="primary small ov-prod-go" href="/horaire" data-i18n="t.902328f8">Open Horaire →</a>
+          </article>
+          <article class="ov-prod ov-vault" id="vault-cta">
+            <div class="ov-prod-top">
+              <span class="ov-prod-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+              <div class="ov-prod-name"><h4>Bazinet Vault</h4><span class="ov-prod-for" data-i18n="t.a4566b08">Your passwords, encrypted</span></div>
+            </div>
+            <p class="ov-prod-status" id="ov-vault-status"></p>
+            <a class="primary small ov-prod-go" href="/app" id="ov-vault-go" data-i18n="t.6da00819">Open vault →</a>
+          </article>
+          <article class="ov-prod ov-support">
+            <div class="ov-prod-top">
+              <span class="ov-prod-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6"/><path d="M12 17h.01"/></svg></span>
+              <div class="ov-prod-name"><h4 data-i18n="nav.support">Support</h4><span class="ov-prod-for" data-i18n="t.c077fbb8">Help articles and live chat</span></div>
+            </div>
+            <p class="ov-prod-status" data-i18n="t.923b4fe8">Questions about either product, billing or your account.</p>
+            <a class="ghost small ov-prod-go" href="/support" data-i18n="t.63914269">Get help →</a>
+          </article>
+        </div>
+
+        <div class="ov-grid">
+          <div class="sec-card ov-card">
+            <div class="ov-card-head">
+              <h3 data-i18n="t.bf049782">Security status</h3>
+              <span id="ov-sec-verdict" class="ov-verdict"></span>
+            </div>
+            <div id="ov-security" class="ov-list"></div>
+          </div>
+          <div class="sec-card ov-card">
+            <div class="ov-card-head">
+              <h3 data-i18n="t.27851878">Recent security events</h3>
+              <button id="ov-log-link" class="link" type="button" data-i18n="t.2856620d">View full log →</button>
+            </div>
+            <div id="ov-activity" class="ov-list"></div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="v-security" class="adminview hidden">
+        <div class="ac-head">
+          <h2 class="av-title" data-i18n="t.f25ce1b8">Security</h2>
+          <p class="ac-lead" data-i18n="t.3e1358be">How you sign in, where you’re signed in, and everything that happened to your account.</p>
+        </div>
+
+        <div class="sec-card">
+          <div class="sec-card-head">
+            <span class="sec-head-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="m10.85 12.15 8.15-8.15M16 5l3 3M14 7l1.5 1.5"/></svg></span>
+            <div><h3 data-i18n="t.5d0f64e8">Account password</h3>
+              <p class="hint" data-i18n="t.c0908b35">Used to sign in to your Bazinet account. Separate from your vault's master password.</p></div>
+          </div>
+          <form id="chpw-form" class="panel">
+            <label><span data-i18n="t.19dff4da">Current password</span><input id="cp-old" type="password" autocomplete="current-password"/></label>
+            <label><span data-i18n="t.d850ee18">New password</span><input id="cp-new" type="password" autocomplete="new-password" placeholder="At least 10 characters"/></label>
+            <button class="primary small ac-self-start" type="submit" data-i18n="t.350c355e">Update password</button>
+            <p id="cp-error" class="error" role="alert"></p>
+          </form>
+          <form id="setpw-form" class="panel hidden">
+            <p class="hint ac-mt0"><span data-i18n="t.6842ae31">You sign in with Google. Add a password so you can</span> <strong><span data-i18n="t.09706c41">also</span></strong>
+              <span data-i18n="t.9817a3aa">sign in with your email and password.</span></p>
+            <label><span data-i18n="t.d850ee18">New password</span><input id="sp-new" type="password" autocomplete="new-password" placeholder="At least 10 characters"/></label>
+            <button class="primary small ac-self-start" type="submit" data-i18n="t.94408e41">Set password</button>
+            <p id="sp-error" class="error" role="alert"></p>
+          </form>
+        </div>
+
+        <div class="sec-card">
+          <div class="sec-card-head">
+            <span class="sec-head-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></span>
+            <div><h3 data-i18n="t.edfd617a">Two-factor authentication</h3>
+              <p class="hint" data-i18n="t.059293e5">A second step at sign-in keeps your account safe even if your password leaks.</p></div>
+          </div>
+          <div id="twofa-status" class="sec-table"></div>
+          <div id="totp-setup" class="hidden ac-mt12"></div>
+        </div>
+
+        <div class="sec-card">
+          <div class="sec-card-head">
+            <span class="sec-head-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 11.5a7 7 0 0 1 7 7"/><path d="M12 7.5a11 11 0 0 1 11 11"/><path d="M12 15.5a3 3 0 0 1 3 3"/><circle cx="12" cy="18.5" r=".8" fill="currentColor" stroke="none"/></svg></span>
+            <div><h3 data-i18n="t.caab7827">Passkeys</h3>
+              <p class="hint" data-i18n="t.68b7340b">Sign in with Face ID, Touch ID, Windows Hello, or a security key —
+                phishing-resistant and password-free.</p></div>
+          </div>
+          <div id="passkeys" class="sec-table"></div>
+          <div class="btn-group"><button id="btn-add-passkey" class="ghost" type="button"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span data-i18n="t.0daca495">Add a passkey</span></button></div>
+        </div>
+
+        <div class="sec-card" id="sessions-card">
+          <div class="sec-card-head">
+            <span class="sec-head-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12.5" rx="2"/><path d="M9 20.5h6M12 17v3.5"/></svg></span>
+            <div><h3 data-i18n="t.7de27ac6">Active sessions &amp; devices</h3>
+              <p class="hint" data-i18n="t.a0d96cb6">Everywhere you’re signed in right now. A website session you don’t use for 14 days ends on its own.</p></div>
+          </div>
+          <div id="sessions" class="ac-sessions"></div>
+          <div class="btn-group">
+            <button id="btn-revoke" class="ghost" type="button"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg><span data-i18n="t.e38e5198">Sign out everywhere else</span></button>
+            <button id="btn-forget" class="ghost" type="button"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 2.5v5c0 4.6-3.1 7.8-7 9.5-3.9-1.7-7-4.9-7-9.5v-5L12 3Z"/><path d="M9.8 9.8l4.4 4.4M14.2 9.8l-4.4 4.4"/></svg><span data-i18n="t.528e1831">Forget trusted devices</span></button>
+          </div>
+        </div>
+
+        <div class="sec-card">
+          <div class="sec-card-head">
+            <span class="sec-head-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a5 5 0 0 0 7.07 0l2.12-2.12a5 5 0 0 0-7.07-7.07L11 5.93"/><path d="M14 10a5 5 0 0 0-7.07 0l-2.12 2.12a5 5 0 0 0 7.07 7.07L13 18.07"/></svg></span>
+            <div><h3 data-i18n="t.f9f1a974">Browser extension</h3>
+              <p class="hint" data-i18n="t.0827109d">Connect the Bazinet Vault browser extension to autofill logins. The pairing code grants
+                the extension API access; your vault still needs your master password, so the code alone can't
+                decrypt anything.</p></div>
+          </div>
+          <div id="ext-status" class="sec-table"></div>
+          <div id="ext-pair-box" class="hidden ac-mt12">
+            <label><span data-i18n="t.309e30fc">Pairing code</span> <span class="hint" data-i18n="t.f258818e">— paste this into the extension, then it disappears</span>
+              <div class="pw-row"><input id="ext-token" type="text" readonly="readonly" autocomplete="off"/>
+                <button id="ext-copy" class="ghost" type="button"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span data-i18n="t.af74f7c5">Copy</span></button></div>
+            </label>
+          </div>
+          <div class="btn-group">
+            <button id="btn-ext-pair" class="ghost" type="button"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="m10.85 12.15 8.15-8.15M16 5l3 3M14 7l1.5 1.5"/></svg><span data-i18n="t.0def8c53">Generate pairing code</span></button>
+            <button id="btn-ext-unpair" class="ghost hidden" type="button"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg><span data-i18n="t.6396aa00">Disconnect extension</span></button>
+          </div>
+        </div>
+
+        
+        <div class="sec-card" id="seclog-card">
+          <div class="sec-card-head">
+            <span class="sec-head-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 2.5v5c0 4.6-3.1 7.8-7 9.5-3.9-1.7-7-4.9-7-9.5v-5L12 3Z"/><path d="M12 8v4M12 15.5v.5"/></svg></span>
+            <div><h3 data-i18n="t.00b59224">Security activity</h3>
+              <p class="hint" data-i18n="t.4325ae73">Sign-ins, failed attempts, and changes to your account or vault.
+                If something here wasn't you, change your password and sign out other sessions.</p></div>
+          </div>
+          <div id="seclog" class="ac-log"></div>
+          <div class="btn-group">
+            <button id="seclog-more" class="ghost hidden" type="button" data-i18n="t.25911d48">Show more</button>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="v-plan" class="adminview hidden">
+        <div class="ac-head">
+          <h2 class="av-title" data-i18n="t.4925e655">Plan &amp; billing</h2>
+          <p class="ac-lead" data-i18n="t.a62c1599">One Bazinet Pro plan adds the extras to Horaire CVM and Bazinet Vault.</p>
+        </div>
+        <div id="plan-body"></div>
+      </section>
+
+      
+      <section id="v-prefs" class="adminview hidden">
+        <div class="ac-head">
+          <h2 class="av-title" data-i18n="t.9dfd349e">Preferences</h2>
+          <p class="ac-lead" data-i18n="t.1ae5a4f8">Your profile, how Bazinet looks, and your account itself.</p>
+        </div>
+
+        <div class="sec-card">
+          <div class="sec-card-head">
+            <span class="sec-head-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"/></svg></span>
+            <div><h3 data-i18n="t.ff4fc027">Profile</h3>
+              <p class="hint" data-i18n="t.321ec253">How your name appears across Bazinet.</p></div>
+          </div>
+          <form id="profile-form" class="panel">
+            
+            <div class="pf-photo">
+              <span id="pf-avatar" class="pf-avatar" aria-hidden="true"></span>
+              <div class="pf-photo-side">
+                <span class="pf-photo-label" data-i18n="t.aeb83710">Profile picture</span>
+                <div class="pf-photo-btns">
+                  <label class="ghost small pf-file"><span data-i18n="t.90bd2810">Choose a photo</span><input id="pf-photo" type="file" accept="image/*"/></label>
+                  <button id="pf-photo-remove" class="ghost small hidden" type="button" data-i18n="t.e963907d">Remove</button>
+                </div>
+                <p class="hint" data-i18n="t.703676f9">Shown on your account and in your agenda. Cropped to a square and shrunk on this device before it is uploaded.</p>
+                <p id="pf-photo-error" class="error" role="alert"></p>
+              </div>
+            </div>
+            <label><span data-i18n="t.c7874aaa">Display name</span><input id="pf-name" type="text" maxlength="60"/></label>
+            <button class="primary small ac-self-start" type="submit" data-i18n="t.efc007a3">Save</button>
+            <p id="pf-error" class="error" role="alert"></p>
+          </form>
+        </div>
+
+        <div class="sec-card">
+          <div class="sec-card-head">
+            <span class="sec-head-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg></span>
+            <div><h3 data-i18n="t.41def7a0">Appearance</h3>
+              <p class="hint" data-i18n="t.3e45bcda">Theme preference for this browser.</p></div>
+          </div>
+          <label class="ac-switch-row"><span class="ac-switch-text"><span class="ac-switch-title" data-i18n="t.a672aeba">Prefer dark mode by default</span><span class="hint" data-i18n="t.1764b404">Used wherever you haven’t picked a theme with the sun and moon button.</span></span>
+            <input id="pf-darkdefault" type="checkbox" class="ac-switch"/></label>
+        </div>
+
+        <div class="sec-card ac-danger">
+          <div class="sec-card-head">
+            <span class="sec-head-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 16.5v.5"/><path d="M10.3 4.2 2.9 17a2 2 0 0 0 1.7 3h14.8a2 2 0 0 0 1.7-3L13.7 4.2a2 2 0 0 0-3.4 0Z"/></svg></span>
+            <div><h3 class="danger-text" data-i18n="t.963a652e">Danger zone</h3>
+              <p class="hint" data-i18n="t.6c78698d">This permanently erases your account, your entire vault, and all data.
+                It cannot be undone.</p></div>
+          </div>
+          <button id="btn-delete" class="primary danger-btn" type="button"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-12M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg><span data-i18n="t.2ae3a019">Delete my account</span></button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  
+  <div id="confirm-overlay" class="overlay hidden">
+    <div class="card dialog confirm">
+      <h2 id="confirm-title">Please confirm</h2>
+      <p id="confirm-text" class="muted"></p>
+      <input id="confirm-input" type="text" class="hidden" placeholder="" autocomplete="off"/>
+      <div class="dialog-actions">
+        <button id="confirm-no" class="ghost" type="button" data-i18n="t.77dfd213">Cancel</button>
+        <button id="confirm-yes" class="primary danger-btn" type="button" data-i18n="t.04a21221">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  
+  <div id="ts-overlay" class="ts-overlay">
+    <div class="ts-card">
+      <p class="ts-cap" data-i18n="t.4a6ddb69">Quick security check</p>
+      <p class="ts-sub" data-i18n="t.1a05f99d">Confirm you're human to continue.</p>
+      <div id="ts-breach"></div>
+    </div>
+  </div>
+
+  <script src="/dom.js"></script>
+  <script src="/wordlist.js"></script>
+  <script src="/pwstrength.js"></script>
+  <script src="/hash-wasm-argon2.js"></script>
+  <script src="/crypto.js"></script>
+  <script src="/api.js"></script>
+  <script src="/horaire-key.js"></script>
+  <script src="/account.js"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onBreachTurnstile&render=explicit" async defer="defer"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="Get the Bazinet Vault browser extension from the Chrome Web Store — autofill, save, and generate passwords in Chrome, Edge and Brave. Your vault keys never leave the extension's background worker."/>
+  <title>Browser extension — Bazinet Vault</title>
+  <script src="/i18n-strings.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/theme.js"></script>
+  <script src="/console-warn.js" defer="defer"></script>
+  <link rel="stylesheet" href="/styles.css"/>
+  <link rel="stylesheet" href="/showcase.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="topbar-brand" aria-label="Bazinet home">
+        <svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8aa2ff"/><stop offset="1" stop-color="#4f6bf0"/></linearGradient></defs><path d="M24 3 6 10v12c0 11 7.7 18.6 18 23 10.3-4.4 18-12 18-23V10L24 3Z" fill="url(#tg)"/><circle cx="24" cy="21" r="5" fill="#0f1320"/><rect x="21.6" y="23" width="4.8" height="8" rx="2.4" fill="#0f1320"/></svg>
+        <span class="brand-text">Bazinet</span>
+      </a>
+      <nav class="topbar-nav">
+        <a href="/vault" class="nav-hide" data-i18n="nav.vault">Vault</a>
+        <a href="/download" class="nav-hide" data-i18n="nav.download">Desktop</a>
+        <a href="/about.html" class="nav-hide" data-i18n="nav.about">About</a>
+        <a href="/support" class="nav-help" data-i18n-attr="aria-label:nav.support,title:nav.support" aria-label="Support" title="Support"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6"/><path d="M12 17h.01"/></svg><span data-i18n="nav.support">Support</span></a>
+        <button class="lang-toggle" type="button" data-lang-toggle>FR</button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light or dark mode" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+        </button>
+        <a href="/account" data-i18n="nav.account">Account</a>
+        <a href="/app" class="topbar-cta" data-i18n="nav.openVault">Open app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+    <section class="hero2 mwrap">
+      <div class="hero2-grid">
+        <div class="hero2-text">
+          <span class="hero-badge" data-i18n="t.06b0fb83">Chrome Web Store · Chrome, Edge &amp; Brave</span>
+          <h1 class="hero-title"><span data-i18n="t.dcdf4373">Fill passwords</span> <span class="grad"><span data-i18n="t.9df02064">without leaving the page</span></span>.</h1>
+          <p class="hero-sub" data-i18n="t.737deb9e">Autofill saved logins, capture new ones as you sign up, and generate strong
+            passwords inline. Your vault key stays in the extension's background worker — pages never
+            see it, and it is wiped when the browser closes.</p>
+          <div class="hero-cta">
+            <span id="ext-primary"><a class="primary" href="https://chromewebstore.google.com/detail/bazinet-vault/cmnicfofobnfjmjajjhgkehalikfghcf" target="_blank" rel="noopener"><span data-i18n="t.d1d195f1">Add to Chrome</span></a></span>
+            <a href="/download" class="ghost-btn" data-i18n="t.9c18e2a4">Get the desktop app</a>
+          </div>
+          <p id="ext-hint" class="dl-hint"><span data-i18n="t.b1b147a5">Chrome, Edge, Brave · Manifest V3 ·</span> <span id="ext-version"><span data-i18n="t.fd3e3d92">loading…</span></span></p>
+          <div class="trust-row">
+            <span class="ti"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg> <span><span data-i18n="t.75f52718">Free</span></span></span>
+            <span class="ti"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg> <span><span data-i18n="t.fdc60c87">Keys never touch the page</span></span></span>
+            <span class="ti"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg> <span><span data-i18n="t.9afad26f">10-minute auto-lock</span></span></span>
+          </div>
+        </div>
+        <div class="hero-photo-wrap">
+          <div class="hero-photo product-mockup" role="img" aria-label="Bazinet Vault extension autofill menu on a sign-in form">
+            <div class="mock-chrome app">
+              <span class="mock-dot tl-red"></span><span class="mock-dot tl-amber"></span><span class="mock-dot tl-green"></span>
+              <span class="mock-title" data-i18n="t.ada2e9e9">Sign in</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-field"><span class="mock-label" data-i18n="t.84add5b2">Email</span><span class="mock-input" data-i18n="t.5224cb6f">john@example.com</span></div>
+              <div class="mock-field"><span class="mock-label" data-i18n="t.8be3c943">Password</span><span class="mock-input" data-i18n="t.7edc6a6c">••••••••••••</span></div>
+              <div class="mock-menu">
+                <div class="mock-menu-head">Bazinet Vault</div>
+                <div class="mock-menu-row"><span class="mock-avatar">E</span><span data-i18n="t.b13bdd17">example.com — john@example.com</span></div>
+                <div class="mock-menu-row muted" data-i18n="t.dab58a4b">Generate a strong password</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section tight mwrap">
+      <div class="sx" aria-labelledby="sx-ext-title">
+        <div class="sx-head">
+          <span class="sx-tag"><span class="sx-pill k-bad"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6z"/></svg><span data-i18n="t.3ebcbc03">Look-alike protection</span></span></span>
+          <h2 id="sx-ext-title" class="sx-h2"><span data-i18n="t.7d80a55f">Fills the real site.</span> <span class="sx-grad" data-i18n="t.14bb227a">Refuses the look-alike.</span></h2>
+          <p class="sx-lead" data-i18n="t.2675f090">A saved login is offered only on the site it was saved for, matched by its real domain. A fake page that looks identical gets nothing, and you’re told why.</p>
+        </div>
+        <div aria-hidden="true">
+          <div class="sx-browser">
+            <div class="sx-bar"><span class="sx-dots"><i></i><i></i><i></i></span><span class="sx-url"><span class="u-good"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>https://<b>github.com</b>/login</span></span><span class="u-bad"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 2 20h20z"/><path d="M12 10v4"/><path d="M12 17h.01"/></svg><span>https://<b>github.com<mark>-login.support</mark></b>/signin</span></span></span></div>
+            <div class="sx-site">
+              <h4 data-i18n="t.b724706c">Sign in to GitHub</h4>
+              <label class="sx-field"><span data-i18n="t.84add5b2">Email</span><span class="sx-input filled"><span>you@example.com</span></span></label>
+              <label class="sx-field"><span data-i18n="t.8be3c943">Password</span><span class="sx-input pw filled"><span>••••••••••••</span></span></label>
+              <div class="sx-suggest"><div class="s-brand"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Bazinet Vault</div><div class="s-row"><span class="s-fav">G</span><span>GitHub · you@example.com</span></div></div>
+              <div class="sx-toast"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span data-i18n="t.a7419509">Filled</span></div>
+              <div class="sx-block"><div class="b-head"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg><span data-i18n="t.4c3e749c">Autofill blocked</span></div><span data-i18n="t.ec80469c">This password was saved for</span> <span class="dom">github.com</span><span data-i18n="t.2886ba74">, but you are on</span> <span class="dom">github.com-login.support</span>.</div>
+            </div>
+          </div>
+          <div class="sx-legend"><span class="sx-pill a k-ok"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>github.com · <span data-i18n="t.c3b0c04f">filled</span></span><span class="sx-pill b k-bad"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg>github.com-login.support · <span data-i18n="t.df88b84d">blocked</span></span></div>
+        </div>
+        <div class="sx-foot">
+          <ul class="sx-list">
+            <li><span class="sx-ico k-ok"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg></span><div><strong data-i18n="t.ebd1b418">Matched by real domain</strong><span data-i18n="t.16154aac">No score, no threshold, no override: a different domain never gets your password.</span></div></li>
+            <li><span class="sx-ico k-acc"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="14" r="4"/><path d="M11 11l9-9"/><path d="M17 5l2 2"/><path d="M15 7l2 2"/></svg></span><div><strong data-i18n="t.90e3a592">Your key stays in the background</strong><span data-i18n="t.804fa9b4">Pages never receive your vault key, only the one login they asked for.</span></div></li>
+            <li><span class="sx-ico k-warn"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></span><div><strong data-i18n="t.c03d23a1">It locks itself</strong><span data-i18n="t.d60aac24">Keys are wiped when the browser closes and after 10 minutes idle.</span></div></li>
+            <li><span class="sx-ico k-teal"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6z"/></svg></span><div><strong data-i18n="t.91353f3f">One destination</strong><span data-i18n="t.98233e83">It talks to bazinet.net and nowhere else.</span></div></li>
+          </ul>
+          <div class="sx-ctas"><a class="primary" href="https://chromewebstore.google.com/detail/bazinet-vault/cmnicfofobnfjmjajjhgkehalikfghcf" target="_blank" rel="noopener"><span data-i18n="t.d1d195f1">Add to Chrome</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section mwrap">
+      <div class="section-head">
+        <h2 class="h2" data-i18n="t.51749277">Add it from the Chrome Web Store</h2>
+        <p class="lead" data-i18n="t.c660ead1">Chrome installs it and keeps it updated. Edge and Brave install from the same listing.</p>
+      </div>
+
+      <ol class="istep-grid">
+        <li class="istep">
+          <span class="istep-n">1</span>
+          <div class="istep-body">
+            <h4><span data-i18n="t.9b3b395b">Add it to Chrome</span></h4>
+            <p data-i18n="t.4e21a124">Use the button above, or open the listing in the store. Chrome asks you to confirm, then it's installed.</p>
+            <div class="istep-mock left" role="img" aria-label="Chrome's confirmation dialog, with an Add extension button">
+              <span class="istep-btn-mock"><span data-i18n="t.11500bcc">Add extension</span></span>
+            </div>
+            <p class="istep-note"><a href="https://chromewebstore.google.com/detail/bazinet-vault/cmnicfofobnfjmjajjhgkehalikfghcf" target="_blank" rel="noopener"><span data-i18n="t.f89b7ebf">View the Chrome Web Store listing →</span></a></p>
+          </div>
+        </li>
+
+        <li class="istep">
+          <span class="istep-n">2</span>
+          <div class="istep-body">
+            <h4><span data-i18n="t.f4956e35">Pin it to your toolbar</span></h4>
+            <p data-i18n="t.880544d7">Click the puzzle-piece icon in Chrome's toolbar and pin Bazinet Vault, so it's one click away on any page.</p>
+          </div>
+        </li>
+
+        <li class="istep">
+          <span class="istep-n">3</span>
+          <div class="istep-body">
+            <h4><span data-i18n="t.ada2e9e9">Sign in</span></h4>
+            <p data-i18n="t.81cbf8b7">Open the extension, sign in with your Bazinet account, and unlock with your master password — it never leaves your device.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="istep-after" data-i18n="t.3c04a552">Chrome asks to read and change data on every site the first time. That's what lets it find a login form wherever one is — what it does with that access is exactly what's below.</div>
+    </section>
+
+    
+    <section class="section tight mwrap">
+      <div class="section-head">
+        <h2 class="h2" data-i18n="t.902b8df7">What it can and can't see</h2>
+        <p class="lead" data-i18n="t.b330cef0">A password manager in your browser is a lot of trust. Here's exactly what
+          this one does.</p>
+      </div>
+      <div class="feat-grid">
+        <div class="feat">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v5c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></span>
+          <h4 data-i18n="t.90e3a592">Your key stays in the background</h4>
+          <p data-i18n="t.8c6465b7">Web pages never receive your vault key — including this one. The part that runs on a
+            page asks for one specific credential and gets only that.</p>
+        </div>
+        <div class="feat">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <h4 data-i18n="t.c03d23a1">It locks itself</h4>
+          <p data-i18n="t.5b4a04ac">Keys are wiped when the browser closes and after 10 minutes idle. Re-opening asks for
+            your master password again.</p>
+        </div>
+        <div class="feat">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><circle cx="12" cy="12" r="9"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg></span>
+          <h4 data-i18n="t.046dacd3">It runs on every site</h4>
+          <p data-i18n="t.a56a7734">Because a login form can be on any site. It looks for password fields and does nothing
+            else. bazinet.net itself is excluded.</p>
+        </div>
+        <div class="feat">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <h4 data-i18n="t.91353f3f">One destination</h4>
+          <p><span data-i18n="t.78702269">It talks to</span> <code><span data-i18n="t.e87d86d2">bazinet.net</span></code> <span data-i18n="t.64c85433">and nowhere else. Argon2id runs on your device;
+            your master password is never sent.</span></p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section tight mwrap">
+      <div class="ext-verify">
+        <div>
+          
+          <h3 data-i18n="t.8d236ba1">Make sure it's ours</h3>
+          <p class="muted" data-i18n="t.69f294fe">Anyone can publish an extension called Bazinet Vault. The id cannot be faked — open chrome://extensions and check that the id shown under Bazinet Vault is exactly this:</p>
+          <div class="istep-copy">
+            <code>cmnicfofobnfjmjajjhgkehalikfghcf</code>
+            <button class="istep-copy-btn" type="button" data-copy="cmnicfofobnfjmjajjhgkehalikfghcf" data-i18n="t.af74f7c5">Copy</button>
+          </div>
+          <p class="muted"><span data-i18n="t.e0a7129a">If it doesn't match, remove it and email</span>
+            <a href="mailto:support@bazinet.net"><span data-i18n="t.cce01e56">support@bazinet.net</span></a>.</p>
+        </div>
+        <div>
+          <h3 data-i18n="t.2b349de5">You can read the code</h3>
+          <p class="muted" data-i18n="t.023328d4">Browser extensions are readable by design — a downloaded extension is a
+            folder of JavaScript, and anyone who installs one can open it. We don't obfuscate ours,
+            for the same reason the desktop app ships its cryptographic code unminified.</p>
+          <p class="muted" data-i18n="t.89edbb64">Hiding it wouldn't make it safer. It would only stop you from checking
+            that it does what this page claims, while a determined attacker reads it anyway.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer mwrap">
+      <nav class="foot-links">
+        <a href="/about.html" data-i18n="nav.about">About</a><span>·</span>
+        <a href="/download" data-i18n="nav.download">Desktop</a><span>·</span>
+        <a href="/vault" data-i18n="nav.vault">Vault</a><span>·</span>
+        <a href="/terms.html" data-i18n="nav.terms">Terms</a><span>·</span>
+        <a href="/privacy.html" data-i18n="nav.privacy">Privacy</a><span>·</span>
+        <a href="/support" data-i18n="nav.support">Support</a><span>·</span>
+        <a href="mailto:support@bazinet.net" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <p class="copyright" data-i18n="t.656456f9">© 2026 Bazinet.net — All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script src="/extension-page.js" defer="defer"></script>
+</body>
+</html>

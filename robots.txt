@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /$
+Allow: /vault
+Allow: /horaire
+Allow: /valorant
+Allow: /blog/
+Allow: /extension
+Allow: /generator
+Allow: /breach
+Allow: /download
+Allow: /about
+Allow: /support
+Allow: /privacy
+Allow: /terms
+Disallow: /app
+Disallow: /account
+Disallow: /admin
+Disallow: /api/
+
+Sitemap: https://bazinet.net/sitemap.xml
+Sitemap: https://bazinet.net/sitemap-blog.xml

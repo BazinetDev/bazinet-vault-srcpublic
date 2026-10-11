@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="Bazinet is an independent software company in Montréal. Horaire CVM is the agenda for Cégep du Vieux Montréal students; Bazinet Vault is a zero-knowledge password manager. One account, encrypted on your device, free to start."/>
+  <meta name="theme-color" content="#0e1220"/>
+  <meta property="og:title" content="Bazinet — Horaire CVM and Bazinet Vault"/>
+  <meta property="og:description" content="Two everyday tools from Montréal, private by design: Horaire CVM, the agenda for Cégep du Vieux Montréal, and Bazinet Vault, a zero-knowledge password manager."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://bazinet.net/"/>
+  <title>Bazinet — Horaire CVM and Bazinet Vault</title>
+  <link rel="canonical" href="https://bazinet.net/"/>
+  <link rel="icon" href="/favicon.svg"/>
+  
+  <script src="/i18n-strings.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/theme.js"></script>
+  <script src="/console-warn.js" defer="defer"></script>
+  <link rel="stylesheet" href="/styles.css"/>
+  <link rel="stylesheet" href="/showcase.css"/>
+  <style>.hub{position:relative;overflow:hidden}.hub::after,.hub::before{content:"";position:absolute;z-index:0;border-radius:50%;filter:blur(90px);pointer-events:none;opacity:.8}.hub::before{width:620px;height:620px;top:-280px;left:-140px;background:radial-gradient(circle,rgba(109,139,255,.34),transparent 70%)}.hub::after{width:560px;height:560px;top:-220px;right:-160px;background:radial-gradient(circle,rgba(72,183,166,.22),transparent 70%)}.hub-inner{position:relative;z-index:1}.hub-hero{text-align:center;padding-top:64px;padding-bottom:4px}.hub-kicker{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);border:1px solid var(--border);border-radius:999px;padding:6px 14px;background:var(--card)}.hub-kicker .d{width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#48b7a6)}.hub-hero h1{font-size:clamp(34px, 5.6vw, 60px);line-height:1.05;letter-spacing:-.02em;margin:20px auto 16px;padding:0 12px;max-width:16em;text-wrap:balance}.hub-hero p{color:var(--muted);font-size:clamp(16px, 1.6vw, 19px);max-width:38em;margin:0 auto;line-height:1.55;text-wrap:pretty}.hub-hero .stats{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 26px;margin-top:22px}.hub-hero .stats .st{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:var(--muted);font-weight:600}.hub-hero .stats .st svg{color:var(--ok);flex:none}.hub-grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}.hub-products{scroll-margin-top:80px}.hub-duo{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:46px 0 0;align-items:stretch}.hub-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}.pcard{--pc:var(--accent);--pc2:var(--accent2);position:relative;display:flex;flex-direction:column;border-radius:18px;background:var(--card);border:1px solid var(--border);overflow:hidden;box-shadow:var(--shadow);transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}.pcard::before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--pc),var(--pc2));opacity:.9}.pcard:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--pc) 55%,transparent);box-shadow:0 26px 60px -12px color-mix(in srgb,var(--pc) 40%,transparent),var(--shadow)}.pcard.horaire-card{--pc:#48b7a6;--pc2:#6d8bff}.pcard.vault{--pc:#6d8bff;--pc2:#8a6dff}.pcard.aim{--pc:#ff4655;--pc2:#ff7a45}.pcard-shot{margin:20px 20px 0;border-radius:12px;overflow:hidden;background:linear-gradient(180deg,#12172a,#0a0d18);border:1px solid rgba(255,255,255,.09);box-shadow:0 12px 30px rgba(0,0,0,.35)}.hub-duo .pcard-shot{height:262px;box-sizing:border-box}.shot-bar{display:flex;align-items:center;gap:6px;padding:9px 12px;background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.06)}.shot-bar i{width:9px;height:9px;border-radius:50%;background:#39405c}.shot-bar .u{margin-left:8px;font-size:10.5px;color:#8a93b5;font-weight:600;letter-spacing:.02em}.aim .shot-bar{background:rgba(255,70,85,.12)}.hzs-grid i{display:flex;flex-direction:column;gap:1px;min-width:0;padding:5px 6px;overflow:hidden;border-radius:5px;font-style:normal;text-align:left;color:#0d1222}.hzs-grid i b{font-size:10.5px;line-height:1.15;font-weight:750;overflow:hidden;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.hzs-grid i span{font-size:8.5px;line-height:1.2;opacity:.78;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-variant-numeric:tabular-nums}.hzs-grid .s1{grid-column:1;grid-row:2/5}.hzs-grid .s2{grid-column:1;grid-row:6/8}.hzs-grid .s3{grid-column:2;grid-row:5/8}.hzs-grid .s4{grid-column:3;grid-row:1/4}.hzs-grid .s5{grid-column:3;grid-row:5/7}.hzs-grid .s6{grid-column:4;grid-row:1/3}.hzs-grid .s7{grid-column:4;grid-row:4/7}.hzs-grid .s8{grid-column:5;grid-row:1/4}.hzs-grid .s9{grid-column:5;grid-row:5/7}.hub-duo .hz-shot{display:flex;flex-direction:column}.hub-duo .hzs-grid{flex:1;height:auto}.vz-shot{display:flex;flex-direction:column}.vz-search{display:flex;align-items:center;gap:7px;margin:10px 12px 0;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);font-size:11px;color:#6c7699}.vz-shot .shot-body{flex:1;display:flex;flex-direction:column}.shot-body{padding:10px 12px 12px;display:grid;gap:7px}.mrow{display:flex;align-items:center;gap:10px;padding:4px 7px;border-radius:9px;background:rgba(255,255,255,.03)}.mfav{width:26px;height:26px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;background:linear-gradient(135deg,#6d8bff,#8a6dff);flex:none}.mfav.gh{background:linear-gradient(135deg,#2b3350,#3a4468)}.mfav.am{background:linear-gradient(135deg,#e0455a,#ff7a45)}.mrow .mtxt{display:flex;flex-direction:column;gap:1px;min-width:0;line-height:1.25}.mrow .mtxt b{font-size:12px;color:#e8ecf7;font-weight:700}.mrow .mtxt s{font-size:11px;color:#6c7699;text-decoration:none;letter-spacing:2px}.mrow .mdots{margin-left:auto;color:#4a537a;font-size:14px;letter-spacing:1px}.coachrow{display:flex;align-items:center;gap:9px;padding:12px 12px 4px}.verdict{font-size:15px;font-weight:900;letter-spacing:.04em;color:#06281f;background:#18e0c8;padding:3px 10px;border-radius:7px;box-shadow:0 0 14px rgba(24,224,200,.45)}.verdict-ms{font-size:12.5px;font-weight:800;color:#aab4cc;margin-left:auto}.cbar{display:flex;height:7px;margin:9px 12px 0;border-radius:5px;overflow:hidden;background:rgba(255,255,255,.08)}.cbar i{height:100%}.cbar .e{width:16%;background:#fc6}.cbar .i{width:74%;background:#18e0c8}.cbar .l{width:10%;background:#ff6b6b}.cstats{display:flex;gap:6px;padding:10px 12px 12px}.cstats span{flex:1;text-align:center;background:rgba(255,255,255,.05);border-radius:7px;padding:6px 3px;font-size:11.5px;font-weight:700;color:#cfd6ec}.cstats span small{display:block;font-size:8.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#6c7699;margin-top:2px}.pcard-body{padding:22px 24px 24px;display:flex;flex-direction:column;gap:14px;flex:1}.pcard-head{display:flex;align-items:center;gap:12px}.pcard-ico{width:44px;height:44px;border-radius:13px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--pc),var(--pc2));flex:none;box-shadow:0 6px 18px -4px color-mix(in srgb,var(--pc) 60%,transparent)}.pcard-name{display:flex;flex-direction:column;gap:2px;min-width:0}.pcard-head h2{font-size:22px;margin:0;letter-spacing:-.01em}.pcard-for{font-size:13px;color:var(--muted)}.pcard-chip{margin-left:auto;align-self:flex-start;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap;color:var(--pc);background:color-mix(in srgb,var(--pc) 14%,transparent);border:1px solid color-mix(in srgb,var(--pc) 30%,transparent);border-radius:999px;padding:4px 10px}.pcard-desc{color:var(--muted);font-size:15px;line-height:1.55;margin:0}.pcard-feats{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;margin:0;padding:0;list-style:none;flex:1;align-content:start}.pcard-feats li{font-size:13px;color:var(--text);display:flex;align-items:center;gap:8px}.pcard-feats li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--pc);flex:none}.pcard-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}.pbtn{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:700;text-decoration:none;border-radius:12px;padding:11px 18px;transition:filter .15s,transform .1s,background .15s}.pbtn.solid{color:#fff;background:linear-gradient(135deg,var(--pc),var(--pc2));box-shadow:0 8px 22px -6px color-mix(in srgb,var(--pc) 55%,transparent)}.pbtn.solid:hover{filter:brightness(1.08)}.pbtn.solid:active{transform:translateY(1px)}.pbtn.line{color:var(--text);border:1px solid var(--border);background:var(--card2)}.pbtn.line:hover{border-color:var(--pc);color:var(--pc)}.hub-pro{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:18px 0 0;padding:16px 20px;border-radius:16px;background:var(--accent-soft);border:1px solid var(--accent-line)}.hub-pro p{margin:0;flex:1 1 380px;font-size:14px;line-height:1.55;color:var(--muted)}.hub-pro p strong{color:var(--text)}.pcard-pro-tag{flex:none;padding:3px 8px;border-radius:6px;font-size:10.5px;font-weight:800;letter-spacing:.06em;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent2))}.hub-pro-price{flex:none;font-size:13.5px;font-weight:700;color:var(--text);white-space:nowrap}.hub-tools{grid-template-columns:repeat(2,1fr);max-width:760px;margin:0 auto}.hub-others{margin:0;border:1px solid var(--border);border-radius:16px;background:var(--card)}.hub-others>summary{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;padding:16px 20px;cursor:pointer;list-style:none}.hub-others>summary::-webkit-details-marker{display:none}.hub-others-label{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted2)}.hub-others-names{font-size:14px;color:var(--muted)}.hub-others-btn{margin-left:auto;display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:999px;font-size:13.5px;font-weight:650;color:var(--text);background:var(--card2);border:1px solid var(--border);transition:border-color .15s,color .15s}.hub-others>summary:hover .hub-others-btn{border-color:var(--accent);color:var(--accent)}.hub-others-btn svg{transition:transform .2s}.hub-others[open] .hub-others-btn svg{transform:rotate(180deg)}.hub-others .when-open,.hub-others[open] .when-closed{display:none}.hub-others[open] .when-open{display:inline}.hub-others>.hub-cards{margin:0;padding:0 16px 16px}.hub-others>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:16px}.pcard.featured{grid-column:1/-1;flex-direction:row}.pcard.featured .pcard-shot{flex:0 0 40%}.pcard.featured .pcard-desc{font-size:14px}.pcard.featured .pcard-feats{flex:0 0 auto}.surf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.surf{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px;text-align:center}.surf .si{width:46px;height:46px;border-radius:12px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}.surf h4{margin:0 0 6px;font-size:15.5px}.surf p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.5}.surf p a{color:var(--accent);font-weight:650;text-decoration:none;white-space:nowrap}.surf p a:hover{text-decoration:underline}.hub-cta{position:relative;overflow:hidden;text-align:center;border-radius:16px;padding:52px 26px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 14%,var(--card)),var(--card));border:1px solid var(--accent-line)}.hub-cta h2{font-size:clamp(24px, 3vw, 32px);margin:0 0 10px}.hub-cta p{color:var(--muted);max-width:34em;margin:0 auto 22px;font-size:16px}.hub-cta .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}@media (min-width:1130px){.hub-products,.hub-valo{padding-left:0;padding-right:0}}@media (max-width:1129px){.hub .section{padding-left:20px;padding-right:20px}}@media (max-width:760px){.hub .section{padding-left:14px;padding-right:14px}}@media (max-width:860px){.hub-duo{grid-template-columns:1fr;gap:18px}}@media (max-width:780px){.hub-cards,.hub-tools{grid-template-columns:1fr}.pcard.featured{flex-direction:column}.pcard.featured .pcard-shot{flex:none}.surf-grid{grid-template-columns:1fr}.hub::after,.hub::before{opacity:.55}.hub-pro-price{white-space:normal}}@media (max-width:420px){.hub-hero{padding-top:40px}.hub-kicker{font-size:10.5px;letter-spacing:.08em;padding:5px 12px}.hub-hero-cta .pbtn{flex:1 1 100%;justify-content:center}.pcard-body{padding:18px 18px 20px}.pcard-shot{margin:16px 16px 0}.hub-duo .pcard-shot{height:230px}.pcard-feats{grid-template-columns:1fr}.pcard-actions .pbtn{flex:1 1 auto;justify-content:center}}</style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="topbar-brand" aria-label="Bazinet home">
+        <svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8aa2ff"/><stop offset="1" stop-color="#4f6bf0"/></linearGradient></defs><path d="M24 3 6 10v12c0 11 7.7 18.6 18 23 10.3-4.4 18-12 18-23V10L24 3Z" fill="url(#tg)"/><path d="M24 15 31 23 24 31 17 23Z" fill="#0f1320"/><path d="M24 15 31 23 24 23Z" fill="#0f1320" opacity=".5"/></svg>
+        <span class="brand-text">Bazinet</span>
+      </a>
+      <nav class="topbar-nav">
+        <a href="/horaire" class="nav-hide" data-i18n="t.fe3af23b">Horaire CVM</a>
+        <a href="/vault" class="nav-hide" data-i18n="nav.vault">Vault</a>
+        <a href="/valorant" class="nav-hide" data-i18n="nav.aim">Aim Trainer</a>
+        <a href="/about.html" class="nav-hide" data-i18n="nav.about">About</a>
+        <a href="/blog/" class="nav-hide" data-blog data-i18n="nav.blog">Blog</a>
+        <a href="/support" class="nav-help" data-i18n-attr="aria-label:nav.support,title:nav.support" aria-label="Support" title="Support"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6"/><path d="M12 17h.01"/></svg><span data-i18n="nav.support">Support</span></a>
+        <button class="lang-toggle" type="button" data-lang-toggle>FR</button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light or dark mode" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+        </button>
+        <a href="/download" class="nav-hide" data-i18n="nav.download">Download</a>
+        <a href="/extension" class="nav-hide" data-i18n="nav.extension">Extension</a>
+        <a href="/account" class="topbar-cta" data-i18n="nav.account">Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hub">
+    <div class="hub-inner">
+      
+      <section class="hub-hero mwrap">
+        <span class="hub-kicker"><span class="d" aria-hidden="true"></span><span data-i18n="t.55aead11">Independent software, made in Montréal</span></span>
+        <h1><span data-i18n="t.bd4cc1d3">Everyday tools,</span> <span class="hub-grad" data-i18n="t.6a9193da">private by design.</span></h1>
+        <p data-i18n="t.788070fb">Bazinet makes Horaire CVM, the agenda for Cégep du Vieux Montréal students, and Bazinet Vault, a zero-knowledge password manager. One account for both, encrypted on your device, free to start.</p>
+        <div class="stats">
+          <span class="st"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg> <span data-i18n="t.00fb203c">Free to start</span></span>
+          <span class="st"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg> <span data-i18n="t.7f5a6512">End-to-end encrypted</span></span>
+          <span class="st"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg> <span data-i18n="t.3952e048">One account for everything</span></span>
+        </div>
+        <div class="hub-hero-cta">
+          <a href="#products" class="pbtn solid" data-i18n="t.fb449e23">See the products ↓</a>
+          <a href="/account?signup" class="pbtn line" data-i18n="t.65e5b31c">Create a free account</a>
+        </div>
+      </section>
+
+      
+      <section class="mwrap hub-products" id="products" aria-label="Products" data-i18n-attr="aria-label:t.fe0a091f">
+        <div class="hub-duo">
+          
+          <article class="pcard horaire-card">
+            <div class="pcard-shot hz-shot" aria-hidden="true">
+              <div class="hzs-head"><span>lun</span><span>mar</span><span>mer</span><span>jeu</span><span>ven</span></div>
+              
+              <div class="hzs-grid" lang="fr">
+                <i class="a s1"><b>Dessin et modélisation</b><span>09:00 – 12:00</span><span>B-4.18</span></i>
+                <i class="b s2"><b>Chimie générale</b><span>13:00 – 15:00</span><span>A-3.40</span></i>
+                <i class="c s3"><b>Écriture et littérature</b><span>12:00 – 15:00</span><span>C-2.04</span></i>
+                <i class="d s4"><b>Calcul différentiel</b><span>08:00 – 11:00</span><span>A-6.25</span></i>
+                <i class="b s5"><b>Chimie générale</b><span>12:00 – 14:00</span><span>Labo A-3.12</span></i>
+                <i class="e s6"><b>Physique mécanique</b><span>08:00 – 10:00</span><span>B-2.20</span></i>
+                <i class="e s7"><b>Physique mécanique</b><span>11:00 – 14:00</span><span>Labo B-2.24</span></i>
+                <i class="f s8"><b>Philosophie et rationalité</b><span>08:00 – 11:00</span><span>D-1.10</span></i>
+                <i class="b s9"><b>Chimie générale</b><span>12:00 – 14:00</span><span>A-3.40</span></i>
+              </div>
+              <span class="sx-now"></span>
+              <span class="sx-land l1"><i></i>Omnivox · TP 2</span>
+              <span class="sx-land l2"><i></i>Mio · 1 message</span>
+              <span class="sx-land l3"><i></i>Examen · 14 oct.</span>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-head">
+                <span class="pcard-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+                <div class="pcard-name"><h2>Horaire CVM</h2><span class="pcard-for" data-i18n="t.06e56f23">The agenda for Cégep du Vieux Montréal</span></div>
+                <span class="pcard-chip" data-i18n="t.75f52718">Free</span>
+              </div>
+              <p class="pcard-desc" data-i18n="t.0505b32e">Import your schedule from Omnivox and get your week, your day and everything that’s due, with homework and exams beside the classes they belong to.</p>
+              <ul class="pcard-feats">
+                <li data-i18n="t.7574d746">Reads the Omnivox PDF</li><li data-i18n="t.1534fc00">Homework and exams</li>
+                <li data-i18n="t.f12d91b7">Workload view</li><li data-i18n="t.59c179cc">Export to your calendar</li>
+              </ul>
+              <div class="pcard-actions">
+                <a href="/horaire" class="pbtn solid" data-i18n="t.902328f8">Open Horaire →</a>
+                <a href="/horaire-desktop/latest/mac" class="pbtn line" data-i18n="t.752ca6a6">Download for Mac</a>
+              </div>
+            </div>
+          </article>
+
+          
+          <article class="pcard vault">
+            <div class="pcard-shot vz-shot" aria-hidden="true">
+              <div class="shot-bar"><i></i><i></i><i></i><span class="u">bazinet.net/app</span></div>
+              <div class="vz-search"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4-4"/></svg><span data-i18n="t.0c8e2d0c">Search your vault</span></div>
+              <div class="shot-body">
+                <div class="mrow"><span class="mfav">G</span><div class="mtxt"><b>Google</b><s>••••••••••</s></div><span class="mdots">⋯</span></div>
+                <div class="mrow"><span class="mfav gh">Gh</span><div class="mtxt"><b>GitHub</b><s>••••••••</s></div><span class="mdots">⋯</span></div>
+                <div class="mrow"><span class="mfav am">Am</span><div class="mtxt"><b>Amazon</b><s>••••••••••••</s></div><span class="mdots">⋯</span></div>
+                <div class="sx-card-note"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-i18n="t.7e60db9b">Encrypted on this device</span></div>
+              </div>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-head">
+                <span class="pcard-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+                <div class="pcard-name"><h2>Bazinet Vault</h2><span class="pcard-for" data-i18n="t.73e6053e">The zero-knowledge password manager</span></div>
+                <span class="pcard-chip" data-i18n="t.75f52718">Free</span>
+              </div>
+              <p class="pcard-desc" data-i18n="t.3d5c11cb">Every password is encrypted on your own device with Argon2id and AES-256 before it’s saved. The server only ever holds ciphertext it can’t read.</p>
+              <ul class="pcard-feats">
+                <li data-i18n="t.6d3cdab5">Passwords &amp; secure notes</li><li data-i18n="t.c928b735">Breach scanning</li>
+                <li data-i18n="t.f9f1a974">Browser extension</li><li data-i18n="t.7dc6ae96">Mac desktop app</li>
+              </ul>
+              <div class="pcard-actions">
+                <a href="/app" class="pbtn solid" data-i18n="t.936cfc14">Open Vault →</a>
+                <a href="/vault" class="pbtn line" data-i18n="t.824d76b1">Learn more</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+        <div class="hub-pro">
+          <span class="pcard-pro-tag">PRO</span>
+          <p><strong data-i18n="t.490ae772">One Bazinet Pro plan covers both.</strong> <span data-i18n="t.48b57cb4">Omnivox sign-in, Mio, cancelled classes, dates from your plans de cours and live sharing in Horaire; more devices, file attachments, email aliases and emergency access in the Vault.</span></p>
+          <span class="hub-pro-price" data-i18n="t.1ba70b59">$2.99/month · 7 days free</span>
+        </div>
+      </section>
+
+      
+      <section class="section mwrap">
+        <div class="section-head">
+          <span class="eyebrow" data-i18n="t.e1c24cd9">No download, runs in your browser</span>
+          <h2 class="h2" data-i18n="t.23ba214d">Free quick tools</h2>
+          <p class="lead" data-i18n="t.22bc982b">Small utilities you can use right now — the heavy lifting happens on your device,
+            so nothing sensitive is ever sent to us.</p>
+        </div>
+        <div class="feat-grid hub-tools">
+          <a class="feat" href="/generator.html">
+            <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m14.5 14.5 5 5M9 8v4M7 10h4"/></svg></span>
+            <h4><span><span data-i18n="t.7f2030d9">Password generator</span></span></h4><p><span><span data-i18n="t.8460ae0e">Create a long, random password with your browser's secure RNG. Choose length and character sets. Nothing leaves your device.</span></span></p>
+          </a>
+          <a class="feat" href="/breach.html">
+            <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v5c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6z"/><path d="M12 8v4M12 15.5v.5"/></svg></span>
+            <h4><span><span data-i18n="t.bd9773dd">Breach check</span></span></h4><p><span><span data-i18n="t.3844a087">See if a password has leaked in a known breach — privately, using k-anonymity. Only the first five hash characters ever leave your browser.</span></span></p>
+          </a>
+        </div>
+      </section>
+
+      
+      <section class="mwrap hub-valo">
+        <details class="hub-others">
+          <summary>
+            <span class="hub-others-label" data-i18n="t.c52fa923">For Valorant players</span>
+            <span class="hub-others-names">Bazinet Aim Trainer</span>
+            <span class="hub-others-btn"><span class="when-closed" data-i18n="t.c510d6c0">See more</span><span class="when-open" data-i18n="t.47c77bf0">See less</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+          </summary>
+          <div class="hub-cards">
+          
+          <article class="pcard aim featured">
+            <div class="pcard-shot" aria-hidden="true">
+              <div class="shot-bar"><i></i><i></i><i></i><span class="u" data-i18n="t.b0d74f1b">Fracture · 6 — 4</span></div>
+              <div class="coachrow"><span class="verdict" data-i18n="t.9fb9dcd8">IDEAL</span><span class="verdict-ms" data-i18n="t.3e4dbc27">128 ms</span></div>
+              <div class="cbar"><i class="e"></i><i class="i"></i><i class="l"></i><i class="sx-cmark"></i></div>
+              <div class="cstats"><span><span data-i18n="t.77947d93">78%</span><small><span><span data-i18n="t.5a94729c">on time</span></span></small></span><span><span data-i18n="t.9ffd1ae1">241</span><small><span><span data-i18n="t.d673d941">ACS</span></span></small></span><span><span data-i18n="t.8ab0d45b">28%</span><small><span data-i18n="t.d17bb082">HS</span></small></span></div>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-head">
+                <span class="pcard-ico"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 1v3M12 20v3M1 12h3M20 12h3"/></svg></span>
+                <div class="pcard-name"><h2>Bazinet Aim Trainer</h2></div>
+                <span class="pcard-chip" data-i18n="t.25e90cad">Free · Windows</span>
+              </div>
+              <p class="pcard-desc" data-i18n="t.22c5a196">A Valorant companion that coaches your counter-strafe timing in real time,
+                analyzes your real matches, and shows a live in-game overlay — without ever touching the game.</p>
+              <ul class="pcard-feats">
+                <li data-i18n="t.d3e633f2">Counter-strafe coach</li><li data-i18n="t.04270ed6">Riot API match stats</li>
+                <li data-i18n="t.bd8b61d1">Live agent overlay</li><li data-i18n="t.45bba479">Sensitivity advisor</li>
+              </ul>
+              <div class="pcard-actions">
+                <a href="/valorant/download" class="pbtn solid" data-i18n="t.24b6d5ec">Download →</a>
+                <a href="/valorant" class="pbtn line" data-i18n="t.824d76b1">Learn more</a>
+              </div>
+            </div>
+          </article>
+          </div>
+        </details>
+      </section>
+
+      
+      <section class="section mwrap">
+        <div class="section-head">
+          <span class="eyebrow" data-i18n="t.e7196b23">The principles</span>
+          <h2 class="h2" data-i18n="t.e2c04cdf">Built the way tools should be</h2>
+        </div>
+        <div class="feat-grid">
+          <div class="feat">
+            <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5z"/><path d="m8.5 12 2.5 2.5 4.5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <h4 data-i18n="t.282ef67b">Private by default</h4><p data-i18n="t.62d2bd7f">Your agenda and your vault are encrypted on your device, so we can’t read either one. No product sells or profiles your data.</p>
+          </div>
+          <div class="feat">
+            <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+            <h4 data-i18n="t.bd7907e4">Actually free</h4><p data-i18n="t.324d3ff6">No credit card, no trial that expires into a paywall. The core of every tool is free — an optional Pro plan just funds the servers.</p>
+          </div>
+          <div class="feat">
+            <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7V5a1 1 0 0 1 1-1h2M17 4h2a1 1 0 0 1 1 1v2M20 17v2a1 1 0 0 1-1 1h-2M7 20H5a1 1 0 0 1-1-1v-2"/><circle cx="12" cy="12" r="3"/></svg></span>
+            <h4 data-i18n="t.d8ba636e">Focused, not bloated</h4><p data-i18n="t.a1a8e418">Each tool does one job well instead of a hundred things poorly. No upsell popups, no dark patterns, no nagging.</p>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section tight mwrap">
+        <div class="section-head">
+          <span class="eyebrow" data-i18n="t.6dd016a6">Sign in once</span>
+          <h2 class="h2" data-i18n="t.50b8c332">One Bazinet account, everywhere</h2>
+          <p class="lead" data-i18n="t.71bc336a">The same account signs you in to Horaire, the vault and the apps — with a password, 2FA, a passkey or Google. Sign-in always happens on bazinet.net.</p>
+        </div>
+        <div class="surf-grid">
+          <div class="surf">
+            <span class="si"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 20h8M12 17v3"/></svg></span>
+            <h4 data-i18n="t.829ea2ed">On the web</h4><p data-i18n="t.81a8b204">Horaire and the vault run right in your browser — nothing to install.</p>
+          </div>
+          <div class="surf">
+            <span class="si"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v11H4z"/><path d="M9 20h6M12 16v4"/></svg></span>
+            <h4 data-i18n="t.4c853e93">On your Mac</h4><p><span data-i18n="t.ed5c43a8">Native apps for Apple Silicon:</span> <a href="/horaire-desktop/latest/mac">Horaire CVM</a> · <a href="/desktop/latest/mac" download>Bazinet Vault</a></p>
+          </div>
+          <div class="surf">
+            <span class="si"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M8 10l-2 2 2 2M14 10l2 2-2 2"/></svg></span>
+            <h4 data-i18n="t.f9f1a974">Browser extension</h4><p data-i18n="t.594725a6">Autofill and save logins as you browse, keys held only in memory.</p>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section tight mwrap">
+        <div class="techstrip">
+          <div class="tlabel" data-i18n="t.7d20d248">Built on technology trusted around the world</div>
+          <div class="trow">
+            <span class="tlogo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 15h13a3 3 0 0 0 0-6 4.5 4.5 0 0 0-8.6-1.5A3.5 3.5 0 0 0 4 15"/></svg> Cloudflare</span>
+            <span class="tlogo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9z"/></svg> <span><span data-i18n="t.d22ce133">Web Crypto API</span></span></span>
+            <span class="tlogo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5z"/></svg> <span><span data-i18n="t.fb0d5f0d">AES-256-GCM</span></span></span>
+            <span class="tlogo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Argon2id</span>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section mwrap">
+        <div class="section-head">
+          <span class="eyebrow" data-i18n="t.79fc372d">Good to know</span>
+          <h2 class="h2" data-i18n="t.9a1fc173">Questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary data-i18n="t.c245b715">Who makes Bazinet?</summary>
+            <p><span><span data-i18n="t.f6570a58">It's an independent project — small tools built and maintained by one person, not a company chasing
+              your data. Questions or bugs go straight to</span></span> <a href="mailto:support@bazinet.net"><span data-i18n="t.cce01e56">support@bazinet.net</span></a>.</p>
+          </details>
+          <details>
+            <summary data-i18n="t.326f1da0">Is Bazinet really free?</summary>
+            <p data-i18n="t.885334b0">Yes. Horaire, the vault, the quick tools and the Aim Trainer are free to start, with no credit card. An optional Pro plan ($2.99/month, 7 days free) adds extras to Horaire and the vault and helps cover server costs.</p>
+          </details>
+          <details>
+            <summary data-i18n="t.1db0a2c3">Can you see my schedule?</summary>
+            <p data-i18n="t.0c6b16eb">No. Horaire encrypts your agenda on your device before it is saved to your account, with a key only your password can produce. The schedule PDF you import is read in your browser and never uploaded.</p>
+          </details>
+          <details>
+            <summary data-i18n="t.dba6a081">Can you read my passwords or vault data?</summary>
+            <p><span><span data-i18n="t.d933efb9">No. The vault is</span></span> <strong><span><span data-i18n="t.9c6e694c">zero-knowledge</span></span></strong><span><span data-i18n="t.e6310f3d">: your data is encrypted in your browser with a key
+              derived from your master password (Argon2id → AES-256-GCM) before anything is sent. We only ever
+              store ciphertext, so we have no technical way to read it — even if compelled to.</span></span></p>
+          </details>
+          <details>
+            <summary data-i18n="t.4bdfbff1">Is Horaire made by the Cégep?</summary>
+            <p data-i18n="t.f5f2e31b">No. Horaire CVM is an independent app built for Cégep du Vieux Montréal students. It isn't affiliated with or endorsed by the Cégep, Omnivox or Skytech — always check Omnivox for anything that matters, like an exam date.</p>
+          </details>
+          <details>
+            <summary data-i18n="t.addcfaa7">Do I need an account to use the tools?</summary>
+            <p data-i18n="t.dd7c5c96">The password generator and the breach check need nothing at all. Horaire, the vault and the Aim Trainer use one free Bazinet account (email, Google or a passkey) that works on the website, the browser extension and the desktop apps.</p>
+          </details>
+          <details>
+            <summary data-i18n="t.c9936be6">Will the Aim Trainer get my Valorant account banned?</summary>
+            <p><span><span data-i18n="t.2f95eb8d">The core app is read-only — it uses the official Riot API and reads your own running client, exactly
+              like public rank-trackers, and never touches the game process. It ships with one clearly-labelled
+              optional "Snap Tap" toggle that</span></span> <strong><span data-i18n="t.b47f363e">is</span></strong> <span><span data-i18n="t.1605f32b">against Valorant's rules and is</span></span> <strong><span><span data-i18n="t.cced5b53">off by
+              default</span></span></strong><span><span data-i18n="t.ff089fde">; don't enable that one for Valorant. Everything else is safe by design.</span></span></p>
+          </details>
+        </div>
+      </section>
+
+      
+      <section class="section tight mwrap">
+        <div class="hub-cta">
+          <h2 data-i18n="t.65292c6f">Pick a tool and go.</h2>
+          <p data-i18n="t.334c115f">Everything's free and takes a minute to start. Your data stays yours.</p>
+          <div class="row">
+            <a href="/horaire" class="primary" data-i18n="t.1f15a43c">Open Horaire</a>
+            <a href="/app" class="primary" data-i18n="t.bdd5aa14">Open the Vault</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer mwrap">
+        <nav class="foot-links">
+          <a href="/horaire" data-i18n="t.fe3af23b">Horaire CVM</a><span>·</span>
+          <a href="/vault" data-i18n="nav.vault">Vault</a><span>·</span>
+          <a href="/valorant" data-i18n="nav.aim">Aim Trainer</a><span>·</span>
+          <a href="/generator.html" data-i18n="nav.generator">Generator</a><span>·</span>
+          <a href="/breach.html" data-i18n="nav.breach">Breach check</a><span>·</span>
+          <a href="/blog/" data-blog data-i18n="nav.blog">Blog</a><span data-blog>·</span>
+          <a href="/about.html" data-i18n="nav.about">About</a><span>·</span>
+          <a href="/extension" data-i18n="nav.extension">Extension</a><span>·</span>
+          <a href="/terms.html" data-i18n="nav.terms">Terms</a><span>·</span>
+          <a href="/privacy.html" data-i18n="nav.privacy">Privacy</a><span>·</span>
+          <a href="/support" data-i18n="nav.support">Support</a><span>·</span>
+          <a href="mailto:support@bazinet.net" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <p class="copyright" data-i18n="t.1d0a6ee1">© 2026 Bazinet.net</p>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>

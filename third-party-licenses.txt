@@ -1,0 +1,11 @@
+Third-party software served by bazinet.net
+==========================================
+
+hash-wasm-argon2.js — hash-wasm
+hash-wasm (https://www.npmjs.com/package/hash-wasm)
+(c) Dani Biro
+@license MIT
+Licensed under the MIT License: https://opensource.org/licenses/MIT
+
+vendor/pdfjs/ — PDF.js, Copyright Mozilla Foundation
+Licensed under the Apache License, Version 2.0. Full text: /vendor/pdfjs/LICENSE

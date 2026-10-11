@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/svg+xml" href="/favicon-vault.svg">
+  <link rel="apple-touch-icon" href="/favicon-vault.svg">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="robots" content="noindex"/>
+  <meta name="theme-color" content="#0f1320"/>
+  <title>Bazinet Vault</title>
+  <link rel="icon" href="/favicon-vault.svg"/>
+  <script src="/i18n-strings.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/theme.js"></script>
+  <script src="/console-warn.js" defer="defer"></script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+  <button class="lang-toggle app-lang-toggle" type="button" data-lang-toggle>FR</button>
+  <button class="theme-toggle app-theme-toggle" type="button" data-theme-toggle aria-label="Toggle light or dark mode" title="Toggle theme">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+  </button>
+  <main class="wrap">
+    <h1 class="brand">
+      <a href="/vault" class="brand-link" aria-label="Bazinet Vault home">
+        <svg class="logo" viewBox="0 0 48 48" width="34" height="34" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#7c97ff"/>
+              <stop offset="1" stop-color="#4f6bf0"/>
+            </linearGradient>
+          </defs>
+          <path d="M24 3 6 10v12c0 11 7.7 18.6 18 23 10.3-4.4 18-12 18-23V10L24 3Z" fill="url(#lg)"/>
+          <circle cx="24" cy="21" r="5" fill="#0f1320"/>
+          <rect x="21.6" y="23" width="4.8" height="8" rx="2.4" fill="#0f1320"/>
+        </svg>
+        <span class="brand-text"><span data-i18n="t.5b2c4813">Bazinet&nbsp;Vault</span></span>
+      </a>
+    </h1>
+
+    
+    <section id="screen-setup" class="card screen unlock-card hidden">
+      <div class="lock-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="42" height="42" fill="none" stroke="url(#lg)" stroke-width="1.6"><rect x="5" y="10" width="14" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+      </div>
+      <h2 class="screen-title" data-i18n="setup.title">Create your master password</h2>
+      
+      <p class="muted"><span data-i18n="t.15272cc0">This encrypts your vault on your device. It is</span> <strong><span data-i18n="t.e56772b8">separate from your account
+        password</span></strong> <span data-i18n="t.cffa50a3">and</span> <strong><span data-i18n="t.82c0bc1c">cannot be recovered</span></strong> <span data-i18n="t.d244b7f5">— there is no reset, no support
+        override, and no copy anywhere else. If you forget it, the vault is gone.</span></p>
+      <p class="muted small"><span data-i18n="t.4335d6ec">It also has to resist</span> <strong><span data-i18n="t.de3ad803">offline guessing</span></strong><span data-i18n="t.f6a88090">: the attack that
+        matters is someone who has stolen a copy of the encrypted database and can guess for as long
+        as they like, without us being able to slow them down. Length and unpredictability are what
+        defeat that. A generated passphrase is the easy way to get both.</span></p>
+
+      
+      <div class="pp-box">
+        <div class="pp-row">
+          <button id="btn-gen-passphrase" class="primary small" type="button" data-i18n="setup.generate">Generate a passphrase</button>
+          <label class="pp-words"><span data-i18n="t.d26d55c7">Words</span>
+            <select id="pp-word-count" aria-label="Number of words">
+              <option value="5">5</option>
+              <option value="6" selected="selected">6</option>
+              <option value="7">7</option>
+            </select>
+          </label>
+        </div>
+        <div id="pp-output" class="pp-output hidden">
+          <code id="pp-value" class="pp-value"></code>
+          <div class="pp-meta">
+            <span id="pp-bits" class="pp-bits"></span>
+            <button id="btn-pp-use" class="ghost small" type="button" data-i18n="t.b80ded59">Use this</button>
+            <button id="btn-pp-copy" class="ghost small" type="button" data-i18n="t.af74f7c5">Copy</button>
+          </div>
+          <p class="hint small" data-i18n="t.82a6ee5b">Write it down and keep it somewhere safe until you have it memorised.
+            Losing it means losing the vault.</p>
+        </div>
+      </div>
+
+      <form id="panel-setup" autocomplete="off" style="">
+        <label><span data-i18n="t.33acdbd6">Master password</span><input id="setup-password" type="password" autocomplete="new-password" placeholder="A passphrase, or something long and unpredictable" required/></label>
+        <div class="meter" id="setup-strength"><div class="bar"></div><span class="label"></span><p class="meter-detail" role="status"></p></div>
+        <label><span data-i18n="t.6884bdb5">Confirm master password</span><input id="setup-password2" type="password" autocomplete="new-password" required/></label>
+        <label class="chk agree-row"><input id="setup-ack" type="checkbox" required/>
+          <span><span data-i18n="t.17745d4c">I understand that if I forget my master password, my vault data is</span> <strong><span data-i18n="t.d7837cad">permanently lost</span></strong>.</span></label>
+        <button id="btn-setup" class="primary" type="submit" style="" data-i18n="setup.create">Create vault</button>
+        <p id="setup-error" class="error" role="alert"></p>
+      </form>
+      <a class="link back-link" href="/account" data-i18n="t.f3895993">← Back to account</a>
+    </section>
+
+    
+    <section id="screen-unlock" class="card screen unlock-card hidden">
+      <div class="lock-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="42" height="42" fill="none" stroke="url(#lg)" stroke-width="1.6"><rect x="5" y="10" width="14" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.4" fill="currentColor" stroke="none"/></svg>
+      </div>
+      <h2 class="screen-title" data-i18n="vault.unlockTitle">Unlock your vault</h2>
+      <p class="muted"><span data-i18n="t.a02107c3">Signed in as</span> <strong id="unlock-email"></strong></p>
+      <form id="panel-unlock" autocomplete="off" style="">
+        <label><span data-i18n="t.33acdbd6">Master password</span><input id="unlock-password" type="password" autocomplete="current-password" required/></label>
+        <button id="btn-unlock" class="primary" type="submit" style="" data-i18n="vault.unlock">Unlock</button>
+        <p id="unlock-error" class="error" role="alert"></p>
+      </form>
+      
+      <button id="btn-use-recovery" class="link hidden" type="button" data-i18n="vault.useRecovery">Use a recovery key instead</button>
+      <button id="btn-unlock-logout" class="link" type="button" data-i18n="btn.signOut">Sign out</button>
+    </section>
+
+    
+    <section id="screen-recovery" class="card screen hidden">
+      <h2 class="screen-title" data-i18n="rk.useTitle">Use your recovery key</h2>
+      <p class="muted small" data-i18n="t.e9c0d442">
+        Enter the recovery key you saved when you set it up. You will choose a new
+        master password straight afterwards.
+      </p>
+      <form id="panel-recovery" autocomplete="off" style="">
+        <label><span data-i18n="t.2e524a4f">Recovery key</span>
+          <input id="recovery-code" type="text" autocomplete="off" spellcheck="false" placeholder="XXXX-XXXX-XXXX-XXXX-…" required/>
+        </label>
+        <div id="recovery-newpw" class="hidden">
+          <label><span data-i18n="t.a935c72d">New master password</span>
+            <input id="recovery-pw" type="password" autocomplete="new-password"/>
+          </label>
+          <label><span data-i18n="t.9ab39cff">Confirm new master password</span>
+            <input id="recovery-pw2" type="password" autocomplete="new-password"/>
+          </label>
+        </div>
+        <button id="btn-recovery-go" class="primary" type="submit" style="" data-i18n="btn.continue">Continue</button>
+        <p id="recovery-error" class="error" role="alert"></p>
+      </form>
+      <button id="btn-recovery-cancel" class="link" type="button" data-i18n="rk.backToMaster">Back to master password</button>
+    </section>
+
+    
+    <section id="screen-mission" class="card screen hidden">
+      <div id="mission-banner" class="mission-banner">
+        <span class="mission-dot"></span>
+        <strong data-i18n="t.8c788c92">Mission session active</strong>
+        <span id="mission-countdown" class="mission-count"></span>
+      </div>
+      <p class="muted small" id="mission-sub" data-i18n="t.1e92c74d">Only the entries you curated are available. The rest of your vault stays sealed.</p>
+      <ul id="mission-items" class="items"></ul>
+      <button id="btn-mission-exit" class="ghost" type="button" style="" data-i18n="t.bb597d44">End mission &amp; lock</button>
+    </section>
+
+    
+    <section id="screen-vault" class="card screen hidden">
+      <header class="vault-head">
+        <span id="vault-email" class="muted ellipsis"></span>
+        <span class="spacer"></span>
+        <button id="btn-add" class="primary small" type="button">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          <span data-i18n="t.8c6a8ea2">Add entry</span>
+        </button>
+        <button id="btn-settings" class="icon-btn" type="button" aria-label="Vault settings">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="3.2"/>
+            <path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.03 1.56V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 8.9 19.3a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.7 15a1.7 1.7 0 0 0-1.56-1.03H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.7 8.9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 3.6h.06A1.7 1.7 0 0 0 10.1 2V3a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15.1 4.7a1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.3 9.1v.06A1.7 1.7 0 0 0 21 10.2h-1a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.51 1z"/>
+          </svg>
+        </button>
+        <div class="menu-wrap">
+          <button id="btn-menu" class="icon-btn" type="button" aria-label="Menu" aria-haspopup="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="5" cy="12" r="2" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="currentColor"/><circle cx="19" cy="12" r="2" fill="currentColor"/></svg>
+          </button>
+          
+          <div id="menu" class="menu hidden" role="menu">
+            <button id="mi-health" class="menu-item" type="button" role="menuitem">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l2.5 6 4-13 2.5 7h5"/></svg>
+              <span data-i18n="t.f402ac0a">Password health</span>
+            </button>
+            <button id="mi-lock" class="menu-item" type="button" role="menuitem">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7.5a4 4 0 0 1 8 0V11"/></svg>
+              <span data-i18n="t.20e099ad">Lock vault</span>
+            </button>
+            <div class="menu-sep"></div>
+            <a href="/support" class="menu-item" role="menuitem">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6"/><path d="M12 17h.01"/></svg>
+              <span data-i18n="t.2ef172ce">Help and support</span>
+            </a>
+            <a href="/account" class="menu-item" role="menuitem">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8.5" r="3.5"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/></svg>
+              <span data-i18n="t.82cf8a5f">Account settings</span>
+            </a>
+            <button id="mi-signout" class="menu-item danger-text" type="button" role="menuitem">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 17l5-5-5-5M20 12H9M12 20H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6"/></svg>
+              <span data-i18n="t.dc1649a1">Sign out</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="toolbar">
+        <div class="search-wrap">
+          <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input id="search" class="search" type="search" placeholder="Search entries…" autocomplete="off" data-i18n-attr="placeholder:vault.search"/>
+        </div>
+        <span id="items-count" class="muted count"></span>
+      </div>
+
+      
+      <div id="ext-notice" class="ext-notice hidden" role="note">
+        <span class="ext-notice-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h6V5a2 2 0 1 1 4 0v2h6v6h-2a2 2 0 1 0 0 4h2v2H4z"/></svg>
+        </span>
+        <span class="ext-notice-txt">
+          <strong data-i18n="ext.notice.title">Fill passwords without opening this tab.</strong>
+          <span data-i18n="ext.notice.body">The browser extension autofills saved logins, captures new ones, and generates passwords inline — your vault key never leaves its background worker.</span>
+        </span>
+        <a class="ext-notice-cta" href="/extension" data-i18n="ext.notice.cta">Get the extension</a>
+        <button id="ext-notice-x" class="ext-notice-x" type="button" aria-label="Dismiss">✕</button>
+      </div>
+
+      <ul id="items" class="items"></ul>
+      <div id="items-empty" class="empty hidden">
+        <svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">
+          <rect x="14" y="26" width="36" height="28" rx="6" fill="none" stroke="currentColor" stroke-width="3"/>
+          <path d="M22 26v-6a10 10 0 0 1 20 0v6" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="32" cy="38" r="3.2" fill="currentColor"/>
+          <rect x="30.4" y="40" width="3.2" height="7" rx="1.6" fill="currentColor"/>
+        </svg>
+        <p data-i18n="vault.empty">Your vault is empty.</p>
+        <p class="muted"><span data-i18n="t.79cbc5eb">Click</span> <strong><span data-i18n="t.8c6a8ea2">Add entry</span></strong> <span data-i18n="t.64c9abd6">to store your first password.</span></p>
+      </div>
+
+      <input id="file-import" type="file" accept="application/json,.json" class="hidden"/>
+      <input id="file-restore" type="file" accept="application/json,.json" class="hidden"/>
+      <input id="file-import-csv" type="file" accept=".csv,text/csv" class="hidden"/>
+    </section>
+
+    
+    <p id="boot" class="boot" role="status"><span data-i18n="t.33ce4174">Loading…</span></p>
+
+    <footer class="site-footer">
+      <nav class="foot-links">
+        <a href="/vault" data-i18n="t.70f8bb9a">Home</a><span>·</span>
+        <a href="/terms.html" target="_blank" rel="noopener" data-i18n="nav.terms">Terms</a><span>·</span>
+        <a href="/privacy.html" target="_blank" rel="noopener" data-i18n="nav.privacy">Privacy</a><span>·</span>
+        <a href="/support" data-i18n="nav.support">Support</a><span>·</span>
+        <a href="mailto:support@bazinet.net" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <p class="copyright" data-i18n="t.1d0a6ee1">© 2026 Bazinet.net</p>
+    </footer>
+  </main>
+
+  
+  <div id="entry-overlay" class="overlay hidden">
+    <form id="panel-entry" class="card dialog" autocomplete="off">
+      <h2 id="entry-title">Add entry</h2>
+      <div class="tabs entry-type" id="entry-type-tabs">
+        <button class="tab active" type="button" data-type="login" data-i18n="t.4e5a2893">Login</button>
+        <button class="tab" type="button" data-type="note"><span data-i18n="t.2541d1c5">Secure note</span> <span class="plan-badge pro">PRO</span></button>
+        <button class="tab" type="button" data-type="identity" data-i18n="t.7e5a975b">Identity</button>
+      </div>
+      <input id="item-name" type="text" placeholder="Name" maxlength="30" required/>
+      <div id="login-fields">
+      <input id="item-username" type="text" placeholder="Username" maxlength="200" autocomplete="off"/>
+      <input id="item-email" type="email" placeholder="email@example.com" maxlength="200" autocomplete="off"/>
+      <label><span data-i18n="t.8be3c943">Password</span>
+        <div class="pw-row">
+          <input id="item-password" type="password" placeholder="Password" maxlength="128"/>
+          <button id="btn-toggle-pass" class="ghost" type="button" aria-label="Show password" data-i18n="t.d97d1ee3">Show</button>
+          <button id="btn-gen" class="ghost" type="button" data-i18n="t.fc45f9b7">Generate</button>
+        </div>
+      </label>
+      <div class="meter" id="entry-strength" aria-hidden="true"><div class="bar"></div><span class="label"></span></div>
+      <details class="gen">
+        <summary data-i18n="t.2b52f37d">Generator options</summary>
+        <div class="gen-body">
+          <label class="range-row"><span data-i18n="t.47460bf7">Length:</span> <span id="gen-len-val"><span data-i18n="t.91032ad7">20</span></span>
+            <input id="gen-len" type="range" min="8" max="64" value="20"/>
+          </label>
+          <div class="gen-opts">
+            <label class="chk"><input id="gen-lower" type="checkbox" checked="checked"/> <span data-i18n="t.6b6c2ccd">a-z</span></label>
+            <label class="chk"><input id="gen-upper" type="checkbox" checked="checked"/> <span data-i18n="t.50d6325b">A-Z</span></label>
+            <label class="chk"><input id="gen-digits" type="checkbox" checked="checked"/> <span data-i18n="t.96ca02e2">0-9</span></label>
+            <label class="chk"><input id="gen-symbols" type="checkbox" checked="checked"/> <span data-i18n="t.e2bb1028">!@#</span></label>
+          </div>
+        </div>
+      </details>
+      <input id="item-url" type="text" placeholder="https://example.com" maxlength="200"/>
+      <textarea id="item-notes" placeholder="Notes (optional)" rows="2" maxlength="300"></textarea>
+
+      
+      <div id="totp-block">
+        <label id="totp-field-wrap"><span data-i18n="t.91df4eec">Authenticator (2FA)</span> <span class="plan-badge pro">PRO</span>
+          <input id="item-totp" type="text" placeholder="otpauth://… link or secret key" maxlength="512" autocomplete="off"/>
+        </label>
+        <p class="hint" id="totp-hint"><span data-i18n="t.e463767f">Paste the site's 2FA setup key (or its</span> <code><span data-i18n="t.e44ca220">otpauth://</span></code> <span data-i18n="t.33f57cd7">link) and Bazinet will generate the 6-digit codes for you — on this device only.</span></p>
+        <div id="totp-upsell" class="totp-upsell hidden">
+          <strong><span data-i18n="t.acc9f23c">⭐ Built-in authenticator</span></strong> <span data-i18n="t.467f2c20">stores your sites' 2FA codes right next to their logins.
+          It's a Pro feature —</span> <a href="/account" target="_blank" rel="noopener" data-i18n="t.d071448e">upgrade to unlock →</a>
+        </div>
+      </div>
+      </div>
+
+      <div id="identity-fields" class="hidden">
+        <p class="field-group-label" data-i18n="t.40f07323">Personal</p>
+        <input id="id-full-name" type="text" placeholder="Full name" maxlength="100" autocomplete="off"/>
+        <input id="id-email" type="email" placeholder="Email" maxlength="200" autocomplete="off"/>
+        <input id="id-phone" type="tel" placeholder="Phone" maxlength="30" autocomplete="off"/>
+        <input id="id-company" type="text" placeholder="Company" maxlength="100" autocomplete="off"/>
+        <input id="id-dob" type="text" placeholder="Date of birth (e.g. 1990-01-15)" maxlength="20" autocomplete="off"/>
+        <p class="field-group-label" data-i18n="t.d70f93df">Address</p>
+        <input id="id-address1" type="text" placeholder="Street address" maxlength="200" autocomplete="off"/>
+        <input id="id-address2" type="text" placeholder="Apt, suite, unit" maxlength="100" autocomplete="off"/>
+        <div class="row-2">
+          <input id="id-city" type="text" placeholder="City" maxlength="100" autocomplete="off"/>
+          <input id="id-state" type="text" placeholder="State / Province" maxlength="100" autocomplete="off"/>
+        </div>
+        <div class="row-2">
+          <input id="id-zip" type="text" placeholder="ZIP / Postal" maxlength="20" autocomplete="off"/>
+          <input id="id-country" type="text" placeholder="Country" maxlength="100" autocomplete="off"/>
+        </div>
+        <textarea id="id-notes" placeholder="Notes (optional)" rows="2" maxlength="300" autocomplete="off"></textarea>
+      </div>
+
+      <textarea id="item-note-body" class="hidden" placeholder="Write your secure note — encrypted on your device." rows="7" maxlength="10000"></textarea>
+
+      <label class="chk fav-row"><input id="item-fav" type="checkbox"/> <span data-i18n="t.a8e7d773">Mark as favorite</span></label>
+
+      
+      <div id="attach-section" class="hidden">
+        <div class="attach-head"><span data-i18n="t.6771ade6">Attachments</span> <span class="plan-badge pro">PRO</span></div>
+        <ul id="attach-list" class="attach-list"></ul>
+        <p id="attach-newhint" class="hint hidden" data-i18n="t.cdd48dde">Save this entry first, then reopen it to attach files.</p>
+        <div id="attach-add" class="attach-add">
+          <input id="attach-file" type="file" class="hidden"/>
+          <button id="btn-attach" class="ghost" type="button" data-i18n="t.56e22caa">📎 Attach a file</button>
+          <span class="hint" data-i18n="t.4c956c45">Up to 512&nbsp;KB each · encrypted on your device.</span>
+        </div>
+        <div id="attach-upsell" class="totp-upsell hidden">
+          <strong><span data-i18n="t.14b5768c">📎 Encrypted attachments</span></strong> <span data-i18n="t.23b29c01">are a Pro feature —</span> <a href="/account" target="_blank" rel="noopener" data-i18n="t.555fd411">upgrade →</a>
+        </div>
+        <p id="attach-error" class="error" role="alert"></p>
+      </div>
+      <div class="row">
+        <button id="btn-entry-save" class="primary" type="submit">Add to vault</button>
+        <button id="btn-entry-cancel" class="link" type="button" data-i18n="t.77dfd213">Cancel</button>
+      </div>
+      <p id="entry-error" class="error" role="alert"></p>
+    </form>
+  </div>
+
+  
+  <div id="emergency-overlay" class="overlay hidden">
+    <div class="card dialog em-dialog">
+      <h2 data-i18n="set.emergency">Emergency access</h2>
+      <p class="muted small" data-i18n="t.e3f39f7f">Let a trusted person reach your vault if you can't — only after a waiting period you control, during which you can decline.</p>
+
+      <h3 class="sec-sub"><span data-i18n="t.a8cd5e50">Your trusted contacts</span> <span class="plan-badge pro">PRO</span></h3>
+      <ul id="em-grantor-list" class="em-list"></ul>
+      <form id="em-add-form" class="em-add hidden">
+        <input id="em-email" type="email" placeholder="contact@email.com" autocomplete="off"/>
+        <select id="em-wait" aria-label="Waiting period">
+          <option value="1" data-i18n="t.2d8a6f7c">1 day</option><option value="3" data-i18n="t.09ad9df4">3 days</option>
+          <option value="7" selected="selected" data-i18n="t.0a8dd6ad">7 days</option><option value="14" data-i18n="t.176e595a">14 days</option><option value="30" data-i18n="t.7d4278a8">30 days</option>
+        </select>
+        <button class="primary small" type="submit" data-i18n="t.b136609f">Invite</button>
+      </form>
+      <p id="em-add-error" class="error" role="alert"></p>
+      <p id="em-add-upsell" class="totp-upsell hidden"><strong><span data-i18n="t.db284546">🛟 Emergency access</span></strong> <span data-i18n="t.82ac333f">is a Pro feature —</span> <a href="/account" target="_blank" rel="noopener"><span data-i18n="t.d071448e">upgrade to unlock →</span></a></p>
+
+      <h3 class="sec-sub" data-i18n="t.055dc933">People who trust you</h3>
+      <ul id="em-grantee-list" class="em-list"></ul>
+
+      <div class="row" style=""><button id="btn-em-close" class="link" type="button" data-i18n="t.bbfa773e">Close</button></div>
+    </div>
+  </div>
+
+  
+  <div id="em-view-overlay" class="overlay hidden">
+    <div class="card dialog">
+      <h2 id="em-view-title">Emergency vault</h2>
+      <p class="muted small" data-i18n="t.0d36487d">Read-only access through emergency recovery. Handle these credentials with care.</p>
+      <ul id="em-view-list" class="items"></ul>
+      <div class="row" style=""><button id="btn-em-view-close" class="link" type="button" data-i18n="t.bbfa773e">Close</button></div>
+    </div>
+  </div>
+
+  
+  <div id="mission-explainer-overlay" class="overlay hidden">
+    <div class="card dialog mission-explainer">
+      <div class="mx-badge">🛰️</div>
+      <h2 data-i18n="set.mission">Mission Mode</h2>
+      <p class="mx-lede" data-i18n="t.1a2d089f">For the moments that matter most — a border crossing, a protest, a source meeting.</p>
+      <ul class="mx-points">
+        <li><span><span data-i18n="t.ee3533a6">🎯</span></span><div><b><span data-i18n="t.5b48c95f">Only what you need.</span></b> <span data-i18n="t.3c287b7e">Curate a small kit of entries. Everything else in your vault stays invisible — and undisclosed.</span></div></li>
+        <li><span><span data-i18n="t.1aef7966">🔑</span></span><div><b><span data-i18n="t.e38bf64d">A separate passcode.</span></b> <span data-i18n="t.6a505ce5">Open a mission without your master password, so you never reveal a full vault even exists.</span></div></li>
+        <li><span><span data-i18n="t.0cfe5f56">⏱️</span></span><div><b><span data-i18n="t.810750ce">It expires.</span></b> <span data-i18n="t.10931058">Set a time limit; the session — and its data on our servers — self-destructs when it's up.</span></div></li>
+        <li><span><span data-i18n="t.1b220ac9">📍</span></span><div><b><span data-i18n="t.854f9e39">Tied to a place (optional).</span></b> <span data-i18n="t.82582b11">Lock a mission to a location, so it only opens where you meant it to.</span></div></li>
+      </ul>
+      <p class="mx-fine" data-i18n="t.4bbd74a7">Built for journalists, activists, and anyone who travels with secrets. Zero-knowledge throughout — encrypted on your device.</p>
+      <div class="row"><button id="mx-got-it" class="primary" type="button" style="" data-i18n="t.45f777a5">Set up a mission</button></div>
+      <button id="mx-close" class="link" type="button" data-i18n="t.e4571490">Not now</button>
+    </div>
+  </div>
+
+  
+  <div id="mission-manage-overlay" class="overlay hidden">
+    <div class="card dialog mission-dialog">
+      <header class="mw-head">
+        <h2 data-i18n="t.a1bee30e">🛰️ Mission Mode</h2>
+        <p class="muted small"><span data-i18n="t.b614e7aa">A small, separately-locked copy of a few entries, that expires on its
+          own. Opening it never reveals the rest of your vault.</span>
+          <button id="mx-help" class="link" type="button"><span data-i18n="t.1dd6a17c">How it works</span></button></p>
+      </header>
+
+      
+      <section id="mw-home">
+        <h3 class="sec-sub" data-i18n="t.a8a720f5">Your missions</h3>
+        <ul id="mission-list" class="em-list"></ul>
+        <button id="btn-mission-new" class="primary" type="button" style="" data-i18n="t.6d4c95c6">
+          + New mission
+        </button>
+      </section>
+
+      
+      <form id="mission-create-form" class="hidden" autocomplete="off">
+        <ol class="mw-steps" aria-label="Progress">
+          <li class="mw-dot is-active" data-step="1"><span>1</span><span data-i18n="t.f056d0d5">Entries</span></li>
+          <li class="mw-dot" data-step="2"><span>2</span><span data-i18n="t.61a0ae3b">Limits</span></li>
+          <li class="mw-dot" data-step="3"><span>3</span><span data-i18n="t.cd1334ca">Passcode</span></li>
+        </ol>
+
+        
+        <section class="mw-step" data-step="1">
+          <h3 class="mw-title" data-i18n="t.2286ef71">Which entries go in?</h3>
+          <p class="hint" data-i18n="t.f4afa57c">Pick only what you would need while the mission is open. Everything you
+            leave out stays sealed in your vault.</p>
+          <div class="mw-pick">
+            <input id="mn-filter" class="mw-filter" type="search" placeholder="Filter entries…" autocomplete="off"/>
+            <button id="mn-none" class="ghost small" type="button" data-i18n="t.719ea396">Clear</button>
+          </div>
+          <div id="mn-items" class="mn-items"></div>
+          <p class="mw-count"><span id="mn-count">0</span> <span data-i18n="t.835f3b50">selected</span></p>
+        </section>
+
+        
+        <section class="mw-step hidden" data-step="2">
+          <h3 class="mw-title" data-i18n="t.897e331c">How long should it last?</h3>
+          <p class="hint" data-i18n="t.52e5c079">The server deletes the mission when the time is up — not the app. Choose
+            the shortest window you can live with.</p>
+          <label><span data-i18n="t.0d1fcc38">Time limit</span>
+            <select id="mn-duration">
+              <option value="3600000"><span data-i18n="t.f030c3d6">1 hour</span></option>
+              <option value="14400000"><span data-i18n="t.7b47150d">4 hours</span></option>
+              <option value="28800000" selected="selected"><span data-i18n="t.191800b7">8 hours</span></option>
+              <option value="86400000"><span data-i18n="t.cb4780f8">24 hours</span></option>
+              <option value="259200000"><span data-i18n="t.09ad9df4">3 days</span></option>
+            </select>
+          </label>
+          <label class="chk fav-row" style="">
+            <input id="mn-geo" type="checkbox"/>
+            <span><span data-i18n="t.c277873e">Only open near where I am now</span> <span id="mn-geo-status" class="hint"></span></span>
+          </label>
+          <p class="hint" data-i18n="t.5c00462d">Advisory only: the check runs on your device, so treat it as a
+            convenience, not a lock.</p>
+        </section>
+
+        
+        <section class="mw-step hidden" data-step="3">
+          <h3 class="mw-title" data-i18n="t.8c07785f">Set a mission passcode</h3>
+          <p class="hint"><span data-i18n="t.9df0e620">This opens the mission — and</span> <strong><span data-i18n="t.f8969a18">only</span></strong> <span data-i18n="t.13888bab">the mission. Make it
+            different from your master password: that is the entire point.</span></p>
+          <label><span data-i18n="t.709a2322">Name</span> <span class="hint" data-i18n="t.6e49505f">— keep it unremarkable</span>
+            <input id="mn-name" type="text" maxlength="60" placeholder="e.g. Trip"/></label>
+          <label><span data-i18n="t.c502deec">Mission passcode</span><input id="mn-pass" type="password" autocomplete="new-password" placeholder="At least 6 characters"/></label>
+          <label><span data-i18n="t.798a2a45">Confirm passcode</span><input id="mn-pass2" type="password" autocomplete="new-password"/></label>
+          <p id="mw-summary" class="mw-summary"></p>
+        </section>
+
+        <p id="mission-create-error" class="error" role="alert"></p>
+        <div class="mw-nav">
+          <button id="mw-back" class="ghost" type="button" data-i18n="t.b52b36b7">Back</button>
+          <button id="mw-next" class="primary" type="button" data-i18n="t.bc981983">Next</button>
+          <button id="btn-mission-create" class="primary hidden" type="submit" data-i18n="t.c5baa93d">Create mission</button>
+        </div>
+      </form>
+
+      <div class="row" style=""><button id="btn-mission-manage-close" class="link" type="button" data-i18n="t.bbfa773e">Close</button></div>
+    </div>
+  </div>
+
+  
+  <div id="mission-open-overlay" class="overlay hidden">
+    <div class="card dialog">
+      <h2 data-i18n="t.a48b16c4">🛰️ Open a Mission</h2>
+      <div id="mission-open-list" class="em-list"></div>
+      <form id="mission-open-form" class="panel hidden" autocomplete="off" style="">
+        <p class="muted small" id="mission-open-name"></p>
+        <label><span data-i18n="t.c502deec">Mission passcode</span><input id="mo-pass" type="password" autocomplete="off" placeholder="Mission passcode"/></label>
+        <button id="btn-mission-open" class="primary" type="submit" data-i18n="t.0f75577f">Open mission</button>
+        <p id="mission-open-error" class="error" role="alert"></p>
+      </form>
+      <div class="row" style=""><button id="btn-mission-open-close" class="link" type="button" data-i18n="t.77dfd213">Cancel</button></div>
+    </div>
+  </div>
+
+  
+  <div id="cp-overlay" class="overlay hidden">
+    <form id="panel-cp" class="card dialog" autocomplete="off">
+      <h2 data-i18n="set.changeMaster">Change master password</h2>
+      <label><span data-i18n="t.78246fe5">Current master password</span><input id="cp-old" type="password" autocomplete="current-password" required/></label>
+      <label><span data-i18n="t.a935c72d">New master password</span><input id="cp-new" type="password" autocomplete="new-password" required/></label>
+      <div class="meter" id="cp-strength"><div class="bar"></div><span class="label"></span><p class="meter-detail" role="status"></p></div>
+      <label><span data-i18n="t.f85039fd">Confirm new password</span><input id="cp-new2" type="password" autocomplete="new-password" required/></label>
+      <div class="row">
+        <button id="btn-cp-save" class="primary" type="submit" data-i18n="t.efc007a3">Save</button>
+        <button id="btn-cp-cancel" class="link" type="button" data-i18n="t.77dfd213">Cancel</button>
+      </div>
+      <p id="cp-error" class="error" role="alert"></p>
+    </form>
+  </div>
+
+  
+  <div id="confirm-overlay" class="overlay hidden">
+    <div class="card dialog confirm">
+      <h2 id="confirm-title">Please confirm</h2>
+      <p id="confirm-text" class="muted"></p>
+      <div class="row">
+        <button id="btn-confirm-yes" class="primary" type="button" data-i18n="t.04a21221">Confirm</button>
+        <button id="btn-confirm-no" class="link" type="button" data-i18n="t.77dfd213">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <div id="health-overlay" class="overlay hidden">
+    <div class="card dialog wide">
+      <h2 data-i18n="menu.health">Password health</h2>
+      <p id="health-headline" class="muted"></p>
+      <p class="hint" data-i18n="t.9286da75">Checked on this device only — nothing about your passwords is sent anywhere.</p>
+      <div id="health-body" class="health-body"></div>
+      <div class="row">
+        <button id="health-close" class="primary" type="button" data-i18n="t.e9b450d1">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="bk-overlay" class="overlay hidden">
+    <div class="card dialog">
+      <h2 id="bk-title">Encrypted backup</h2>
+      <p id="bk-lede" class="muted"></p>
+      <label class="field">
+        <span data-i18n="t.a68524bf">Backup passphrase</span>
+        <input id="bk-pass" type="password" autocomplete="new-password"/>
+      </label>
+      <div id="bk-meter" class="meter"><div class="bar"></div><div class="label"></div></div>
+      <label id="bk-confirm-row" class="field">
+        <span data-i18n="t.ebaac0cf">Confirm passphrase</span>
+        <input id="bk-pass2" type="password" autocomplete="new-password"/>
+      </label>
+      <p id="bk-error" class="error"></p>
+      <div class="row">
+        <button id="bk-go" class="primary" type="button">Create backup</button>
+        <button id="bk-cancel" class="link" type="button" data-i18n="t.77dfd213">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="settings-overlay" class="overlay hidden">
+    <div class="card dialog settings-dialog" role="dialog" aria-modal="true" aria-labelledby="set-title">
+      <header class="set-head">
+        <h2 id="set-title" data-i18n="set.title">Vault settings</h2>
+        <button id="set-close" class="icon-btn" type="button" aria-label="Close settings">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </header>
+
+      <div class="set-body">
+        <nav class="set-nav" role="tablist" aria-label="Settings sections">
+          <button class="set-tab is-active" type="button" role="tab" data-pane="pane-security">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5.5c0 4.2-2.9 7.9-7 9.5-4.1-1.6-7-5.3-7-9.5V6z"/></svg>
+            <span data-i18n="set.security">Security</span>
+          </button>
+          <button class="set-tab" type="button" role="tab" data-pane="pane-backup">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 16V4M8 8l4-4 4 4"/><path d="M4 16v2.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V16"/></svg>
+            <span data-i18n="set.backup">Backup &amp; transfer</span>
+          </button>
+          <button class="set-tab" type="button" role="tab" data-pane="pane-prefs">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7h14M5 12h14M5 17h14"/><circle cx="9" cy="7" r="2" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="2" fill="currentColor" stroke="none"/><circle cx="8" cy="17" r="2" fill="currentColor" stroke="none"/></svg>
+            <span data-i18n="set.prefs">Preferences</span>
+          </button>
+          <button class="set-tab set-tab-danger" type="button" role="tab" data-pane="pane-danger">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4l9 16H3z"/><path d="M12 10v4"/><circle cx="12" cy="17" r=".9" fill="currentColor" stroke="none"/></svg>
+            <span data-i18n="set.danger">Danger zone</span>
+          </button>
+        </nav>
+
+        <div class="set-panes">
+          
+          <section id="pane-security" class="set-pane">
+            <p class="set-lede" data-i18n="t.35e2b18e">How this vault is locked, and who else can ever open it.</p>
+
+            <button id="mi-recovery" class="set-row" type="button">
+              <span class="set-txt">
+                <span class="set-title" data-i18n="set.recovery">Recovery key</span>
+                <span class="set-desc"><span data-i18n="t.0e185755">A second way in, held only by you, if the master password is ever forgotten.</span></span>
+              </span>
+              <span id="set-recovery-state" class="set-meta"></span>
+            </button>
+
+            <button id="mi-change" class="set-row" type="button">
+              <span class="set-txt">
+                <span class="set-title" data-i18n="set.changeMaster">Change master password</span>
+                <span class="set-desc"><span data-i18n="t.b5671c7c">Re-locks the vault under a new password. Entries are not re-encrypted.</span></span>
+              </span>
+            </button>
+
+            <button id="mi-rotate" class="set-row" type="button">
+              <span class="set-txt">
+                <span class="set-title" data-i18n="set.rotate">Rotate vault key</span>
+                <span class="set-desc"><span data-i18n="t.17031821">Replaces the encryption key itself and re-encrypts every entry. Use after a key you no longer trust.</span></span>
+              </span>
+            </button>
+
+            <button id="mi-emergency" class="set-row" type="button">
+              <span class="set-txt">
+                <span class="set-title" data-i18n="set.emergency">Emergency access</span>
+                <span class="set-desc"><span data-i18n="t.5d3d2b0a">Let a trusted contact reach this vault after a waiting period you set.</span></span>
+              </span>
+            </button>
+
+            <button id="mi-mission" class="set-row" type="button">
+              <span class="set-txt">
+                <span class="set-title" data-i18n="set.mission">Mission Mode</span>
+                <span class="set-desc"><span data-i18n="t.8ac18353">A temporary, separately-locked subset of entries for travel or higher-risk situations.</span></span>
+              </span>
+            </button>
+
+            
+            <button id="mi-aliases" class="set-row" type="button">
+              <span class="set-txt">
+                <span class="set-title" data-i18n="set.aliases"><span data-i18n="t.2f17e5fe">Email aliases</span> <span class="plan-badge pro">PRO</span></span>
+                <span class="set-desc" data-i18n="set.aliasesDesc">Hand out a masked address instead of your real inbox, so a leak never exposes it.</span>
+              </span>
+            </button>
+          </section>
+
+          
+          <section id="pane-backup" class="set-pane hidden">
+            <p class="set-lede" data-i18n="t.ccd351cc">Getting data out of this vault, and back into it.</p>
+
+            <button id="mi-backup" class="set-row set-row-good" type="button">
+              <span class="set-txt">
+                <span class="set-title" data-i18n="set.encBackup">Encrypted backup</span>
+                <span class="set-desc"><span data-i18n="t.2c74789f">A file only your backup passphrase can open. This is the safe way to keep a copy.</span></span>
+              </span>
+              <span class="set-meta set-meta-good" data-i18n="set.recommended">Recommended</span>
+            </button>
+
+            <button id="mi-restore" class="set-row" type="button">
+              <span class="set-txt">
+                <span class="set-title" data-i18n="set.restore">Restore from backup</span>
+                <span class="set-desc"><span data-i18n="t.b5efcb0a">Read entries back in from an encrypted backup file.</span></span>
+              </span>
+            </button>
+
+            <div class="set-divide"><span data-i18n="set.otherManagers">Other password managers</span></div>
+
+            <button id="mi-import" class="set-row" type="button">
+              <span class="set-txt">
+                <span class="set-title" data-i18n="set.importJson">Import from JSON</span>
+                <span class="set-desc"><span data-i18n="t.8f29a3b6">Bring in entries from a plaintext JSON export.</span></span>
+              </span>
+            </button>
+
+            <button id="mi-import-csv" class="set-row" type="button">
+              <span class="set-txt">
+                <span class="set-title" data-i18n="set.importCsv">Import from NordPass CSV</span>
+                <span class="set-desc"><span data-i18n="t.75368390">Bring in entries from a NordPass CSV export.</span></span>
+              </span>
+            </button>
+
+            <div class="set-divide"><span data-i18n="set.unencrypted">Unencrypted</span></div>
+
+            <button id="mi-export" class="set-row set-row-warn" type="button">
+              <span class="set-txt">
+                <span class="set-title" data-i18n="set.exportPlain">Export as plaintext (JSON)</span>
+                <span class="set-desc"><span data-i18n="t.46bc0e1d">Every password in readable text. Anyone who opens the file can read it — prefer an encrypted backup.</span></span>
+              </span>
+              <span class="set-meta set-meta-warn" data-i18n="set.unprotected">Unprotected</span>
+            </button>
+          </section>
+
+          
+          <section id="pane-prefs" class="set-pane hidden">
+            <p class="set-lede" data-i18n="t.7832942b">Day-to-day behaviour.</p>
+
+            <button id="mi-autolock" class="set-row" type="button">
+              <span class="set-txt">
+                <span class="set-title" data-i18n="set.autolock">Auto-lock</span>
+                <span class="set-desc"><span data-i18n="t.49dcb7f7">How long the vault stays open without activity. Click to cycle.</span></span>
+              </span>
+              <span id="autolock-value" class="set-meta"><span data-i18n="t.b45ebd80">5 min</span></span>
+            </button>
+
+          </section>
+
+          
+          <section id="pane-danger" class="set-pane hidden">
+            <p class="set-lede" data-i18n="t.6f804a1f">
+              These are separated because they are hard or impossible to undo. Nothing
+              here deletes vault data from the server.
+            </p>
+
+            <button id="mi-panic" class="set-row set-row-danger" type="button">
+              <span class="set-txt">
+                <span class="set-title" data-i18n="set.wipe">Wipe this device</span>
+                <span class="set-desc"><span data-i18n="t.2daa1a44">Clears everything stored on this device and signs you out everywhere. Your vault is not deleted — it reopens with your master password.</span></span>
+              </span>
+            </button>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="rk-overlay" class="overlay hidden">
+    <div class="card dialog">
+      <h2 id="rk-title" data-i18n="set.recovery">Recovery key</h2>
+      <p id="rk-lede" class="muted"></p>
+
+      
+      <div id="rk-intro" class="hidden">
+        <p class="hint" data-i18n="t.c1e2ad92">
+          A recovery key is a second way into this vault, held only by you. It opens the
+          same vault your master password does, so keep it somewhere a thief would not
+          look — printed and filed, not in a note on the same laptop.
+        </p>
+      </div>
+
+      
+      <div id="rk-reveal" class="hidden">
+        <p class="hint"><strong><span data-i18n="t.776ae93e">This is shown once.</span></strong> <span data-i18n="t.67f1b7bf">Write it down or download it before you close this.</span></p>
+        <pre id="rk-code" class="rk-code" aria-label="Your recovery key"></pre>
+        <label class="field rk-ack">
+          <input id="rk-ack" type="checkbox"/>
+          <span data-i18n="t.1def0aa6">I have saved this recovery key somewhere safe.</span>
+        </label>
+      </div>
+
+      <p id="rk-error" class="error"></p>
+      <div class="row">
+        <button id="rk-create" class="primary" type="button" data-i18n="t.59fe709c">Create a recovery key</button>
+        <button id="rk-download" class="hidden" type="button" data-i18n="nav.download">Download</button>
+        <button id="rk-done" class="primary hidden" type="button" disabled="disabled" data-i18n="t.e9b450d1">Done</button>
+        <button id="rk-remove" class="danger hidden" type="button" data-i18n="t.e963907d">Remove</button>
+        <button id="rk-cancel" class="link" type="button" data-i18n="t.bbfa773e">Close</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="keyverify-overlay" class="overlay hidden" role="alertdialog" aria-modal="true" aria-labelledby="kv-title">
+    <div class="card dialog kv-dialog">
+      <h2 id="kv-title">Verify this contact's key</h2>
+      <p class="muted small">
+        <span data-i18n="t.3d925ada">You are about to encrypt your vault key so that</span> <strong id="kv-contact"></strong> <span data-i18n="t.b45f3f1a">can open it.
+        Confirm with them —</span> <em><span data-i18n="t.993e174d">by phone, in person, or any channel that is not this app</span></em> <span data-i18n="t.9617fc6d">—
+        that they see the same safety phrase in their own account.</span>
+      </p>
+
+      <div class="kv-fp">
+        <div class="kv-label" data-i18n="t.46dd93c1">Safety phrase</div>
+        <div id="kv-words" class="kv-words"></div>
+        <div class="kv-label" data-i18n="t.ce052306">SHA-256 of their public key</div>
+        <div id="kv-hex" class="kv-hex mono"></div>
+      </div>
+
+      <div id="kv-changed" class="kv-changed hidden">
+        <strong data-i18n="t.47a3040d">This is not the key you verified before.</strong>
+        <p class="small" data-i18n="t.ee92fca2">Previously verified fingerprint:</p>
+        <div id="kv-old-hex" class="kv-hex mono"></div>
+        <p class="small" data-i18n="t.fcffad35">A changed key is what a compromised server substituting its own key looks like.
+          It can also happen legitimately if your contact reset their vault. Do not continue until they
+          confirm the new phrase over a channel you trust.</p>
+      </div>
+
+      <label class="check kv-check">
+        <input id="kv-understand" type="checkbox"/>
+        <span data-i18n="t.6d4cd586">I have confirmed this safety phrase with this person through a channel other than this app.</span>
+      </label>
+      <p class="hint small" data-i18n="t.1d0c1bd0">Verification is only as strong as the channel you use. Confirming by email,
+        to an address this app told you about, proves nothing.</p>
+
+      <div class="row">
+        <button id="kv-confirm" class="primary" type="button" disabled="disabled" data-i18n="t.e76e23a0">I verified this — add the contact</button>
+        <button id="kv-cancel" class="link" type="button" data-i18n="t.77dfd213">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="integrity-overlay" class="overlay hidden" role="alertdialog" aria-modal="true" aria-labelledby="integrity-title">
+    <div class="card dialog integrity-dialog">
+      <h2 id="integrity-title">Some entries could not be read</h2>
+      <p id="integrity-lede"></p>
+      <div id="integrity-body" class="integ-body"></div>
+      <label class="check integ-check">
+        <input id="integrity-understand" type="checkbox"/>
+        <span id="integrity-ack-label" data-i18n="t.a47928e5">I understand that these entries could not be verified and are not shown with their contents.</span>
+      </label>
+      <div class="row">
+        <button id="integrity-ack" class="primary" type="button" disabled="disabled" data-i18n="t.6ad9039e">Continue to my vault</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="aliases-overlay" class="overlay hidden">
+    <div class="card dialog alias-dialog">
+      <h2><span data-i18n="t.2f17e5fe">Email aliases</span> <span class="plan-badge pro">PRO</span></h2>
+      
+      <p class="muted small"><span data-i18n="t.a86a40d4">Each alias is a masked</span> <code id="alias-pattern"><span data-i18n="t.d392751d">vault-…</span></code> <span data-i18n="t.ea69a1a4">address that forwards to your real email. Keep your real email private when signing up to services.</span> <strong><span data-i18n="t.522d680c">Don't reply</span></strong> <span data-i18n="t.f9de503c">to forwarded mail — a reply is sent from your real address and would reveal it.</span></p>
+      <div id="alias-pro-gate" class="totp-upsell hidden">
+        <strong><span data-i18n="t.af71b9c9">📧 Email aliases</span></strong> <span data-i18n="t.23b29c01">are a Pro feature —</span> <a href="/account" target="_blank" rel="noopener" data-i18n="t.d071448e">upgrade to unlock →</a>
+      </div>
+      <div id="alias-main" class="hidden">
+        <div id="alias-fwd-status" class="hidden"></div>
+        <ul id="alias-list" class="alias-list"></ul>
+        <p id="alias-empty" class="muted small hidden" data-i18n="t.1367fa1e">No aliases yet. Create one below.</p>
+        <form id="alias-create-form" class="alias-create">
+          <input id="alias-label" type="text" placeholder="Label (optional, e.g. Shopping)" maxlength="60"/>
+          <button class="primary small" type="submit" data-i18n="t.14186c33">Create alias</button>
+        </form>
+        <p id="alias-error" class="error" role="alert"></p>
+        <p class="muted small hint"><span data-i18n="t.1840bd95">Up to 10 aliases per account. Mail sent to an alias is forwarded to</span> <strong id="alias-real-email"></strong></p>
+      </div>
+      <div class="row" style="">
+        <button id="btn-aliases-close" class="link" type="button" data-i18n="t.bbfa773e">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  
+  <script src="/dom.js"></script>
+  <script src="/integrity.js"></script>
+  <script src="/wordlist.js"></script>
+  <script src="/keypin.js"></script>
+  <script src="/manifest.js"></script>
+  <script src="/backup.js"></script>
+  <script src="/rotation.js"></script>
+  <script src="/recovery.js"></script>
+  <script src="/health.js"></script>
+  <script src="/importers.js"></script>
+  <script src="/pwstrength.js"></script>
+  <script src="/hash-wasm-argon2.js"></script>
+  <script src="/crypto.js"></script>
+  <script src="/totp.js"></script>
+  <script src="/api.js"></script>
+  <script src="/emergency-api.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

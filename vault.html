@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="Bazinet Vault is a free, zero-knowledge password manager. Your passwords are encrypted on your own device with Argon2id + AES-256 — we only ever store data we cannot read."/>
+  <meta name="theme-color" content="#0f1320"/>
+  <meta property="og:title" content="Bazinet Vault — Free Zero-Knowledge Password Manager"/>
+  <meta property="og:description" content="Encrypt your passwords on your device with Argon2id + AES-256. We store only ciphertext we can never read. Free, no credit card."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://bazinet.net/vault"/>
+  <title>Bazinet Vault — Free Zero-Knowledge Password Manager</title>
+  <link rel="canonical" href="https://bazinet.net/vault"/>
+  <link rel="icon" href="/favicon-vault.svg"/>
+  
+  <script src="/i18n-strings.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/theme.js"></script>
+  <script src="/console-warn.js" defer="defer"></script>
+  <link rel="stylesheet" href="/styles.css"/>
+  <link rel="stylesheet" href="/showcase.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/vault" class="topbar-brand" aria-label="Bazinet Vault home">
+        <svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8aa2ff"/><stop offset="1" stop-color="#4f6bf0"/></linearGradient></defs><path d="M24 3 6 10v12c0 11 7.7 18.6 18 23 10.3-4.4 18-12 18-23V10L24 3Z" fill="url(#tg)"/><circle cx="24" cy="21" r="5" fill="#0f1320"/><rect x="21.6" y="23" width="4.8" height="8" rx="2.4" fill="#0f1320"/></svg>
+        <span class="brand-text">Bazinet Vault</span>
+      </a>
+      <nav class="topbar-nav">
+        <a href="/" class="nav-hide" data-i18n="nav.home">Products</a>
+        <a href="/blog/" class="nav-hide" data-blog data-i18n="nav.blog">Blog</a>
+        <a href="/generator.html" class="nav-hide" data-i18n="nav.generator">Generator</a>
+        <a href="/breach.html" class="nav-hide" data-i18n="nav.breach">Breach check</a>
+        <a href="/terms.html" class="nav-hide" data-i18n="nav.terms">Terms</a>
+        <a href="/privacy.html" class="nav-hide" data-i18n="nav.privacy">Privacy</a>
+        <a href="/support" class="nav-help" data-i18n-attr="aria-label:nav.support,title:nav.support" aria-label="Support" title="Support"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6"/><path d="M12 17h.01"/></svg><span data-i18n="nav.support">Support</span></a>
+        <button class="lang-toggle" type="button" data-lang-toggle>FR</button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light or dark mode" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+        </button>
+        <a href="/download" class="nav-hide" data-i18n="nav.download">Download</a>
+        <a href="/extension" class="nav-hide" data-i18n="nav.extension">Extension</a>
+        <a href="/account" data-i18n="nav.account">Account</a>
+        <a href="/app" class="topbar-cta" data-i18n="nav.openVault">Open app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+    <section class="hero2 mwrap">
+      <div class="hero2-grid">
+        <div class="hero2-text">
+          <span class="hero-badge" data-i18n="t.fd8dc20e">Zero-knowledge · End-to-end encrypted</span>
+          <h1 class="hero-title"><span><span data-i18n="t.eb1228e8">Passwords only</span></span> <span class="grad"><span><span data-i18n="t.8af56de6">you</span></span></span> <span><span data-i18n="t.e88c3e20">can unlock.</span></span></h1>
+          <p class="hero-sub" data-i18n="t.6c11ee5c">Bazinet Vault encrypts everything on your own device with a key derived
+            from your master password. We store only ciphertext — your passwords, notes, and master
+            password never reach our servers.</p>
+          <div class="hero-cta">
+            <a href="/account?signup" class="primary" data-i18n="t.a64a5fc1">Create free account</a>
+            <a href="/account/login" class="ghost-btn" data-i18n="t.ada2e9e9">Sign in</a>
+          </div>
+          <div class="trust-row">
+            <span class="ti"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg> <span><span data-i18n="t.8f31b8a2">Free forever</span></span></span>
+            <span class="ti"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg> <span><span data-i18n="t.a26dc1a6">No credit card</span></span></span>
+            <span class="ti"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg> <span><span data-i18n="t.b73cdaab">Nothing to install</span></span></span>
+          </div>
+          <p class="hero-dl-line"><span><span data-i18n="t.34091ce4">Prefer a native app?</span></span> <a href="/download"><span><span data-i18n="t.f2077073">Download for Mac →</span></span></a></p>
+        </div>
+        <div class="hero-photo-wrap">
+          
+          <div class="hero-photo product-mockup" role="img" aria-label="Bazinet Vault app — a list of encrypted password entries">
+            <div class="mock-chrome">
+              <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+              <span class="mock-url" data-i18n="t.3bff55ae">bazinet.net/app</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-header">
+                <span class="mock-brand"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M12 2 4 5v5c0 5.5 3.5 9 8 10 4.5-1 8-4.5 8-10V5z" fill="#6d8bff" opacity=".9"/></svg> Bazinet Vault</span>
+                <span class="mock-badge pro">PRO</span>
+              </div>
+              <div class="mock-search"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="6"/><path d="m18 18-3-3" stroke-linecap="round"/></svg> <span data-i18n="t.9996c558">Search entries…</span></div>
+              <ul class="mock-items">
+                <li class="mock-item"><span class="mock-favicon g">G</span><span class="mock-info"><b>Google</b><span><span data-i18n="t.9025f6f4">john@gmail.com</span></span></span><span class="mock-pw"><span data-i18n="t.d83afca5">••••••••••</span></span></li>
+                <li class="mock-item"><span class="mock-favicon gh">⌗</span><span class="mock-info"><b>GitHub</b><span><span data-i18n="t.c4588044">@bazinet-dev</span></span></span><span class="mock-pw"><span data-i18n="t.d83afca5">••••••••••</span></span></li>
+                <li class="mock-item"><span class="mock-favicon nf">N</span><span class="mock-info"><b>Netflix</b><span><span data-i18n="t.5be321d9">john.smith@gmail.com</span></span></span><span class="mock-pw"><span data-i18n="t.d83afca5">••••••••••</span></span></li>
+                <li class="mock-item"><span class="mock-favicon am">A</span><span class="mock-info"><b>Amazon</b><span><span data-i18n="t.bf7c0411">shopping@bazinet.net</span></span></span><span class="mock-pw"><span data-i18n="t.d83afca5">••••••••••</span></span></li>
+              </ul>
+              <div class="mock-enc-badge"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5z"/></svg> <span data-i18n="t.5249db76">AES-256 encrypted · keys never leave this device</span></div>
+            </div>
+          </div>
+          <div class="hero-photo-badge">
+            <span class="hp-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2.2"/><path d="M8 11V7.5a4 4 0 0 1 8 0V11"/></svg></span>
+            <span class="hp-t"><strong><span><span data-i18n="t.3df08944">Encrypted on your device</span></span></strong><span><span><span data-i18n="t.0fa4967a">Your keys never leave your browser</span></span></span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section tight mwrap">
+      <div class="stats">
+        <div class="stat"><div class="num">AES-256</div><div class="cap" data-i18n="t.a8b48253">Authenticated encryption (GCM) on every entry</div></div>
+        <div class="stat"><div class="num">Argon2id</div><div class="cap" data-i18n="t.8ecd33e2">19&nbsp;MiB memory-hard key derivation in your browser</div></div>
+        <div class="stat"><div class="num">0</div><div class="cap" data-i18n="t.c092e6ca">Passwords on our servers we could ever read</div></div>
+        <div class="stat"><div class="num">100%</div><div class="cap" data-i18n="t.d1137a9e">Encryption &amp; decryption done on your device</div></div>
+      </div>
+    </section>
+
+    
+    <section class="section tight mwrap">
+      <div class="sx" aria-labelledby="sx-vault-title">
+        <div class="sx-head">
+          <span class="sx-tag"><span class="sx-pill k-ok"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-i18n="t.569715c6">Zero-knowledge, shown working</span></span></span>
+          <h2 id="sx-vault-title" class="sx-h2"><span data-i18n="t.cd651995">Encrypted before it leaves your device.</span> <span class="sx-grad" data-i18n="t.56d812f0">Unreadable when it gets to us.</span></h2>
+          <p class="sx-lead" data-i18n="t.56481789">You see your passwords. What reaches our servers was sealed with AES-256 on your device first, with a key only your master password can make. We store it. We can’t open it.</p>
+        </div>
+        <div class="sx-flow" aria-hidden="true">
+          <div class="sx-win">
+            <div class="sx-bar"><span class="sx-dots"><i></i><i></i><i></i></span><span data-i18n="t.66480519">Your device</span><span class="sx-bar-end"><i class="sx-led"></i><span data-i18n="t.b3da7025">Unlocked</span></span></div>
+            <div class="sx-body">
+              <div class="sx-row r1 k-acc"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="14" r="4"/><path d="M11 11l9-9"/><path d="M17 5l2 2"/><path d="M15 7l2 2"/></svg><b>GitHub</b><em><span class="sx-swap"><span class="pt">K#9mX@qzL!p2Rw$v</span><span class="ct">9f3ac1e0d7…b7d4</span></span></em></div>
+              <div class="sx-row r2 k-teal"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M9 12h6"/><path d="M9 16h4"/></svg><b data-i18n="t.729130ab">Note · Wi-Fi</b><em><span class="sx-swap"><span class="pt">maison-5G · Tr0mpette!88</span><span class="ct">e04b77aa2c…19c2</span></span></em></div>
+              <div class="sx-row r3 k-warn"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg><b data-i18n="t.04ef4a37">2FA · Google</b><em><span class="sx-swap"><span class="pt">482 913</span><span class="ct">c1d95e3f60…8a0e</span></span></em></div>
+            </div>
+            <div class="sx-keynote"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="14" r="4"/><path d="M11 11l9-9"/><path d="M17 5l2 2"/><path d="M15 7l2 2"/></svg><span data-i18n="t.00d90605">Key made here from your master password. Never sent.</span></div>
+          </div>
+          <div class="sx-pipe"><span class="sx-pk p1"></span><span class="sx-pk p2"></span><span class="sx-pk p3"></span><span class="sx-hubcap k-ok">AES-256-GCM</span><span class="sx-hub"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span></div>
+          <div class="sx-win">
+            <div class="sx-bar"><span class="sx-dots"><i></i><i></i><i></i></span><span data-i18n="t.eeb843b8">bazinet.net servers</span><span class="sx-bar-end"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3l18 18"/><path d="M10.6 6.1A9.8 9.8 0 0 1 12 6c5 0 9 6 9 6a15 15 0 0 1-3 3.5"/><path d="M6.6 6.6A15 15 0 0 0 3 12s4 6 9 6a9 9 0 0 0 4.4-1.1"/></svg><span data-i18n="t.1c970f72">Can’t read it</span></span></div>
+            <div class="sx-body">
+              <div class="sx-item n1 k-ok"><span class="sx-kind" data-i18n="t.02127c01">Stored · encrypted</span><code>U2FsdGVkX1+9f3ac1e0d7a4…6e2fb7d4</code></div>
+              <div class="sx-item n2 k-ok"><span class="sx-kind" data-i18n="t.02127c01">Stored · encrypted</span><code>U2FsdGVkX1+e04b77aa2c91…d05519c2</code></div>
+              <div class="sx-item n3 k-ok"><span class="sx-kind" data-i18n="t.02127c01">Stored · encrypted</span><code>U2FsdGVkX1+c1d95e3f6048…3b778a0e</code></div>
+            </div>
+          </div>
+        </div>
+        <div class="sx-foot">
+          <ul class="sx-list">
+            <li><span class="sx-ico k-acc"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="14" r="4"/><path d="M11 11l9-9"/><path d="M17 5l2 2"/><path d="M15 7l2 2"/></svg></span><div><strong data-i18n="t.82f189e0">Argon2id, on your device</strong><span data-i18n="t.6a13f175">Your master password becomes a 256-bit key right here, in your browser. It never travels.</span></div></li>
+            <li><span class="sx-ico k-ok"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><div><strong data-i18n="t.aaaccddb">AES-256-GCM on every entry</strong><span data-i18n="t.528dc0fe">Each login, note and 2FA secret is sealed before it’s saved.</span></div></li>
+            <li><span class="sx-ico k-teal"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3l18 18"/><path d="M10.6 6.1A9.8 9.8 0 0 1 12 6c5 0 9 6 9 6a15 15 0 0 1-3 3.5"/><path d="M6.6 6.6A15 15 0 0 0 3 12s4 6 9 6a9 9 0 0 0 4.4-1.1"/></svg></span><div><strong data-i18n="t.8e37c84a">Ciphertext only, on our side</strong><span data-i18n="t.87e98738">We keep what we can’t read. Not your logins, not your notes.</span></div></li>
+            <li><span class="sx-ico k-warn"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="13" height="10" rx="1.5"/><path d="M1 18h17"/><rect x="17" y="9" width="5" height="10" rx="1"/></svg></span><div><strong data-i18n="t.ec54fff2">Opens on every device</strong><span data-i18n="t.16f16fcb">Sign in anywhere and your vault is decrypted there, locally, again.</span></div></li>
+          </ul>
+          <div class="sx-ctas"><a href="/account?signup" class="primary" data-i18n="t.a64a5fc1">Create free account</a></div>
+          <p class="sx-fine"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6z"/></svg><span data-i18n="t.134bfe69">Always on. There is no unencrypted mode to forget about.</span></p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section tight mwrap">
+      <div class="techstrip">
+        <div class="tlabel" data-i18n="t.7d20d248">Built on technology trusted around the world</div>
+        <div class="trow">
+          <span class="tlogo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 15h13a3 3 0 0 0 0-6 4.5 4.5 0 0 0-8.6-1.5A3.5 3.5 0 0 0 4 15"/></svg> Cloudflare</span>
+          <span class="tlogo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9z"/></svg> <span><span data-i18n="t.d22ce133">Web Crypto API</span></span></span>
+          <span class="tlogo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5z"/></svg> <span><span data-i18n="t.fb0d5f0d">AES-256-GCM</span></span></span>
+          <span class="tlogo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> <span><span data-i18n="t.04880b1d">Argon2id KDF</span></span></span>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section mwrap">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="t.23b72125">Everything you need</span>
+        <h2 class="h2" data-i18n="t.afd3334a">A real vault, minus the things that watch you</h2>
+        <p class="lead" data-i18n="t.e7dd0240">All the essentials of a modern password manager — built so that the secrets stay
+          secret, even from us.</p>
+      </div>
+      <div class="feat-grid">
+        <div class="feat">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h4 data-i18n="t.83246a76">Zero-knowledge</h4><p data-i18n="t.5b5baade">Your vault is encrypted on your device. We literally cannot read it — not your logins, not your notes.</p>
+        </div>
+        <div class="feat">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+          <h4 data-i18n="t.0e230a00">AES-256 encryption</h4><p data-i18n="t.b55e9877">Every entry is sealed with AES-256-GCM — the same authenticated-encryption standard used across the security industry.</p>
+        </div>
+        <a class="feat" href="/generator.html">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="8" cy="14" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m11 11 8-8M16 3l2 2M14.5 6.5 16 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <h4><span><span data-i18n="t.7f2030d9">Password generator</span></span></h4><p><span><span data-i18n="t.b8a1a737">Create strong, unique passwords with one click — try our free generator, no account needed.</span></span></p>
+        </a>
+        <a class="feat" href="/breach.html">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3 4 6v5c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-3Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 9v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="16" r="1" fill="currentColor"/></svg></span>
+          <h4><span><span data-i18n="t.bd9773dd">Breach check</span></span></h4><p><span><span data-i18n="t.98f5aa85">See if a password has appeared in a known data breach — privately, using k-anonymity.</span></span></p>
+        </a>
+        <div class="feat">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <h4 data-i18n="t.b5eb447b">Auto-lock</h4><p data-i18n="t.7b9fb6c7">Your vault locks itself after inactivity, so a walked-away screen stays a closed door.</p>
+        </div>
+        <div class="feat">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span>
+          <h4 data-i18n="t.76fc2f25">Works everywhere</h4><p data-i18n="t.23f522ed">A fast web app on any modern browser — your encrypted vault syncs across your devices.</p>
+        </div>
+        <div class="feat">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3v12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="m8 11 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 17v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <h4 data-i18n="t.5aa075b7">Import &amp; export</h4><p data-i18n="t.7b7ed108">Bring in passwords from a JSON export, or take an encrypted backup of your vault any time. Your data is never locked in.</p>
+        </div>
+        <div class="feat">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <h4 data-i18n="t.263bbdba">Verified, bot-proof sign-up</h4><p data-i18n="t.997e6ab9">Mandatory email verification plus Cloudflare Turnstile and rate limiting keep automated abuse and fake accounts out.</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section mwrap">
+      <div class="split">
+        <div class="split-photo">
+          
+          <div class="product-mockup split-mockup" role="img" aria-label="Password entry dialog with built-in generator and strength meter">
+            <div class="mock-chrome sm">
+              <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-dialog-title" data-i18n="t.8c6a8ea2">Add entry</div>
+              <div class="mock-field"><span class="mock-label" data-i18n="t.709a2322">Name</span><div class="mock-input-val">Netflix</div></div>
+              <div class="mock-field"><span class="mock-label" data-i18n="t.84c29015">Username</span><div class="mock-input-val">john@example.com</div></div>
+              <div class="mock-field pw-field">
+                <span class="mock-label" data-i18n="t.8be3c943">Password</span>
+                <div class="mock-pw-row">
+                  <div class="mock-input-val">••••••••••••••••</div>
+                  <span class="mock-gen-btn" data-i18n="t.fc45f9b7">Generate</span>
+                </div>
+              </div>
+              <div class="mock-strength">
+                <div class="mock-bar strong"></div>
+                <span class="mock-str-lbl" data-i18n="t.cf846870">Strong</span>
+              </div>
+              <div class="mock-gen-box">
+                <span class="mock-gen-preview" data-i18n="t.ed54d86f">K#9mX@qzL!p2Rw$v</span>
+                <span class="mock-gen-copy" data-i18n="t.af74f7c5">Copy</span>
+              </div>
+              <div class="mock-save-btn" data-i18n="t.34495766">Save to vault</div>
+            </div>
+          </div>
+        </div>
+        <div class="split-text">
+          <span class="eyebrow" data-i18n="t.a12a815f">Peace of mind</span>
+          <h3 data-i18n="t.0ddaff9f">Security that gets out of your way</h3>
+          <p data-i18n="t.6c190760">Good security shouldn't feel like a second job. Save a login once, and it's there the next
+            time you need it — on your laptop, your phone, wherever you are. The hard cryptography happens
+            quietly in the background.</p>
+          <ul class="split-list">
+            <li data-i18n="t.e088edba">One master password unlocks everything</li>
+            <li data-i18n="t.1b06be20">Strong, unique passwords generated in a click</li>
+            <li data-i18n="t.7c47e9be">Search, favorites, and notes built in</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section tight mwrap">
+      <div class="photo-band">
+        
+        <div class="product-mockup band-mockup" role="img" aria-label="Zero-knowledge encryption diagram showing master password to vault key to encrypted entries">
+          <div class="crypto-diagram">
+            <div class="cd-step"><div class="cd-icon pw-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="10" r="4"/><path d="M12 14v6M9 17h6" stroke-linecap="round"/></svg></div><span data-i18n="t.33acdbd6">Master password</span></div>
+            <div class="cd-arrow">→</div>
+            <div class="cd-step"><div class="cd-icon kdf-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span data-i18n="t.04880b1d">Argon2id KDF</span></div>
+            <div class="cd-arrow">→</div>
+            <div class="cd-step"><div class="cd-icon key-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="14" r="4"/><path d="m11 11 8-8M16 3l2 2M14.5 6.5 16 8" stroke-linecap="round"/></svg></div><span data-i18n="t.eca71ab0">256-bit key</span></div>
+            <div class="cd-arrow">→</div>
+            <div class="cd-step"><div class="cd-icon vault-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="8" width="16" height="13" rx="2.5"/><path d="M8 8V5.5a4 4 0 0 1 8 0V8"/><circle cx="12" cy="14.5" r="1.8" fill="currentColor" stroke="none"/></svg></div><span data-i18n="t.78569a7b">Encrypted vault</span></div>
+          </div>
+          <div class="cd-note" data-i18n="t.7f5b0472">Your master password never leaves your device — the key is derived locally.</div>
+        </div>
+        <div class="pb-overlay">
+          <h3 data-i18n="t.ea6e9391">Stop reusing the same password everywhere.</h3>
+          <p data-i18n="t.3dab5e10">Reused passwords are how one leaked site becomes ten compromised accounts. Give every login
+            its own strong key — and forget about it.</p>
+          <div><a href="/account?signup" class="primary" data-i18n="t.ccffc414">Start free</a></div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section mwrap">
+      <div class="split rev">
+        <div class="split-photo">
+          
+          <div class="product-mockup split-mockup" role="img" aria-label="Breach check interface showing password security scan results">
+            <div class="mock-chrome sm">
+              <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-dialog-title" data-i18n="t.3a67c53e">🔍 Breach check</div>
+              <div class="mock-breach-input"><div class="mock-input-val pw-hidden">••••••••••••</div><span class="mock-gen-btn" data-i18n="t.4b5e84be">Check</span></div>
+              <div class="mock-breach-result safe"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5z"/><path d="m8.5 12 2.5 2.5 4.5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-i18n="t.75818c1d">Not found in any known breach</span></div>
+              <div style=""></div>
+              <div class="mock-dialog-title" style="" data-i18n="t.6330aea9">Vault scan</div>
+              <div class="mock-scan-row"><span>Google</span><span class="safe-tag" data-i18n="t.826f4832">✓ Safe</span></div>
+              <div class="mock-scan-row"><span data-i18n="t.93370add">Old email</span><span class="warn-tag" data-i18n="t.5c0090c3">⚠ Pwned 3×</span></div>
+              <div class="mock-scan-row"><span>Netflix</span><span class="safe-tag" data-i18n="t.826f4832">✓ Safe</span></div>
+              <div class="mock-scan-row"><span>GitHub</span><span class="safe-tag" data-i18n="t.826f4832">✓ Safe</span></div>
+              <div class="mock-enc-badge" style=""><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="6"/><path d="M17 17l3 3" stroke-linecap="round"/></svg> <span data-i18n="t.4c64ebd3">k-anonymity · password never sent to server</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="split-text">
+          <span class="eyebrow" data-i18n="t.65384e88">Zero-knowledge by design</span>
+          <h3 data-i18n="t.d9d447cb">Your secrets never leave your device unencrypted</h3>
+          <p data-i18n="t.18e9bf1d">When you sign in, your master password is stretched with Argon2id into a key that never
+            leaves your browser. That key wraps a random vault key, and that vault key encrypts every
+            entry. The server only ever receives sealed, unreadable blobs.</p>
+          <ul class="split-list">
+            <li data-i18n="t.ca14caa6">Master password is never transmitted or stored</li>
+            <li data-i18n="t.3642226b">Server stores ciphertext only — a breach reveals nothing usable</li>
+            <li data-i18n="t.64e9f64c">Changing your password re-wraps the vault, never re-exposes it</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section mwrap">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="t.1dd6a17c">How it works</span>
+        <h2 class="h2" data-i18n="t.19cd6c5f">Three steps to a safer digital life</h2>
+      </div>
+      <div class="feat-grid">
+        <div class="feat">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span>
+          <h4 data-i18n="t.483c895d">1 · Create your account</h4><p data-i18n="t.3c4bc790">Pick a strong master password and verify your email. Setup takes under a minute.</p>
+        </div>
+        <div class="feat">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12h8M12 8v8" stroke-linecap="round"/></svg></span>
+          <h4 data-i18n="t.6503cacd">2 · Add your logins</h4><p data-i18n="t.a225c654">Generate fresh passwords or import what you have. Everything is encrypted before it's saved.</p>
+        </div>
+        <div class="feat">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5z"/><path d="m8.5 12 2.5 2.5 4.5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h4 data-i18n="t.856bc0df">3 · Relax</h4><p data-i18n="t.87c814f6">Unlock with one password. Your vault is always encrypted, always yours, and only you hold the key.</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section mwrap">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="t.63a3455d">Why it's different</span>
+        <h2 class="h2" data-i18n="t.0c743116">Bazinet Vault vs. the usual habits</h2>
+        <p class="lead" data-i18n="t.7502ba97">How a zero-knowledge vault compares to the two most common ways people manage
+          passwords today.</p>
+      </div>
+      <div class="compare">
+        <table>
+          <thead>
+            <tr>
+              <th data-i18n="t.ad565d9d">Feature</th>
+              <th class="cell" data-i18n="t.83b314a3">Reusing passwords</th>
+              <th class="cell" data-i18n="t.6a870137">Browser-saved</th>
+              <th class="cell col-us">Bazinet Vault</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="feat-name" data-i18n="t.f0d35cda">Unique password per site</td><td class="cell no">✕</td><td class="cell" data-i18n="t.1bc4d666">Sometimes</td><td class="cell yes">✓</td></tr>
+            <tr><td class="feat-name" data-i18n="t.0eda2517">End-to-end (zero-knowledge) encryption</td><td class="cell no">✕</td><td class="cell no">✕</td><td class="cell yes">✓</td></tr>
+            <tr><td class="feat-name" data-i18n="t.3563655c">Argon2id master-key hardening</td><td class="cell no">✕</td><td class="cell no">✕</td><td class="cell yes">✓</td></tr>
+            <tr><td class="feat-name" data-i18n="t.b6687dc8">Built-in strong generator</td><td class="cell no">✕</td><td class="cell" data-i18n="t.aa2c96da">Basic</td><td class="cell yes">✓</td></tr>
+            <tr><td class="feat-name" data-i18n="t.6fb46f7c">Breach checking</td><td class="cell no">✕</td><td class="cell" data-i18n="t.940a179c">Varies</td><td class="cell yes">✓</td></tr>
+            <tr><td class="feat-name" data-i18n="t.b0624f21">Provider can read your data</td><td class="cell no">—</td><td class="cell no" data-i18n="t.bb5857ac">Often</td><td class="cell yes" data-i18n="t.80c3052d">Never</td></tr>
+            <tr><td class="feat-name" data-i18n="t.3e8248e3">Price</td><td class="cell" data-i18n="t.75f52718">Free</td><td class="cell" data-i18n="t.75f52718">Free</td><td class="cell yes" data-i18n="t.75f52718">Free</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    
+    <section class="section mwrap">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="t.0ece2df5">No hype</span>
+        <h2 class="h2" data-i18n="t.b4be85be">Honest about what it is</h2>
+        <p class="lead" data-i18n="t.3bc708ef">A password manager you can actually reason about — including where it draws the line.</p>
+      </div>
+      <div class="feat-grid">
+        <div class="feat">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"/></svg></span>
+          <h4 data-i18n="t.182aef64">Independent, not enterprise</h4><p data-i18n="t.8b5522a2">Built and run by one developer — no investors, no data to sell, and no roadmap set by anyone but the people using it.</p>
+        </div>
+        <div class="feat">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v5c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></span>
+          <h4 data-i18n="t.65384e88">Zero-knowledge by design</h4><p><span data-i18n="t.7eda08a4">Your key is derived in the browser; only ciphertext ever reaches the server.</span><span data-blog> <span data-i18n="t.ec330441">The crypto and its trade-offs are written up plainly on the blog.</span></span></p>
+        </div>
+        <div class="feat">
+          <span class="feat-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 8h14M6 8l-2 6h4zM18 8l-2 6h4z"/></svg></span>
+          <h4 data-i18n="t.03aad260">Clear about the trade-offs</h4><p data-i18n="t.fc168a63">Forget your master password and the data is gone — the cost of a design where no one else can read it. We'll always tell you what it is and isn't.</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section mwrap">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="t.218f37ac">Under the hood</span>
+        <h2 class="h2" data-i18n="t.dce05274">Industry-leading security, in plain terms</h2>
+      </div>
+      <ul class="sec-list">
+        <li><span><span data-i18n="t.f0f9130e">Your master password is hardened with</span></span> <strong>Argon2id</strong> <span><span data-i18n="t.49fd2a6b">— a modern, memory-hard algorithm built to resist password cracking</span></span></li>
+        <li><span><span data-i18n="t.cd92edcd">Your vault is sealed with</span></span> <strong><span><span data-i18n="t.fb0d5f0d">AES-256-GCM</span></span></strong><span><span data-i18n="t.b77b9caf">, the encryption standard trusted by banks and governments</span></span></li>
+        <li><strong><span><span data-i18n="t.4cce5f23">Zero-knowledge by design:</span></span></strong> <span><span data-i18n="t.780555bd">we only ever store scrambled data that we cannot read</span></span></li>
+        <li><span><span data-i18n="t.548e91c2">Your master password and encryption keys</span></span> <strong><span><span data-i18n="t.9b8f30ef">never leave your device</span></span></strong></li>
+        <li data-i18n="t.ce6b5c29">Built-in defense against bots, brute-force attempts, and automated attacks</li>
+        <li data-i18n="t.cccc7095">Hardened against common web attacks with a strict Content-Security-Policy and tamper protection</li>
+        <li data-i18n="t.fcd08ef1">Mandatory email verification and trusted sign-up keep accounts clean</li>
+      </ul>
+    </section>
+
+    
+    <section class="section mwrap">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="t.9a1fc173">Questions</span>
+        <h2 class="h2" data-i18n="t.0b8a19ed">Frequently asked</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary data-i18n="t.d15821fb">What does "zero-knowledge" actually mean?</summary>
+          <p data-i18n="t.8210aaf9">It means the encryption and decryption of your vault happen on your device, not on our servers.
+            We receive and store only encrypted blobs. Because your master password and keys never leave your
+            browser, we have no technical way to read your data — even if we wanted to, or were compelled to.</p>
+        </details>
+        <details>
+          <summary data-i18n="t.4ea55ff8">What happens if I forget my master password?</summary>
+          <p><span><span data-i18n="t.f1f8a8f9">Your data is encrypted with a key derived from that password, and there is no recovery backdoor by
+            design — we cannot reset it for you, and support cannot be talked into it. There is one way back in,
+            and only you can set it up: a</span></span> <strong><span><span data-i18n="t.31f8d328">recovery key</span></span></strong><span><span data-i18n="t.6a29f5b9">. It is 32 random characters generated in
+            your browser and shown once, and it opens the same vault your master password does. Create one from
+            the vault menu and keep it somewhere physically safe. Without a recovery key, forgetting your master
+            password means the vault cannot be decrypted by anyone, including us.</span></span></p>
+        </details>
+        <details>
+          <summary data-i18n="t.91437e09">Is Bazinet Vault really free?</summary>
+          <p data-i18n="t.71140601">Yes. It runs on Cloudflare's free tier and is supported by unobtrusive ads on these public pages
+            (never on your vault). No credit card, no trial, no upsell.</p>
+        </details>
+        <details>
+          <summary data-i18n="t.00bed843">Should I store my most critical secrets here?</summary>
+          <p><span><span data-i18n="t.9d6df395">For everyday logins, yes — your vault is end-to-end encrypted and only you hold the key. Two honest
+            caveats, though: Bazinet Vault is an independent project that hasn't yet had a formal third-party
+            security audit, and there's no password-recovery backdoor — if you forget your master password and
+            haven't set up a recovery key, the data can't be recovered by anyone. So set up a recovery key, and
+            for irreplaceable, high-stakes secrets also keep a separate backup and don't rely on any single tool. See our</span></span> <a href="/terms.html" data-i18n="nav.terms"><span><span data-i18n="t.a55a275a">Terms</span></span></a> <span><span data-i18n="t.7512ea92">for the full details.</span></span></p>
+        </details>
+        <details>
+          <summary data-i18n="t.347f3a61">How is the breach check private?</summary>
+          <p data-i18n="t.4ee8a9d4">We use k-anonymity: your browser hashes the password with SHA-1 and sends only the first five
+            characters of that hash to look up matches. The full password and full hash never leave your device.</p>
+        </details>
+      </div>
+    </section>
+    
+
+    
+    <section class="section mwrap">
+      <div class="bigcta">
+        <h2 data-i18n="t.587cd0e4">Your passwords deserve better than a sticky note.</h2>
+        <p data-i18n="t.f8e34bc5">Create your free, zero-knowledge vault in under a minute. Only you hold the key.</p>
+        <div class="hero-cta">
+          <a href="/account?signup" class="primary" data-i18n="t.a64a5fc1">Create free account</a>
+          <a href="/generator.html" class="ghost-btn" data-i18n="t.c5bfb1ce">Try the generator</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="contact" class="contact-card mwrap">
+      <h3 class="sec-title" data-i18n="t.b37456c4">Contact</h3>
+      <p><span><span data-i18n="t.1616867a">Questions, feedback, or a security report? Reach us at</span></span>
+        <a href="mailto:support@bazinet.net"><span data-i18n="t.cce01e56">support@bazinet.net</span></a>.</p>
+    </div>
+
+    <footer class="site-footer mwrap">
+      <nav class="foot-links">
+        <a href="/app" data-i18n="nav.openVault">Open app</a><span>·</span>
+        <a href="/blog/" data-blog data-i18n="nav.blog">Blog</a><span data-blog>·</span>
+        <a href="/generator.html" data-i18n="nav.generator">Generator</a><span>·</span>
+        <a href="/breach.html" data-i18n="nav.breach">Breach check</a><span>·</span>
+        <a href="/extension" data-i18n="nav.extension">Extension</a><span>·</span>
+        <a href="/terms.html" data-i18n="nav.terms">Terms</a><span>·</span>
+        <a href="/privacy.html" data-i18n="nav.privacy">Privacy</a><span>·</span>
+        <a href="/support" data-i18n="nav.support">Support</a><span>·</span>
+        <a href="mailto:support@bazinet.net" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <p class="copyright" data-i18n="t.1d0a6ee1">© 2026 Bazinet.net</p>
+    </footer>
+  </main>
+</body>
+</html>

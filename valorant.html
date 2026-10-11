@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Bazinet Aim Trainer — Valorant aim trainer, counter-strafe coach & live overlay</title>
+  <meta name="description" content="A free, ToS-safe Valorant companion for Windows: real counter-strafe timing coach, official Riot API match analytics, a live in-game agent-comp overlay, and a sensitivity advisor. Logs in with your Bazinet account."/>
+  <link rel="icon" href="/favicon.svg"/>
+  <link rel="canonical" href="https://bazinet.net/valorant"/>
+  <meta property="og:title" content="Bazinet Aim Trainer"/>
+  <meta property="og:description" content="Counter-strafe timing coach, Riot-API match analytics, live agent-comp overlay, and a sensitivity advisor. Free for Windows."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://bazinet.net/valorant"/>
+  <style>:root{--bg:#0c0d12;--bg2:#0f1117;--panel:#14161f;--panel2:#191c27;--line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.14);--tx:#e9edf6;--muted:#9aa3b8;--muted2:#6c7488;--red:#ff4655;--red2:#ff6b78;--cyan:#18e0c8;--gold:#ffd166;--grad:linear-gradient(135deg,#ff4655,#ff7a45)}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--tx);font:15px/1.6 "Segoe UI",system-ui,-apple-system,Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:0 auto;padding:0 22px}.btn{display:inline-flex;align-items:center;gap:9px;cursor:pointer;border:none;font:inherit;font-weight:700;border-radius:11px;padding:13px 22px;transition:.16s}.btn-primary{background:var(--grad);color:#fff;box-shadow:0 8px 26px rgba(255,70,85,.32)}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(255,70,85,.42)}.btn-ghost{background:var(--panel2);color:var(--tx);border:1px solid var(--line2)}.btn-ghost:hover{border-color:var(--red);color:#fff}.pill{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--red2);background:rgba(255,70,85,.1);border:1px solid rgba(255,70,85,.25);border-radius:999px;padding:5px 12px}.muted{color:var(--muted)}h2{font-size:30px;line-height:1.2;letter-spacing:-.02em}.section{padding:74px 0;border-top:1px solid var(--line)}.eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red2);margin-bottom:12px}.topbar{position:sticky;top:0;z-index:20;background:rgba(12,13,18,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.topbar .row{display:flex;align-items:center;gap:18px;height:62px}.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:16px}.brand .mark{color:var(--red);font-size:18px}.brand .sub{color:var(--muted);font-weight:600}.topnav{margin-left:auto;display:flex;align-items:center;gap:8px}.topnav a.lnk{color:var(--muted);font-weight:600;padding:8px 12px;border-radius:8px}.topnav a.lnk:hover{color:#fff;background:var(--panel2)}.hero{position:relative;overflow:hidden;padding:64px 0 30px}.hero::before{content:"";position:absolute;inset:-40% -20% auto;height:560px;background:radial-gradient(60% 60% at 70% 10%,rgba(255,70,85,.22),transparent 70%);pointer-events:none}.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}.hero h1{font-size:50px;line-height:1.04;letter-spacing:-.03em;margin:16px 0 16px}.hero h1 .accent{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}.hero p.lead{font-size:18px;color:var(--muted);max-width:34em}.hero-cta{display:flex;flex-wrap:wrap;gap:13px;margin-top:26px;align-items:center}.hero-meta{margin-top:14px;font-size:13px;color:var(--muted2);display:flex;gap:16px;flex-wrap:wrap}.hero-meta b{color:var(--muted)}.mock{background:linear-gradient(180deg,var(--panel),var(--bg2));border:1px solid var(--line2);border-radius:16px;box-shadow:0 30px 70px rgba(0,0,0,.5);overflow:hidden}.mock-bar{display:flex;align-items:center;gap:7px;padding:11px 14px;border-bottom:1px solid var(--line);background:var(--panel2)}.dot{width:11px;height:11px;border-radius:50%}.mock-bar .t{margin-left:8px;font-size:12px;color:var(--muted);font-weight:600}.mock-body{padding:16px}.statgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.stat{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:11px}.stat .k{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted2)}.stat .v{font-size:20px;font-weight:800;margin-top:3px}.stat .v.good{color:var(--cyan)}.stat .v.warn{color:var(--gold)}.stat .v.red{color:var(--red2)}.mock-row{display:flex;align-items:center;gap:8px;margin-top:13px;font-size:12px;color:var(--muted)}.bar{height:7px;border-radius:5px;background:var(--panel2);flex:1;overflow:hidden;border:1px solid var(--line)}.bar>i{display:block;height:100%;background:var(--grad)}.trust{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:center;color:var(--muted);font-size:13.5px;font-weight:600}.trust span{display:inline-flex;align-items:center;gap:8px}.trust .ic{color:var(--cyan)}.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;transition:.16s}.card:hover{border-color:var(--line2);transform:translateY(-3px)}.card .ic{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:21px;background:rgba(255,70,85,.12);border:1px solid rgba(255,70,85,.22);margin-bottom:14px}.card h3{font-size:17px;margin-bottom:7px}.card p{font-size:14px;color:var(--muted)}.split{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.split.rev .splcopy{order:2}.splcopy h2{margin-bottom:14px}.splcopy p{color:var(--muted);margin-bottom:14px}.ck{list-style:none;display:grid;gap:10px}.ck li{display:flex;gap:10px;font-size:14.5px}.ck li::before{content:"✓";color:var(--cyan);font-weight:800}.ovmock{background:rgba(10,12,20,.92);border:1px solid var(--line2);border-radius:12px;overflow:hidden;max-width:330px;margin:0 auto;box-shadow:0 24px 60px rgba(0,0,0,.5)}.ovh{display:flex;align-items:center;gap:7px;padding:9px 13px;background:rgba(255,70,85,.13);border-bottom:1px solid var(--line)}.ovh .b{color:var(--red);font-weight:800}.ovh .map{flex:1;color:var(--muted);font-weight:700;font-size:13px}.ovh .sc{font-weight:800;font-size:16px;letter-spacing:1px}.ovlbl{font-size:9px;font-weight:700;letter-spacing:.12em;color:var(--muted2);padding:6px 13px 3px;text-transform:uppercase}.ovlbl.en{color:rgba(255,70,85,.6)}.ovp{display:grid;grid-template-columns:22px 1fr auto;gap:7px;align-items:center;padding:4px 12px;border-bottom:1px solid rgba(255,255,255,.05);font-size:12px}.ovp .ag{width:22px;height:22px;border-radius:5px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:10px}.ovp.me{background:rgba(255,70,85,.1)}.ovp .nm{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ovp .nm .tg{color:var(--muted2);font-weight:400;font-size:9px}.ovp .an{color:var(--muted);font-weight:600;text-align:right}.warn{display:flex;gap:16px;background:rgba(255,70,85,.07);border:1px solid rgba(255,70,85,.3);border-left:4px solid var(--red);border-radius:12px;padding:20px 22px}.warn .ic{font-size:24px}.warn h3{margin-bottom:6px;font-size:16px}.warn p{color:var(--muted);font-size:14px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px;counter-reset:s}.step{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}.step::before{counter-increment:s;content:counter(s);display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:8px;background:var(--grad);color:#fff;font-weight:800;margin-bottom:12px}.step h4{font-size:15px;margin-bottom:5px}.step p{font-size:13.5px;color:var(--muted)}.dlband{text-align:center;background:radial-gradient(70% 120% at 50% 0,rgba(255,70,85,.16),transparent 70%),var(--panel);border:1px solid var(--line2);border-radius:18px;padding:48px 24px}.dlband h2{font-size:34px;margin-bottom:12px}.dlband p{color:var(--muted);max-width:34em;margin:0 auto 24px}.reqs{display:flex;flex-wrap:wrap;gap:8px 22px;justify-content:center;margin-top:18px;font-size:13px;color:var(--muted2)}.faq{display:grid;gap:12px;margin-top:34px}details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:4px 20px}details[open]{border-color:var(--line2)}summary{cursor:pointer;font-weight:700;padding:16px 0;list-style:none;display:flex;justify-content:space-between;align-items:center}summary::-webkit-details-marker{display:none}summary::after{content:"+";color:var(--red2);font-size:20px;font-weight:400}details[open] summary::after{content:"–"}details p{color:var(--muted);font-size:14px;padding:0 0 16px}footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted2);font-size:13px}.foot-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}.foot-links{display:flex;gap:18px;flex-wrap:wrap}.foot-links a:hover{color:#fff}.disclaimer{margin-top:16px;font-size:11.5px;color:var(--muted2);max-width:62em}@media(max-width:880px){.hero-grid,.split{grid-template-columns:1fr}.split.rev .splcopy{order:0}.feat{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.hero h1{font-size:38px}.topnav a.lnk{display:none}}@media(max-width:560px){.feat,.statgrid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}}:root{--sb-thumb:color-mix(in srgb, var(--muted2) 55%, transparent)}*{scrollbar-width:thin;scrollbar-color:var(--sb-thumb) transparent}::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-corner,::-webkit-scrollbar-track{background:0 0}::-webkit-scrollbar-thumb{background:var(--sb-thumb) padding-box;border:3px solid transparent;border-radius:999px}</style>
+  <link rel="stylesheet" href="/showcase.css"/>
+</head>
+<body>
+
+  
+  <header class="topbar">
+    <div class="wrap row">
+      <a class="brand" href="/valorant"><span class="mark">◆</span> Bazinet <span class="sub">Aim Trainer</span></a>
+      <nav class="topnav">
+        <a class="lnk" href="#features">Features</a>
+        <a class="lnk" href="#overlay">Live overlay</a>
+        <a class="lnk" href="#faq">FAQ</a>
+        <a class="lnk" href="https://bazinet.net/">bazinet.net</a>
+        <a class="btn btn-primary" href="/valorant/download" data-i18n="nav.download">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="pill">Free • Windows</span>
+        <h1>Train your aim.<br><span class="accent">Master counter-strafing.</span></h1>
+        <p class="lead">A standalone Valorant companion that coaches your counter-strafe timing in real
+          time, breaks down your real matches from the official Riot API, and shows a live in-game
+          agent-comp overlay — all without ever touching the game.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="/valorant/download">Download for Windows</a>
+          <a class="btn btn-ghost" href="#features">See what it does</a>
+        </div>
+        <div class="hero-meta">
+          <span><b>◆</b> Sign in with Bazinet</span>
+          <span><b>✓</b> Official Riot API</span>
+          <span><b>↻</b> Auto-updates</span>
+        </div>
+      </div>
+
+      
+      <div class="mock" aria-hidden="true">
+        <div class="mock-bar">
+          <span class="dot" style=""></span>
+          <span class="dot" style=""></span>
+          <span class="dot" style=""></span>
+          <span class="t">Bazinet Aim Trainer — Overview</span>
+        </div>
+        <div class="mock-body">
+          <div class="statgrid">
+            <div class="stat"><div class="k">ACS</div><div class="v">241</div></div>
+            <div class="stat"><div class="k">Headshot %</div><div class="v good">28.4</div></div>
+            <div class="stat"><div class="k">K/D</div><div class="v">1.18</div></div>
+            <div class="stat"><div class="k">KAST</div><div class="v">73%</div></div>
+            <div class="stat"><div class="k">Opening WR</div><div class="v warn">47%</div></div>
+            <div class="stat"><div class="k">Traded</div><div class="v good">61%</div></div>
+          </div>
+          <div class="mock-row"><span>Counter-strafe accuracy</span><div class="bar"><i style=""></i></div><b style="">78%</b></div>
+          <div class="mock-row"><span>Avg shot timing</span><div class="bar"><i style=""></i></div><b>134 ms</b></div>
+          <div class="mock-row"><span>Economy discipline</span><div class="bar"><i style=""></i></div><b style="">55%</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section" style="">
+    <div class="wrap trust">
+      <span><span class="ic">✓</span> Never reads, hooks, or injects into the game</span>
+      <span><span class="ic">✓</span> Read-only official Riot API</span>
+      <span><span class="ic">✓</span> Vanguard-safe by design</span>
+      <span><span class="ic">✓</span> Open auto-updates</span>
+    </div>
+  </section>
+
+  
+  
+  <section class="section">
+    <div class="wrap">
+      <div class="sx sx-valo" aria-labelledby="sx-valo-title">
+        <div class="sx-head">
+          <span class="sx-tag"><span class="sx-pill k-teal"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>Counter-strafe coach</span><span class="sx-pill k-ok"><i class="sx-led"></i>Live</span></span>
+          <h2 id="sx-valo-title" class="sx-h2">Every shot, timed. <span class="sx-grad">Every habit, caught.</span></h2>
+          <p class="sx-lead">The coach watches your A/D presses and your clicks, and tells you whether each shot landed inside the 65–220 ms window where you’ve actually stopped moving.</p>
+        </div>
+        <div class="sx-flow" aria-hidden="true">
+          <div class="sx-win">
+            <div class="sx-bar"><span class="sx-dots"><i></i><i></i><i></i></span><span>Your input</span></div>
+            <div class="sx-keys"><span class="sx-key a">A</span><span class="sx-key d">D</span><span class="sx-key m1">MOUSE 1</span></div>
+            <div class="sx-body"><div class="sx-row r1 k-acc"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7"/><path d="M21 12a9 9 0 0 1-15 6.7"/><path d="M18 3v3h-3"/><path d="M6 21v-3h3"/></svg><b>Strafe left, tap right</b><em>then fire</em></div></div>
+          </div>
+          <div class="sx-pipe"><span class="sx-pk p1"></span><span class="sx-pk p2"></span><span class="sx-pk p3"></span><span class="sx-hubcap k-teal">Timing</span><span class="sx-hub"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span></div>
+          <div class="sx-win">
+            <div class="sx-bar"><span class="sx-dots"><i></i><i></i><i></i></span><span>Monitor</span><span class="sx-bar-end">Session</span></div>
+            <div class="sx-meter"><div class="sx-meter-bar"><i class="sx-meter-mark"></i></div><div class="sx-meter-scale"><span class="t0">0 ms</span><span class="t65">65</span><span class="t220">220</span><span class="t300">300</span></div></div>
+            <div class="sx-body">
+              <div class="sx-item n1 k-teal"><span class="sx-kind">Ideal · 128 ms</span><span>Stopped, first bullet on target</span></div>
+              <div class="sx-item n2 k-warn"><span class="sx-kind">Early · 41 ms</span><span>Still moving: the shot drifts</span></div>
+              <div class="sx-item n3 k-teal"><span class="sx-kind">Ideal · 176 ms</span><span>Clean counter-strafe</span></div>
+              <div class="sx-item n4 k-bad"><span class="sx-kind">Late · 264 ms</span><span>Waited too long to shoot</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="sx-foot">
+          <ul class="sx-list">
+          <li><span class="sx-ico k-teal"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></span><div><strong>Early, ideal or late</strong><span>Every shot is classified the moment you fire, with its exact timing.</span></div></li>
+          <li><span class="sx-ico k-bad"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 2 20h20z"/><path d="M12 10v4"/><path d="M12 17h.01"/></svg></span><div><strong>Panic taps caught</strong><span>Double-taps fired while still moving are flagged, so you can drop the habit.</span></div></li>
+          <li><span class="sx-ico k-acc"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7"/><path d="M21 12a9 9 0 0 1-15 6.7"/><path d="M18 3v3h-3"/><path d="M6 21v-3h3"/></svg></span><div><strong>History that stays</strong><span>Your session history persists across launches, so progress is visible.</span></div></li>
+          <li><span class="sx-ico k-ok"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6z"/></svg></span><div><strong>Never hooks the game</strong><span>No injection, no memory reading. The coach only listens to your key and mouse presses.</span></div></li>
+          </ul>
+          <div class="sx-ctas"><a class="btn btn-primary" href="/valorant/download">Download for Windows</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="wrap">
+      <div class="eyebrow">What's inside</div>
+      <h2>Everything to sharpen your game</h2>
+      <div class="feat">
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#ff8f99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 1v3M12 20v3M1 12h3M20 12h3"/></svg></div>
+          <h3>Counter-strafe coach</h3>
+          <p>A real-time monitor tracks your A/D presses and shots, scoring how consistently you fire
+            inside the 65–220 ms window where your velocity hits zero. Catches panic double-taps too.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#ff8f99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M7 21V10"/><path d="M12 21V4"/><path d="M17 21v-7"/></svg></div>
+          <h3>Real match analytics</h3>
+          <p>ACS, KAST, headshot %, K/D, ADR, opening-duel win rate, traded deaths, clutches, multikills,
+            economy discipline and top weapons — pulled from your actual matches.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#ff8f99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <h3>Live in-game overlay</h3>
+          <p>A lightweight always-on-top overlay shows your map, score and the full agent comp for both
+            teams — read live from your own running client.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#ff8f99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="6"/><path d="M12 7v4"/></svg></div>
+          <h3>Sensitivity advisor</h3>
+          <p>cm/360 + eDPI converter, plus a recommendation grounded in your real headshot % and
+            opening-duel win rate — not generic advice.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#ff8f99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.8c.6.4 1 1.1 1 1.8v.4h6v-.4c0-.7.4-1.4 1-1.8A7 7 0 0 0 12 2Z"/></svg></div>
+          <h3>Auto coaching</h3>
+          <p>Plain-language insights point out your biggest weaknesses each session, so you always know
+            the one thing to work on next.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#ff8f99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
+          <h3>Bazinet account login</h3>
+          <p>Sign in through your browser with your Bazinet account — password, 2FA, passkey or Google.
+            The app never sees your password.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section">
+    <div class="wrap split">
+      <div class="splcopy">
+        <div class="eyebrow">Monitor</div>
+        <h2>Feel every counter-strafe</h2>
+        <p>When you press D while moving left (or A while moving right), your character decelerates. The
+          ideal shot window is <b>65–220 ms</b> after the switch — that's when velocity reaches zero and
+          your first bullet is pinpoint accurate.</p>
+        <ul class="ck">
+          <li>Live timing histogram and shot timeline</li>
+          <li>Early / ideal / late classification per shot</li>
+          <li>Panic double-tap detection</li>
+          <li>Session history that persists across launches</li>
+        </ul>
+      </div>
+      <div class="mock" aria-hidden="true">
+        <div class="mock-bar"><span class="dot" style=""></span><span class="dot" style=""></span><span class="dot" style=""></span><span class="t">Monitor — counter-strafe timing</span></div>
+        <div class="mock-body">
+          <div class="statgrid">
+            <div class="stat"><div class="k">Strafe acc.</div><div class="v good">81%</div></div>
+            <div class="stat"><div class="k">Avg timing</div><div class="v">128 ms</div></div>
+            <div class="stat"><div class="k">Panic taps</div><div class="v red">3</div></div>
+          </div>
+          <div class="mock-row"><span style="">Early</span><div class="bar"><i style=""></i></div><b>12</b></div>
+          <div class="mock-row"><span style="">Ideal</span><div class="bar"><i style=""></i></div><b>64</b></div>
+          <div class="mock-row"><span style="">Late</span><div class="bar"><i style=""></i></div><b>7</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section" id="overlay">
+    <div class="wrap split rev">
+      <div class="splcopy">
+        <div class="eyebrow">Live overlay</div>
+        <h2>Know comp at a glance</h2>
+        <p>Toggle a sleek always-on-top overlay that reads your running client — locally and read-only —
+          to show the map, the live score, and the agents + player names on both teams. Perfect for
+          calling out the enemy composition before the round starts.</p>
+        <ul class="ck">
+          <li>Your team and the enemy team, with agents</li>
+          <li>Live map &amp; round score</li>
+          <li>Respects streamer / incognito mode</li>
+          <li>Click-through, never blocks your aim</li>
+        </ul>
+      </div>
+      <div>
+        <div class="ovmock" aria-hidden="true">
+          <div class="ovh"><span class="b">◆</span><span class="map">Fracture</span><span class="sc">6 — 4</span></div>
+          <div class="ovlbl">Your team</div>
+          <div class="ovp"><div class="ag">R</div><div class="nm">Mango<span class="tg">#671</span></div><div class="an">Reyna</div></div>
+          <div class="ovp me"><div class="ag">I</div><div class="nm">Crimson<span class="tg">#947</span></div><div class="an">Iso</div></div>
+          <div class="ovp"><div class="ag">D</div><div class="nm">Just a Guy<span class="tg">#WWR</span></div><div class="an">Deadlock</div></div>
+          <div class="ovp"><div class="ag">N</div><div class="nm">Sausage<span class="tg">#mia</span></div><div class="an">Neon</div></div>
+          <div class="ovp"><div class="ag">P</div><div class="nm"><span class="tg">hidden</span></div><div class="an">Phoenix</div></div>
+          <div class="ovlbl en">Enemy team</div>
+          <div class="ovp"><div class="ag">O</div><div class="nm">schmidtOng<span class="tg">#888</span></div><div class="an">Omen</div></div>
+          <div class="ovp"><div class="ag">B</div><div class="nm">ltf2<span class="tg">#032</span></div><div class="an">Brimstone</div></div>
+          <div class="ovp"><div class="ag">D</div><div class="nm">AHunkyCat<span class="tg">#610</span></div><div class="an">Deadlock</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section">
+    <div class="wrap">
+      <div class="eyebrow">Built to be safe</div>
+      <h2 style="">Compliant by design</h2>
+      <p class="muted" style="">The core app gives no in-game advantage.
+        Match analysis comes only from the official Riot Games API — Riot's servers, not the game client.
+        The live overlay merely <em>reads</em> your running client locally, the same read-only mechanism
+        public rank-trackers use. It never reads game memory, injects, hooks, or overlays the game process.</p>
+      <div class="warn">
+        <div class="ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#ff6b78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></div>
+        <div>
+          <h3>Integrated SnapTap / SOCD is not fully recognized by Riot Games</h3>
+          <p>The app bundles an optional <b>Snap Tap / SOCD movement</b> toggle (powered by open-source
+            SnapKey). <b>Snap Tap was theoretically banned in Valorant</b> (Riot, 2024) and using it can get your account
+            suspended, but many people use it without any issues. It's disabled by default.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section">
+    <div class="wrap">
+      <div class="eyebrow">Get started</div>
+      <h2>Up and running in a minute</h2>
+      <div class="steps">
+        <div class="step"><h4>Download &amp; install</h4><p>Grab the Windows installer and run it. Auto-updates keep you current.</p></div>
+        <div class="step"><h4>Sign in with Bazinet</h4><p>One click opens your browser to sign in. The app never sees your password.</p></div>
+        <div class="step"><h4>Connect your stats</h4><p>Add a Riot API key, or enable the keyless live-client view — no production key needed.</p></div>
+        <div class="step"><h4>Train &amp; analyze</h4><p>Open the Monitor while you play, then review your match breakdown and coaching.</p></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section" id="download">
+    <div class="wrap">
+      <div class="dlband">
+        <span class="pill">Free download</span>
+        <h2 style="">Get Bazinet Aim Trainer</h2>
+        <p>Free for Windows 10 &amp; 11. Installs in seconds and updates itself. Sign in with your Bazinet
+          account to get started.</p>
+        <a class="btn btn-primary" href="/valorant/download" style="">Download for Windows</a>
+        <div class="reqs">
+          <span>Windows 10 / 11 (64-bit)</span>
+          <span>Riot Client running (for live features)</span>
+          <span>~76 MB installer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="eyebrow">Questions</div>
+      <h2>Frequently asked</h2>
+      <div class="faq">
+        <details open><summary>Is this allowed by Riot / will it get me banned?</summary>
+          <p>The core app is read-only and never touches the game process — match data comes from the
+            official Riot API and the live view only reads your own running client, exactly like public
+            rank-trackers. The single exception is the optional <b>Snap Tap</b> toggle, which is banned in
+            Valorant and ships disabled; don't turn it on for Valorant.</p></details>
+        <details><summary>Do I need a Riot API key?</summary>
+          <p>No. You can enable the keyless "live client view," which analyzes your matches by reading your
+            own logged-in client session — no production key required. A Riot API key is supported too.</p></details>
+        <details><summary>What do I sign in with?</summary>
+          <p>Your Bazinet account (the same one at bazinet.net). Sign-in happens in your browser with
+            password, 2FA, passkey or Google — the app never sees your password.</p></details>
+        <details><summary>Which platforms are supported?</summary>
+          <p>Windows 10 and 11 (64-bit). The installer is signed for one-click install and updates itself
+            automatically.</p></details>
+        <details><summary>Does the overlay show live K/D and ults?</summary>
+          <p>Riot no longer exposes live mid-match scoreboard stats through the client API, so the overlay
+            focuses on what's available: map, round score, and both teams' agents and names.</p></details>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="wrap">
+      <div class="foot-row">
+        <a class="brand" href="/valorant"><span class="mark">◆</span> Bazinet <span class="sub">Aim Trainer</span></a>
+        <div class="foot-links">
+          <a href="/valorant/download" data-i18n="nav.download">Download</a>
+          <a href="https://bazinet.net/">Bazinet Vault</a>
+          <a href="/terms.html" data-i18n="nav.terms">Terms</a>
+          <a href="/privacy.html" data-i18n="nav.privacy">Privacy</a>
+        </div>
+      </div>
+      <p class="disclaimer">Bazinet Aim Trainer is not affiliated with, endorsed, sponsored, or specifically
+        approved by Riot Games, Inc. "VALORANT" and Riot Games are trademarks of Riot Games, Inc. This tool
+        reads publicly available data through the official Riot API and your own local client; it does not
+        modify or interfere with the game. © Bazinet.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
