@@ -2807,6 +2807,12 @@
       "breach.html"
     ]
   },
+  "t.6988b16a": {
+    "en": "Reconnect",
+    "pages": [
+      "app.html"
+    ]
+  },
   "t.698ea83b": {
     "en": "Review them again",
     "pages": [
@@ -3687,6 +3693,12 @@
     "en": "you",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.8b39b72f": {
+    "en": "Offline copy",
+    "pages": [
+      "app.html"
     ]
   },
   "t.8b5522a2": {
@@ -5515,6 +5527,12 @@
     "en": "Enter your account password to open your agenda. It never leaves this device — it is what decrypts your schedule.",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.e1b67c04": {
+    "en": "Keeps an encrypted copy on this computer so the vault opens without a connection, read-only. Turning it off erases the copy.",
+    "pages": [
+      "app.html"
     ]
   },
   "t.e1c24cd9": {

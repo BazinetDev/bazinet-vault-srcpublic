@@ -42,6 +42,12 @@
     </h1>
 
     
+    <div id="offline-banner" class="offline-banner hidden" role="status">
+      <span id="offline-text"></span>
+      <button id="btn-go-online" class="ghost small" type="button" data-i18n="t.6988b16a">Reconnect</button>
+    </div>
+
+    
     <section id="screen-setup" class="card screen unlock-card hidden">
       <div class="lock-ico" aria-hidden="true">
         <svg viewBox="0 0 24 24" width="42" height="42" fill="none" stroke="url(#lg)" stroke-width="1.6"><rect x="5" y="10" width="14" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
@@ -700,6 +706,14 @@
               <span id="autolock-value" class="set-meta"><span data-i18n="t.b45ebd80">5 min</span></span>
             </button>
 
+            <button id="mi-offline" class="set-row desktop-only" type="button">
+              <span class="set-txt">
+                <span class="set-title" data-i18n="t.8b39b72f">Offline copy</span>
+                <span class="set-desc" data-i18n="t.e1b67c04">Keeps an encrypted copy on this computer so the vault opens without a connection, read-only. Turning it off erases the copy.</span>
+              </span>
+              <span id="offline-value" class="set-meta"></span>
+            </button>
+
           </section>
 
           
@@ -857,6 +871,7 @@
   <script src="/crypto.js"></script>
   <script src="/totp.js"></script>
   <script src="/api.js"></script>
+  <script src="/offline.js"></script>
   <script src="/emergency-api.js"></script>
   <script src="/app.js"></script>
 </body>
