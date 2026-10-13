@@ -2672,6 +2672,12 @@
       "vault.html"
     ]
   },
+  "t.648809b5": {
+    "en": "Open Horaire in the browser",
+    "pages": [
+      "download.html"
+    ]
+  },
   "t.64c85433": {
     "en": "and nowhere else. Argon2id runs on your device; your master password is never sent.",
     "pages": [
@@ -2970,6 +2976,12 @@
       "app.html"
     ]
   },
+  "t.6e61afc7": {
+    "en": "Horaire CVM in its own window: your week, homework and exams, synced with Omnivox. Free, and it updates itself.",
+    "pages": [
+      "download.html"
+    ]
+  },
   "t.6ef0dd10": {
     "en": "Response times",
     "pages": [
@@ -3080,6 +3092,12 @@
     "en": "The zero-knowledge password manager",
     "pages": [
       "index.html"
+    ]
+  },
+  "t.74520d54": {
+    "en": "Also a native app · Horaire CVM",
+    "pages": [
+      "download.html"
     ]
   },
   "t.7502ba97": {
@@ -4512,6 +4530,12 @@
       "extension.html"
     ]
   },
+  "t.b1ea6cbd": {
+    "en": "Your Cégep agenda, on your Mac",
+    "pages": [
+      "download.html"
+    ]
+  },
   "t.b1f9bfea": {
     "en": "Two-factor verification",
     "pages": [
@@ -4742,6 +4766,12 @@
     "en": "Search",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.bce9cc1d": {
+    "en": "macOS 10.15+ · Apple Silicon · updates itself",
+    "pages": [
+      "download.html"
     ]
   },
   "t.bd004d09": {
@@ -5481,6 +5511,12 @@
       "horaire.html"
     ]
   },
+  "t.de2eddb2": {
+    "en": "Also on your Mac: download the desktop app",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.de3ad803": {
     "en": "offline guessing",
     "pages": [
@@ -6156,12 +6192,6 @@
       "about.html",
       "index.html",
       "support.html"
-    ]
-  },
-  "t.fe4f0df4": {
-    "en": "macOS 10.15+ · Apple Silicon · version 1.2.0",
-    "pages": [
-      "download.html"
     ]
   },
   "t.ff089fde": {
