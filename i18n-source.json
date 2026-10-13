@@ -3112,6 +3112,12 @@
       "download.html"
     ]
   },
+  "t.750eb701": {
+    "en": "Stop receiving surveys",
+    "pages": [
+      "survey.html"
+    ]
+  },
   "t.7512ea92": {
     "en": "for the full details.",
     "pages": [
@@ -3273,6 +3279,12 @@
     "en": "Sign in to Omnivox once",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.7ab94b08": {
+    "en": "Loading the survey…",
+    "pages": [
+      "survey.html"
     ]
   },
   "t.7b47150d": {
@@ -5977,6 +5989,12 @@
       "horaire.html"
     ]
   },
+  "t.f596289f": {
+    "en": "Edit my answers",
+    "pages": [
+      "survey.html"
+    ]
+  },
   "t.f5f2e31b": {
     "en": "No. Horaire CVM is an independent app built for Cégep du Vieux Montréal students. It isn't affiliated with or endorsed by the Cégep, Omnivox or Skytech — always check Omnivox for anything that matters, like an exam date.",
     "pages": [
@@ -6011,6 +6029,12 @@
     "en": "Delete",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.f74db5b7": {
+    "en": "This link is personal: it answers as your Bazinet account.",
+    "pages": [
+      "survey.html"
     ]
   },
   "t.f768ea10": {
