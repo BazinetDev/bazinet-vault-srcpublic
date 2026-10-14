@@ -1253,12 +1253,6 @@
       "horaire.html"
     ]
   },
-  "t.1ba70b59": {
-    "en": "$2.99/month · 7 days free",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.1bc4d666": {
     "en": "Sometimes",
     "pages": [
@@ -3327,6 +3321,12 @@
       "vault.html"
     ]
   },
+  "t.7b9375b7": {
+    "en": "Yes. Horaire, the vault, the quick tools and the Aim Trainer are free to start, with no credit card. An optional Pro plan adds extras to Horaire and the vault and helps cover server costs: $2.99 a month or $24.99 a year (7 days free), a $9.99 term pass with no subscription, or Family at $5.99 a month for up to 5 people.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.7b9fb6c7": {
     "en": "Your vault locks itself after inactivity, so a walked-away screen stays a closed door.",
     "pages": [
@@ -3667,12 +3667,6 @@
     "en": "Click the puzzle-piece icon in Chrome's toolbar and pin Bazinet Vault, so it's one click away on any page.",
     "pages": [
       "extension.html"
-    ]
-  },
-  "t.885334b0": {
-    "en": "Yes. Horaire, the vault, the quick tools and the Aim Trainer are free to start, with no credit card. An optional Pro plan ($2.99/month, 7 days free) adds extras to Horaire and the vault and helps cover server costs.",
-    "pages": [
-      "index.html"
     ]
   },
   "t.88a0b037": {
@@ -5519,6 +5513,12 @@
       "account.html",
       "app.html",
       "horaire.html"
+    ]
+  },
+  "t.dc529f40": {
+    "en": "$2.99/month, $24.99/year or $9.99 a term · Family $5.99/month for 5",
+    "pages": [
+      "index.html"
     ]
   },
   "t.dcdf4373": {
