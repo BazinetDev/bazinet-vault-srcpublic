@@ -218,6 +218,22 @@
     ],
     "conflict": true
   },
+  "nav.status": {
+    "en": "Status",
+    "pages": [
+      "about.html",
+      "breach.html",
+      "download.html",
+      "extension.html",
+      "generator.html",
+      "horaire.html",
+      "index.html",
+      "privacy.html",
+      "support.html",
+      "terms.html",
+      "vault.html"
+    ]
+  },
   "nav.support": {
     "en": "Support",
     "pages": [
