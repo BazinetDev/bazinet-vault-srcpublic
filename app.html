@@ -219,6 +219,7 @@
         <button id="ext-notice-x" class="ext-notice-x" type="button" aria-label="Dismiss">✕</button>
       </div>
 
+      <p id="family-note" class="family-note hidden" role="status"></p>
       <ul id="items" class="items"></ul>
       <div id="items-empty" class="empty hidden">
         <svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">
@@ -325,6 +326,12 @@
 
       <textarea id="item-note-body" class="hidden" placeholder="Write your secure note — encrypted on your device." rows="7" maxlength="10000"></textarea>
 
+      <label id="item-dest-row" class="hidden"><span data-i18n="t.4c978856">Save in</span>
+        <select id="item-dest">
+          <option value="mine" data-i18n="t.ddfb3a90">My vault</option>
+          <option value="family" data-i18n="t.fe1ceb89">Family vault (everyone in your family plan)</option>
+        </select>
+      </label>
       <label class="chk fav-row"><input id="item-fav" type="checkbox"/> <span data-i18n="t.a8e7d773">Mark as favorite</span></label>
 
       

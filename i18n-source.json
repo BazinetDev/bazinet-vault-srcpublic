@@ -2264,6 +2264,12 @@
       "app.html"
     ]
   },
+  "t.4c978856": {
+    "en": "Save in",
+    "pages": [
+      "app.html"
+    ]
+  },
   "t.4cce5f23": {
     "en": "Zero-knowledge by design:",
     "pages": [
@@ -4014,6 +4020,12 @@
       "horaire.html"
     ]
   },
+  "t.98899fba": {
+    "en": "Fill from my Bazinet Vault",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.98edb761": {
     "en": "English and French, in chat, tickets and email.",
     "pages": [
@@ -5045,6 +5057,12 @@
       "horaire.html"
     ]
   },
+  "t.c812c060": {
+    "en": "Save in my Bazinet Vault",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.c915d505": {
     "en": "Your schedule",
     "pages": [
@@ -5539,6 +5557,12 @@
       "horaire.html"
     ]
   },
+  "t.ddfb3a90": {
+    "en": "My vault",
+    "pages": [
+      "app.html"
+    ]
+  },
   "t.de2eddb2": {
     "en": "Also on your Mac: download the desktop app",
     "pages": [
@@ -5621,6 +5645,12 @@
     "en": "Built the way tools should be",
     "pages": [
       "index.html"
+    ]
+  },
+  "t.e2ebd42b": {
+    "en": "Use the password from my Vault",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.e32fd9ee": {
@@ -6224,6 +6254,12 @@
     "en": "Save passwords to your free vault →",
     "pages": [
       "generator.html"
+    ]
+  },
+  "t.fe1ceb89": {
+    "en": "Family vault (everyone in your family plan)",
+    "pages": [
+      "app.html"
     ]
   },
   "t.fe3af23b": {
