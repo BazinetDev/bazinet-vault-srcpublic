@@ -2009,6 +2009,12 @@
       "horaire.html"
     ]
   },
+  "t.445cd7b2": {
+    "en": "Sign in to Omnivox",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.44d483c0": {
     "en": "Your messages here and your account details. Never your vault or your agenda: they are encrypted on your device.",
     "pages": [
@@ -3745,6 +3751,12 @@
     "en": "Offline copy",
     "pages": [
       "app.html"
+    ]
+  },
+  "t.8b3cd98e": {
+    "en": "So Horaire can see when one of your classes is cancelled.",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.8b5522a2": {

@@ -529,6 +529,18 @@
       <div id="pro-modal" class="hz-modal hz-promodal"></div>
     </div>
 
+    
+    <div id="ovx-overlay" class="hz-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="ovx-dlg-title">
+      <div class="hz-modal">
+        <h3 id="ovx-dlg-title" data-i18n="t.445cd7b2">Sign in to Omnivox</h3>
+        <p class="hz-note" data-i18n="t.8b3cd98e">So Horaire can see when one of your classes is cancelled.</p>
+        <div id="ovx-dlg-slot"></div>
+        <div class="hz-row end">
+          <button id="ovx-dlg-close" class="ghost-btn" type="button" data-i18n="t.bbfa773e">Close</button>
+        </div>
+      </div>
+    </div>
+
     <div id="set-overlay" class="hz-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="set-title">
       <div class="hz-modal">
         <h3 id="set-title" data-i18n="t.c7f73bb5">Settings</h3>
@@ -582,7 +594,7 @@
           <div id="lea-items" class="hz-lealist"></div>
         </div>
         
-        <div class="hz-ovx-box">
+        <div id="ovx-box" class="hz-ovx-box">
           <h4 data-i18n="t.d56b82dd">Connect Omnivox</h4>
           <p class="hz-note" data-i18n="t.89843574">Your homework, added by itself</p>
           <p class="hz-src" id="ovx-source"></p>
