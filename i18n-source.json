@@ -989,12 +989,6 @@
       "vault.html"
     ]
   },
-  "t.1367fa1e": {
-    "en": "No aliases yet. Create one below.",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.13888bab": {
     "en": "the mission. Make it different from your master password: that is the entire point.",
     "pages": [
@@ -6278,6 +6272,12 @@
   },
   "vault.useRecovery": {
     "en": "Use a recovery key instead",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.al.empty": {
+    "en": "No aliases yet. Create one above.",
     "pages": [
       "app.html"
     ]
