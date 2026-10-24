@@ -47,12 +47,6 @@
       "app.html"
     ]
   },
-  "menu.health": {
-    "en": "Password health",
-    "pages": [
-      "app.html"
-    ]
-  },
   "nav.about": {
     "en": "About",
     "pages": [
@@ -404,18 +398,6 @@
     "en": "Support is asking to read your account log",
     "pages": [
       "account.html"
-    ]
-  },
-  "set.aliases": {
-    "en": "Email aliases",
-    "pages": [
-      "app.html"
-    ]
-  },
-  "set.aliasesDesc": {
-    "en": "Hand out a masked address instead of your real inbox, so a leak never exposes it.",
-    "pages": [
-      "app.html"
     ]
   },
   "set.autolock": {
@@ -2598,12 +2580,6 @@
       "horaire.html"
     ]
   },
-  "t.5d3d2b0a": {
-    "en": "Let a trusted contact reach this vault after a waiting period you set.",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.5f21e0f7": {
     "en": "Verify & continue",
     "pages": [
@@ -3735,12 +3711,6 @@
       "index.html"
     ]
   },
-  "t.8ac18353": {
-    "en": "A temporary, separately-locked subset of entries for travel or higher-risk situations.",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.8af56de6": {
     "en": "you",
     "pages": [
@@ -3920,12 +3890,6 @@
     "en": "Questions about either product, billing or your account.",
     "pages": [
       "account.html"
-    ]
-  },
-  "t.9286da75": {
-    "en": "Checked on this device only — nothing about your passwords is sent anywhere.",
-    "pages": [
-      "app.html"
     ]
   },
   "t.93370add": {
@@ -4930,12 +4894,6 @@
       "vault.html"
     ]
   },
-  "t.c1e2ad92": {
-    "en": "A recovery key is a second way into this vault, held only by you. It opens the same vault your master password does, so keep it somewhere a thief would not look — printed and filed, not in a note on the same laptop.",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.c1f9adb7": {
     "en": "Enter it once. After that this device is remembered and you will not be asked again.",
     "pages": [
@@ -5793,12 +5751,6 @@
       "app.html"
     ]
   },
-  "t.ea69a1a4": {
-    "en": "address that forwards to your real email. Keep your real email private when signing up to services.",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.ea6e9391": {
     "en": "Stop reusing the same password everywhere.",
     "pages": [
@@ -6143,12 +6095,6 @@
       "vault.html"
     ]
   },
-  "t.f9de503c": {
-    "en": "to forwarded mail — a reply is sent from your real address and would reveal it.",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.f9e4e497": {
     "en": "native app",
     "pages": [
@@ -6332,6 +6278,108 @@
   },
   "vault.useRecovery": {
     "en": "Use a recovery key instead",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.al.lede": {
+    "en": "address that forwards to your real inbox. Give it out instead of your email when you sign up somewhere.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.al.noreply": {
+    "en": "to forwarded mail — your reply would come from your real address.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.lock": {
+    "en": "Lock",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.moreDetails": {
+    "en": "More details",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.nav.all": {
+    "en": "All entries",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.nav.fav": {
+    "en": "Favorites",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.nav.ids": {
+    "en": "Identities",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.nav.logins": {
+    "en": "Logins",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.nav.notes": {
+    "en": "Secure notes",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.nav.passkeys": {
+    "en": "Passkeys",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.nav.protect": {
+    "en": "Protect",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.nav.vault": {
+    "en": "Vault",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.noMatch": {
+    "en": "Nothing here matches.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.rk.p1": {
+    "en": "A second way into this vault, held only by you",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.rk.p1s": {
+    "en": "It opens the vault if you ever forget your master password.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.rk.p2": {
+    "en": "Anyone holding it can open your vault",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "vx.rk.p2s": {
+    "en": "Keep it printed and filed — not in a note on the same laptop.",
     "pages": [
       "app.html"
     ]
