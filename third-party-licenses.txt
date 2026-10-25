@@ -10,7 +10,7 @@ Licensed under the MIT License: https://opensource.org/licenses/MIT
 vendor/pdfjs/ — PDF.js, Copyright Mozilla Foundation
 Licensed under the Apache License, Version 2.0. Full text: /vendor/pdfjs/LICENSE
 
-vendor/postal-mime.js — postal-mime 3.0.1, Copyright (c) 2021-2025 Andris Reinman
+vendor/postal-mime.js — postal-mime 4.1.4, Copyright (c) 2021-2025 Andris Reinman
 Licensed under the MIT No Attribution License (MIT-0): https://opensource.org/license/mit-0
 
 vendor/image-decode.js — jpeg-js 0.4.4, Copyright (c) 2011 notmasteryet / Eugene Ware, BSD 3-Clause License;
