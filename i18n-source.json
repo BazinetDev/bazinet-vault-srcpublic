@@ -3831,6 +3831,12 @@
       "account.html"
     ]
   },
+  "t.90d4e35e": {
+    "en": "Sign in now",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.90e3a592": {
     "en": "Your key stays in the background",
     "pages": [
@@ -4556,6 +4562,12 @@
     "en": "Contact",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.b3c7c8ac": {
+    "en": "Sign in to Omnivox again",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.b3da7025": {
@@ -5687,6 +5699,12 @@
     "en": "All the essentials of a modern password manager — built so that the secrets stay secret, even from us.",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.e7e5f648": {
+    "en": "Your Omnivox session ended. Omnivox may email you a code to sign back in: start when you can check your email, since the code only lasts a few minutes.",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.e87d86d2": {
