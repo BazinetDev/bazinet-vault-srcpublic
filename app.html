@@ -142,18 +142,6 @@
     </section>
 
     
-    <section id="screen-mission" class="card screen hidden">
-      <div id="mission-banner" class="mission-banner">
-        <span class="mission-dot"></span>
-        <strong data-i18n="t.8c788c92">Mission session active</strong>
-        <span id="mission-countdown" class="mission-count"></span>
-      </div>
-      <p class="muted small" id="mission-sub" data-i18n="t.1e92c74d">Only the entries you curated are available. The rest of your vault stays sealed.</p>
-      <ul id="mission-items" class="items"></ul>
-      <button id="btn-mission-exit" class="ghost" type="button" style="" data-i18n="t.bb597d44">End mission &amp; lock</button>
-    </section>
-
-    
     <section id="screen-vault" class="screen vault-shell hidden">
       <aside class="vault-side" aria-label="Vault navigation">
         <nav class="side-nav">
@@ -489,15 +477,14 @@
     <div class="card dialog mission-explainer">
       <div class="mx-badge"><svg class="bz-ico" viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 7 9 3 5 7l4 4"/><path d="m17 11 4 4-4 4-4-4"/><path d="m8 12 4 4 6-6-4-4Z"/><path d="m16 8 3-3"/><path d="M9 21a6 6 0 0 0-6-6"/></svg></div>
       <h2 data-i18n="set.mission">Mission Mode</h2>
-      <p class="mx-lede" data-i18n="t.1a2d089f">For the moments that matter most — a border crossing, a protest, a source meeting.</p>
+      <p class="mx-lede" data-i18n="mm.x.lede">For a border crossing, a trip, a sensitive meeting: carry a few entries, not your whole vault.</p>
       <ul class="mx-points">
-        <li><span class="mx-ico"><svg class="bz-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"/><path d="M12 16.5a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Z"/><path d="M12 12h.01"/></svg></span><div><b><span data-i18n="t.5b48c95f">Only what you need.</span></b> <span data-i18n="t.3c287b7e">Curate a small kit of entries. Everything else in your vault stays invisible — and undisclosed.</span></div></li>
-        <li><span class="mx-ico"><svg class="bz-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.5 11.5a4 4 0 1 0-1 1L19 20l2-2-1.5-1.5L21 15l-2-2-1.5 1.5Z"/></svg></span><div><b><span data-i18n="t.e38bf64d">A separate passcode.</span></b> <span data-i18n="t.6a505ce5">Open a mission without your master password, so you never reveal a full vault even exists.</span></div></li>
-        <li><span class="mx-ico"><svg class="bz-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="M12 9v4l2.5 1.5"/><path d="M9.5 2.5h5"/></svg></span><div><b><span data-i18n="t.810750ce">It expires.</span></b> <span data-i18n="t.10931058">Set a time limit; the session — and its data on our servers — self-destructs when it's up.</span></div></li>
-        <li><span class="mx-ico"><svg class="bz-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21Z"/><path d="M12 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg></span><div><b><span data-i18n="t.854f9e39">Tied to a place (optional).</span></b> <span data-i18n="t.82582b11">Lock a mission to a location, so it only opens where you meant it to.</span></div></li>
+        <li><span class="mx-ico"><svg class="bz-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"/><path d="M12 16.5a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Z"/><path d="M12 12h.01"/></svg></span><div><b data-i18n="mm.x.p1">Only what you need.</b> <span data-i18n="mm.x.p1s">Pick a few entries. The rest of your vault is never on that device.</span></div></li>
+        <li><span class="mx-ico"><svg class="bz-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.5 11.5a4 4 0 1 0-1 1L19 20l2-2-1.5-1.5L21 15l-2-2-1.5 1.5Z"/></svg></span><div><b data-i18n="mm.x.p2">Opens anywhere, on its own.</b> <span data-i18n="mm.x.p2s">At bazinet.net/mission, with a mission code and a passcode. No account, no master password, nothing that shows a vault exists.</span></div></li>
+        <li><span class="mx-ico"><svg class="bz-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="M12 9v4l2.5 1.5"/><path d="M9.5 2.5h5"/></svg></span><div><b data-i18n="mm.x.p3">It ends by itself.</b> <span data-i18n="mm.x.p3s">After the time you choose (30 days at most), the server deletes it. Too many wrong passcodes destroy it too.</span></div></li>
       </ul>
-      <p class="mx-fine" data-i18n="t.4bbd74a7">Built for journalists, activists, and anyone who travels with secrets. Zero-knowledge throughout — encrypted on your device.</p>
-      <div class="row"><button id="mx-got-it" class="primary" type="button" style="" data-i18n="t.45f777a5">Set up a mission</button></div>
+      <p class="mx-fine" data-i18n="mm.x.fine">Encrypted on your device. We never see the entries, the passcode or the mission code.</p>
+      <div class="row"><button id="mx-got-it" class="primary mx-wide" type="button" data-i18n="t.45f777a5">Set up a mission</button></div>
       <button id="mx-close" class="link" type="button" data-i18n="t.e4571490">Not now</button>
     </div>
   </div>
@@ -507,99 +494,77 @@
     <div class="card dialog mission-dialog">
       <header class="mw-head">
         <h2 class="mx-title"><svg class="bz-ico" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 7 9 3 5 7l4 4"/><path d="m17 11 4 4-4 4-4-4"/><path d="m8 12 4 4 6-6-4-4Z"/><path d="m16 8 3-3"/><path d="M9 21a6 6 0 0 0-6-6"/></svg> <span data-i18n="t.a1bee30e">Mission Mode</span></h2>
-        <p class="muted small"><span data-i18n="t.b614e7aa">A small, separately-locked copy of a few entries, that expires on its
-          own. Opening it never reveals the rest of your vault.</span>
+        <p class="muted small"><span data-i18n="mm.sub">A few entries, opened at bazinet.net/mission with a code and a passcode. Ends on its own.</span>
           <button id="mx-help" class="link" type="button"><span data-i18n="t.1dd6a17c">How it works</span></button></p>
       </header>
 
       
       <section id="mw-home">
-        <h3 class="sec-sub" data-i18n="t.a8a720f5">Your missions</h3>
-        <ul id="mission-list" class="em-list"></ul>
-        <button id="btn-mission-new" class="primary" type="button" style="" data-i18n="t.6d4c95c6">
-          + New mission
-        </button>
+        <ul id="mission-list" class="mm-list"></ul>
+        <button id="btn-mission-new" class="primary mx-wide" type="button" data-i18n="t.6d4c95c6">+ New mission</button>
       </section>
 
       
-      <form id="mission-create-form" class="hidden" autocomplete="off">
-        <ol class="mw-steps" aria-label="Progress">
-          <li class="mw-dot is-active" data-step="1"><span>1</span><span data-i18n="t.f056d0d5">Entries</span></li>
-          <li class="mw-dot" data-step="2"><span>2</span><span data-i18n="t.61a0ae3b">Limits</span></li>
-          <li class="mw-dot" data-step="3"><span>3</span><span data-i18n="t.cd1334ca">Passcode</span></li>
-        </ol>
+      <form id="mission-create-form" class="mm-form hidden" autocomplete="off" novalidate>
+        <h3 id="mm-form-title" class="mw-title" data-i18n="mm.newTitle">New mission</h3>
+        <label class="mm-name-row"><span data-i18n="t.709a2322">Name</span> <span class="hint" data-i18n="mm.nameHint">shown when it opens; keep it unremarkable</span>
+          <input id="mn-name" type="text" maxlength="60" data-i18n-attr="placeholder:mm.namePh" placeholder="e.g. Trip"/></label>
 
-        
-        <section class="mw-step" data-step="1">
-          <h3 class="mw-title" data-i18n="t.2286ef71">Which entries go in?</h3>
-          <p class="hint" data-i18n="t.f4afa57c">Pick only what you would need while the mission is open. Everything you
-            leave out stays sealed in your vault.</p>
+        <div class="mm-sec">
+          <div class="mm-sec-h"><strong data-i18n="mm.entries">Entries</strong> <span class="hint"><span id="mn-count">0</span> <span data-i18n="t.835f3b50">selected</span></span></div>
           <div class="mw-pick">
-            <input id="mn-filter" class="mw-filter" type="search" placeholder="Filter entries…" autocomplete="off"/>
+            <input id="mn-filter" class="mw-filter" type="search" data-i18n-attr="placeholder:mm.filter" placeholder="Search entries" autocomplete="off"/>
             <button id="mn-none" class="ghost small" type="button" data-i18n="t.719ea396">Clear</button>
           </div>
           <div id="mn-items" class="mn-items"></div>
-          <p class="mw-count"><span id="mn-count">0</span> <span data-i18n="t.835f3b50">selected</span></p>
-        </section>
+        </div>
 
-        
-        <section class="mw-step hidden" data-step="2">
-          <h3 class="mw-title" data-i18n="t.897e331c">How long should it last?</h3>
-          <p class="hint" data-i18n="t.52e5c079">The server deletes the mission when the time is up — not the app. Choose
-            the shortest window you can live with.</p>
-          <label><span data-i18n="t.0d1fcc38">Time limit</span>
+        <div id="mm-new-only" class="mm-grid">
+          <label><span data-i18n="mm.ends">Ends after</span>
             <select id="mn-duration">
-              <option value="3600000"><span data-i18n="t.f030c3d6">1 hour</span></option>
-              <option value="14400000"><span data-i18n="t.7b47150d">4 hours</span></option>
-              <option value="28800000" selected="selected"><span data-i18n="t.191800b7">8 hours</span></option>
-              <option value="86400000"><span data-i18n="t.cb4780f8">24 hours</span></option>
-              <option value="259200000"><span data-i18n="t.09ad9df4">3 days</span></option>
+              <option value="3600000" data-i18n="t.f030c3d6">1 hour</option>
+              <option value="28800000" data-i18n="t.191800b7">8 hours</option>
+              <option value="86400000" data-i18n="t.cb4780f8">24 hours</option>
+              <option value="259200000" selected="selected" data-i18n="t.09ad9df4">3 days</option>
+              <option value="604800000" data-i18n="mm.d7">7 days</option>
+              <option value="1209600000" data-i18n="mm.d14">14 days</option>
+              <option value="2592000000" data-i18n="mm.d30">30 days</option>
             </select>
           </label>
-          <label class="chk fav-row" style="">
-            <input id="mn-geo" type="checkbox"/>
-            <span><span data-i18n="t.c277873e">Only open near where I am now</span> <span id="mn-geo-status" class="hint"></span></span>
+          <label><span data-i18n="mm.fails">Destroy after</span>
+            <select id="mn-fails">
+              <option value="3" data-i18n="mm.f3">3 wrong passcodes</option>
+              <option value="5" selected="selected" data-i18n="mm.f5">5 wrong passcodes</option>
+              <option value="10" data-i18n="mm.f10">10 wrong passcodes</option>
+            </select>
           </label>
-          <p class="hint" data-i18n="t.5c00462d">Advisory only: the check runs on your device, so treat it as a
-            convenience, not a lock.</p>
-        </section>
-
-        
-        <section class="mw-step hidden" data-step="3">
-          <h3 class="mw-title" data-i18n="t.8c07785f">Set a mission passcode</h3>
-          <p class="hint"><span data-i18n="t.9df0e620">This opens the mission — and</span> <strong><span data-i18n="t.f8969a18">only</span></strong> <span data-i18n="t.13888bab">the mission. Make it
-            different from your master password: that is the entire point.</span></p>
-          <label><span data-i18n="t.709a2322">Name</span> <span class="hint" data-i18n="t.6e49505f">— keep it unremarkable</span>
-            <input id="mn-name" type="text" maxlength="60" placeholder="e.g. Trip"/></label>
-          <label><span data-i18n="t.c502deec">Mission passcode</span><input id="mn-pass" type="password" autocomplete="new-password" placeholder="At least 6 characters"/></label>
-          <label><span data-i18n="t.798a2a45">Confirm passcode</span><input id="mn-pass2" type="password" autocomplete="new-password"/></label>
-          <p id="mw-summary" class="mw-summary"></p>
-        </section>
+          <label><span data-i18n="t.c502deec">Mission passcode</span>
+            <input id="mn-pass" type="password" autocomplete="new-password" data-i18n-attr="placeholder:mm.passPh" placeholder="At least 8 characters"/></label>
+          <label><span data-i18n="t.798a2a45">Confirm passcode</span>
+            <input id="mn-pass2" type="password" autocomplete="new-password"/></label>
+          <p class="hint mm-span" data-i18n="mm.passHint">Not your master password. It can't be recovered: if it's lost, delete the mission and make a new one.</p>
+        </div>
 
         <p id="mission-create-error" class="error" role="alert"></p>
         <div class="mw-nav">
-          <button id="mw-back" class="ghost" type="button" data-i18n="t.b52b36b7">Back</button>
-          <button id="mw-next" class="primary" type="button" data-i18n="t.bc981983">Next</button>
-          <button id="btn-mission-create" class="primary hidden" type="submit" data-i18n="t.c5baa93d">Create mission</button>
+          <button id="mw-back" class="ghost" type="button" data-i18n="t.77dfd213">Cancel</button>
+          <button id="btn-mission-create" class="primary" type="submit" data-i18n="t.c5baa93d">Create mission</button>
         </div>
       </form>
 
-      <div class="row" style=""><button id="btn-mission-manage-close" class="link" type="button" data-i18n="t.bbfa773e">Close</button></div>
-    </div>
-  </div>
+      
+      <section id="mm-ready" class="mm-ready hidden">
+        <h3 class="mw-title" data-i18n="mm.readyTitle">Mission ready</h3>
+        <p class="muted" data-i18n="mm.readyHow">To open it, go to bazinet.net/mission on any device and enter this code and the passcode you chose.</p>
+        <div id="mm-ready-code" class="mm-code"></div>
+        <div class="mw-nav">
+          <button id="mm-ready-copy" class="ghost" type="button" data-i18n="mm.copyCode">Copy code</button>
+          <button id="mm-ready-done" class="primary" type="button" data-i18n="mm.done">Done</button>
+        </div>
+        <p class="hint" data-i18n="mm.readyKeep">You can see the code again here while the mission lasts. Keep it apart from the passcode.</p>
+      </section>
 
-  
-  <div id="mission-open-overlay" class="overlay hidden">
-    <div class="card dialog">
-      <h2 class="mx-title"><svg class="bz-ico" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 7 9 3 5 7l4 4"/><path d="m17 11 4 4-4 4-4-4"/><path d="m8 12 4 4 6-6-4-4Z"/><path d="m16 8 3-3"/><path d="M9 21a6 6 0 0 0-6-6"/></svg> <span data-i18n="t.a48b16c4">Open a Mission</span></h2>
-      <div id="mission-open-list" class="em-list"></div>
-      <form id="mission-open-form" class="panel hidden" autocomplete="off" style="">
-        <p class="muted small" id="mission-open-name"></p>
-        <label><span data-i18n="t.c502deec">Mission passcode</span><input id="mo-pass" type="password" autocomplete="off" placeholder="Mission passcode"/></label>
-        <button id="btn-mission-open" class="primary" type="submit" data-i18n="t.0f75577f">Open mission</button>
-        <p id="mission-open-error" class="error" role="alert"></p>
-      </form>
-      <div class="row" style=""><button id="btn-mission-open-close" class="link" type="button" data-i18n="t.77dfd213">Cancel</button></div>
+      <div class="row mm-foot"><button id="btn-mission-manage-close" class="link" type="button" data-i18n="t.bbfa773e">Close</button></div>
     </div>
   </div>
 
@@ -920,6 +885,7 @@
   <script src="/hash-wasm-argon2.js"></script>
   <script src="/crypto.js"></script>
   <script src="/totp.js"></script>
+  <script src="/mission-code.js"></script>
   <script src="/api.js"></script>
   <script src="/offline.js"></script>
   <script src="/emergency-api.js"></script>

@@ -47,6 +47,228 @@
       "app.html"
     ]
   },
+  "mm.copyCode": {
+    "en": "Copy code",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.d14": {
+    "en": "14 days",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.d30": {
+    "en": "30 days",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.d7": {
+    "en": "7 days",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.done": {
+    "en": "Done",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.ends": {
+    "en": "Ends after",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.entries": {
+    "en": "Entries",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.f10": {
+    "en": "10 wrong passcodes",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.f3": {
+    "en": "3 wrong passcodes",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.f5": {
+    "en": "5 wrong passcodes",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.fails": {
+    "en": "Destroy after",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.filter": {
+    "en": "Search entries",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.nameHint": {
+    "en": "shown when it opens; keep it unremarkable",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.namePh": {
+    "en": "e.g. Trip",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.newTitle": {
+    "en": "New mission",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.passHint": {
+    "en": "Not your master password. It can't be recovered: if it's lost, delete the mission and make a new one.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.passPh": {
+    "en": "At least 8 characters",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.readyHow": {
+    "en": "To open it, go to bazinet.net/mission on any device and enter this code and the passcode you chose.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.readyKeep": {
+    "en": "You can see the code again here while the mission lasts. Keep it apart from the passcode.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.readyTitle": {
+    "en": "Mission ready",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.sub": {
+    "en": "A few entries, opened at bazinet.net/mission with a code and a passcode. Ends on its own.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.x.fine": {
+    "en": "Encrypted on your device. We never see the entries, the passcode or the mission code.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.x.lede": {
+    "en": "For a border crossing, a trip, a sensitive meeting: carry a few entries, not your whole vault.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.x.p1": {
+    "en": "Only what you need.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.x.p1s": {
+    "en": "Pick a few entries. The rest of your vault is never on that device.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.x.p2": {
+    "en": "Opens anywhere, on its own.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.x.p2s": {
+    "en": "At bazinet.net/mission, with a mission code and a passcode. No account, no master password, nothing that shows a vault exists.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.x.p3": {
+    "en": "It ends by itself.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "mm.x.p3s": {
+    "en": "After the time you choose (30 days at most), the server deletes it. Too many wrong passcodes destroy it too.",
+    "pages": [
+      "app.html"
+    ]
+  },
+  "ms.autoclose": {
+    "en": "Closes by itself after 5 minutes without use, and when the mission ends.",
+    "pages": [
+      "mission.html"
+    ]
+  },
+  "ms.close": {
+    "en": "Close mission",
+    "pages": [
+      "mission.html"
+    ]
+  },
+  "ms.code": {
+    "en": "Mission code",
+    "pages": [
+      "mission.html"
+    ]
+  },
+  "ms.go": {
+    "en": "Open mission",
+    "pages": [
+      "mission.html"
+    ]
+  },
+  "ms.lede": {
+    "en": "Enter the mission code and its passcode. Nothing else from your account is needed or shown on this device.",
+    "pages": [
+      "mission.html"
+    ]
+  },
+  "ms.pass": {
+    "en": "Passcode",
+    "pages": [
+      "mission.html"
+    ]
+  },
+  "ms.search": {
+    "en": "Search",
+    "pages": [
+      "mission.html"
+    ]
+  },
+  "ms.title": {
+    "en": "Open a mission",
+    "pages": [
+      "mission.html"
+    ]
+  },
   "nav.about": {
     "en": "About",
     "pages": [
@@ -240,6 +462,7 @@
       "generator.html",
       "horaire.html",
       "index.html",
+      "mission.html",
       "privacy.html",
       "support.html",
       "terms.html",
@@ -851,12 +1074,6 @@
       "index.html"
     ]
   },
-  "t.0d1fcc38": {
-    "en": "Time limit",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.0d36487d": {
     "en": "Read-only access through emergency recovery. Handle these credentials with care.",
     "pages": [
@@ -929,22 +1146,10 @@
       "breach.html"
     ]
   },
-  "t.0f75577f": {
-    "en": "Open mission",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.0fa4967a": {
     "en": "Your keys never leave your browser",
     "pages": [
       "vault.html"
-    ]
-  },
-  "t.10931058": {
-    "en": "Set a time limit; the session — and its data on our servers — self-destructs when it's up.",
-    "pages": [
-      "app.html"
     ]
   },
   "t.114f60b0": {
@@ -981,12 +1186,6 @@
     "en": "Always on. There is no unencrypted mode to forget about.",
     "pages": [
       "vault.html"
-    ]
-  },
-  "t.13888bab": {
-    "en": "the mission. Make it different from your master password: that is the entire point.",
-    "pages": [
-      "app.html"
     ]
   },
   "t.14186c33": {
@@ -1188,12 +1387,6 @@
       "support.html"
     ]
   },
-  "t.1a2d089f": {
-    "en": "For the moments that matter most — a border crossing, a protest, a source meeting.",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.1ae5a4f8": {
     "en": "Your profile, how Bazinet looks, and your account itself.",
     "pages": [
@@ -1289,12 +1482,6 @@
       "account.html"
     ]
   },
-  "t.1e92c74d": {
-    "en": "Only the entries you curated are available. The rest of your vault stays sealed.",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.1f15a43c": {
     "en": "Open Horaire",
     "pages": [
@@ -1317,12 +1504,6 @@
     "en": "Under the hood",
     "pages": [
       "vault.html"
-    ]
-  },
-  "t.2286ef71": {
-    "en": "Which entries go in?",
-    "pages": [
-      "app.html"
     ]
   },
   "t.22bc982b": {
@@ -1829,12 +2010,6 @@
       "extension.html"
     ]
   },
-  "t.3c287b7e": {
-    "en": "Curate a small kit of entries. Everything else in your vault stays invisible — and undisclosed.",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.3c4bc790": {
     "en": "Pick a strong master password and verify your email. Setup takes under a minute.",
     "pages": [
@@ -2176,12 +2351,6 @@
       "horaire.html"
     ]
   },
-  "t.4bbd74a7": {
-    "en": "Built for journalists, activists, and anyone who travels with secrets. Zero-knowledge throughout — encrypted on your device.",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.4bdfbff1": {
     "en": "Is Horaire made by the Cégep?",
     "pages": [
@@ -2364,12 +2533,6 @@
       "breach.html"
     ]
   },
-  "t.52e5c079": {
-    "en": "The server deletes the mission when the time is up — not the app. Choose the shortest window you can live with.",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.5366ba0e": {
     "en": "Free, for good.",
     "pages": [
@@ -2508,12 +2671,6 @@
       "app.html"
     ]
   },
-  "t.5b48c95f": {
-    "en": "Only what you need.",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.5b4a04ac": {
     "en": "Keys are wiped when the browser closes and after 10 minutes idle. Re-opening asks for your master password again.",
     "pages": [
@@ -2531,12 +2688,6 @@
     "pages": [
       "download.html",
       "vault.html"
-    ]
-  },
-  "t.5c00462d": {
-    "en": "Advisory only: the check runs on your device, so treat it as a convenience, not a lock.",
-    "pages": [
-      "app.html"
     ]
   },
   "t.5c0090c3": {
@@ -2586,12 +2737,6 @@
     "en": "Your own tasks, by effort",
     "pages": [
       "horaire.html"
-    ]
-  },
-  "t.61a0ae3b": {
-    "en": "Limits",
-    "pages": [
-      "app.html"
     ]
   },
   "t.61cc55aa": {
@@ -2819,12 +2964,6 @@
       "vault.html"
     ]
   },
-  "t.6a505ce5": {
-    "en": "Open a mission without your master password, so you never reveal a full vault even exists.",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.6a6b7d53": {
     "en": "— a companion app for Valorant players.",
     "pages": [
@@ -2944,12 +3083,6 @@
     "en": "Privacy-first breach check",
     "pages": [
       "breach.html"
-    ]
-  },
-  "t.6e49505f": {
-    "en": "— keep it unremarkable",
-    "pages": [
-      "app.html"
     ]
   },
   "t.6e61afc7": {
@@ -3263,12 +3396,6 @@
       "survey.html"
     ]
   },
-  "t.7b47150d": {
-    "en": "4 hours",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.7b4f6712": {
     "en": "Phone, laptop or the desktop app. It works without a connection and syncs when you’re back.",
     "pages": [
@@ -3417,12 +3544,6 @@
       "horaire.html"
     ]
   },
-  "t.810750ce": {
-    "en": "It expires.",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.8137ffb4": {
     "en": "Signed auto-updates",
     "pages": [
@@ -3451,12 +3572,6 @@
     "en": "Learn more",
     "pages": [
       "index.html"
-    ]
-  },
-  "t.82582b11": {
-    "en": "Lock a mission to a location, so it only opens where you meant it to.",
-    "pages": [
-      "app.html"
     ]
   },
   "t.826f4832": {
@@ -3575,12 +3690,6 @@
       "breach.html"
     ]
   },
-  "t.854f9e39": {
-    "en": "Tied to a place (optional).",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.856bc0df": {
     "en": "3 · Relax",
     "pages": [
@@ -3645,12 +3754,6 @@
     "en": "Chat now",
     "pages": [
       "support.html"
-    ]
-  },
-  "t.897e331c": {
-    "en": "How long should it last?",
-    "pages": [
-      "app.html"
     ]
   },
   "t.89843574": {
@@ -3722,12 +3825,6 @@
       "vault.html"
     ]
   },
-  "t.8c07785f": {
-    "en": "Set a mission passcode",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.8c6465b7": {
     "en": "Web pages never receive your vault key — including this one. The part that runs on a page asks for one specific credential and gets only that.",
     "pages": [
@@ -3739,12 +3836,6 @@
     "pages": [
       "app.html",
       "vault.html"
-    ]
-  },
-  "t.8c788c92": {
-    "en": "Mission session active",
-    "pages": [
-      "app.html"
     ]
   },
   "t.8c974bc6": {
@@ -4115,12 +4206,6 @@
       "extension.html"
     ]
   },
-  "t.9df0e620": {
-    "en": "This opens the mission — and",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.9dfd349e": {
     "en": "Preferences",
     "pages": [
@@ -4236,12 +4321,6 @@
       "app.html"
     ]
   },
-  "t.a48b16c4": {
-    "en": "Open a Mission",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.a56a7734": {
     "en": "Because a login form can be on any site. It looks for password fields and does nothing else. bazinet.net itself is excluded.",
     "pages": [
@@ -4304,12 +4383,6 @@
   },
   "t.a86a40d4": {
     "en": "Each alias is a masked",
-    "pages": [
-      "app.html"
-    ]
-  },
-  "t.a8a720f5": {
-    "en": "Your missions",
     "pages": [
       "app.html"
     ]
@@ -4623,7 +4696,6 @@
   "t.b52b36b7": {
     "en": "Back",
     "pages": [
-      "app.html",
       "support.html"
     ]
   },
@@ -4647,12 +4719,6 @@
   },
   "t.b5efcb0a": {
     "en": "Read entries back in from an encrypted backup file.",
-    "pages": [
-      "app.html"
-    ]
-  },
-  "t.b614e7aa": {
-    "en": "A small, separately-locked copy of a few entries, that expires on its own. Opening it never reveals the rest of your vault.",
     "pages": [
       "app.html"
     ]
@@ -4729,12 +4795,6 @@
       "vault.html"
     ]
   },
-  "t.bb597d44": {
-    "en": "End mission & lock",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.bb838bd6": {
     "en": "What we will never ask for",
     "pages": [
@@ -4758,7 +4818,6 @@
   "t.bc981983": {
     "en": "Next",
     "pages": [
-      "app.html",
       "horaire.html"
     ]
   },
@@ -4900,12 +4959,6 @@
     "en": "Week, day and month views",
     "pages": [
       "horaire.html"
-    ]
-  },
-  "t.c277873e": {
-    "en": "Only open near where I am now",
-    "pages": [
-      "app.html"
     ]
   },
   "t.c31d3f01": {
@@ -5108,12 +5161,6 @@
     "en": "Start free",
     "pages": [
       "vault.html"
-    ]
-  },
-  "t.cd1334ca": {
-    "en": "Passcode",
-    "pages": [
-      "app.html"
     ]
   },
   "t.cd447955": {
@@ -5613,12 +5660,6 @@
       "support.html"
     ]
   },
-  "t.e38bf64d": {
-    "en": "A separate passcode.",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.e38e5198": {
     "en": "Sign out everywhere else",
     "pages": [
@@ -5881,12 +5922,6 @@
       "app.html"
     ]
   },
-  "t.f056d0d5": {
-    "en": "Entries",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.f0589bc5": {
     "en": "Your password, your master password, your recovery key, or a code we sent you. Anyone who asks for one is not us.",
     "pages": [
@@ -5971,12 +6006,6 @@
       "extension.html"
     ]
   },
-  "t.f4afa57c": {
-    "en": "Pick only what you would need while the mission is open. Everything you leave out stays sealed in your vault.",
-    "pages": [
-      "app.html"
-    ]
-  },
   "t.f580763f": {
     "en": "Save it as a PDF and drop it above",
     "pages": [
@@ -6057,12 +6086,6 @@
   },
   "t.f85039fd": {
     "en": "Confirm new password",
-    "pages": [
-      "app.html"
-    ]
-  },
-  "t.f8969a18": {
-    "en": "only",
     "pages": [
       "app.html"
     ]
