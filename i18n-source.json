@@ -2413,6 +2413,12 @@
       "vault.html"
     ]
   },
+  "t.4d4ce73b": {
+    "en": "Card",
+    "pages": [
+      "app.html"
+    ]
+  },
   "t.4e0ea3f4": {
     "en": "With Horaire",
     "pages": [
@@ -3332,6 +3338,12 @@
       "vault.html"
     ]
   },
+  "t.780ff71c": {
+    "en": "Wi-Fi",
+    "pages": [
+      "app.html"
+    ]
+  },
   "t.78246fe5": {
     "en": "Current master password",
     "pages": [
@@ -3475,6 +3487,12 @@
     "en": "Mac desktop app",
     "pages": [
       "index.html"
+    ]
+  },
+  "t.7dd2ad61": {
+    "en": "Payment cards",
+    "pages": [
+      "app.html"
     ]
   },
   "t.7de27ac6": {
@@ -3794,6 +3812,12 @@
       "extension.html"
     ]
   },
+  "t.8a64573d": {
+    "en": "Bank accounts",
+    "pages": [
+      "app.html"
+    ]
+  },
   "t.8ab0d45b": {
     "en": "28%",
     "pages": [
@@ -4011,6 +4035,12 @@
       "account.html"
     ]
   },
+  "t.94fcf3c2": {
+    "en": "API keys",
+    "pages": [
+      "app.html"
+    ]
+  },
   "t.9503c9e4": {
     "en": "Ready in under a minute",
     "pages": [
@@ -4041,6 +4071,12 @@
     "pages": [
       "app.html",
       "generator.html"
+    ]
+  },
+  "t.971de244": {
+    "en": "Your cégep",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.97729b41": {
@@ -4218,6 +4254,12 @@
     "en": "Preferences",
     "pages": [
       "account.html"
+    ]
+  },
+  "t.9e89988c": {
+    "en": "Bank",
+    "pages": [
+      "app.html"
     ]
   },
   "t.9fb9dcd8": {
@@ -4441,6 +4483,12 @@
     "en": "AES-256-GCM on every entry",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.aab2dc75": {
+    "en": "SSH key",
+    "pages": [
+      "app.html"
     ]
   },
   "t.aaf0d2f4": {
@@ -4975,6 +5023,12 @@
       "generator.html"
     ]
   },
+  "t.c3531b32": {
+    "en": "Free time together",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.c3b0c04f": {
     "en": "filled",
     "pages": [
@@ -5229,6 +5283,12 @@
     "en": "Sign in with a passkey",
     "pages": [
       "account.html"
+    ]
+  },
+  "t.cf678cab": {
+    "en": "API key",
+    "pages": [
+      "app.html"
     ]
   },
   "t.cf846870": {
@@ -5768,6 +5828,12 @@
     "en": "can unlock.",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.e91a644c": {
+    "en": "SSH keys",
+    "pages": [
+      "app.html"
     ]
   },
   "t.e963907d": {
