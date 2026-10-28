@@ -17,6 +17,12 @@
       "account.html"
     ]
   },
+  "boot.loading": {
+    "en": "Loading",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "btn.continue": {
     "en": "Continue",
     "pages": [
