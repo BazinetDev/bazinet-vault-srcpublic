@@ -19,6 +19,7 @@
   <script src="/support-articles.js" defer="defer"></script>
   <script src="/live.js" defer="defer"></script>
   <script src="/support.js" defer="defer"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onSupportTurnstile&render=explicit" async defer="defer"></script>
   <link rel="stylesheet" href="/styles.css"/>
   <link rel="stylesheet" href="/support.css"/>
 </head>
@@ -193,5 +194,12 @@
     <span data-i18n="t.2ced57f1">Chat</span>
     <span id="sp-fab-badge" class="sp-fab-badge hidden"></span>
   </button>
+  <div id="ts-overlay" class="ts-overlay">
+    <div class="ts-card">
+      <p class="ts-cap" data-i18n="t.4a6ddb69">Quick security check</p>
+      <p class="ts-sub" data-i18n="t.1a05f99d">Confirm you're human to continue.</p>
+      <div id="ts-support"></div>
+    </div>
+  </div>
 </body>
 </html>

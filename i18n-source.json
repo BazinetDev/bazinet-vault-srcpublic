@@ -1184,7 +1184,8 @@
   "t.1a05f99d": {
     "en": "Confirm you're human to continue.",
     "pages": [
-      "account.html"
+      "account.html",
+      "support.html"
     ]
   },
   "t.1a2d089f": {
@@ -2140,7 +2141,8 @@
     "en": "Quick security check",
     "pages": [
       "account.html",
-      "breach.html"
+      "breach.html",
+      "support.html"
     ]
   },
   "t.4a7c565d": {
