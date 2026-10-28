@@ -1384,6 +1384,7 @@
     "en": "Confirm you're human to continue.",
     "pages": [
       "account.html",
+      "mission.html",
       "support.html"
     ]
   },
@@ -2317,6 +2318,7 @@
     "pages": [
       "account.html",
       "breach.html",
+      "mission.html",
       "support.html"
     ]
   },

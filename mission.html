@@ -67,5 +67,13 @@
   <script src="/totp.js"></script>
   <script src="/mission-code.js"></script>
   <script src="/mission.js"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onMissionTurnstile&render=explicit" async defer="defer"></script>
+  <div id="ts-overlay" class="ts-overlay">
+    <div class="ts-card">
+      <p class="ts-cap" data-i18n="t.4a6ddb69">Quick security check</p>
+      <p class="ts-sub" data-i18n="t.1a05f99d">Confirm you're human to continue.</p>
+      <div id="ts-mission"></div>
+    </div>
+  </div>
 </body>
 </html>
