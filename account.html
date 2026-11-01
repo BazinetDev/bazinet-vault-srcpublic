@@ -71,6 +71,7 @@
         <button id="tab-signup2" class="tab" type="button" data-i18n="t.aaf37447">Create account</button>
       </div>
       <form id="login-form" class="panel" autocomplete="off">
+        <p id="login-ended" class="login-ended hidden" role="status"></p>
         <label><span data-i18n="t.84add5b2">Email</span><input id="li-email" type="email" autocomplete="username" required/></label>
         <label><span data-i18n="t.8be3c943">Password</span><input id="li-pw" type="password" autocomplete="current-password" required/></label>
         <button class="primary" type="submit" data-i18n="t.ada2e9e9">Sign in</button>
@@ -465,6 +466,7 @@
   <script src="/crypto.js"></script>
   <script src="/api.js"></script>
   <script src="/horaire-key.js"></script>
+  <script src="/signout-reason.js"></script>
   <script src="/account.js"></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onBreachTurnstile&render=explicit" async defer="defer"></script>
 </body>
