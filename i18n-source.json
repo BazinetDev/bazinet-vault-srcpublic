@@ -280,6 +280,7 @@
     "pages": [
       "about.html",
       "breach.html",
+      "changelog.html",
       "download.html",
       "extension.html",
       "generator.html",
@@ -294,6 +295,7 @@
     "pages": [
       "about.html",
       "breach.html",
+      "changelog.html",
       "download.html",
       "extension.html",
       "generator.html",
@@ -316,6 +318,7 @@
     "pages": [
       "about.html",
       "breach.html",
+      "changelog.html",
       "download.html",
       "generator.html",
       "index.html",
@@ -329,9 +332,27 @@
     "pages": [
       "about.html",
       "breach.html",
+      "changelog.html",
       "generator.html",
       "index.html",
       "privacy.html",
+      "terms.html",
+      "vault.html"
+    ]
+  },
+  "nav.changelog": {
+    "en": "What’s new",
+    "pages": [
+      "about.html",
+      "breach.html",
+      "changelog.html",
+      "download.html",
+      "extension.html",
+      "generator.html",
+      "horaire.html",
+      "index.html",
+      "privacy.html",
+      "support.html",
       "terms.html",
       "vault.html"
     ]
@@ -342,6 +363,7 @@
       "about.html",
       "app.html",
       "breach.html",
+      "changelog.html",
       "download.html",
       "extension.html",
       "generator.html",
@@ -359,6 +381,7 @@
       "about.html",
       "app.html",
       "breach.html",
+      "changelog.html",
       "extension.html",
       "generator.html",
       "index.html",
@@ -374,6 +397,7 @@
     "pages": [
       "about.html",
       "breach.html",
+      "changelog.html",
       "generator.html",
       "index.html",
       "privacy.html",
@@ -386,6 +410,7 @@
     "pages": [
       "about.html",
       "breach.html",
+      "changelog.html",
       "generator.html",
       "index.html",
       "privacy.html",
@@ -398,6 +423,7 @@
     "pages": [
       "about.html",
       "breach.html",
+      "changelog.html",
       "generator.html",
       "horaire.html",
       "privacy.html",
@@ -410,6 +436,7 @@
     "pages": [
       "about.html",
       "breach.html",
+      "changelog.html",
       "download.html",
       "extension.html",
       "generator.html",
@@ -427,6 +454,7 @@
       "account.html",
       "app.html",
       "breach.html",
+      "changelog.html",
       "download.html",
       "extension.html",
       "generator.html",
@@ -445,6 +473,7 @@
     "pages": [
       "about.html",
       "breach.html",
+      "changelog.html",
       "download.html",
       "extension.html",
       "generator.html",
@@ -463,6 +492,7 @@
       "account.html",
       "app.html",
       "breach.html",
+      "changelog.html",
       "download.html",
       "extension.html",
       "generator.html",
@@ -482,6 +512,7 @@
       "account.html",
       "app.html",
       "breach.html",
+      "changelog.html",
       "download.html",
       "extension.html",
       "generator.html",
@@ -2859,6 +2890,7 @@
     "en": "© 2026 Bazinet.net — All rights reserved.",
     "pages": [
       "about.html",
+      "changelog.html",
       "download.html",
       "extension.html"
     ]
