@@ -286,6 +286,7 @@
       "generator.html",
       "index.html",
       "privacy.html",
+      "security.html",
       "support.html",
       "terms.html"
     ]
@@ -301,6 +302,7 @@
       "generator.html",
       "index.html",
       "privacy.html",
+      "security.html",
       "support.html",
       "terms.html",
       "vault.html"
@@ -323,6 +325,7 @@
       "generator.html",
       "index.html",
       "privacy.html",
+      "security.html",
       "terms.html",
       "vault.html"
     ]
@@ -336,6 +339,7 @@
       "generator.html",
       "index.html",
       "privacy.html",
+      "security.html",
       "terms.html",
       "vault.html"
     ]
@@ -352,6 +356,7 @@
       "horaire.html",
       "index.html",
       "privacy.html",
+      "security.html",
       "support.html",
       "terms.html",
       "vault.html"
@@ -370,6 +375,7 @@
       "horaire.html",
       "index.html",
       "privacy.html",
+      "security.html",
       "support.html",
       "terms.html",
       "vault.html"
@@ -386,6 +392,7 @@
       "generator.html",
       "index.html",
       "privacy.html",
+      "security.html",
       "terms.html",
       "valorant.html",
       "vault.html"
@@ -401,6 +408,7 @@
       "generator.html",
       "index.html",
       "privacy.html",
+      "security.html",
       "terms.html",
       "vault.html"
     ]
@@ -414,6 +422,7 @@
       "generator.html",
       "index.html",
       "privacy.html",
+      "security.html",
       "terms.html",
       "vault.html"
     ]
@@ -427,6 +436,7 @@
       "generator.html",
       "horaire.html",
       "privacy.html",
+      "security.html",
       "terms.html",
       "vault.html"
     ]
@@ -441,6 +451,7 @@
       "extension.html",
       "generator.html",
       "privacy.html",
+      "security.html",
       "support.html",
       "terms.html",
       "vault.html"
@@ -461,12 +472,31 @@
       "horaire.html",
       "index.html",
       "privacy.html",
+      "security.html",
       "support.html",
       "terms.html",
       "valorant.html",
       "vault.html"
     ],
     "conflict": true
+  },
+  "nav.security": {
+    "en": "Security",
+    "pages": [
+      "about.html",
+      "breach.html",
+      "changelog.html",
+      "download.html",
+      "extension.html",
+      "generator.html",
+      "horaire.html",
+      "index.html",
+      "privacy.html",
+      "security.html",
+      "support.html",
+      "terms.html",
+      "vault.html"
+    ]
   },
   "nav.status": {
     "en": "Status",
@@ -480,6 +510,7 @@
       "horaire.html",
       "index.html",
       "privacy.html",
+      "security.html",
       "support.html",
       "terms.html",
       "vault.html"
@@ -500,6 +531,7 @@
       "index.html",
       "mission.html",
       "privacy.html",
+      "security.html",
       "support.html",
       "terms.html",
       "vault.html"
@@ -519,6 +551,7 @@
       "horaire.html",
       "index.html",
       "privacy.html",
+      "security.html",
       "support.html",
       "terms.html",
       "valorant.html",
@@ -2892,7 +2925,8 @@
       "about.html",
       "changelog.html",
       "download.html",
-      "extension.html"
+      "extension.html",
+      "security.html"
     ]
   },
   "t.659087d3": {

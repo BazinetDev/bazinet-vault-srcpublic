@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon-vault.svg">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="How to report a security vulnerability in Bazinet.net, what is in scope, safe harbour for good-faith research, and how Bazinet protects your data."/>
+  <title>Security — Bazinet.net</title>
+  <link rel="icon" href="/favicon.svg"/>
+  <script src="/i18n-strings.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/theme.js"></script>
+  <script src="/notice.js"></script>
+  <script src="/console-warn.js" defer="defer"></script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="topbar-brand" aria-label="Bazinet home">
+        <svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c97ff"/><stop offset="1" stop-color="#4f6bf0"/></linearGradient></defs><path d="M24 3 6 10v12c0 11 7.7 18.6 18 23 10.3-4.4 18-12 18-23V10L24 3Z" fill="url(#tg)"/><circle cx="24" cy="21" r="5" fill="#0f1320"/><rect x="21.6" y="23" width="4.8" height="8" rx="2.4" fill="#0f1320"/></svg>
+        <span class="brand-text">Bazinet</span>
+      </a>
+      <nav class="topbar-nav">
+        <a href="/" class="nav-hide" data-i18n="nav.home">Products</a>
+        <a href="/about.html" class="nav-hide" data-i18n="nav.about">About</a>
+        <a href="/blog/" class="nav-hide" data-blog data-i18n="nav.blog">Blog</a>
+        <a href="/generator.html" class="nav-hide" data-i18n="nav.generator">Generator</a>
+        <a href="/breach.html" class="nav-hide" data-i18n="nav.breach">Breach check</a>
+        <a href="/terms.html" class="nav-hide" data-i18n="nav.terms">Terms</a>
+        <a href="/privacy.html" class="nav-hide" data-i18n="nav.privacy">Privacy</a>
+        <a href="/support" class="nav-help" data-i18n-attr="aria-label:nav.support,title:nav.support" aria-label="Support" title="Support"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6"/><path d="M12 17h.01"/></svg><span data-i18n="nav.support">Support</span></a>
+        <button class="lang-toggle" type="button" data-lang-toggle>FR</button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light or dark mode" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+        </button>
+        <a href="/download" class="nav-hide" data-i18n="nav.download">Download</a>
+        <a href="/extension" class="nav-hide" data-i18n="nav.extension">Extension</a>
+        <a href="/account" data-i18n="nav.account">Account</a>
+        <a href="/app" class="topbar-cta" data-i18n="nav.openVault">Open app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap legal security-page">
+    <article class="legal-doc hidden" data-legal="fr" lang="fr-CA">
+      <h1>Sécurité</h1>
+      <p class="legal-meta">Comment signaler une vulnérabilité, ce que nous examinons et comment nous protégeons vos données. Mis à jour le 3 novembre 2026.</p>
+
+      <h2 id="signaler-fr">Signaler une vulnérabilité</h2>
+      <p>Écrivez à <a href="mailto:support@bazinet.net?subject=SECURITY">support@bazinet.net</a> avec <strong>SECURITY</strong> dans l’objet. Décrivez ce que vous avez fait, ce qui s’est produit, ce à quoi vous vous attendiez et la gravité que vous estimez. Un rapport sommaire aujourd’hui vaut mieux qu’un rapport soigné le mois prochain.</p>
+      <p>Ne publiez pas les détails d’une vulnérabilité avant qu’elle soit corrigée. Le fichier <a href="/.well-known/security.txt">security.txt</a> donne les mêmes coordonnées dans un format lisible par les outils.</p>
+
+      <h2 id="delais-fr">À quoi vous attendre</h2>
+      <ul>
+        <li>Accusé de réception : 3 jours ouvrables.</li>
+        <li>Première évaluation : 10 jours ouvrables.</li>
+        <li>Faille critique : corrigée le plus vite possible, avec des nouvelles en cours de route.</li>
+        <li>Divulgation publique : coordonnée avec vous, 90 jours par défaut.</li>
+      </ul>
+
+      <h2 id="portee-fr">Ce que nous examinons</h2>
+      <p>Bazinet.net et son API, Bazinet Vault (application Web, application de bureau et extension de navigateur), Horaire CVM (Web, bureau et téléphone), Bazinet Aim Trainer et le centre d’aide. Nous voulons surtout savoir si quelque chose permet de :</p>
+      <ul>
+        <li>faire parvenir à nos serveurs un mot de passe maître, une clé ou le contenu déchiffré d’un coffre-fort;</li>
+        <li>lire ou modifier les données d’un autre utilisateur;</li>
+        <li>contourner la connexion, la double authentification ou une clé d’accès;</li>
+        <li>faire exécuter à une application Bazinet du code qu’elle n’a pas livré.</li>
+      </ul>
+
+      <h2 id="hors-portee-fr">Ce que nous n’acceptons pas</h2>
+      <ul>
+        <li>Les résultats d’outils d’analyse automatisés sans effet démontré, par exemple les réglages DMARC, SPF, DKIM ou MTA-STS, les versions ou suites TLS, ou un en-tête de sécurité absent d’une page sans action sensible.</li>
+        <li>Les tests de déni de service ou de limites de requêtes, et le pollupostage.</li>
+        <li>L’hameçonnage ou l’ingénierie sociale visant notre équipe, et les attaques physiques.</li>
+        <li>Les services de tiers (Cloudflare, Stripe, Omnivox) : signalez-les à leurs responsables.</li>
+        <li>Les rapports qui exigent un paiement avant de donner les détails.</li>
+      </ul>
+
+      <h2 id="recompenses-fr">Récompenses</h2>
+      <p>Nous n’offrons pas de programme de primes payées pour l’instant. Un rapport valide qui a un effet réel peut être remercié ou récompensé à notre seule discrétion, comme le prévoit l’<a href="/terms.html">article 10 des Conditions d’utilisation</a>. Les rapports envoyés en masse depuis des outils automatisés ne donnent droit à aucune récompense et ne reçoivent pas de réponse.</p>
+
+      <h2 id="protection-fr">Recherche de bonne foi</h2>
+      <p>Si vous respectez cette politique de bonne foi, nous n’intenterons aucune poursuite et ne prendrons aucune mesure contre votre compte en raison de votre recherche. Est autorisé :</p>
+      <ul>
+        <li>tester vos <strong>propres</strong> comptes et les données de votre <strong>propre</strong> coffre-fort;</li>
+        <li>analyser l’extension, les applications publiées et le code du site;</li>
+        <li>une analyse automatisée à un rythme qui ne ralentit pas le service pour les autres.</li>
+      </ul>
+      <p>N’est pas autorisé : accéder aux données d’un autre utilisateur (arrêtez-vous et signalez-le; une preuve avec votre propre second compte suffit), le déni de service, le pollupostage, l’ingénierie sociale, ni retenir une découverte pour obtenir quelque chose. En cas de doute, demandez d’abord.</p>
+
+      <h2 id="donnees-fr">Comment nous protégeons vos données</h2>
+      <ul>
+        <li>Votre coffre-fort est chiffré sur votre appareil (Argon2id, puis AES-256-GCM). Nous ne voyons jamais votre mot de passe maître ni le contenu de votre coffre-fort.</li>
+        <li>Chaque compte a une double authentification par courriel, et peut ajouter une application d’authentification ou une clé d’accès.</li>
+        <li>Votre journal de sécurité, dans les paramètres du compte, montre chaque connexion et chaque changement important.</li>
+        <li>Nos courriels viennent seulement de noreply@bazinet.net ou de support@bazinet.net. Nous ne vous demanderons jamais votre mot de passe maître.</li>
+        <li>L’état de nos services est publié sur <a href="https://status.bazinet.net/">status.bazinet.net</a>.</li>
+      </ul>
+      <p>Bazinet n’a pas nécessairement fait l’objet d’un audit de sécurité indépendant (<a href="/privacy.html">Politique de confidentialité, article 11</a>). Pour des secrets de très grande valeur, préférez un gestionnaire audité.</p>
+    </article>
+
+    <article class="legal-doc" data-legal="en" lang="en">
+      <h1>Security</h1>
+      <p class="legal-meta">How to report a vulnerability, what we look at, and how we protect your data. Updated November 3, 2026.</p>
+
+      <h2 id="report">Report a vulnerability</h2>
+      <p>Email <a href="mailto:support@bazinet.net?subject=SECURITY">support@bazinet.net</a> with <strong>SECURITY</strong> in the subject. Say what you did, what happened, what you expected and how severe you think it is. A rough report today beats a polished one next month.</p>
+      <p>Please don’t publish the details of a vulnerability before it is fixed. Our <a href="/.well-known/security.txt">security.txt</a> gives the same contact in a format tools can read.</p>
+
+      <h2 id="timeline">What to expect</h2>
+      <ul>
+        <li>Acknowledgement: 3 business days.</li>
+        <li>First assessment: 10 business days.</li>
+        <li>A critical issue: fixed as fast as possible, with updates along the way.</li>
+        <li>Public disclosure: coordinated with you, 90 days by default.</li>
+      </ul>
+
+      <h2 id="scope">What we look at</h2>
+      <p>Bazinet.net and its API, Bazinet Vault (web app, desktop app and browser extension), Horaire CVM (web, desktop and phone), Bazinet Aim Trainer and the help centre. We most want to hear about anything that:</p>
+      <ul>
+        <li>gets a master password, a key or decrypted vault contents to our servers;</li>
+        <li>reads or changes another user’s data;</li>
+        <li>gets around sign-in, two-step verification or a passkey;</li>
+        <li>makes a Bazinet app run code it didn’t ship with.</li>
+      </ul>
+
+      <h2 id="out-of-scope">What we don’t accept</h2>
+      <ul>
+        <li>Automated scanner results with no demonstrated impact, such as DMARC, SPF, DKIM or MTA-STS settings, TLS versions or ciphers, or a security header missing from a page with no sensitive action.</li>
+        <li>Denial-of-service or rate-limit testing, and spam.</li>
+        <li>Phishing or social engineering of our team, and physical attacks.</li>
+        <li>Third-party services (Cloudflare, Stripe, Omnivox): report those to them.</li>
+        <li>Reports that demand payment before giving the details.</li>
+      </ul>
+
+      <h2 id="rewards">Rewards</h2>
+      <p>We don’t run a paid bug bounty at the moment. A valid report with real impact may be thanked or rewarded at our sole discretion, as <a href="/terms.html">section 10 of the Terms of Service</a> says. Bulk reports from automated tools are not eligible for a reward and don’t get a reply.</p>
+
+      <h2 id="safe-harbour">Good-faith research</h2>
+      <p>If you follow this policy in good faith, we won’t take legal action or act against your account because of your research. This is allowed:</p>
+      <ul>
+        <li>testing your <strong>own</strong> accounts and your <strong>own</strong> vault data;</li>
+        <li>examining the extension, the published apps and the site’s code;</li>
+        <li>automated scanning at a rate that doesn’t slow the service down for others.</li>
+      </ul>
+      <p>This is not allowed: accessing another user’s data (stop and report it; a proof with your own second account is enough), denial of service, spam, social engineering, or holding a finding back to get something for it. If you’re not sure, ask first.</p>
+
+      <h2 id="protection">How we protect your data</h2>
+      <ul>
+        <li>Your vault is encrypted on your device (Argon2id, then AES-256-GCM). We never see your master password or what is in your vault.</li>
+        <li>Every account has two-step verification by email, and can add an authenticator app or a passkey.</li>
+        <li>Your security log, in account settings, shows every sign-in and every important change.</li>
+        <li>Our emails come only from noreply@bazinet.net or support@bazinet.net. We will never ask for your master password.</li>
+        <li>The state of our services is published at <a href="https://status.bazinet.net/">status.bazinet.net</a>.</li>
+      </ul>
+      <p>Bazinet has not necessarily had an independent security audit (<a href="/privacy.html">Privacy Policy, section 11</a>). For very high-value secrets, prefer an audited password manager.</p>
+    </article>
+
+    <footer class="site-footer">
+      <nav class="foot-links">
+        <a href="/about.html" data-i18n="nav.about">About</a><span>·</span>
+        <a href="/extension" data-i18n="nav.extension">Extension</a><span>·</span>
+        <a href="/terms.html" data-i18n="nav.terms">Terms</a><span>·</span>
+        <a href="/privacy.html" data-i18n="nav.privacy">Privacy</a><span>·</span>
+        <a href="/changelog" data-i18n="nav.changelog">What’s new</a><span>·</span>
+        <a href="/security" data-i18n="nav.security">Security</a><span>·</span>
+        <a href="https://status.bazinet.net/" data-i18n="nav.status">Status</a><span>·</span>
+        <a href="/support" data-i18n="nav.support">Support</a><span>·</span>
+        <a href="mailto:support@bazinet.net" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <p class="copyright" data-i18n="t.656456f9">© 2026 Bazinet.net — All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>
