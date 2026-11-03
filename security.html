@@ -93,6 +93,16 @@
       </ul>
       <p>N’est pas autorisé : accéder aux données d’un autre utilisateur (arrêtez-vous et signalez-le; une preuve avec votre propre second compte suffit), le déni de service, le pollupostage, l’ingénierie sociale, ni retenir une découverte pour obtenir quelque chose. En cas de doute, demandez d’abord.</p>
 
+      <h2 id="resultats-fr">Résultats de tests publics</h2>
+      <p>Ce ne sont pas des certifications : ce sont des tests indépendants et publics que tout le monde peut relancer. Résultats du 3 novembre 2026.</p>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=bazinet.net">Mozilla Observatory</a> : A+ (135/100, 12 tests réussis sur 12).</li>
+        <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=bazinet.net">Qualys SSL Labs</a> : A, TLS 1.3 seulement.</li>
+        <li><a href="https://internet.nl/site/bazinet.net/4387735/">Internet.nl, test du site</a> : 100 % (IPv6, DNSSEC, HTTPS, RPKI).</li>
+        <li><a href="https://internet.nl/mail/bazinet.net/2081391/">Internet.nl, test des courriels</a> : 97 % (DMARC en rejet, DKIM, SPF, DNSSEC).</li>
+        <li><a href="https://hstspreload.org/?domain=bazinet.net">Liste HSTS préchargée</a> : inscription en attente; les navigateurs n’ouvriront alors bazinet.net qu’en HTTPS.</li>
+      </ul>
+
       <h2 id="donnees-fr">Comment nous protégeons vos données</h2>
       <ul>
         <li>Votre coffre-fort est chiffré sur votre appareil (Argon2id, puis AES-256-GCM). Nous ne voyons jamais votre mot de passe maître ni le contenu de votre coffre-fort.</li>
@@ -149,6 +159,16 @@
         <li>automated scanning at a rate that doesn’t slow the service down for others.</li>
       </ul>
       <p>This is not allowed: accessing another user’s data (stop and report it; a proof with your own second account is enough), denial of service, spam, social engineering, or holding a finding back to get something for it. If you’re not sure, ask first.</p>
+
+      <h2 id="test-results">Public test results</h2>
+      <p>These are not certifications: they are independent, public tests that anyone can run again. Results from November 3, 2026.</p>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=bazinet.net">Mozilla Observatory</a>: A+ (135/100, 12 of 12 tests passed).</li>
+        <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=bazinet.net">Qualys SSL Labs</a>: A, TLS 1.3 only.</li>
+        <li><a href="https://internet.nl/site/bazinet.net/4387735/">Internet.nl website test</a>: 100% (IPv6, DNSSEC, HTTPS, RPKI).</li>
+        <li><a href="https://internet.nl/mail/bazinet.net/2081391/">Internet.nl email test</a>: 97% (DMARC set to reject, DKIM, SPF, DNSSEC).</li>
+        <li><a href="https://hstspreload.org/?domain=bazinet.net">HSTS preload list</a>: listing pending; browsers will then only open bazinet.net over HTTPS.</li>
+      </ul>
 
       <h2 id="protection">How we protect your data</h2>
       <ul>
