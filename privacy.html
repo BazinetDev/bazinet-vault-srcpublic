@@ -50,12 +50,13 @@
         <button class="link" type="button" data-lang-toggle-to="en">read this policy in English</button>.
       </p>
       <h1>Politique de confidentialité</h1>
-      <p class="legal-meta">Dernière mise à jour : 28 octobre 2026</p>
+      <p class="legal-meta">Dernière mise à jour : 3 novembre 2026</p>
 
       <h2>1. Portée</h2>
       <p>La présente politique vise bazinet.net, Bazinet Vault (application Web, extension de
-        navigateur et application de bureau), Horaire CVM (applications Web et de bureau), Bazinet
-        Aim Trainer et le centre d'aide (le « Service »). La personne responsable de la protection
+        navigateur et application de bureau), Horaire CVM (applications Web, de bureau, iPhone et
+          Android), Bazinet Aim Trainer, les Missions, le centre d'aide et status.bazinet.net (le
+          « Service »). La personne responsable de la protection
         des renseignements personnels est le propriétaire de Bazinet, que vous pouvez joindre à
         <a href="mailto:support@bazinet.net">support@bazinet.net</a>.</p>
 
@@ -75,8 +76,9 @@
           d'authentificateur chiffré et un vérificateur de clé de récupération.</li>
         <li><strong>Données techniques :</strong> adresse IP, pays, navigateur, appareil et version
           de l'application, et entrées du journal de sécurité. Pour les applications de bureau, un
-          hachage à clé d'un identifiant de machine et les adresses IP d'où elle a été
-          utilisée.</li>
+          hachage à clé d'un identifiant de machine et les adresses IP d'où elle a été utilisée.
+            Pour les applications de téléphone, un hachage à clé de l'identifiant de l'appareil
+            (un identifiant du trousseau sur iPhone, l'identifiant Android sur Android).</li>
         <li><strong>Facturation (Pro) :</strong> votre forfait, son état, et les identifiants de
           client et d'abonnement Stripe. Nous ne recevons jamais votre numéro de carte.</li>
         <li><strong>Forfait Famille :</strong> les adresses courriel invitées et qui s'est joint.
@@ -88,8 +90,12 @@
         <li><strong>Alias courriel (Pro) :</strong> chaque alias, son libellé et le nombre de
           messages transférés. Le courrier transféré n'est pas conservé. Votre adresse réelle est
           enregistrée auprès de Cloudflare pour qu'elle puisse recevoir le courrier transféré.</li>
-        <li><strong>Accès d'urgence (Pro) :</strong> votre contact, le délai d'attente et les dates
-          des demandes.</li>
+        <li><strong>Accès d'urgence (Pro) :</strong> votre contact, le délai d'attente et les
+          dates des demandes.</li>
+        <li><strong>Missions (Pro) :</strong> la Mission chiffrée, un hachage de son code, sa date
+          d'expiration et le nombre d'essais erronés. Une personne qui ouvre une Mission sans
+          compte passe une vérification anti-robots (Turnstile), et son adresse IP sert aux
+          limites de débit.</li>
         <li><strong>Horaire CVM et Omnivox :</strong>
           <ul>
             <li>Importation de l'horaire : votre numéro de DA et votre mot de passe Omnivox servent
@@ -105,15 +111,28 @@
               annulés passe par nos serveurs et n'est pas conservé.</li>
             <li>Partage (Pro) : les adresses courriel invitées, leurs permissions, et les clés
               publiques et privées chiffrées servant au partage.</li>
+            <li>Notes, absences et cote R : lues dans LÉA par nos serveurs, puis conservées
+              chiffrées, où nous ne pouvons pas les lire.</li>
+            <li>Sur votre téléphone : Face ID, les rappels, les widgets et les notifications Mio
+              sont gérés sur l'appareil. Pour vous avertir des nouveaux messages Mio,
+              l'application consulte Mio en arrière-plan par nos serveurs, comme le fait
+              l'agenda.</li>
           </ul>
         </li>
         <li><strong>Rapports de diagnostic :</strong> journaux techniques d'une application,
-          envoyés au soutien seulement pendant que vous lui accordez l'accès (article 6). Sur
-          iPhone, Horaire CVM l'envoie à chaque ouverture tant que cet accès est actif.</li>
-        <li><strong>Journal de base de l'app iPhone :</strong> les démarrages (version de l'app,
-          version d'iOS, modèle d'iPhone) et les erreurs de l'app, inscrits au journal de votre
+          envoyés au soutien seulement pendant que l'accès du soutien est accordé (article 6). Sur
+            iPhone et Android, Horaire CVM en envoie un à chaque ouverture tant que cet accès est
+            actif. Sur Android, il comprend le matériel du téléphone, la version et les réglages
+            du système, l'état du réseau, de la batterie et du stockage, les permissions de
+            l'application et la liste des applications qu'Android laisse voir à Horaire CVM.</li>
+        <li><strong>Journal de base des applications de téléphone :</strong> les démarrages
+          (version de l'application, version du système, modèle de téléphone) et les erreurs de
+          l'app, inscrits au journal de votre
           compte pour qu'on puisse corriger les pannes. Jamais votre mot de passe ni le contenu
           de votre agenda.</li>
+        <li><strong>Mesures sur le compte :</strong> les avertissements, suspensions,
+          bannissements et résiliations, avec le motif, les notes du personnel, l'avis qui vous a
+          été envoyé et votre réponse.</li>
         <li><strong>Traducteurs :</strong> si vous proposez des traductions, votre adresse courriel
           avec vos propositions.</li>
       </ul>
@@ -124,21 +143,31 @@
 
       <h2>4. Utilisation</h2>
       <p>Pour faire fonctionner et sécuriser le Service, vous connecter, envoyer les courriels de
-        compte, de sécurité et de soutien, prévenir les abus (limites de débit, blocage de comptes,
+        compte, de sécurité et de soutien et les avis de mesures sur votre compte, prévenir les
+        abus (limites de débit, blocage de comptes,
         d'adresses et de machines), corriger les problèmes et respecter nos obligations légales.
         Les statistiques d'utilisation sont des décomptes, sans compte ni adresse associés. Les
-        clavardages sont d'abord répondus par Bazinet AI, qui fonctionne sur nos serveurs et
-        n'utilise aucun modèle d'IA tiers; vous pouvez demander une personne en tout temps. Nous ne
+          clavardages sont d'abord répondus par Bazinet AI, qui choisit une réponse parmi nos
+          articles d'aide et ne rédige pas de texte. Pour associer une question à un article, son
+          texte peut être traité par un modèle d'IA que Cloudflare exécute pour nous; le résultat
+          n'est conservé que pour nos articles, pas pour votre question. Vous pouvez demander une
+          personne en tout temps. Certaines décisions sont prises automatiquement : les limites de
+          débit, les vérifications anti-robots, et le blocage d'un compte, d'une adresse ou d'un
+          appareil après des abus répétés ou une correspondance avec un appareil bloqué. Vous
+          pouvez demander quels renseignements et quelles raisons ont mené à une telle décision,
+          et qu'une personne la revoie. Nous ne
         vendons pas de renseignements personnels et n'utilisons ni publicité, ni outils d'analyse
         ou de pistage tiers.</p>
 
       <h2>5. Fournisseurs de services</h2>
       <ul>
         <li><strong>Cloudflare :</strong> hébergement, base de données, stockage de fichiers et
-          sauvegardes, acheminement du courriel, vérification anti-robots (Turnstile), et le
-          navigateur servant à la connexion à Omnivox.</li>
+          sauvegardes, envoi et acheminement du courriel, vérification anti-robots (Turnstile), le
+            navigateur servant à la connexion à Omnivox, et le modèle d'IA utilisé par Bazinet AI
+            (article 4).</li>
         <li><strong>Stripe :</strong> paiements.</li>
-        <li><strong>Resend :</strong> envoi des courriels.</li>
+        <li><strong>Resend :</strong> envoi des courriels lorsque l'envoi de Cloudflare n'est pas
+          disponible.</li>
         <li><strong>Google :</strong> la connexion avec Google, si vous l'utilisez, et le Chrome Web
           Store pour l'extension.</li>
         <li><strong>Have I Been Pwned :</strong> vérification des fuites (préfixes de hachage
@@ -157,7 +186,11 @@
         journaux et les conversations de soutien, afin d'offrir du soutien et de sécuriser le
         Service. Il ne peut pas voir le contenu chiffré. Votre journal de sécurité complet, les
         diagnostics, les réparations et les rapports de diagnostic exigent votre consentement,
-        limité dans le temps et révocable. Les actions du personnel sont journalisées.</p>
+        limité dans le temps et révocable. Sans votre consentement, le propriétaire ne peut
+          activer les diagnostics d'un compte que s'il a des motifs raisonnables de croire que ce
+          compte sert à attaquer le Service, à frauder ou à enfreindre la loi, et seulement le
+          temps nécessaire à l'enquête. Les actions du personnel, y compris celle-ci, sont
+          journalisées.</p>
 
       <h2>7. Témoins et stockage sur votre appareil</h2>
       <p>Nous n'utilisons que les témoins nécessaires pour vous connecter et sécuriser le Service,
@@ -176,6 +209,10 @@
         <li>Rapports de diagnostic : les 10 plus récents par application (5 pour les plans de
           cours).</li>
         <li>Comptes jamais vérifiés : 24 heures.</li>
+        <li>Suspensions : jusqu'à leur fin. Bannissements et résiliations, avec leur motif : tant
+          que le compte existe.</li>
+        <li>Adresses IP bloquées : pendant la durée fixée lors du blocage.</li>
+        <li>Appareils bloqués (un hachage à clé seulement) : jusqu'à la levée du blocage.</li>
         <li>Sauvegardes et historique des bases de données : 30 jours.</li>
         <li>Dossiers de facturation et demandes relatives à la vie privée : aussi longtemps que la
           loi l'exige.</li>
@@ -188,8 +225,10 @@
         Omnivox, vos fichiers et vos conversations de soutien. Les copies dans nos sauvegardes et
         l'historique des bases de données disparaissent dans les 31 jours. Les entrées du journal
         de sécurité et les dossiers de facturation sont conservés pendant les durées ci-dessus, les
-        traductions que vous avez proposées gardent votre adresse courriel, et une machine bloquée
-        pour abus le demeure.</p>
+        traductions que vous avez proposées gardent votre adresse courriel, et un ordinateur ou un
+          téléphone bloqué pour abus le demeure. Si une suspension ou un bannissement vous empêche
+          de vous connecter, écrivez à <a href="mailto:support@bazinet.net">support@bazinet.net</a> pour faire supprimer votre
+          compte.</p>
 
       <h2>10. Lieu de conservation</h2>
       <p>Nos données sont conservées par Cloudflare, principalement dans l'est de l'Amérique du
@@ -202,20 +241,25 @@
         l'objet d'un audit de sécurité indépendant. Aucun système n'est parfaitement sûr.</p>
 
       <h2>12. Enfants</h2>
-      <p>Le Service ne s'adresse pas aux enfants, et nous ne recueillons pas sciemment de
-        renseignements sur des enfants en contravention de la loi.</p>
+      <p>Le Service ne s'adresse pas aux enfants. Si vous avez moins de 14 ans, un parent ou un
+        tuteur doit consentir à votre utilisation du Service. Si nous apprenons que nous détenons
+        des renseignements sur un enfant sans ce consentement, nous les supprimons.</p>
 
       <h2>13. Vos droits</h2>
       <p>En vertu de la Loi sur la protection des renseignements personnels dans le secteur privé,
-        vous pouvez accéder à vos renseignements et les faire corriger, retirer votre consentement
-        et porter plainte à la Commission d'accès à l'information. Vous pouvez consulter votre
+        vous pouvez accéder à vos renseignements et les faire corriger, les recevoir dans un
+          format technologique structuré et couramment utilisé, retirer votre consentement, être
+          informé qu'une décision vous concernant a été prise automatiquement et demander qu'une
+          personne la revoie, et porter plainte à la Commission d'accès à l'information. Vous
+          pouvez consulter votre
         journal de sécurité, exporter votre coffre et supprimer votre compte dans l'application.
         Pour toute autre demande, écrivez à
         <a href="mailto:support@bazinet.net">support@bazinet.net</a>.</p>
 
       <h2>14. Modifications</h2>
       <p>Nous pouvons mettre à jour la présente politique. La date ci-dessus indique la version la
-        plus récente.</p>
+        plus récente. Avant qu'un changement important dans notre utilisation de vos
+        renseignements s'applique, nous vous en informons par courriel.</p>
 
       <h2>15. Nous joindre</h2>
       <p><a href="mailto:support@bazinet.net">support@bazinet.net</a></p>
@@ -228,11 +272,12 @@
       <button class="link" type="button" data-lang-toggle-to="fr">Lire cette politique en français</button>.
     </p>
     <h1>Privacy Policy</h1>
-    <p class="legal-meta">Last Updated: October 28, 2026</p>
+    <p class="legal-meta">Last Updated: November 3, 2026</p>
 
     <h2>1. Scope</h2>
     <p>This policy covers bazinet.net, Bazinet Vault (web app, browser extension and desktop app),
-      Horaire CVM (web and desktop apps), Bazinet Aim Trainer and the help centre (the "Service").
+      Horaire CVM (web, desktop, iPhone and Android apps), Bazinet Aim Trainer, Missions, the help
+        centre and status.bazinet.net (the "Service").
       The person responsible for the protection of personal information is the owner of Bazinet,
       reachable at <a href="mailto:support@bazinet.net">support@bazinet.net</a>.</p>
 
@@ -250,7 +295,8 @@
         verifier.</li>
       <li><strong>Technical:</strong> IP address, country, browser, device and app version, and
         security log entries. For the desktop apps, a keyed hash of a machine identifier and the IP
-        addresses it was used from.</li>
+        addresses it was used from. For the phone apps, a keyed hash of the device identifier (a
+          Keychain identifier on iPhone, the Android ID on Android).</li>
       <li><strong>Billing (Pro):</strong> your plan, its status, and Stripe customer and
         subscription identifiers. We never receive your card number.</li>
       <li><strong>Family plan:</strong> the email addresses invited and who joined. Members see each
@@ -263,6 +309,9 @@
         it can receive the forwarded mail.</li>
       <li><strong>Emergency access (Pro):</strong> your contact, the waiting period and request
         times.</li>
+      <li><strong>Missions (Pro):</strong> the encrypted Mission, a hash of its code, its expiry
+        date and the number of wrong passcodes. Someone opening a Mission without an account
+        passes a bot check (Turnstile), and their IP address is used for rate limits.</li>
       <li><strong>Horaire CVM and Omnivox:</strong>
         <ul>
           <li>Schedule import: your student number and Omnivox password are used for one sign-in
@@ -277,14 +326,23 @@
             not stored.</li>
           <li>Sharing (Pro): the email addresses invited, their permissions, and the public and
             encrypted private keys used to share.</li>
+          <li>Grades, absences and the cote R: read from LÉA by our servers, then kept encrypted,
+            where we cannot read them.</li>
+          <li>On your phone: Face ID, reminders, widgets and Mio notifications are handled on the
+            device. To tell you about new Mio messages, the app checks Mio in the background
+            through our servers, the same way the agenda does.</li>
         </ul>
       </li>
       <li><strong>Diagnostic reports:</strong> technical logs from an app, sent to support only
-        while you have granted support access (section 6). On iPhone, Horaire CVM sends it each
-        time the app opens while that access is live.</li>
-      <li><strong>iPhone app basic log:</strong> launches (app version, iOS version, iPhone model)
+        while support access is granted (section 6). On iPhone and Android, Horaire CVM sends one
+        each time the app opens while that access is live. On Android, it includes the phone's
+        hardware, system version and settings, network, battery and storage state, the app's
+        permissions, and the list of apps Android lets Horaire CVM see.</li>
+      <li><strong>Phone apps basic log:</strong> launches (app version, system version, phone model)
         and the app's errors, written to your account's log so crashes can be fixed. Never your
         password or your agenda's content.</li>
+      <li><strong>Account measures:</strong> warnings, suspensions, bans and terminations, with
+        the reason, staff notes, the notice sent to you and your reply.</li>
       <li><strong>Translators:</strong> if you contribute translations, your email address with
         your submissions.</li>
     </ul>
@@ -293,19 +351,27 @@
       data and your Riot key on your computer.</p>
 
     <h2>4. How we use it</h2>
-    <p>To run and secure the Service, sign you in, send account, security and support emails,
+    <p>To run and secure the Service, sign you in, send account, security and support emails and
+      notices of measures on your account,
       prevent abuse (rate limits, blocking accounts, addresses and machines), fix problems, and
       meet legal obligations. Usage statistics are counts, with no account or address attached.
-      Live chats are first answered by Bazinet AI, which runs on our servers and uses no
-      third-party AI model; you can ask for a person at any time. We do not sell personal
+      Live chats are first answered by Bazinet AI, which picks an answer from our help articles
+        and does not write text of its own. To match a question to an article, its text may be
+        processed by an AI model that Cloudflare runs for us; the result is kept for our articles
+        only, not for your question. You can ask for a person at any time. Some decisions are made
+        automatically: rate limits, bot checks, and blocking an account, address or device after
+        repeated abuse or a match with a blocked device. You may ask what information and reasons
+        led to such a decision, and have a person review it. We do not sell personal
       information, show ads or use third-party analytics or tracking.</p>
 
     <h2>5. Service providers</h2>
     <ul>
-      <li><strong>Cloudflare:</strong> hosting, database, file storage and backups, email routing,
-        bot checks (Turnstile), and the browser used to sign in to Omnivox.</li>
+      <li><strong>Cloudflare:</strong> hosting, database, file storage and backups, sending and
+        routing email, bot checks (Turnstile), the browser used to sign in to Omnivox, and the AI
+        model used by Bazinet AI (section 4).</li>
       <li><strong>Stripe:</strong> payments.</li>
-      <li><strong>Resend:</strong> sending email.</li>
+      <li><strong>Resend:</strong> sending email when Cloudflare's email sending is
+        unavailable.</li>
       <li><strong>Google:</strong> sign-in with Google, if you use it, and the Chrome Web Store for
         the extension.</li>
       <li><strong>Have I Been Pwned:</strong> breach checks (hash prefixes only).</li>
@@ -321,7 +387,10 @@
     <p>Authorized staff can see account information, logs and support conversations, according to
       their role, to give support and secure the Service. They cannot see encrypted content. Your
       full security log, diagnostics, repairs and diagnostic reports require your consent, which is
-      limited in time and can be revoked. Staff actions are logged.</p>
+      limited in time and can be revoked. Without your consent, the owner may turn on diagnostics
+        for an account only when there are reasonable grounds to believe it is being used to
+        attack the Service, commit fraud or break the law, and only for as long as the
+        investigation needs. Staff actions, including this one, are logged.</p>
 
     <h2>7. Cookies and storage on your device</h2>
     <p>We use only cookies needed to sign you in and secure the Service, plus a bz_geo cookie
@@ -338,6 +407,10 @@
       <li>Closed support conversations and their files: 365 days.</li>
       <li>Diagnostic reports: the 10 most recent per app (5 for plans de cours).</li>
       <li>Accounts never verified: 24 hours.</li>
+      <li>Suspensions: until they end. Bans and terminations, with their reason: while the account
+        exists.</li>
+      <li>Blocked IP addresses: for the period set when blocked.</li>
+      <li>Blocked devices (a keyed hash only): until the block is lifted.</li>
       <li>Database backups and history: 30 days.</li>
       <li>Billing records and privacy requests: as long as the law requires.</li>
       <li>Everything else: while your account exists.</li>
@@ -346,9 +419,12 @@
     <h2>9. Deleting your account</h2>
     <p>You can delete your account in account settings. This deletes your account and its data,
       including your vault, agenda, shares, Omnivox connection, files and support conversations.
-      Copies in our backups and database history are gone within 31 days. Security log entries and billing records are
+      Copies in our backups and database history are gone within 31 days. Security log entries and
+        billing records are
       kept for the periods above, translations you contributed keep your email address, and a
-      machine blocked for abuse stays blocked.</p>
+        computer or phone blocked for abuse stays blocked. If a suspension or ban stops you from
+        signing in, write to <a href="mailto:support@bazinet.net">support@bazinet.net</a> to have
+        your account deleted.</p>
 
     <h2>10. Where it is stored</h2>
     <p>Our data is stored by Cloudflare, mainly in eastern North America, and may be processed
@@ -360,18 +436,22 @@
       perfectly secure.</p>
 
     <h2>12. Children</h2>
-    <p>The Service is not directed to children, and we do not knowingly collect children's
-      information in violation of the law.</p>
+    <p>The Service is not directed to children. If you are under 14, a parent or guardian must
+      consent to your use of the Service. If we learn that we hold a child's information without
+      that consent, we delete it.</p>
 
     <h2>13. Your rights</h2>
     <p>Under Québec's Act respecting the protection of personal information in the private sector,
-      you may access and correct your information, withdraw your consent, and complain to the
+      you may access and correct your information, receive it in a structured, commonly used
+        technological format, withdraw your consent, be told when a decision about you was made
+        automatically and ask for a person to review it, and complain to the
       Commission d'accès à l'information. You can view your security log, export your vault and
       delete your account in the app. For anything else, write to
       <a href="mailto:support@bazinet.net">support@bazinet.net</a>.</p>
 
     <h2>14. Changes</h2>
-    <p>We may update this policy. The date above shows the latest version.</p>
+    <p>We may update this policy. The date above shows the latest version. Before a significant
+      change to how we use your information applies, we tell you by email.</p>
 
     <h2>15. Contact</h2>
     <p><a href="mailto:support@bazinet.net">support@bazinet.net</a></p>
