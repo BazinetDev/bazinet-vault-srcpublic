@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /$
+Allow: /fr$
 Allow: /vault
 Allow: /horaire
 Allow: /valorant
