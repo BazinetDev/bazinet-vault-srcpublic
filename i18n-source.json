@@ -1764,6 +1764,12 @@
       "horaire.html"
     ]
   },
+  "t.2437c021": {
+    "en": "Email request",
+    "pages": [
+      "support.html"
+    ]
+  },
   "t.24b6d5ec": {
     "en": "Download →",
     "pages": [
@@ -2080,12 +2086,6 @@
   },
   "t.32861acd": {
     "en": "Your name (optional)",
-    "pages": [
-      "support.html"
-    ]
-  },
-  "t.32d5db4c": {
-    "en": "Write to us",
     "pages": [
       "support.html"
     ]
@@ -4370,6 +4370,12 @@
       "account.html"
     ]
   },
+  "t.8fba926f": {
+    "en": "Send an email request",
+    "pages": [
+      "support.html"
+    ]
+  },
   "t.902328f8": {
     "en": "Open Horaire →",
     "pages": [
@@ -5244,6 +5250,12 @@
       "account.html"
     ]
   },
+  "t.b24c5e54": {
+    "en": "Live, while you're on this page. Nothing here goes by email.",
+    "pages": [
+      "support.html"
+    ]
+  },
   "t.b2d01ab7": {
     "en": "Traded",
     "pages": [
@@ -5910,12 +5922,6 @@
     "en": "Built-in defense against bots, brute-force attempts, and automated attacks",
     "pages": [
       "vault.html"
-    ]
-  },
-  "t.ce72f3a0": {
-    "en": "Quick questions, answered live while you're on this page.",
-    "pages": [
-      "support.html"
     ]
   },
   "t.cf04df27": {
