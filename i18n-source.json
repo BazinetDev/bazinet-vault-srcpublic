@@ -879,6 +879,12 @@
       "horaire.html"
     ]
   },
+  "t.018d6adb": {
+    "en": "Free download",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.02127c01": {
     "en": "Stored · encrypted",
     "pages": [
@@ -891,16 +897,34 @@
       "extension.html"
     ]
   },
+  "t.03688ba6": {
+    "en": "FAQ",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.03aad260": {
     "en": "Clear about the trade-offs",
     "pages": [
       "vault.html"
     ]
   },
+  "t.03e23fa7": {
+    "en": "Clean counter-strafe",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.04057474": {
     "en": "First launch:",
     "pages": [
       "download.html"
+    ]
+  },
+  "t.04096508": {
+    "en": "Master counter-strafing.",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.04270ed6": {
@@ -1024,6 +1048,18 @@
       "horaire.html"
     ]
   },
+  "t.085e9eca": {
+    "en": "Panic taps caught",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.0888c557": {
+    "en": "See what it does",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.08c35203": {
     "en": "Confirm you're human to keep checking passwords.",
     "pages": [
@@ -1058,6 +1094,12 @@
     "en": "also",
     "pages": [
       "account.html"
+    ]
+  },
+  "t.098024dc": {
+    "en": "Timing",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.09ad9df4": {
@@ -1105,6 +1147,7 @@
   "t.0b8a19ed": {
     "en": "Frequently asked",
     "pages": [
+      "valorant.html",
       "vault.html"
     ]
   },
@@ -1142,6 +1185,12 @@
     "en": "Search your vault",
     "pages": [
       "index.html"
+    ]
+  },
+  "t.0d3448b3": {
+    "en": "Opening WR",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.0d36487d": {
@@ -1186,6 +1235,12 @@
       "vault.html"
     ]
   },
+  "t.0e437e38": {
+    "en": "Which platforms are supported?",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.0eb7008d": {
     "en": "Each new assignment shows up in your agenda with its due date. You don’t lift a finger.",
     "pages": [
@@ -1220,6 +1275,12 @@
     "en": "Your keys never leave your browser",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.0fbf6453": {
+    "en": "What do I sign in with?",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.114f60b0": {
@@ -1288,6 +1349,12 @@
       "extension.html"
     ]
   },
+  "t.14c0f289": {
+    "en": "Strafe acc.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.14ee8a15": {
     "en": "Automatically.",
     "pages": [
@@ -1334,6 +1401,12 @@
     "en": "Questions, feedback, or a security report? Reach us at",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.163b3038": {
+    "en": "Train & analyze",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.16f16fcb": {
@@ -1400,6 +1473,12 @@
     "en": "New task",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.17f583ac": {
+    "en": "Free • Windows",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.182aef64": {
@@ -1488,6 +1567,12 @@
       "horaire.html"
     ]
   },
+  "t.1c6b6fd5": {
+    "en": "Late · 264 ms",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.1c6d29c7": {
     "en": "Days with no classes (holidays, pedagogical days)",
     "pages": [
@@ -1498,6 +1583,18 @@
     "en": "Can’t read it",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.1cbed6bf": {
+    "en": "Snap Tap was theoretically banned in Valorant",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.1cc3678f": {
+    "en": "then fire",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.1cd5589f": {
@@ -1528,6 +1625,18 @@
       "account.html"
     ]
   },
+  "t.1d4802c6": {
+    "en": "Bazinet Aim Trainer is not affiliated with, endorsed, sponsored, or specifically approved by Riot Games, Inc. \"VALORANT\" and Riot Games are trademarks of Riot Games, Inc. This tool reads publicly available data through the official Riot API and your own local client; it does not modify or interfere with the game. © Bazinet.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.1d7a5aff": {
+    "en": "Ideal · 128 ms",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.1db0a2c3": {
     "en": "Can you see my schedule?",
     "pages": [
@@ -1553,6 +1662,12 @@
       "account.html"
     ]
   },
+  "t.1ea1ce2f": {
+    "en": "Early / ideal / late classification per shot",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.1f15a43c": {
     "en": "Open Horaire",
     "pages": [
@@ -1563,6 +1678,12 @@
     "en": "The PDF will not open. Can I paste instead?",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.20191d66": {
+    "en": "Stopped, first bullet on target",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.20e099ad": {
@@ -1587,6 +1708,12 @@
     "en": "A Valorant companion that coaches your counter-strafe timing in real time, analyzes your real matches, and shows a live in-game overlay — without ever touching the game.",
     "pages": [
       "index.html"
+    ]
+  },
+  "t.230861c8": {
+    "en": "Bazinet account login",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.2393466b": {
@@ -1745,10 +1872,22 @@
       "horaire.html"
     ]
   },
+  "t.2a207b2f": {
+    "en": "A lightweight always-on-top overlay shows your map, score and the full agent comp for both teams — read live from your own running client.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.2ab7554f": {
     "en": "We sent a 6-digit code to",
     "pages": [
       "account.html"
+    ]
+  },
+  "t.2ab904ea": {
+    "en": "Integrated SnapTap / SOCD is not fully recognized by Riot Games",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.2ae3a019": {
@@ -1835,6 +1974,18 @@
       "app.html"
     ]
   },
+  "t.2e544fe1": {
+    "en": "Live overlay",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.2e59b0a0": {
+    "en": "Real match analytics",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.2e837b38": {
     "en": "Check my connection",
     "pages": [
@@ -1855,10 +2006,22 @@
       "app.html"
     ]
   },
+  "t.2f2f75d8": {
+    "en": "Click-through, never blocks your aim",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.2f95eb8d": {
     "en": "The core app is read-only — it uses the official Riot API and reads your own running client, exactly like public rank-trackers, and never touches the game process. It ships with one clearly-labelled optional \"Snap Tap\" toggle that",
     "pages": [
       "index.html"
+    ]
+  },
+  "t.2fbaa32d": {
+    "en": "Grab the Windows installer and run it. Auto-updates keep you current.",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.2feaecb5": {
@@ -1996,6 +2159,12 @@
       "vault.html"
     ]
   },
+  "t.34c8b583": {
+    "en": "after the switch — that's when velocity reaches zero and your first bullet is pinpoint accurate.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.350c355e": {
     "en": "Update password",
     "pages": [
@@ -2026,6 +2195,18 @@
       "vault.html"
     ]
   },
+  "t.375eae8c": {
+    "en": "Every shot, timed.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.380aba39": {
+    "en": "reads",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.382d7fb0": {
     "en": "Add to my agenda",
     "pages": [
@@ -2044,10 +2225,28 @@
       "index.html"
     ]
   },
+  "t.3987aa72": {
+    "en": "Headshot %",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.39dfe485": {
+    "en": "Never hooks the game",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.3a67c53e": {
     "en": "Breach check",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.3a8616ab": {
+    "en": "Still moving: the shot drifts",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.3b2418e1": {
@@ -2135,6 +2334,12 @@
       "vault.html"
     ]
   },
+  "t.3eb4f3ad": {
+    "en": "Vanguard-safe by design",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.3ebcbc03": {
     "en": "Look-alike protection",
     "pages": [
@@ -2190,6 +2395,12 @@
       "horaire.html"
     ]
   },
+  "t.4310ed54": {
+    "en": "Late",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.4325ae73": {
     "en": "Sign-ins, failed attempts, and changes to your account or vault. If something here wasn't you, change your password and sign out other sessions.",
     "pages": [
@@ -2229,7 +2440,8 @@
   "t.45bba479": {
     "en": "Sensitivity advisor",
     "pages": [
-      "index.html"
+      "index.html",
+      "valorant.html"
     ]
   },
   "t.45cf2811": {
@@ -2398,6 +2610,12 @@
       "account.html"
     ]
   },
+  "t.4a8a6516": {
+    "en": "Windows 10 / 11 (64-bit)",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.4ab29102": {
     "en": "Your account",
     "pages": [
@@ -2483,6 +2701,12 @@
       "app.html"
     ]
   },
+  "t.4de3cf93": {
+    "en": "The app bundles an optional",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.4e0ea3f4": {
     "en": "With Horaire",
     "pages": [
@@ -2523,6 +2747,18 @@
     "en": "Light or dark theme",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.4fa6b89e": {
+    "en": "(Riot, 2024) and using it can get your account suspended, but many people use it without any issues. It's disabled by default.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.4fe02851": {
+    "en": "Auto-updates",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.503a916f": {
@@ -2617,10 +2853,28 @@
       "horaire.html"
     ]
   },
+  "t.536f82cd": {
+    "en": "When you press D while moving left (or A while moving right), your character decelerates. The ideal shot window is",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.53ed54cb": {
+    "en": "Your Bazinet account (the same one at bazinet.net). Sign-in happens in your browser with password, 2FA, passkey or Google — the app never sees your password.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.548e91c2": {
     "en": "Your master password and encryption keys",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.554c1516": {
+    "en": "Do I need a Riot API key?",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.555fd411": {
@@ -2683,6 +2937,18 @@
       "horaire.html"
     ]
   },
+  "t.577e5343": {
+    "en": "No. You can enable the keyless \"live client view,\" which analyzes your matches by reading your own logged-in client session — no production key required. A Riot API key is supported too.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.581d843a": {
+    "en": "Early · 41 ms",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.587cd0e4": {
     "en": "Your passwords deserve better than a sticky note.",
     "pages": [
@@ -2711,6 +2977,12 @@
     "en": "Showing your last saved copy. Enter your account password to sync.",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.599a145f": {
+    "en": "65–220 ms",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.59c179cc": {
@@ -2768,6 +3040,12 @@
       "vault.html"
     ]
   },
+  "t.5bee9525": {
+    "en": "Live map & round score",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.5c0090c3": {
     "en": "Pwned 3×",
     "pages": [
@@ -2785,6 +3063,12 @@
     "pages": [
       "account.html",
       "horaire.html"
+    ]
+  },
+  "t.5d436bd3": {
+    "en": "Monitor — counter-strafe timing",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.5f21e0f7": {
@@ -2935,6 +3219,12 @@
       "download.html"
     ]
   },
+  "t.65c821a5": {
+    "en": "Live",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.65e5b31c": {
     "en": "Create a free account",
     "pages": [
@@ -2952,6 +3242,12 @@
     "en": "Read the pasted text",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.6707f0ad": {
+    "en": "Bazinet Aim Trainer — Overview",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.6771ade6": {
@@ -3072,6 +3368,12 @@
     "en": "Share your schedule",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.6b6932a2": {
+    "en": "Early, ideal or late",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.6b6c2ccd": {
@@ -3265,10 +3567,22 @@
       "vault.html"
     ]
   },
+  "t.72b15c2a": {
+    "en": "Add a Riot API key, or enable the keyless live-client view — no production key needed.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.72f2b0df": {
     "en": "Shared with you",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.732874d1": {
+    "en": "The core app gives no in-game advantage. Match analysis comes only from the official Riot Games API — Riot's servers, not the game client. The live overlay merely",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.737deb9e": {
@@ -3332,6 +3646,12 @@
       "horaire.html"
     ]
   },
+  "t.754f15cd": {
+    "en": "Is this allowed by Riot / will it get me banned?",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.7574d746": {
     "en": "Reads the Omnivox PDF",
     "pages": [
@@ -3351,6 +3671,12 @@
       "extension.html",
       "index.html",
       "vault.html"
+    ]
+  },
+  "t.763dc76f": {
+    "en": "Read-only official Riot API",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.764c1dfc": {
@@ -3458,6 +3784,12 @@
       "horaire.html"
     ]
   },
+  "t.79c635bc": {
+    "en": "Your team and the enemy team, with agents",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.79cbc5eb": {
     "en": "Click",
     "pages": [
@@ -3494,12 +3826,6 @@
       "vault.html"
     ]
   },
-  "t.7b9375b7": {
-    "en": "Yes. Horaire, the vault, the quick tools and the Aim Trainer are free to start, with no credit card. An optional Pro plan adds extras to Horaire and the vault and helps cover server costs: $2.99 a month or $24.99 a year (7 days free), a $9.99 term pass with no subscription, or Family at $5.99 a month for up to 5 people.",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.7b9fb6c7": {
     "en": "Your vault locks itself after inactivity, so a walked-away screen stays a closed door.",
     "pages": [
@@ -3528,6 +3854,12 @@
     "en": "Search, favorites, and notes built in",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.7c713f6c": {
+    "en": "toggle, which is banned in Valorant and ships disabled; don't turn it on for Valorant.",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.7d20d248": {
@@ -3623,6 +3955,12 @@
       "extension.html"
     ]
   },
+  "t.80b3016c": {
+    "en": "Your team",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.80c3052d": {
     "en": "Never",
     "pages": [
@@ -3708,6 +4046,12 @@
       "vault.html"
     ]
   },
+  "t.82fa34f9": {
+    "en": "Open auto-updates",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.82fb1d51": {
     "en": "Up to date",
     "pages": [
@@ -3776,6 +4120,12 @@
       "vault.html"
     ]
   },
+  "t.84e8c0b9": {
+    "en": "History that stays",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.851f6996": {
     "en": "Scan my saved passwords",
     "pages": [
@@ -3806,6 +4156,18 @@
       "horaire.html"
     ]
   },
+  "t.86b538b8": {
+    "en": "ACS, KAST, headshot %, K/D, ADR, opening-duel win rate, traded deaths, clutches, multikills, economy discipline and top weapons — pulled from your actual matches.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.874de72e": {
+    "en": "Auto coaching",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.879e3232": {
     "en": "Year",
     "pages": [
@@ -3828,6 +4190,12 @@
     "en": "Click the puzzle-piece icon in Chrome's toolbar and pin Bazinet Vault, so it's one click away on any page.",
     "pages": [
       "extension.html"
+    ]
+  },
+  "t.8823469e": {
+    "en": "toggle (powered by open-source SnapKey).",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.88a0b037": {
@@ -3972,6 +4340,12 @@
       "vault.html"
     ]
   },
+  "t.8eaadb0b": {
+    "en": "Everything to sharpen your game",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.8ecd33e2": {
     "en": "19 MiB memory-hard key derivation in your browser",
     "pages": [
@@ -4034,6 +4408,18 @@
       "extension.html"
     ]
   },
+  "t.90e40d50": {
+    "en": "Get started",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.90e9980a": {
+    "en": "Ideal",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.91032ad7": {
     "en": "20",
     "pages": [
@@ -4063,6 +4449,12 @@
     "en": "Questions about either product, billing or your account.",
     "pages": [
       "account.html"
+    ]
+  },
+  "t.92f06d01": {
+    "en": "Panic taps",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.93370add": {
@@ -4101,6 +4493,12 @@
       "account.html"
     ]
   },
+  "t.94ab71c6": {
+    "en": "Free for Windows 10 & 11. Installs in seconds and updates itself. Sign in with your Bazinet account to get started.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.94fcf3c2": {
     "en": "API keys",
     "pages": [
@@ -4117,6 +4515,12 @@
     "en": "— a password manager with a browser extension and a desktop app.",
     "pages": [
       "about.html"
+    ]
+  },
+  "t.960dd182": {
+    "en": "One click opens your browser to sign in. The app never sees your password.",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.9617fc6d": {
@@ -4149,6 +4553,18 @@
     "en": "Omnivox password",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.97c62a1c": {
+    "en": "Respects streamer / incognito mode",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.97e61691": {
+    "en": "Double-taps fired while still moving are flagged, so you can drop the habit.",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.9817a3aa": {
@@ -4218,10 +4634,17 @@
       "vault.html"
     ]
   },
+  "t.99d72c7f": {
+    "en": "hidden",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.9a1fc173": {
     "en": "Questions",
     "pages": [
       "index.html",
+      "valorant.html",
       "vault.html"
     ]
   },
@@ -4292,10 +4715,22 @@
       "index.html"
     ]
   },
+  "t.9cde002f": {
+    "en": "Open the Monitor while you play, then review your match breakdown and coaching.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.9d015202": {
     "en": "Horaire checks LÉA for new plans de cours once a day. Check now to get them right away.",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.9d150426": {
+    "en": "A standalone Valorant companion that coaches your counter-strafe timing in real time, breaks down your real matches from the official Riot API, and shows a live in-game agent-comp overlay — all without ever touching the game.",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.9d1afc1f": {
@@ -4308,6 +4743,18 @@
     "en": "For everyday logins, yes — your vault is end-to-end encrypted and only you hold the key. Two honest caveats, though: Bazinet Vault is an independent project that hasn't yet had a formal third-party security audit, and there's no password-recovery backdoor — if you forget your master password and haven't set up a recovery key, the data can't be recovered by anyone. So set up a recovery key, and for irreplaceable, high-stakes secrets also keep a separate backup and don't rely on any single tool. See our",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.9da8ddd9": {
+    "en": "A real-time monitor tracks your A/D presses and shots, scoring how consistently you fire inside the 65–220 ms window where your velocity hits zero. Catches panic double-taps too.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.9dd3905d": {
+    "en": "Train your aim.",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.9df02064": {
@@ -4365,6 +4812,12 @@
       "horaire.html"
     ]
   },
+  "t.a10e410f": {
+    "en": "Riot no longer exposes live mid-match scoreboard stats through the client API, so the overlay focuses on what's available: map, round score, and both teams' agents and names.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.a124947c": {
     "en": "Low",
     "pages": [
@@ -4419,6 +4872,18 @@
       "vault.html"
     ]
   },
+  "t.a2709d46": {
+    "en": "Avg timing",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.a31e868f": {
+    "en": "Sign in with Bazinet",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.a3b3f222": {
     "en": "Days with no classes",
     "pages": [
@@ -4447,6 +4912,18 @@
     "en": "One Bazinet Pro plan adds the extras to Horaire CVM and Bazinet Vault.",
     "pages": [
       "account.html"
+    ]
+  },
+  "t.a633bbe2": {
+    "en": "Plain-language insights point out your biggest weaknesses each session, so you always know the one thing to work on next.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.a639486f": {
+    "en": "MOUSE 1",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.a64a5fc1": {
@@ -4569,6 +5046,18 @@
       "account.html"
     ]
   },
+  "t.ab50bff5": {
+    "en": "$2.99/month, $24.99/year or $9.99 a term · Family $5.99/month or $59.99/year for 5",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.ab59d5aa": {
+    "en": "The coach watches your A/D presses and your clicks, and tells you whether each shot landed inside the 65–220 ms window where you’ve actually stopped moving.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.ac28f2ab": {
     "en": "Bazinet Aim Trainer",
     "pages": [
@@ -4581,6 +5070,12 @@
       "app.html"
     ]
   },
+  "t.ad058241": {
+    "en": "Your session history persists across launches, so progress is visible.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.ad15d234": {
     "en": "Bazinet Account",
     "pages": [
@@ -4591,6 +5086,12 @@
     "en": "Feature",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.ad9f2b23": {
+    "en": "Every habit, caught.",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.ada2e9e9": {
@@ -4617,6 +5118,12 @@
     "en": "Try it free for 7 days",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.ae4800f8": {
+    "en": "Does the overlay show live K/D and ults?",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.aeb83710": {
@@ -4689,6 +5196,12 @@
       "extension.html"
     ]
   },
+  "t.b153b683": {
+    "en": "Live timing histogram and shot timeline",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.b180b0a6": {
     "en": "1.2.1 · signature valid",
     "pages": [
@@ -4731,6 +5244,12 @@
       "account.html"
     ]
   },
+  "t.b2d01ab7": {
+    "en": "Traded",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.b304d12b": {
     "en": "Privacy.",
     "pages": [
@@ -4765,6 +5284,12 @@
     "en": "Sign in to Omnivox again",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.b3d10d18": {
+    "en": "Know comp at a glance",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.b3da7025": {
@@ -4857,6 +5382,12 @@
       "vault.html"
     ]
   },
+  "t.b673fada": {
+    "en": "2.5 MB installer",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.b724706c": {
     "en": "Sign in to GitHub",
     "pages": [
@@ -4881,6 +5412,12 @@
       "vault.html"
     ]
   },
+  "t.b7d7f827": {
+    "en": "Your input",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.b80ded59": {
     "en": "Use this",
     "pages": [
@@ -4903,6 +5440,12 @@
     "en": "Send reset link",
     "pages": [
       "account.html"
+    ]
+  },
+  "t.b9cca065": {
+    "en": "Get Bazinet Aim Trainer",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.ba374bf1": {
@@ -4971,6 +5514,18 @@
     "en": "Everyday tools,",
     "pages": [
       "index.html"
+    ]
+  },
+  "t.bd527cd9": {
+    "en": "Ideal · 176 ms",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.bd554c63": {
+    "en": "Up and running in a minute",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.bd7907e4": {
@@ -5095,6 +5650,12 @@
       "horaire.html"
     ]
   },
+  "t.c383675f": {
+    "en": "Enemy team",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.c3b0c04f": {
     "en": "filled",
     "pages": [
@@ -5156,10 +5717,22 @@
       "generator.html"
     ]
   },
+  "t.c601cc1a": {
+    "en": "Feel every counter-strafe",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.c660ead1": {
     "en": "Chrome installs it and keeps it updated. Edge and Brave install from the same listing.",
     "pages": [
       "extension.html"
+    ]
+  },
+  "t.c68ef2fc": {
+    "en": "Sign in through your browser with your Bazinet account — password, 2FA, passkey or Google. The app never sees your password.",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.c6faab68": {
@@ -5232,6 +5805,12 @@
     "en": "Remove this schedule from this account",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.cb437536": {
+    "en": "Economy discipline",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.cb4780f8": {
@@ -5375,6 +5954,12 @@
       "app.html"
     ]
   },
+  "t.d0044f1e": {
+    "en": "cm/360 + eDPI converter, plus a recommendation grounded in your real headshot % and opening-duel win rate — not generic advice.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.d071448e": {
     "en": "upgrade to unlock →",
     "pages": [
@@ -5463,7 +6048,8 @@
   "t.d3e633f2": {
     "en": "Counter-strafe coach",
     "pages": [
-      "index.html"
+      "index.html",
+      "valorant.html"
     ]
   },
   "t.d3f0ab15": {
@@ -5490,6 +6076,12 @@
       "horaire.html"
     ]
   },
+  "t.d608594f": {
+    "en": "Panic double-tap detection",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.d60aac24": {
     "en": "Keys are wiped when the browser closes and after 10 minutes idle.",
     "pages": [
@@ -5502,10 +6094,22 @@
       "horaire.html"
     ]
   },
+  "t.d6218f66": {
+    "en": "Riot Client running (for live features)",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.d634af03": {
     "en": "Create your free account",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.d649c183": {
+    "en": "Session history that persists across launches",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.d673d941": {
@@ -5587,6 +6191,12 @@
       "index.html"
     ]
   },
+  "t.d8d25ff5": {
+    "en": "Strafe left, tap right",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.d9109bf9": {
     "en": "Download the PDF that opens, or print it and choose “Save as PDF”.",
     "pages": [
@@ -5618,10 +6228,22 @@
       "vault.html"
     ]
   },
+  "t.da8121fd": {
+    "en": "Snap Tap / SOCD movement",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.dab58a4b": {
     "en": "Generate a strong password",
     "pages": [
       "extension.html"
+    ]
+  },
+  "t.dae5b726": {
+    "en": "Snap Tap",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.db07be18": {
@@ -5636,6 +6258,12 @@
       "app.html"
     ]
   },
+  "t.db89c894": {
+    "en": "your running client locally, the same read-only mechanism public rank-trackers use. It never reads game memory, injects, hooks, or overlays the game process.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.dba6a081": {
     "en": "Can you read my passwords or vault data?",
     "pages": [
@@ -5648,12 +6276,6 @@
       "account.html",
       "app.html",
       "horaire.html"
-    ]
-  },
-  "t.dc529f40": {
-    "en": "$2.99/month, $24.99/year or $9.99 a term · Family $5.99/month for 5",
-    "pages": [
-      "index.html"
     ]
   },
   "t.dcdf4373": {
@@ -5692,6 +6314,12 @@
       "horaire.html"
     ]
   },
+  "t.ddc6bbfe": {
+    "en": "Waited too long to shoot",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.ddfb3a90": {
     "en": "My vault",
     "pages": [
@@ -5711,9 +6339,15 @@
     ]
   },
   "t.dedcf993": {
-    "en": "Connecting Omnivox does the sign-in on our server instead, which is the only way this can work on iPhone and Android, where a browser extension cannot exist. Your password is kept encrypted and is decrypted for one sign-in at a time.",
+    "en": "Connecting Omnivox does the sign-in on our server instead, which is the only way this can work on a phone, where a browser extension cannot exist. Your password is kept encrypted and is decrypted for one sign-in at a time.",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.df68bf73": {
+    "en": "Download & install",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.df88b84d": {
@@ -5732,6 +6366,18 @@
     "en": "Kind",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.e03d007c": {
+    "en": "Download for Windows",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.e063c423": {
+    "en": "Connect your stats",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.e088edba": {
@@ -5770,6 +6416,12 @@
       "index.html"
     ]
   },
+  "t.e1e734fa": {
+    "en": "Toggle a sleek always-on-top overlay that reads your running client — locally and read-only — to show the map, the live score, and the agents + player names on both teams. Perfect for calling out the enemy composition before the round starts.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.e2bb1028": {
     "en": "!@#",
     "pages": [
@@ -5792,6 +6444,12 @@
     "en": "No need to stay on the page.",
     "pages": [
       "support.html"
+    ]
+  },
+  "t.e3635514": {
+    "en": "Windows 10 and 11 (64-bit). The app updates itself automatically.",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.e38e5198": {
@@ -5836,6 +6494,18 @@
       "horaire.html"
     ]
   },
+  "t.e50d7b17": {
+    "en": "Avg shot timing",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.e5384294": {
+    "en": "No injection, no memory reading. The coach only listens to your key and mouse presses.",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.e56772b8": {
     "en": "separate from your account password",
     "pages": [
@@ -5846,6 +6516,12 @@
     "en": ": your data is encrypted in your browser with a key derived from your master password (Argon2id → AES-256-GCM) before anything is sent. We only ever store ciphertext, so we have no technical way to read it — even if compelled to.",
     "pages": [
       "index.html"
+    ]
+  },
+  "t.e68ec371": {
+    "en": "The core app is read-only and never touches the game process — match data comes from the official Riot API and the live view only reads your own running client, exactly like public rank-trackers. The single exception is the optional",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.e7196b23": {
@@ -5887,7 +6563,8 @@
   "t.e87d86d2": {
     "en": "bazinet.net",
     "pages": [
-      "extension.html"
+      "extension.html",
+      "valorant.html"
     ]
   },
   "t.e88c3e20": {
@@ -5940,6 +6617,12 @@
       "about.html"
     ]
   },
+  "t.eac83dc0": {
+    "en": "What's inside",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.eae1b241": {
     "en": "Every class, room and teacher of your term appears, week by week.",
     "pages": [
@@ -5976,10 +6659,22 @@
       "extension.html"
     ]
   },
+  "t.ec0f1069": {
+    "en": "Monitor",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.ec330441": {
     "en": "The crypto and its trade-offs are written up plainly on the blog.",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.ec3eb030": {
+    "en": "Counter-strafe accuracy",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.ec54fff2": {
@@ -5994,6 +6689,12 @@
       "extension.html"
     ]
   },
+  "t.ec819181": {
+    "en": "Compliant by design",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.eca15992": {
     "en": "To fetch your homework, your password is decrypted here and sent to our server for that one sign-in. The server uses it and keeps nothing.",
     "pages": [
@@ -6004,6 +6705,12 @@
     "en": "256-bit key",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.ecf8c7e5": {
+    "en": "Official Riot API",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.ed54d86f": {
@@ -6080,6 +6787,12 @@
       "vault.html"
     ]
   },
+  "t.f101452f": {
+    "en": "Live in-game overlay",
+    "pages": [
+      "valorant.html"
+    ]
+  },
   "t.f12d91b7": {
     "en": "Workload view",
     "pages": [
@@ -6146,6 +6859,12 @@
       "extension.html"
     ]
   },
+  "t.f5167793": {
+    "en": "Yes. Horaire, the vault, the quick tools and the Aim Trainer are free to start, with no credit card. An optional Pro plan adds extras to Horaire and the vault and helps cover server costs: $2.99 a month or $24.99 a year (7 days free), a $9.99 term pass with no subscription, or Family at $5.99 a month or $59.99 a year for up to 5 people.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.f580763f": {
     "en": "Save it as a PDF and drop it above",
     "pages": [
@@ -6156,6 +6875,12 @@
     "en": "Edit my answers",
     "pages": [
       "survey.html"
+    ]
+  },
+  "t.f5b5a3f5": {
+    "en": "Never reads, hooks, or injects into the game",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.f5f2e31b": {
@@ -6215,7 +6940,8 @@
   "t.f7f1997c": {
     "en": "Session",
     "pages": [
-      "download.html"
+      "download.html",
+      "valorant.html"
     ]
   },
   "t.f82be68a": {
@@ -6228,6 +6954,18 @@
     "en": "Confirm new password",
     "pages": [
       "app.html"
+    ]
+  },
+  "t.f86e91f7": {
+    "en": "Built to be safe",
+    "pages": [
+      "valorant.html"
+    ]
+  },
+  "t.f88909c1": {
+    "en": "Every shot is classified the moment you fire, with its exact timing.",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.f89b7ebf": {
@@ -6296,6 +7034,12 @@
     "en": "Forget your master password and the data is gone — the cost of a design where no one else can read it. We'll always tell you what it is and isn't.",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.fc338f87": {
+    "en": "Features",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.fc45f9b7": {
@@ -6373,6 +7117,12 @@
       "about.html",
       "index.html",
       "support.html"
+    ]
+  },
+  "t.fe4a8495": {
+    "en": "Early",
+    "pages": [
+      "valorant.html"
     ]
   },
   "t.ff089fde": {
