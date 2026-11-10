@@ -885,6 +885,12 @@
       "index.html"
     ]
   },
+  "t.01330fcb": {
+    "en": "Your agenda stays on your account.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.016390c2": {
     "en": "Export and print",
     "pages": [
@@ -907,6 +913,12 @@
     "en": "Browser extensions are readable by design — a downloaded extension is a folder of JavaScript, and anyone who installs one can open it. We don't obfuscate ours, for the same reason the desktop app ships its cryptographic code unminified.",
     "pages": [
       "extension.html"
+    ]
+  },
+  "t.0303838c": {
+    "en": "Exams with extra time or in the Services adaptés room have to be requested at least 14 days ahead. Horaire keeps track of that for you.",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.03688ba6": {
@@ -1126,6 +1138,12 @@
       "horaire.html"
     ]
   },
+  "t.0a8adac9": {
+    "en": "Schedule",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.0a8dd6ad": {
     "en": "7 days",
     "pages": [
@@ -1140,6 +1158,12 @@
   },
   "t.0ae57b80": {
     "en": "Send the request",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.0ae7856e": {
+    "en": "Paper copy",
     "pages": [
       "horaire.html"
     ]
@@ -1401,6 +1425,12 @@
     "en": "Homework and exams",
     "pages": [
       "index.html"
+    ]
+  },
+  "t.15fd3070": {
+    "en": "When an exam falls on one of your classes, Horaire requests that class's time plus your extra time. Other exams stay in the reminder until you send them.",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.1605f32b": {
@@ -1734,12 +1764,6 @@
       "index.html"
     ]
   },
-  "t.22f120b4": {
-    "en": "Exams with the Services adaptés have to be requested at least 14 days ahead. Horaire reminds you a week before that deadline, for every exam in your agenda.",
-    "pages": [
-      "horaire.html"
-    ]
-  },
   "t.230861c8": {
     "en": "Bazinet account login",
     "pages": [
@@ -1980,6 +2004,12 @@
       "horaire.html"
     ]
   },
+  "t.2ce5dd0d": {
+    "en": "Check now",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.2ced57f1": {
     "en": "Chat",
     "pages": [
@@ -2074,6 +2104,12 @@
   },
   "t.2feaecb5": {
     "en": "It is encrypted on this device with your Bazinet account key, the same way your agenda is. Our server stores it only as ciphertext it cannot read.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.301fc031": {
+    "en": "Horaire reads your requests on Omnivox, so an exam you already requested is never reminded again.",
     "pages": [
       "horaire.html"
     ]
@@ -2207,6 +2243,12 @@
       "vault.html"
     ]
   },
+  "t.348d3af0": {
+    "en": "A reminder for every exam",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.34c8b583": {
     "en": "after the switch — that's when velocity reaches zero and your first bullet is pinpoint accurate.",
     "pages": [
@@ -2295,6 +2337,12 @@
     "en": "Still moving: the shot drifts",
     "pages": [
       "valorant.html"
+    ]
+  },
+  "t.3b02dcde": {
+    "en": "In your agenda a week before each exam's 14-day deadline, so none slips past it.",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.3b2418e1": {
@@ -2416,6 +2464,12 @@
     "en": "Personal",
     "pages": [
       "app.html"
+    ]
+  },
+  "t.4110868c": {
+    "en": "Hides it on this device until your password is entered again. You stay signed in.",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.416bbc1b": {
@@ -2785,12 +2839,6 @@
       "vault.html"
     ]
   },
-  "t.4ea63d15": {
-    "en": "I write my exams at the Services adaptés",
-    "pages": [
-      "horaire.html"
-    ]
-  },
   "t.4ee8a9d4": {
     "en": "We use k-anonymity: your browser hashes the password with SHA-1 and sends only the first five characters of that hash to look up matches. The full password and full hash never leave your device.",
     "pages": [
@@ -2889,6 +2937,12 @@
       "vault.html"
     ]
   },
+  "t.5277fb73": {
+    "en": "For exams you write with extra time or in the Services adaptés room. Horaire then watches every exam in your agenda for its 14-day deadline.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.528dc0fe": {
     "en": "Each login, note and 2FA secret is sealed before it’s saved.",
     "pages": [
@@ -2923,6 +2977,12 @@
     "en": "Your Bazinet account (the same one at bazinet.net). Sign-in happens in your browser with password, 2FA, passkey or Google — the app never sees your password.",
     "pages": [
       "valorant.html"
+    ]
+  },
+  "t.545b00b8": {
+    "en": "Turned off",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.548e91c2": {
@@ -3013,6 +3073,12 @@
     "en": "Your passwords deserve better than a sticky note.",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.5885a022": {
+    "en": "Your timetable, laid out for printing.",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.58fd445f": {
@@ -3581,6 +3647,12 @@
       "account.html",
       "app.html",
       "vault.html"
+    ]
+  },
+  "t.70d220c3": {
+    "en": "Requests sent for you",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.70f8bb9a": {
@@ -4204,10 +4276,17 @@
       "vault.html"
     ]
   },
+  "t.85729dcc": {
+    "en": "Requests on Omnivox",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.85dfa32c": {
     "en": "Account",
     "pages": [
-      "account.html"
+      "account.html",
+      "horaire.html"
     ]
   },
   "t.860044e6": {
@@ -4264,8 +4343,20 @@
       "valorant.html"
     ]
   },
+  "t.88372528": {
+    "en": "Turned on",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.88a0b037": {
     "en": "Download each plan de cours",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.891ebccd": {
+    "en": "Lock",
     "pages": [
       "horaire.html"
     ]
@@ -4322,6 +4413,12 @@
     "en": "28%",
     "pages": [
       "index.html"
+    ]
+  },
+  "t.8ac7aa17": {
+    "en": "What you get",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.8af56de6": {
@@ -4509,6 +4606,12 @@
     "en": "Is Bazinet Vault really free?",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.91d672ff": {
+    "en": "Your requests",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.91df4eec": {
@@ -4823,6 +4926,12 @@
       "valorant.html"
     ]
   },
+  "t.9db06291": {
+    "en": "Used for every request Horaire sends.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.9dd3905d": {
     "en": "Train your aim.",
     "pages": [
@@ -5034,6 +5143,12 @@
       "extension.html"
     ]
   },
+  "t.a797e309": {
+    "en": "Theme",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.a84a3beb": {
     "en": "Ask to see, correct or delete your personal information. We answer within 30 days, as Québec's Law 25 requires.",
     "pages": [
@@ -5134,6 +5249,12 @@
     "en": "Bazinet Aim Trainer",
     "pages": [
       "about.html"
+    ]
+  },
+  "t.aca6a6ca": {
+    "en": "Add your classes to Google Calendar, Apple Calendar or Outlook.",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.acc9f23c": {
@@ -5436,6 +5557,12 @@
       "app.html"
     ]
   },
+  "t.b596d01b": {
+    "en": "Turn on Services adaptés",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.b5eb447b": {
     "en": "Auto-lock",
     "pages": [
@@ -5668,12 +5795,6 @@
       "account.html"
     ]
   },
-  "t.bfce5a51": {
-    "en": "Send the requests for me on Omnivox",
-    "pages": [
-      "horaire.html"
-    ]
-  },
   "t.c008f9f6": {
     "en": "Why use a generated password?",
     "pages": [
@@ -5845,6 +5966,12 @@
   },
   "t.c7f73bb5": {
     "en": "Settings",
+    "pages": [
+      "horaire.html"
+    ]
+  },
+  "t.c87eda14": {
+    "en": "With your extra time already counted, as soon as the exam is in your agenda.",
     "pages": [
       "horaire.html"
     ]
@@ -6218,12 +6345,6 @@
     "en": "permanently lost",
     "pages": [
       "app.html"
-    ]
-  },
-  "t.d7e4cb80": {
-    "en": "Export to my calendar (.ics)",
-    "pages": [
-      "horaire.html"
     ]
   },
   "t.d82b56ca": {
@@ -6602,6 +6723,12 @@
       "valorant.html"
     ]
   },
+  "t.e708b087": {
+    "en": "Light or dark, English or French.",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.e7196b23": {
     "en": "The principles",
     "pages": [
@@ -6841,8 +6968,8 @@
       "horaire.html"
     ]
   },
-  "t.efe02f59": {
-    "en": "Check my requests now",
+  "t.eff5437e": {
+    "en": "Send the requests for me",
     "pages": [
       "horaire.html"
     ]
@@ -6919,10 +7046,22 @@
       "account.html"
     ]
   },
+  "t.f2c33eb3": {
+    "en": "Calendar file (.ics)",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.f3895993": {
     "en": "← Back to account",
     "pages": [
       "app.html"
+    ]
+  },
+  "t.f3e4fadb": {
+    "en": "Export",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.f402ac0a": {
@@ -7015,12 +7154,6 @@
       "breach.html"
     ]
   },
-  "t.f76dcc97": {
-    "en": "When an exam falls on one of your classes, Horaire requests that class's time with your extra time, as soon as the exam is in your agenda. Other exams stay in the reminder until you send them.",
-    "pages": [
-      "horaire.html"
-    ]
-  },
   "t.f780d949": {
     "en": "— a",
     "pages": [
@@ -7080,6 +7213,12 @@
     "en": "native app",
     "pages": [
       "download.html"
+    ]
+  },
+  "t.f9ee5ebc": {
+    "en": "Your requests, checked",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.f9f1a974": {

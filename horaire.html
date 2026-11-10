@@ -591,195 +591,297 @@
     </div>
 
     <div id="set-overlay" class="hz-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="set-title">
-      <div class="hz-modal">
-        <h3 id="set-title" data-i18n="t.c7f73bb5">Settings</h3>
-        <div id="set-info" class="hz-note"></div>
-        <div id="set-pro"></div>
-        
-        <div class="hz-appearance">
-          <span class="hz-note" data-i18n="t.41def7a0">Appearance</span>
-          <span class="hz-appbtns">
-            <button class="lang-toggle" type="button" data-lang-toggle>FR</button>
-            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light or dark mode" title="Toggle theme">
-              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
-              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+      <div class="hz-modal hz-settings">
+        <header class="hz-set-head">
+          <div class="hz-set-titles">
+            <h3 id="set-title" data-i18n="t.c7f73bb5">Settings</h3>
+            <div id="set-info" class="hz-note"></div>
+          </div>
+          <button id="set-close" class="primary small" type="button" data-i18n="t.e9b450d1">Done</button>
+        </header>
+        <div class="hz-set-body">
+          <nav class="hz-set-nav" role="tablist" aria-label="Settings" data-i18n-attr="aria-label:t.c7f73bb5">
+            <button id="set-tab-schedule" class="hz-set-tab" type="button" role="tab" data-set-tab="schedule" aria-controls="set-pane-schedule" aria-selected="true">
+              <svg class="bz-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg>
+              <span data-i18n="t.0a8adac9">Schedule</span>
             </button>
-          </span>
+            <button id="set-tab-omnivox" class="hz-set-tab" type="button" role="tab" data-set-tab="omnivox" aria-controls="set-pane-omnivox" aria-selected="false" tabindex="-1">
+              <svg class="bz-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8"/><path d="M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.3 4.9L20 16"/><path d="M20 20v-4h-4"/></svg>
+              <span>Omnivox</span>
+            </button>
+            <button id="set-tab-saide" class="hz-set-tab" type="button" role="tab" data-set-tab="saide" aria-controls="set-pane-saide" aria-selected="false" tabindex="-1">
+              <svg class="bz-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4.5" width="14" height="16.5" rx="2.5"/><path d="M9 4.5V3h6v1.5"/><path d="m9 13 2.2 2.2L15.5 11"/></svg>
+              <span class="hz-set-long">Services adaptés</span><span class="hz-set-short">SAIDE</span>
+            </button>
+            <button id="set-tab-account" class="hz-set-tab" type="button" role="tab" data-set-tab="account" aria-controls="set-pane-account" aria-selected="false" tabindex="-1">
+              <svg class="bz-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/></svg>
+              <span data-i18n="t.85dfa32c">Account</span>
+            </button>
+          </nav>
+
+          <div class="hz-set-panes">
+            <div id="set-pane-schedule" class="hz-set-pane" role="tabpanel" aria-labelledby="set-tab-schedule" data-set-pane="schedule">
+              <section class="hz-set-sec">
+                <h4 data-i18n="t.c915d505">Your schedule</h4>
+                <p class="hz-secnote" data-i18n="t.d8b436ff">The term dates, the days off, and a colour for each course.</p>
+                <div class="hz-row hz-set-dates">
+                  <label class="hz-field"><span data-i18n="t.9820d9fe">First day</span><input id="set-start" type="date"/></label>
+                  <label class="hz-field"><span data-i18n="t.2a177256">Last day</span><input id="set-end" type="date"/></label>
+                </div>
+                <div class="hz-field">
+                  <span id="set-off-label" data-i18n="t.a3b3f222">Days with no classes</span>
+                  <div id="set-off" class="hz-doff" role="group" aria-labelledby="set-off-label"></div>
+                </div>
+                <div class="hz-row stack">
+                  <button id="set-cal" class="ghost-btn small hidden" type="button"></button>
+                  <button id="btn-replace" class="ghost-btn small" type="button" data-i18n="t.7eaca198">Import another schedule</button>
+                </div>
+                <h5 class="hz-subhead" data-i18n="t.0c43edd6">Course colours</h5>
+                <div id="set-colors" class="hz-colors"></div>
+              </section>
+
+              <section class="hz-set-sec hz-danger">
+                <h4 data-i18n="t.963a652e">Danger zone</h4>
+                <p class="hz-secnote" data-i18n="t.49a164ae">This clears the timetable and the colours. Your tasks and your account are not touched, and you can import a new schedule right after.</p>
+                <div class="hz-row stack">
+                  <button id="btn-wipe" class="ghost-btn danger" type="button" data-i18n="t.cac372cb">Remove this schedule from this account</button>
+                </div>
+              </section>
+            </div>
+
+            <div id="set-pane-omnivox" class="hz-set-pane hidden" role="tabpanel" aria-labelledby="set-tab-omnivox" data-set-pane="omnivox">
+              <section class="hz-set-sec">
+                <h4 data-i18n="t.563eee8a">Homework and messages</h4>
+                <p class="hz-secnote" data-i18n="t.b3151db2">Where your homework and your Mio messages come from. You only need one of these.</p>
+                <div class="hz-lea-box">
+                  <h4 data-i18n="t.4b65eab2">Homework from LÉA</h4>
+                  
+                  <p class="hz-src" id="lea-source"></p>
+                  
+                  <p class="hz-note" data-i18n="t.09180189">Your courses are checked every time you open your agenda — the Bazinet extension reads LÉA in your own browser, on the session you are already signed in to. Your Omnivox password is never involved, and nothing is added here until you say so.</p>
+                  <p class="hz-leastat" id="lea-status"></p>
+                  <div class="hz-row stack">
+                    <button id="lea-check" class="ghost-btn small" type="button" data-i18n="t.2e837b38">Check my connection</button>
+                  </div>
+                  <div id="lea-items" class="hz-lealist"></div>
+                </div>
+                <div id="ovx-box" class="hz-ovx-box">
+                  <h4 data-i18n="t.d56b82dd">Connect Omnivox</h4>
+                  <p class="hz-note" data-i18n="t.89843574">Your homework, added by itself</p>
+                  <p class="hz-src" id="ovx-source"></p>
+                  
+                  <details class="hz-how">
+                    <summary data-i18n="t.fa22f804">How is this different from the browser extension?</summary>
+                    <p data-i18n="t.bd2cab10">Two ways to read the same school account. You only need one, and Bazinet picks for you.</p>
+                    <p data-i18n="t.fd73d35e">The extension reads LÉA and Mio inside your own browser, on the Omnivox session you are already signed in to. Your Omnivox password is never involved and nothing about your school account leaves this computer. It only works in a desktop browser with the extension installed.</p>
+                    <p data-i18n="t.dedcf993">Connecting Omnivox does the sign-in on our server instead, which is the only way this can work on a phone, where a browser extension cannot exist. Your password is kept encrypted and is decrypted for one sign-in at a time.</p>
+                    <p data-i18n="t.a85c2bc3">When both are available the extension is used first, because it keeps your password out of it entirely. Connecting Omnivox changes nothing on a computer that already has the extension — it is there for your phone.</p>
+                  </details>
+                  <p class="hz-leastat" id="ovx-state"></p>
+                  <div id="ovx-pro" class="hidden"></div>
+                  <div id="ovx-setup" class="hidden">
+                    <label class="hz-field"><span data-i18n="t.be011097">Omnivox sign-in (DA)</span><input id="ovx-da" type="text" autocomplete="off" inputmode="numeric"/></label>
+                    <label class="hz-field"><span data-i18n="t.97729b41">Omnivox password</span><input id="ovx-pw" type="password" autocomplete="off"/></label>
+                    <div class="hz-ovx-consent">
+                      <strong data-i18n="t.42700eaa">What happens to your password</strong>
+                      <p data-i18n="t.2feaecb5">It is encrypted on this device with your Bazinet account key, the same way your agenda is. Our server stores it only as ciphertext it cannot read.</p>
+                      <p data-i18n="t.eca15992">To fetch your homework, your password is decrypted here and sent to our server for that one sign-in. The server uses it and keeps nothing.</p>
+                      <p data-i18n="t.2d8883ea">Omnivox may occasionally ask for a CAPTCHA when a sign-in comes from a server. If that happens, sync stops and tells you — sign in on Omnivox once and it resumes.</p>
+                      <p data-i18n="t.9ab476ff">Omnivox will email you a code the first time, because the sync runs from our server and not your phone. We keep the “remember this device” cookie it gives us afterwards, encrypted, so it only asks once. Disconnecting deletes it.</p>
+                      <p data-i18n="t.e464a049">The email Omnivox sends about the new sign-in may say it came from an iPhone in the United States. That's our server, not someone else.</p>
+                      <label class="hz-ovx-agree"><input id="ovx-agree" type="checkbox"/><span data-i18n="t.b3117020">I understand and agree</span></label>
+                    </div>
+                    <div class="hz-row stack">
+                      <button id="ovx-connect" class="primary small" type="button" data-i18n="t.b65463cb">Connect</button>
+                      <button id="ovx-vault-fill" class="ghost-btn small hidden" type="button" data-i18n="t.98899fba">Fill from my Bazinet Vault</button>
+                    </div>
+                  </div>
+                  <div id="ovx-verify" class="hz-ovx-verify hidden">
+                    <strong data-i18n="t.00bcde67">Omnivox sent you a code by email</strong>
+                    <p class="hz-note" data-i18n="t.c1f9adb7">Enter it once. After that this device is remembered and you will not be asked again.</p>
+                    <label class="hz-field"><span data-i18n="t.80f2f298">Verification code</span><input id="ovx-code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="12"/></label>
+                    <div class="hz-row stack">
+                      <button id="ovx-submit-code" class="primary small" type="button" data-i18n="t.dda6ac27">Verify</button>
+                    </div>
+                  </div>
+                  <div id="ovx-ready" class="hz-ovx-verify hidden">
+                    <strong data-i18n="t.b3c7c8ac">Sign in to Omnivox again</strong>
+                    <p class="hz-note" data-i18n="t.e7e5f648">Your Omnivox session ended. Omnivox may email you a code to sign back in: start when you can check your email, since the code only lasts a few minutes.</p>
+                    <div class="hz-row stack">
+                      <button id="ovx-send-code" class="primary small" type="button" data-i18n="t.90d4e35e">Sign in now</button>
+                    </div>
+                  </div>
+                  <div class="hz-row stack">
+                    <button id="ovx-retry" class="ghost-btn small hidden" type="button" data-i18n="t.042c862e">Try again</button>
+                    <button id="ovx-vault-use" class="ghost-btn small hidden" type="button" data-i18n="t.e2ebd42b">Use the password from my Vault</button>
+                    <button id="ovx-forget" class="ghost-btn small danger hidden" type="button" data-i18n="t.a1c8e09a">Disconnect Omnivox</button>
+                  </div>
+                </div>
+              </section>
+
+              <section class="hz-set-sec">
+                <h4 data-i18n="t.6c590c23">Plans de cours</h4>
+                <p class="hz-secnote" data-i18n="t.9d015202">Horaire checks LÉA for new plans de cours once a day. Check now to get them right away.</p>
+                <div class="hz-row stack">
+                  <button id="plans-fetch" class="ghost-btn small" type="button" data-i18n="t.11fe717f">Get my plans de cours from Omnivox</button>
+                </div>
+                <div id="plans-support" class="hz-plans-support hidden">
+                  <p class="hz-note" data-i18n="t.e420fb72">Support access is on for your account. Send what Horaire reads from your plans de cours — course names, evaluations and the dates they land on — so support can check them.</p>
+                  <button id="plans-send" class="ghost-btn small" type="button" data-i18n="t.076fce3e">Send my plans de cours to support</button>
+                </div>
+              </section>
+            </div>
+
+            <div id="set-pane-saide" class="hz-set-pane hidden" role="tabpanel" aria-labelledby="set-tab-saide" data-set-pane="saide">
+              <section class="hz-set-sec" id="saide-sec">
+                <h4 data-i18n="t.339494b0">Services adaptés (SAIDE)</h4>
+                <p class="hz-secnote" data-i18n="t.0303838c">Exams with extra time or in the Services adaptés room have to be requested at least 14 days ahead. Horaire keeps track of that for you.</p>
+                <div class="hz-setlist">
+                  <label class="hz-setrow hz-setrow-main" for="saide-on">
+                    <span class="hz-setrow-text">
+                      <strong data-i18n="t.b596d01b">Turn on Services adaptés</strong>
+                      <small data-i18n="t.5277fb73">For exams you write with extra time or in the Services adaptés room. Horaire then watches every exam in your agenda for its 14-day deadline.</small>
+                    </span>
+                    <span class="hz-switch">
+                      <input id="saide-on" type="checkbox" role="switch"/>
+                      <span class="hz-switch-state hz-sw-on" data-i18n="t.88372528">Turned on</span>
+                      <span class="hz-switch-state hz-sw-off" data-i18n="t.545b00b8">Turned off</span>
+                      <span class="hz-switch-ui" aria-hidden="true"></span>
+                    </span>
+                  </label>
+                </div>
+
+                <div id="saide-off" class="hz-saide-intro">
+                  <h5 class="hz-subhead" data-i18n="t.8ac7aa17">What you get</h5>
+                  <ul class="hz-featlist">
+                    <li>
+                      <svg class="bz-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9a6 6 0 0 1 12 0c0 6 2.5 7.5 2.5 7.5h-17S6 15 6 9"/><path d="M10 20a2.2 2.2 0 0 0 4 0"/></svg>
+                      <span><strong data-i18n="t.348d3af0">A reminder for every exam</strong><small data-i18n="t.3b02dcde">In your agenda a week before each exam's 14-day deadline, so none slips past it.</small></span>
+                    </li>
+                    <li>
+                      <svg class="bz-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.4-4.4"/><path d="m8.4 11 1.8 1.8 3.4-3.4"/></svg>
+                      <span><strong><span data-i18n="t.f9ee5ebc">Your requests, checked</span> <span class="hz-pro-badge">PRO</span></strong><small data-i18n="t.301fc031">Horaire reads your requests on Omnivox, so an exam you already requested is never reminded again.</small></span>
+                    </li>
+                    <li>
+                      <svg class="bz-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 10.5 13.5"/><path d="M21 3l-6.5 18-4-7.5L3 9.5 21 3Z"/></svg>
+                      <span><strong><span data-i18n="t.70d220c3">Requests sent for you</span> <span class="hz-pro-badge">PRO</span></strong><small data-i18n="t.c87eda14">With your extra time already counted, as soon as the exam is in your agenda.</small></span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div id="saide-more" class="hz-saide-more hidden">
+                  <h5 class="hz-subhead" data-i18n="t.85729dcc">Requests on Omnivox</h5>
+                  <div class="hz-setlist">
+                    <div class="hz-setrow">
+                      <span class="hz-setrow-text">
+                        <strong data-i18n="t.91d672ff">Your requests</strong>
+                        <small id="saide-status" role="status"></small>
+                      </span>
+                      <span class="hz-setrow-acts">
+                        <button id="saide-connect" class="ghost-btn small hidden" type="button" data-i18n="t.d56b82dd">Connect Omnivox</button>
+                        <button id="saide-check" class="ghost-btn small" type="button" data-i18n="t.2ce5dd0d">Check now</button>
+                      </span>
+                    </div>
+                    <label class="hz-setrow" for="saide-auto">
+                      <span class="hz-setrow-text">
+                        <strong><span data-i18n="t.eff5437e">Send the requests for me</span> <span class="hz-pro-badge">PRO</span></strong>
+                        <small data-i18n="t.15fd3070">When an exam falls on one of your classes, Horaire requests that class's time plus your extra time. Other exams stay in the reminder until you send them.</small>
+                      </span>
+                      <span class="hz-switch">
+                        <input id="saide-auto" type="checkbox" role="switch"/>
+                        <span class="hz-switch-state hz-sw-on" data-i18n="t.88372528">Turned on</span>
+                        <span class="hz-switch-state hz-sw-off" data-i18n="t.545b00b8">Turned off</span>
+                        <span class="hz-switch-ui" aria-hidden="true"></span>
+                      </span>
+                    </label>
+                    <div class="hz-setrow hz-setrow-field">
+                      <span class="hz-setrow-text">
+                        <strong id="saide-place-label" data-i18n="t.45887e0b">Where you write</strong>
+                        <small data-i18n="t.9db06291">Used for every request Horaire sends.</small>
+                      </span>
+                      <select id="saide-place" aria-labelledby="saide-place-label">
+                        <option value="2" data-i18n="t.0070a2ab">In the Services adaptés room</option>
+                        <option value="3" data-i18n="t.1d98aabb">In class for the instructions, then in the Services adaptés room</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div id="set-pane-account" class="hz-set-pane hidden" role="tabpanel" aria-labelledby="set-tab-account" data-set-pane="account">
+              <section class="hz-set-sec">
+                <h4 data-i18n="t.4ab29102">Your account</h4>
+                <p class="hz-secnote" data-i18n="t.8410e19f">Your agenda syncs to every device you sign in on. It is encrypted here before it is uploaded, so the server stores it without being able to read it.</p>
+                <div class="hz-setlist">
+                  <div class="hz-setrow">
+                    <span class="hz-setrow-text"><strong data-i18n="t.a02107c3">Signed in as</strong><small id="set-who"></small></span>
+                    <span class="hz-setrow-acts"><button id="sync-now" class="ghost-btn small" type="button" data-i18n="t.2b7d938e">Sync now</button></span>
+                  </div>
+                  <div class="hz-setrow">
+                    <span class="hz-setrow-text"><strong data-i18n="t.dd71f853">Lock this agenda</strong><small data-i18n="t.4110868c">Hides it on this device until your password is entered again. You stay signed in.</small></span>
+                    <span class="hz-setrow-acts"><button id="set-lock" class="ghost-btn small" type="button" data-i18n="t.891ebccd">Lock</button></span>
+                  </div>
+                  <div class="hz-setrow">
+                    <span class="hz-setrow-text"><strong data-i18n="t.d16c78ab">Sign out on this device</strong><small data-i18n="t.01330fcb">Your agenda stays on your account.</small></span>
+                    <span class="hz-setrow-acts"><button id="set-signout" class="ghost-btn small" type="button" data-i18n="t.dc1649a1">Sign out</button></span>
+                  </div>
+                </div>
+                <div id="set-pro"></div>
+              </section>
+
+              <section class="hz-set-sec">
+                <h4 data-i18n="t.41def7a0">Appearance</h4>
+                <p class="hz-secnote" data-i18n="t.e708b087">Light or dark, English or French.</p>
+                <div class="hz-setlist">
+                  <div class="hz-setrow">
+                    <span class="hz-setrow-text"><strong data-i18n="t.a797e309">Theme</strong></span>
+                    <span class="hz-setrow-acts">
+                      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light or dark mode" title="Toggle theme">
+                        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+                        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+                      </button>
+                    </span>
+                  </div>
+                  <div class="hz-setrow">
+                    <span class="hz-setrow-text"><strong data-i18n="t.89b86ab0">Language</strong></span>
+                    <span class="hz-setrow-acts"><button class="lang-toggle" type="button" data-lang-toggle>FR</button></span>
+                  </div>
+                </div>
+              </section>
+
+              <section class="hz-set-sec">
+                <h4 data-i18n="t.016390c2">Export and print</h4>
+                <p class="hz-secnote" data-i18n="t.ee4c7c62">Take your timetable somewhere else, or put it on paper.</p>
+                <div class="hz-setlist">
+                  <div class="hz-setrow">
+                    <span class="hz-setrow-text"><strong data-i18n="t.f2c33eb3">Calendar file (.ics)</strong><small data-i18n="t.aca6a6ca">Add your classes to Google Calendar, Apple Calendar or Outlook.</small></span>
+                    <span class="hz-setrow-acts"><button id="btn-ics" class="ghost-btn small" type="button" data-i18n="t.f3e4fadb">Export</button></span>
+                  </div>
+                  <div class="hz-setrow">
+                    <span class="hz-setrow-text"><strong data-i18n="t.0ae7856e">Paper copy</strong><small data-i18n="t.5885a022">Your timetable, laid out for printing.</small></span>
+                    <span class="hz-setrow-acts"><button id="btn-print" class="ghost-btn small" type="button" data-i18n="t.5b221e9c">Print</button></span>
+                  </div>
+                </div>
+              </section>
+
+              <nav class="foot-links hz-modal-legal">
+                <a href="/" data-i18n="nav.home">Products</a><span>·</span>
+                <a href="/terms" data-i18n="nav.terms">Terms</a><span>·</span>
+                <a href="/privacy" data-i18n="nav.privacy">Privacy</a><span>·</span>
+                <a href="/changelog" data-i18n="nav.changelog">What’s new</a><span>·</span>
+                <a href="/security" data-i18n="nav.security">Security</a><span>·</span>
+                <a href="https://status.bazinet.net/" data-i18n="nav.status">Status</a><span>·</span>
+                <a href="/support" data-i18n="nav.support">Support</a><span>·</span>
+                <a href="mailto:support@bazinet.net" data-i18n="nav.contact">Contact</a>
+              </nav>
+              <p class="hz-note" data-i18n="t.303176bd">Not affiliated with the Cégep du Vieux Montréal or with Omnivox. Your agenda is encrypted on your device before it is stored on your account.</p>
+            </div>
+          </div>
         </div>
-        
-        <section class="hz-set-sec">
-          <h4 data-i18n="t.c915d505">Your schedule</h4>
-          <p class="hz-secnote" data-i18n="t.d8b436ff">The term dates, the days off, and a colour for each course.</p>
-          <div class="hz-row">
-            <label class="hz-field"><span data-i18n="t.9820d9fe">First day</span><input id="set-start" type="date"/></label>
-            <label class="hz-field"><span data-i18n="t.2a177256">Last day</span><input id="set-end" type="date"/></label>
-          </div>
-          <div class="hz-field">
-            <span id="set-off-label" data-i18n="t.a3b3f222">Days with no classes</span>
-            <div id="set-off" class="hz-doff" role="group" aria-labelledby="set-off-label"></div>
-          </div>
-          <div class="hz-row stack">
-            <button id="set-cal" class="ghost-btn small hidden" type="button"></button>
-            <button id="btn-replace" class="ghost-btn small" type="button" data-i18n="t.7eaca198">Import another schedule</button>
-          </div>
-          <h5 class="hz-subhead" data-i18n="t.0c43edd6">Course colours</h5>
-          <div id="set-colors" class="hz-colors"></div>
-        </section>
-
-        <section class="hz-set-sec">
-          <h4 data-i18n="t.563eee8a">Homework and messages</h4>
-          <p class="hz-secnote" data-i18n="t.b3151db2">Where your homework and your Mio messages come from. You only need one of these.</p>
-        
-        <div class="hz-lea-box">
-          <h4 data-i18n="t.4b65eab2">Homework from LÉA</h4>
-          
-          <p class="hz-src" id="lea-source"></p>
-          
-          <p class="hz-note" data-i18n="t.09180189">Your courses are checked every time you open your agenda — the Bazinet extension reads LÉA in your own browser, on the session you are already signed in to. Your Omnivox password is never involved, and nothing is added here until you say so.</p>
-          <p class="hz-leastat" id="lea-status"></p>
-          <div class="hz-row stack">
-            <button id="lea-check" class="ghost-btn small" type="button" data-i18n="t.2e837b38">Check my connection</button>
-          </div>
-          <div id="lea-items" class="hz-lealist"></div>
-        </div>
-        
-        <div id="ovx-box" class="hz-ovx-box">
-          <h4 data-i18n="t.d56b82dd">Connect Omnivox</h4>
-          <p class="hz-note" data-i18n="t.89843574">Your homework, added by itself</p>
-          <p class="hz-src" id="ovx-source"></p>
-          
-          <details class="hz-how">
-            <summary data-i18n="t.fa22f804">How is this different from the browser extension?</summary>
-            <p data-i18n="t.bd2cab10">Two ways to read the same school account. You only need one, and Bazinet picks for you.</p>
-            <p data-i18n="t.fd73d35e">The extension reads LÉA and Mio inside your own browser, on the Omnivox session you are already signed in to. Your Omnivox password is never involved and nothing about your school account leaves this computer. It only works in a desktop browser with the extension installed.</p>
-            <p data-i18n="t.dedcf993">Connecting Omnivox does the sign-in on our server instead, which is the only way this can work on a phone, where a browser extension cannot exist. Your password is kept encrypted and is decrypted for one sign-in at a time.</p>
-            <p data-i18n="t.a85c2bc3">When both are available the extension is used first, because it keeps your password out of it entirely. Connecting Omnivox changes nothing on a computer that already has the extension — it is there for your phone.</p>
-          </details>
-          <p class="hz-leastat" id="ovx-state"></p>
-          <div id="ovx-pro" class="hidden"></div>
-          <div id="ovx-setup" class="hidden">
-            <label class="hz-field"><span data-i18n="t.be011097">Omnivox sign-in (DA)</span><input id="ovx-da" type="text" autocomplete="off" inputmode="numeric"/></label>
-            <label class="hz-field"><span data-i18n="t.97729b41">Omnivox password</span><input id="ovx-pw" type="password" autocomplete="off"/></label>
-            <div class="hz-ovx-consent">
-              <strong data-i18n="t.42700eaa">What happens to your password</strong>
-              <p data-i18n="t.2feaecb5">It is encrypted on this device with your Bazinet account key, the same way your agenda is. Our server stores it only as ciphertext it cannot read.</p>
-              <p data-i18n="t.eca15992">To fetch your homework, your password is decrypted here and sent to our server for that one sign-in. The server uses it and keeps nothing.</p>
-              <p data-i18n="t.2d8883ea">Omnivox may occasionally ask for a CAPTCHA when a sign-in comes from a server. If that happens, sync stops and tells you — sign in on Omnivox once and it resumes.</p>
-              <p data-i18n="t.9ab476ff">Omnivox will email you a code the first time, because the sync runs from our server and not your phone. We keep the “remember this device” cookie it gives us afterwards, encrypted, so it only asks once. Disconnecting deletes it.</p>
-              <p data-i18n="t.e464a049">The email Omnivox sends about the new sign-in may say it came from an iPhone in the United States. That's our server, not someone else.</p>
-              <label class="hz-ovx-agree"><input id="ovx-agree" type="checkbox"/><span data-i18n="t.b3117020">I understand and agree</span></label>
-            </div>
-            <div class="hz-row stack">
-              <button id="ovx-connect" class="primary small" type="button" data-i18n="t.b65463cb">Connect</button>
-              <button id="ovx-vault-fill" class="ghost-btn small hidden" type="button" data-i18n="t.98899fba">Fill from my Bazinet Vault</button>
-            </div>
-          </div>
-          <div id="ovx-verify" class="hz-ovx-verify hidden">
-            <strong data-i18n="t.00bcde67">Omnivox sent you a code by email</strong>
-            <p class="hz-note" data-i18n="t.c1f9adb7">Enter it once. After that this device is remembered and you will not be asked again.</p>
-            <label class="hz-field"><span data-i18n="t.80f2f298">Verification code</span><input id="ovx-code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="12"/></label>
-            <div class="hz-row stack">
-              <button id="ovx-submit-code" class="primary small" type="button" data-i18n="t.dda6ac27">Verify</button>
-            </div>
-          </div>
-          <div id="ovx-ready" class="hz-ovx-verify hidden">
-            <strong data-i18n="t.b3c7c8ac">Sign in to Omnivox again</strong>
-            <p class="hz-note" data-i18n="t.e7e5f648">Your Omnivox session ended. Omnivox may email you a code to sign back in: start when you can check your email, since the code only lasts a few minutes.</p>
-            <div class="hz-row stack">
-              <button id="ovx-send-code" class="primary small" type="button" data-i18n="t.90d4e35e">Sign in now</button>
-            </div>
-          </div>
-          <div class="hz-row stack">
-            <button id="ovx-retry" class="ghost-btn small hidden" type="button" data-i18n="t.042c862e">Try again</button>
-            <button id="ovx-vault-use" class="ghost-btn small hidden" type="button" data-i18n="t.e2ebd42b">Use the password from my Vault</button>
-            <button id="ovx-forget" class="ghost-btn small danger hidden" type="button" data-i18n="t.a1c8e09a">Disconnect Omnivox</button>
-          </div>
-        </div>
-        </section>
-
-        
-        <section class="hz-set-sec" id="saide-sec">
-          <h4 data-i18n="t.339494b0">Services adaptés (SAIDE)</h4>
-          <p class="hz-secnote" data-i18n="t.22f120b4">Exams with the Services adaptés have to be requested at least 14 days ahead. Horaire reminds you a week before that deadline, for every exam in your agenda.</p>
-          <label class="hz-check"><input id="saide-on" type="checkbox"/><span data-i18n="t.4ea63d15">I write my exams at the Services adaptés</span></label>
-          <div id="saide-more" class="hz-saide-more hidden">
-            <label class="hz-check"><input id="saide-auto" type="checkbox"/><span data-i18n="t.bfce5a51">Send the requests for me on Omnivox</span></label>
-            <p class="hz-note" data-i18n="t.f76dcc97">When an exam falls on one of your classes, Horaire requests that class's time with your extra time, as soon as the exam is in your agenda. Other exams stay in the reminder until you send them.</p>
-            <label class="hz-field"><span data-i18n="t.45887e0b">Where you write</span>
-              <select id="saide-place">
-                <option value="2" data-i18n="t.0070a2ab">In the Services adaptés room</option>
-                <option value="3" data-i18n="t.1d98aabb">In class for the instructions, then in the Services adaptés room</option>
-              </select></label>
-            <div class="hz-row stack">
-              <button id="saide-check" class="ghost-btn" type="button" data-i18n="t.efe02f59">Check my requests now</button>
-            </div>
-            <p id="saide-status" class="hz-note" role="status"></p>
-          </div>
-        </section>
-
-        
-        <section class="hz-set-sec">
-          <h4 data-i18n="t.6c590c23">Plans de cours</h4>
-          <p class="hz-secnote" data-i18n="t.9d015202">Horaire checks LÉA for new plans de cours once a day. Check now to get them right away.</p>
-          <div class="hz-row stack">
-            <button id="plans-fetch" class="ghost-btn" type="button" data-i18n="t.11fe717f">Get my plans de cours from Omnivox</button>
-          </div>
-          
-          <div id="plans-support" class="hz-plans-support hidden">
-            <p class="hz-note" data-i18n="t.e420fb72">Support access is on for your account. Send what Horaire reads from your plans de cours — course names, evaluations and the dates they land on — so support can check them.</p>
-            <button id="plans-send" class="ghost-btn small" type="button" data-i18n="t.076fce3e">Send my plans de cours to support</button>
-          </div>
-        </section>
-
-        <section class="hz-set-sec">
-          <h4 data-i18n="t.4ab29102">Your account</h4>
-          <p class="hz-secnote" data-i18n="t.8410e19f">Your agenda syncs to every device you sign in on. It is encrypted here before it is uploaded, so the server stores it without being able to read it.</p>
-          <p class="hz-note" id="set-who"></p>
-          <div class="hz-row stack">
-            <button id="sync-now" class="ghost-btn" type="button" data-i18n="t.2b7d938e">Sync now</button>
-            
-            <button id="set-lock" class="ghost-btn" type="button" data-i18n="t.dd71f853">Lock this agenda</button>
-            <button id="set-signout" class="ghost-btn" type="button" data-i18n="t.d16c78ab">Sign out on this device</button>
-          </div>
-        </section>
-
-        <section class="hz-set-sec">
-          <h4 data-i18n="t.016390c2">Export and print</h4>
-          <p class="hz-secnote" data-i18n="t.ee4c7c62">Take your timetable somewhere else, or put it on paper.</p>
-          <div class="hz-row stack">
-            <button id="btn-ics" class="ghost-btn" type="button" data-i18n="t.d7e4cb80">Export to my calendar (.ics)</button>
-            <button id="btn-print" class="ghost-btn" type="button" data-i18n="t.5b221e9c">Print</button>
-          </div>
-        </section>
-
-        
-        <section class="hz-set-sec hz-danger">
-          <h4 data-i18n="t.963a652e">Danger zone</h4>
-          <p class="hz-secnote" data-i18n="t.49a164ae">This clears the timetable and the colours. Your tasks and your account are not touched, and you can import a new schedule right after.</p>
-          <div class="hz-row stack">
-            <button id="btn-wipe" class="ghost-btn danger" type="button" data-i18n="t.cac372cb">Remove this schedule from this account</button>
-          </div>
-        </section>
-
-        <div class="hz-row end">
-          <button id="set-close" class="primary" type="button" data-i18n="t.e9b450d1">Done</button>
-        </div>
-        
-        <nav class="foot-links hz-modal-legal">
-          <a href="/" data-i18n="nav.home">Products</a><span>·</span>
-          <a href="/terms" data-i18n="nav.terms">Terms</a><span>·</span>
-          <a href="/privacy" data-i18n="nav.privacy">Privacy</a><span>·</span>
-          <a href="/changelog" data-i18n="nav.changelog">What’s new</a><span>·</span>
-          <a href="/security" data-i18n="nav.security">Security</a><span>·</span>
-          <a href="https://status.bazinet.net/" data-i18n="nav.status">Status</a><span>·</span>
-          <a href="/support" data-i18n="nav.support">Support</a><span>·</span>
-          <a href="mailto:support@bazinet.net" data-i18n="nav.contact">Contact</a>
-        </nav>
-        <p class="hz-note" data-i18n="t.303176bd">Not affiliated with the Cégep du Vieux Montréal or with Omnivox. Your agenda is encrypted on your device before it is stored on your account.</p>
       </div>
     </div>
 
-    
     <div id="plans-overlay" class="hz-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="plans-title">
       <div class="hz-modal">
         <h3 id="plans-title" data-i18n="t.6c590c23">Plans de cours</h3>
