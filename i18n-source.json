@@ -837,6 +837,12 @@
       "app.html"
     ]
   },
+  "t.0070a2ab": {
+    "en": "In the Services adaptés room",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.009485b3": {
     "en": "Sign in once and you’re done. Every time you open Horaire, it checks Omnivox for you and brings back what’s new. Nothing to download, nothing to copy, no plan de cours to add one by one.",
     "pages": [
@@ -865,6 +871,12 @@
     "en": "Key made here from your master password. Never sent.",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.00ebcd1b": {
+    "en": "Length for the group (minutes)",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.00fb203c": {
@@ -1124,6 +1136,12 @@
     "en": "Aim Trainer",
     "pages": [
       "support.html"
+    ]
+  },
+  "t.0ae57b80": {
+    "en": "Send the request",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.0aebe9e9": {
@@ -1637,6 +1655,12 @@
       "valorant.html"
     ]
   },
+  "t.1d98aabb": {
+    "en": "In class for the instructions, then in the Services adaptés room",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.1db0a2c3": {
     "en": "Can you see my schedule?",
     "pages": [
@@ -1708,6 +1732,12 @@
     "en": "A Valorant companion that coaches your counter-strafe timing in real time, analyzes your real matches, and shows a live in-game overlay — without ever touching the game.",
     "pages": [
       "index.html"
+    ]
+  },
+  "t.22f120b4": {
+    "en": "Exams with the Services adaptés have to be requested at least 14 days ahead. Horaire reminds you a week before that deadline, for every exam in your agenda.",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.230861c8": {
@@ -1926,6 +1956,12 @@
       "horaire.html"
     ]
   },
+  "t.2bf9009b": {
+    "en": "Request this exam at the Services adaptés",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.2c709552": {
     "en": "Sign in at cvm.omnivox.ca. It’s in your list of services.",
     "pages": [
@@ -2003,6 +2039,12 @@
     "pages": [
       "account.html",
       "app.html",
+      "horaire.html"
+    ]
+  },
+  "t.2f132233": {
+    "en": "Title of the evaluation",
+    "pages": [
       "horaire.html"
     ]
   },
@@ -2106,6 +2148,12 @@
     "en": "Sign up with Google",
     "pages": [
       "account.html"
+    ]
+  },
+  "t.339494b0": {
+    "en": "Services adaptés (SAIDE)",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.33acdbd6": {
@@ -2437,6 +2485,12 @@
       "support.html"
     ]
   },
+  "t.45887e0b": {
+    "en": "Where you write",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.45bba479": {
     "en": "Sensitivity advisor",
     "pages": [
@@ -2729,6 +2783,12 @@
     "en": "What happens if I forget my master password?",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.4ea63d15": {
+    "en": "I write my exams at the Services adaptés",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.4ee8a9d4": {
@@ -3069,6 +3129,12 @@
     "en": "Monitor — counter-strafe timing",
     "pages": [
       "valorant.html"
+    ]
+  },
+  "t.5ea99def": {
+    "en": "Starts at",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.5f21e0f7": {
@@ -5602,6 +5668,12 @@
       "account.html"
     ]
   },
+  "t.bfce5a51": {
+    "en": "Send the requests for me on Omnivox",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.c008f9f6": {
     "en": "Why use a generated password?",
     "pages": [
@@ -6769,6 +6841,12 @@
       "horaire.html"
     ]
   },
+  "t.efe02f59": {
+    "en": "Check my requests now",
+    "pages": [
+      "horaire.html"
+    ]
+  },
   "t.f030c3d6": {
     "en": "1 hour",
     "pages": [
@@ -6935,6 +7013,12 @@
     "en": "Check one password",
     "pages": [
       "breach.html"
+    ]
+  },
+  "t.f76dcc97": {
+    "en": "When an exam falls on one of your classes, Horaire requests that class's time with your extra time, as soon as the exam is in your agenda. Other exams stay in the reminder until you send them.",
+    "pages": [
+      "horaire.html"
     ]
   },
   "t.f780d949": {

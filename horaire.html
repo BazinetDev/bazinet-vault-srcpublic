@@ -416,6 +416,8 @@
       
       <div id="crsa-health" class="hz-crsa hz-crsa-warn hidden" role="status"></div>
       
+      <div id="saide-bar" class="hz-crsa hz-saide hidden" role="status"></div>
+      
       <div id="pro-strip" class="hz-prostrip hidden"></div>
       
       <div id="share-bar" class="hz-sharebar hidden" role="status"></div>
@@ -564,6 +566,30 @@
       </div>
     </div>
 
+    
+    <div id="saide-overlay" class="hz-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="saide-title">
+      <div class="hz-modal">
+        <h3 id="saide-title" data-i18n="t.2bf9009b">Request this exam at the Services adaptés</h3>
+        <p id="saide-what" class="hz-taskctx"></p>
+        <label class="hz-field"><span data-i18n="t.2f132233">Title of the evaluation</span><input id="saide-name" type="text" maxlength="150"/></label>
+        <div class="hz-row">
+          <label class="hz-field"><span data-i18n="t.5ea99def">Starts at</span><input id="saide-start" type="time"/></label>
+          <label class="hz-field"><span data-i18n="t.00ebcd1b">Length for the group (minutes)</span><input id="saide-minutes" type="number" min="5" max="779" step="5"/></label>
+        </div>
+        <p id="saide-extra" class="hz-note"></p>
+        <label class="hz-field"><span data-i18n="t.45887e0b">Where you write</span>
+          <select id="saide-where">
+            <option value="2" data-i18n="t.0070a2ab">In the Services adaptés room</option>
+            <option value="3" data-i18n="t.1d98aabb">In class for the instructions, then in the Services adaptés room</option>
+          </select></label>
+        <p id="saide-error" class="hz-error" role="alert"></p>
+        <div class="hz-row end">
+          <button id="saide-cancel" class="ghost-btn" type="button" data-i18n="t.77dfd213">Cancel</button>
+          <button id="saide-send" class="primary" type="button" data-i18n="t.0ae57b80">Send the request</button>
+        </div>
+      </div>
+    </div>
+
     <div id="set-overlay" class="hz-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="set-title">
       <div class="hz-modal">
         <h3 id="set-title" data-i18n="t.c7f73bb5">Settings</h3>
@@ -669,6 +695,26 @@
             <button id="ovx-forget" class="ghost-btn small danger hidden" type="button" data-i18n="t.a1c8e09a">Disconnect Omnivox</button>
           </div>
         </div>
+        </section>
+
+        
+        <section class="hz-set-sec" id="saide-sec">
+          <h4 data-i18n="t.339494b0">Services adaptés (SAIDE)</h4>
+          <p class="hz-secnote" data-i18n="t.22f120b4">Exams with the Services adaptés have to be requested at least 14 days ahead. Horaire reminds you a week before that deadline, for every exam in your agenda.</p>
+          <label class="hz-check"><input id="saide-on" type="checkbox"/><span data-i18n="t.4ea63d15">I write my exams at the Services adaptés</span></label>
+          <div id="saide-more" class="hz-saide-more hidden">
+            <label class="hz-check"><input id="saide-auto" type="checkbox"/><span data-i18n="t.bfce5a51">Send the requests for me on Omnivox</span></label>
+            <p class="hz-note" data-i18n="t.f76dcc97">When an exam falls on one of your classes, Horaire requests that class's time with your extra time, as soon as the exam is in your agenda. Other exams stay in the reminder until you send them.</p>
+            <label class="hz-field"><span data-i18n="t.45887e0b">Where you write</span>
+              <select id="saide-place">
+                <option value="2" data-i18n="t.0070a2ab">In the Services adaptés room</option>
+                <option value="3" data-i18n="t.1d98aabb">In class for the instructions, then in the Services adaptés room</option>
+              </select></label>
+            <div class="hz-row stack">
+              <button id="saide-check" class="ghost-btn" type="button" data-i18n="t.efe02f59">Check my requests now</button>
+            </div>
+            <p id="saide-status" class="hz-note" role="status"></p>
+          </div>
         </section>
 
         
@@ -799,6 +845,7 @@
   <script src="/horaire-mio.js"></script>
   <script src="/horaire-crsa.js"></script>
   <script src="/horaire-plans.js"></script>
+  <script src="/horaire-saide.js"></script>
   
   <script src="/lea-extract.js"></script>
   <script src="/mio-extract.js"></script>
@@ -806,6 +853,7 @@
   <script src="/lea-docs.js"></script>
   <script src="/lea-notes.js"></script>
   <script src="/plan-extract.js"></script>
+  <script src="/srae-extract.js"></script>
   <script src="/horaire-cote.js"></script>
   <script src="/horaire-omnivox.js"></script>
   <script src="/horaire-share.js"></script>
