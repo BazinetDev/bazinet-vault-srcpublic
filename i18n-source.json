@@ -879,12 +879,6 @@
       "horaire.html"
     ]
   },
-  "t.00fb203c": {
-    "en": "Free to start",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.01330fcb": {
     "en": "Your agenda stays on your account.",
     "pages": [
@@ -951,12 +945,6 @@
       "valorant.html"
     ]
   },
-  "t.04270ed6": {
-    "en": "Riot API match stats",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.042c862e": {
     "en": "Try again",
     "pages": [
@@ -1000,12 +988,6 @@
       "download.html"
     ]
   },
-  "t.0505b32e": {
-    "en": "Import your schedule from Omnivox and get your week, your day and everything that’s due, with homework and exams beside the classes they belong to.",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.052269b2": {
     "en": "Open in browser",
     "pages": [
@@ -1034,12 +1016,6 @@
     "en": "Chrome Web Store · Chrome, Edge & Brave",
     "pages": [
       "extension.html"
-    ]
-  },
-  "t.06e56f23": {
-    "en": "The agenda for Cégep du Vieux Montréal",
-    "pages": [
-      "index.html"
     ]
   },
   "t.076fce3e": {
@@ -1138,6 +1114,18 @@
       "horaire.html"
     ]
   },
+  "t.09e64b4c": {
+    "en": "For Cégep du Vieux Montréal students",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.0a88df4c": {
+    "en": "Cards, bank accounts, identities, Wi-Fi networks, SSH keys and API keys, each with the fields it needs and its own Show and Copy buttons.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.0a8adac9": {
     "en": "Schedule",
     "pages": [
@@ -1153,6 +1141,7 @@
   "t.0a972f9a": {
     "en": "Aim Trainer",
     "pages": [
+      "index.html",
       "support.html"
     ]
   },
@@ -1186,6 +1175,12 @@
       "horaire.html"
     ]
   },
+  "t.0b4595b6": {
+    "en": "On the web and on Mac",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.0b8a19ed": {
     "en": "Frequently asked",
     "pages": [
@@ -1205,28 +1200,22 @@
       "breach.html"
     ]
   },
+  "t.0c411401": {
+    "en": "One developer in Montréal, one free account for both, and everything you store is encrypted on your device before it is saved.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.0c43edd6": {
     "en": "Course colours",
     "pages": [
       "horaire.html"
     ]
   },
-  "t.0c6b16eb": {
-    "en": "No. Horaire encrypts your agenda on your device before it is saved to your account, with a key only your password can produce. The schedule PDF you import is read in your browser and never uploaded.",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.0c743116": {
     "en": "Bazinet Vault vs. the usual habits",
     "pages": [
       "vault.html"
-    ]
-  },
-  "t.0c8e2d0c": {
-    "en": "Search your vault",
-    "pages": [
-      "index.html"
     ]
   },
   "t.0d3448b3": {
@@ -1239,6 +1228,12 @@
     "en": "Read-only access through emergency recovery. Handle these credentials with care.",
     "pages": [
       "app.html"
+    ]
+  },
+  "t.0da0e4f8": {
+    "en": "Family vault",
+    "pages": [
+      "index.html"
     ]
   },
   "t.0dab8f64": {
@@ -1325,6 +1320,12 @@
       "valorant.html"
     ]
   },
+  "t.11388614": {
+    "en": "breach check",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.114f60b0": {
     "en": "Every plan de cours, read for you",
     "pages": [
@@ -1353,6 +1354,12 @@
     "en": "The app keeps itself current, but only with packages we signed. Each one is checked against a key built into the app before anything installs.",
     "pages": [
       "download.html"
+    ]
+  },
+  "t.12fbfdd9": {
+    "en": "Only the locked copy is saved. A copy of our database would show nothing but scrambled bytes.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.134bfe69": {
@@ -1421,22 +1428,10 @@
       "app.html"
     ]
   },
-  "t.1534fc00": {
-    "en": "Homework and exams",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.15fd3070": {
     "en": "When an exam falls on one of your classes, Horaire requests that class's time plus your extra time. Other exams stay in the reminder until you send them.",
     "pages": [
       "horaire.html"
-    ]
-  },
-  "t.1605f32b": {
-    "en": "against Valorant's rules and is",
-    "pages": [
-      "index.html"
     ]
   },
   "t.16154aac": {
@@ -1541,6 +1536,12 @@
       "app.html"
     ]
   },
+  "t.18638356": {
+    "en": "once",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.18707151": {
     "en": "New: Horaire syncs with Omnivox automatically",
     "pages": [
@@ -1585,6 +1586,12 @@
       "support.html"
     ]
   },
+  "t.1a46921b": {
+    "en": "Your vault is encrypted in your browser with Argon2id and AES 256, using a key from your master password. The server stores ciphertext and nothing else.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.1ae5a4f8": {
     "en": "Your profile, how Bazinet looks, and your account itself.",
     "pages": [
@@ -1601,6 +1608,12 @@
     "en": "Can view",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.1b552a31": {
+    "en": "For anyone with too many passwords",
+    "pages": [
+      "index.html"
     ]
   },
   "t.1bc4d666": {
@@ -1691,16 +1704,11 @@
       "horaire.html"
     ]
   },
-  "t.1db0a2c3": {
-    "en": "Can you see my schedule?",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.1dd6a17c": {
     "en": "How it works",
     "pages": [
       "app.html",
+      "index.html",
       "vault.html"
     ]
   },
@@ -1708,6 +1716,12 @@
     "en": "I have saved this recovery key somewhere safe.",
     "pages": [
       "app.html"
+    ]
+  },
+  "t.1e34cd2b": {
+    "en": "Lose it without a recovery key and nobody can open the vault, including us",
+    "pages": [
+      "index.html"
     ]
   },
   "t.1e83ae49": {
@@ -1728,6 +1742,12 @@
       "index.html"
     ]
   },
+  "t.1f6df70e": {
+    "en": "a month",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.1f81c9ef": {
     "en": "The PDF will not open. Can I paste instead?",
     "pages": [
@@ -1738,6 +1758,12 @@
     "en": "Stopped, first bullet on target",
     "pages": [
       "valorant.html"
+    ]
+  },
+  "t.20d0ec72": {
+    "en": "Sign in with Omnivox and Horaire reads your schedule. Your password is used for that sign in only and is not kept. The schedule PDF works too.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.20e099ad": {
@@ -1752,14 +1778,20 @@
       "vault.html"
     ]
   },
-  "t.22bc982b": {
-    "en": "Small utilities you can use right now — the heavy lifting happens on your device, so nothing sensitive is ever sent to us.",
+  "t.21c9f3a5": {
+    "en": "Sign in to Omnivox once in Horaire and it stays connected on every device, phone included.",
     "pages": [
       "index.html"
     ]
   },
-  "t.22c5a196": {
-    "en": "A Valorant companion that coaches your counter-strafe timing in real time, analyzes your real matches, and shows a live in-game overlay — without ever touching the game.",
+  "t.2211d5ba": {
+    "en": "Or $24.99 a year.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.22614627": {
+    "en": "After a while without use, the vault locks and needs your master password again.",
     "pages": [
       "index.html"
     ]
@@ -1794,12 +1826,6 @@
       "vault.html"
     ]
   },
-  "t.23ba214d": {
-    "en": "Free quick tools",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.23cb0ae5": {
     "en": "Bazinet.net builds simple, private software for everyday use. All of its products work with a single Bazinet account.",
     "pages": [
@@ -1824,28 +1850,22 @@
       "support.html"
     ]
   },
-  "t.24b6d5ec": {
-    "en": "Download →",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.24e5bd33": {
     "en": "Search the help centre",
     "pages": [
       "support.html"
     ]
   },
+  "t.24f2ac90": {
+    "en": "Homework and exams on the class they belong to",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.2541d1c5": {
     "en": "Secure note",
     "pages": [
       "app.html"
-    ]
-  },
-  "t.254e31a5": {
-    "en": "Yes. Horaire is free, every feature of it. The vault, the quick tools and the Aim Trainer are free to start, with no credit card. An optional Pro plan adds extras to the vault and helps cover server costs: $2.99 a month or $24.99 a year (7 days free), a $9.99 term pass with no subscription, or Family at $5.99 a month or $59.99 a year for up to 5 people.",
-    "pages": [
-      "index.html"
     ]
   },
   "t.257806d8": {
@@ -1858,12 +1878,6 @@
     "en": "Show more",
     "pages": [
       "account.html"
-    ]
-  },
-  "t.25e90cad": {
-    "en": "Free · Windows",
-    "pages": [
-      "index.html"
     ]
   },
   "t.261298f5": {
@@ -1884,6 +1898,12 @@
       "extension.html"
     ]
   },
+  "t.26d4cbf6": {
+    "en": "Free, with Pro if you want it",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.26d96c9f": {
     "en": "account password",
     "pages": [
@@ -1902,16 +1922,16 @@
       "account.html"
     ]
   },
+  "t.27e403e2": {
+    "en": "Also free, with Omnivox connected",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.27eeb7a2": {
     "en": "Rejected",
     "pages": [
       "download.html"
-    ]
-  },
-  "t.282ef67b": {
-    "en": "Private by default",
-    "pages": [
-      "index.html"
     ]
   },
   "t.2856620d": {
@@ -1930,6 +1950,24 @@
     "en": "Same encryption, same account, same zero-knowledge design — just a tougher shell around it.",
     "pages": [
       "download.html"
+    ]
+  },
+  "t.2991c779": {
+    "en": "Your inbox sits next to your agenda. Read your teachers’ messages, open attachments and reply from Horaire.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.29b5712b": {
+    "en": "Pro, with Omnivox connected",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.2a0cae6f": {
+    "en": "Homework, readings and exams sit on the class they are for, each marked by how much work it is.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.2a177256": {
@@ -1986,6 +2024,12 @@
       "horaire.html"
     ]
   },
+  "t.2bd0f8f9": {
+    "en": "Services adaptés",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.2bf9009b": {
     "en": "Request this exam at the Services adaptés",
     "pages": [
@@ -2004,6 +2048,12 @@
       "app.html"
     ]
   },
+  "t.2cbf3341": {
+    "en": "Tasks on their class",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.2cc4bce5": {
     "en": "Take it anywhere",
     "pages": [
@@ -2020,6 +2070,12 @@
     "en": "Chat",
     "pages": [
       "support.html"
+    ]
+  },
+  "t.2d060d29": {
+    "en": "Day, week, month and year views",
+    "pages": [
+      "index.html"
     ]
   },
   "t.2d8883ea": {
@@ -2087,19 +2143,14 @@
   "t.2f17e5fe": {
     "en": "Email aliases",
     "pages": [
-      "app.html"
+      "app.html",
+      "index.html"
     ]
   },
   "t.2f2f75d8": {
     "en": "Click-through, never blocks your aim",
     "pages": [
       "valorant.html"
-    ]
-  },
-  "t.2f95eb8d": {
-    "en": "The core app is read-only — it uses the official Riot API and reads your own running client, exactly like public rank-trackers, and never touches the game process. It ships with one clearly-labelled optional \"Snap Tap\" toggle that",
-    "pages": [
-      "index.html"
     ]
   },
   "t.2fbaa32d": {
@@ -2126,10 +2177,22 @@
       "horaire.html"
     ]
   },
+  "t.305c9c8c": {
+    "en": "Name someone you trust. If they ask for access, you are told and have a waiting period you set to say no.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.309e30fc": {
     "en": "Pairing code",
     "pages": [
       "account.html"
+    ]
+  },
+  "t.31b8b1d0": {
+    "en": "Shows which passwords are weak or used on more than one site. It runs on your device.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.31f8d328": {
@@ -2150,22 +2213,10 @@
       "account.html"
     ]
   },
-  "t.324d3ff6": {
-    "en": "No credit card, no trial that expires into a paywall. The core of every tool is free — an optional Pro plan just funds the servers.",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.3259090c": {
     "en": "Sign in to Bazinet",
     "pages": [
       "horaire.html"
-    ]
-  },
-  "t.326f1da0": {
-    "en": "Is Bazinet really free?",
-    "pages": [
-      "index.html"
     ]
   },
   "t.32861acd": {
@@ -2174,16 +2225,16 @@
       "support.html"
     ]
   },
+  "t.32e12d0e": {
+    "en": "finally in order.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.330ebbd9": {
     "en": "Free security tools",
     "pages": [
       "about.html"
-    ]
-  },
-  "t.334c115f": {
-    "en": "Everything's free and takes a minute to start. Your data stays yours.",
-    "pages": [
-      "index.html"
     ]
   },
   "t.338492d6": {
@@ -2261,6 +2312,12 @@
       "valorant.html"
     ]
   },
+  "t.3503c01e": {
+    "en": "Bazinet Vault keeps passwords only you can read.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.350c355e": {
     "en": "Update password",
     "pages": [
@@ -2309,18 +2366,6 @@
       "horaire.html"
     ]
   },
-  "t.3844a087": {
-    "en": "See if a password has leaked in a known breach — privately, using k-anonymity. Only the first five hash characters ever leave your browser.",
-    "pages": [
-      "index.html"
-    ]
-  },
-  "t.3952e048": {
-    "en": "One account for everything",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.3987aa72": {
     "en": "Headshot %",
     "pages": [
@@ -2331,6 +2376,12 @@
     "en": "Never hooks the game",
     "pages": [
       "valorant.html"
+    ]
+  },
+  "t.3a0f3eab": {
+    "en": "Calendar file and print",
+    "pages": [
+      "index.html"
     ]
   },
   "t.3a67c53e": {
@@ -2356,6 +2407,12 @@
     "pages": [
       "about.html",
       "support.html"
+    ]
+  },
+  "t.3b41122f": {
+    "en": "Your plans de cours, read for you",
+    "pages": [
+      "index.html"
     ]
   },
   "t.3bb7ac69": {
@@ -2388,12 +2445,6 @@
       "vault.html"
     ]
   },
-  "t.3d5c11cb": {
-    "en": "Every password is encrypted on your own device with Argon2id and AES-256 before it’s saved. The server only ever holds ciphertext it can’t read.",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.3d925ada": {
     "en": "You are about to encrypt your vault key so that",
     "pages": [
@@ -2418,16 +2469,16 @@
       "account.html"
     ]
   },
+  "t.3e1c96ea": {
+    "en": "Free tools, no account:",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.3e45bcda": {
     "en": "Theme preference for this browser.",
     "pages": [
       "account.html"
-    ]
-  },
-  "t.3e4dbc27": {
-    "en": "128 ms",
-    "pages": [
-      "index.html"
     ]
   },
   "t.3e8248e3": {
@@ -2463,7 +2514,8 @@
   "t.40d39151": {
     "en": "password generator",
     "pages": [
-      "about.html"
+      "about.html",
+      "index.html"
     ]
   },
   "t.40f07323": {
@@ -2497,10 +2549,22 @@
       "horaire.html"
     ]
   },
+  "t.4268035c": {
+    "en": "From Mio",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.42700eaa": {
     "en": "What happens to your password",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.430a3383": {
+    "en": "$5.99",
+    "pages": [
+      "index.html"
     ]
   },
   "t.4310ed54": {
@@ -2539,6 +2603,12 @@
       "horaire.html"
     ]
   },
+  "t.445fe32c": {
+    "en": "Type in your grades and each group’s average for an R score estimate. Mark your absences and see how close you are to a course’s limit.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.44d483c0": {
     "en": "Your messages here and your account details. Never your vault or your agenda: they are encrypted on your device.",
     "pages": [
@@ -2554,7 +2624,6 @@
   "t.45bba479": {
     "en": "Sensitivity advisor",
     "pages": [
-      "index.html",
       "valorant.html"
     ]
   },
@@ -2594,6 +2663,12 @@
       "support.html"
     ]
   },
+  "t.46c286c9": {
+    "en": "One Pro plan covers both products.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.46dd93c1": {
     "en": "Safety phrase",
     "pages": [
@@ -2607,16 +2682,16 @@
       "generator.html"
     ]
   },
+  "t.47646164": {
+    "en": "One account for both",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.47a3040d": {
     "en": "This is not the key you verified before.",
     "pages": [
       "app.html"
-    ]
-  },
-  "t.47c77bf0": {
-    "en": "See less",
-    "pages": [
-      "index.html"
     ]
   },
   "t.48116970": {
@@ -2631,8 +2706,8 @@
       "vault.html"
     ]
   },
-  "t.48b57cb4": {
-    "en": "Omnivox sign-in, Mio, cancelled classes, dates from your plans de cours and live sharing in Horaire; more devices, file attachments, email aliases and emergency access in the Vault.",
+  "t.485c5c2b": {
+    "en": "AES 256 locks every entry",
     "pages": [
       "index.html"
     ]
@@ -2659,12 +2734,6 @@
     "en": "Check your inbox",
     "pages": [
       "account.html"
-    ]
-  },
-  "t.490ae772": {
-    "en": "One Bazinet Pro plan covers both.",
-    "pages": [
-      "index.html"
     ]
   },
   "t.4925e655": {
@@ -2718,6 +2787,12 @@
       "support.html"
     ]
   },
+  "t.4a768e27": {
+    "en": "Fills your logins on the sites they belong to. Cards, bank accounts and keys are never offered as logins.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.4a7c565d": {
     "en": "Confirm password",
     "pages": [
@@ -2734,6 +2809,12 @@
     "en": "Your account",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.4b10e48f": {
+    "en": "One master password, never sent to the server",
+    "pages": [
+      "index.html"
     ]
   },
   "t.4b200591": {
@@ -2755,12 +2836,6 @@
       "horaire.html"
     ]
   },
-  "t.4bdfbff1": {
-    "en": "Is Horaire made by the Cégep?",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.4c12318a": {
     "en": "Chat with support",
     "pages": [
@@ -2779,16 +2854,16 @@
       "extension.html"
     ]
   },
+  "t.4c4b8746": {
+    "en": "They fill in your R score estimate and absence counts on their own.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.4c64ebd3": {
     "en": "k-anonymity · password never sent to server",
     "pages": [
       "vault.html"
-    ]
-  },
-  "t.4c853e93": {
-    "en": "On your Mac",
-    "pages": [
-      "index.html"
     ]
   },
   "t.4c956c45": {
@@ -2839,6 +2914,12 @@
       "app.html"
     ]
   },
+  "t.4e5dfe77": {
+    "en": "More than one device",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.4ea55ff8": {
     "en": "What happens if I forget my master password?",
     "pages": [
@@ -2849,6 +2930,24 @@
     "en": "We use k-anonymity: your browser hashes the password with SHA-1 and sends only the first five characters of that hash to look up matches. The full password and full hash never leave your device.",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.4efb6cb7": {
+    "en": "Family",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.4f187923": {
+    "en": "R score and absences",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.4f3ce676": {
+    "en": "What happens to a password you save",
+    "pages": [
+      "index.html"
     ]
   },
   "t.4f8bffd1": {
@@ -2885,12 +2984,6 @@
     "en": "Connected to Omnivox",
     "pages": [
       "horaire.html"
-    ]
-  },
-  "t.50b8c332": {
-    "en": "One Bazinet account, everywhere",
-    "pages": [
-      "index.html"
     ]
   },
   "t.50d6325b": {
@@ -2967,6 +3060,12 @@
       "breach.html"
     ]
   },
+  "t.534df97a": {
+    "en": "Grades and absences from LÉA",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.5366ba0e": {
     "en": "Free, for good.",
     "pages": [
@@ -3019,12 +3118,6 @@
     "en": "Encryption still happens on your device; the server only ever sees ciphertext. Nothing about that changes.",
     "pages": [
       "download.html"
-    ]
-  },
-  "t.55aead11": {
-    "en": "Independent software, made in Montréal",
-    "pages": [
-      "index.html"
     ]
   },
   "t.563eee8a": {
@@ -3093,8 +3186,8 @@
       "horaire.html"
     ]
   },
-  "t.594725a6": {
-    "en": "Autofill and save logins as you browse, keys held only in memory.",
+  "t.590c3782": {
+    "en": "It stays on your device. Bazinet never receives it, so nobody here can unlock your vault.",
     "pages": [
       "index.html"
     ]
@@ -3117,22 +3210,10 @@
       "valorant.html"
     ]
   },
-  "t.59c179cc": {
-    "en": "Export to your calendar",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.59fe709c": {
     "en": "Create a recovery key",
     "pages": [
       "app.html"
-    ]
-  },
-  "t.5a94729c": {
-    "en": "on time",
-    "pages": [
-      "index.html"
     ]
   },
   "t.5aa075b7": {
@@ -3203,6 +3284,12 @@
       "valorant.html"
     ]
   },
+  "t.5e9db116": {
+    "en": "Write exams with extra time? Horaire reminds you to request each one 14 days ahead, then checks and sends the requests on Omnivox.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.5ea99def": {
     "en": "Starts at",
     "pages": [
@@ -3215,8 +3302,8 @@
       "account.html"
     ]
   },
-  "t.5ff70034": {
-    "en": "Bazinet Pro adds more devices, file attachments, email aliases and emergency access to the Vault.",
+  "t.5f82c5b2": {
+    "en": "Horaire CVM turns your Omnivox schedule into an agenda.",
     "pages": [
       "index.html"
     ]
@@ -3225,6 +3312,12 @@
     "en": "Your schedule is encrypted on your device first. We store it; we can’t read it.",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.606951bd": {
+    "en": "The whole password manager, on every device.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.60eb52b4": {
@@ -3239,10 +3332,22 @@
       "horaire.html"
     ]
   },
+  "t.612ed713": {
+    "en": "$9.99",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.618c69f5": {
     "en": "Your own tasks, by effort",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.61ae3348": {
+    "en": "Your schedule from Omnivox",
+    "pages": [
+      "index.html"
     ]
   },
   "t.61cc55aa": {
@@ -3263,8 +3368,8 @@
       "download.html"
     ]
   },
-  "t.62d2bd7f": {
-    "en": "Your agenda and your vault are encrypted on your device, so we can’t read either one. No product sells or profiles your data.",
+  "t.62eaf977": {
+    "en": "From Omnivox",
     "pages": [
       "index.html"
     ]
@@ -3299,6 +3404,12 @@
       "vault.html"
     ]
   },
+  "t.640ea781": {
+    "en": "New homework, as soon as it is posted",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.648809b5": {
     "en": "Open Horaire in the browser",
     "pages": [
@@ -3327,12 +3438,6 @@
     "en": "2 · Add your logins",
     "pages": [
       "vault.html"
-    ]
-  },
-  "t.65292c6f": {
-    "en": "Pick a tool and go.",
-    "pages": [
-      "index.html"
     ]
   },
   "t.65384e88": {
@@ -3372,8 +3477,7 @@
   "t.65e5b31c": {
     "en": "Create a free account",
     "pages": [
-      "horaire.html",
-      "index.html"
+      "horaire.html"
     ]
   },
   "t.66480519": {
@@ -3496,12 +3600,6 @@
       "vault.html"
     ]
   },
-  "t.6a9193da": {
-    "en": "private by design.",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.6ad9039e": {
     "en": "Continue to my vault",
     "pages": [
@@ -3569,12 +3667,6 @@
       "horaire.html"
     ]
   },
-  "t.6d3cdab5": {
-    "en": "Passwords & secure notes",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.6d4a09cc": {
     "en": "Free Password Generator",
     "pages": [
@@ -3597,12 +3689,6 @@
     "en": "Open vault →",
     "pages": [
       "account.html"
-    ]
-  },
-  "t.6dd016a6": {
-    "en": "Sign in once",
-    "pages": [
-      "index.html"
     ]
   },
   "t.6dff9418": {
@@ -3699,12 +3785,6 @@
       "app.html"
     ]
   },
-  "t.71bc336a": {
-    "en": "The same account signs you in to Horaire, the vault and the apps — with a password, 2FA, a passkey or Google. Sign-in always happens on bazinet.net.",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.7227f9df": {
     "en": "Altered in transit",
     "pages": [
@@ -3739,12 +3819,6 @@
     "en": "Autofill saved logins, capture new ones as you sign up, and generate strong passwords inline. Your vault key stays in the extension's background worker — pages never see it, and it is wiped when the browser closes.",
     "pages": [
       "extension.html"
-    ]
-  },
-  "t.73e6053e": {
-    "en": "The zero-knowledge password manager",
-    "pages": [
-      "index.html"
     ]
   },
   "t.74520d54": {
@@ -3802,8 +3876,8 @@
       "valorant.html"
     ]
   },
-  "t.7574d746": {
-    "en": "Reads the Omnivox PDF",
+  "t.756c818c": {
+    "en": "Checks your passwords against known leaks. Only the first five characters of a hash are sent.",
     "pages": [
       "index.html"
     ]
@@ -3851,12 +3925,6 @@
     "en": "This is shown once.",
     "pages": [
       "app.html"
-    ]
-  },
-  "t.77947d93": {
-    "en": "78%",
-    "pages": [
-      "index.html"
     ]
   },
   "t.77a914c0": {
@@ -3910,12 +3978,6 @@
       "extension.html"
     ]
   },
-  "t.788070fb": {
-    "en": "Bazinet makes Horaire CVM, the agenda for Cégep du Vieux Montréal students, and Bazinet Vault, a zero-knowledge password manager. One account for both, encrypted on your device, free to start.",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.7884a0c1": {
     "en": "Our principles",
     "pages": [
@@ -3934,6 +3996,12 @@
       "horaire.html"
     ]
   },
+  "t.79ac25e1": {
+    "en": "Write exams with extra time? Horaire reminds you to request each one 14 days ahead. With Pro it checks and sends the requests on Omnivox.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.79c635bc": {
     "en": "Your team and the enemy team, with agents",
     "pages": [
@@ -3946,8 +4014,8 @@
       "app.html"
     ]
   },
-  "t.79fc372d": {
-    "en": "Good to know",
+  "t.79f459bd": {
+    "en": "$2.99",
     "pages": [
       "index.html"
     ]
@@ -3964,6 +4032,12 @@
       "survey.html"
     ]
   },
+  "t.7aca3bf3": {
+    "en": "The next class, at a glance",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.7b4f6712": {
     "en": "Phone, laptop or the desktop app. It works without a connection and syncs when you’re back.",
     "pages": [
@@ -3974,6 +4048,12 @@
     "en": "Bring in passwords from a JSON export, or take an encrypted backup of your vault any time. Your data is never locked in.",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.7b854507": {
+    "en": "The room and how long until your next class sit under the date, and what is due next stays in view.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.7b9fb6c7": {
@@ -4015,7 +4095,6 @@
   "t.7d20d248": {
     "en": "Built on technology trusted around the world",
     "pages": [
-      "index.html",
       "vault.html"
     ]
   },
@@ -4025,16 +4104,16 @@
       "app.html"
     ]
   },
+  "t.7d645d65": {
+    "en": "When a teacher posts work in LÉA, Horaire asks if it belongs in your agenda, already on the right class with its due date.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.7d80a55f": {
     "en": "Fills the real site.",
     "pages": [
       "extension.html"
-    ]
-  },
-  "t.7dc6ae96": {
-    "en": "Mac desktop app",
-    "pages": [
-      "index.html"
     ]
   },
   "t.7dd2ad61": {
@@ -4053,12 +4132,6 @@
     "en": "Identity",
     "pages": [
       "app.html"
-    ]
-  },
-  "t.7e60db9b": {
-    "en": "Encrypted on this device",
-    "pages": [
-      "index.html"
     ]
   },
   "t.7eaca198": {
@@ -4082,15 +4155,19 @@
   "t.7f2030d9": {
     "en": "Password generator",
     "pages": [
-      "index.html",
       "vault.html"
+    ]
+  },
+  "t.7f54e571": {
+    "en": "Up to five people.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.7f5a6512": {
     "en": "End-to-end encrypted",
     "pages": [
-      "horaire.html",
-      "index.html"
+      "horaire.html"
     ]
   },
   "t.7f5b0472": {
@@ -4130,8 +4207,8 @@
       "download.html"
     ]
   },
-  "t.81a8b204": {
-    "en": "Horaire and the vault run right in your browser — nothing to install.",
+  "t.81aaa1d3": {
+    "en": "Sign in with Omnivox once a term, or drop in the schedule PDF. Horaire builds the session with the room, group and teacher for every class.",
     "pages": [
       "index.html"
     ]
@@ -4148,22 +4225,10 @@
       "vault.html"
     ]
   },
-  "t.824d76b1": {
-    "en": "Learn more",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.826f4832": {
     "en": "Safe",
     "pages": [
       "vault.html"
-    ]
-  },
-  "t.829ea2ed": {
-    "en": "On the web",
-    "pages": [
-      "index.html"
     ]
   },
   "t.82a6ee5b": {
@@ -4248,12 +4313,6 @@
     "en": "Your agenda syncs to every device you sign in on. It is encrypted here before it is uploaded, so the server stores it without being able to read it.",
     "pages": [
       "horaire.html"
-    ]
-  },
-  "t.8460ae0e": {
-    "en": "Create a long, random password with your browser's secure RNG. Choose length and character sets. Nothing leaves your device.",
-    "pages": [
-      "index.html"
     ]
   },
   "t.84add5b2": {
@@ -4421,12 +4480,6 @@
       "app.html"
     ]
   },
-  "t.8ab0d45b": {
-    "en": "28%",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.8ac7aa17": {
     "en": "What you get",
     "pages": [
@@ -4483,6 +4536,12 @@
     "en": "Effort",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.8ce60194": {
+    "en": "On the Family plan, a shared vault for up to five people, encrypted for each of them.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.8d183dbd": {
@@ -4554,8 +4613,7 @@
   "t.902328f8": {
     "en": "Open Horaire →",
     "pages": [
-      "account.html",
-      "index.html"
+      "account.html"
     ]
   },
   "t.9025f6f4": {
@@ -4569,6 +4627,12 @@
     "en": "What it can and can't see",
     "pages": [
       "extension.html"
+    ]
+  },
+  "t.902cbd92": {
+    "en": "Secure notes and files",
+    "pages": [
+      "index.html"
     ]
   },
   "t.90bd2810": {
@@ -4599,6 +4663,12 @@
     "en": "Ideal",
     "pages": [
       "valorant.html"
+    ]
+  },
+  "t.90fd8b1c": {
+    "en": "A generator built in",
+    "pages": [
+      "index.html"
     ]
   },
   "t.91032ad7": {
@@ -4650,12 +4720,6 @@
       "vault.html"
     ]
   },
-  "t.936cfc14": {
-    "en": "Open Vault →",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.93c43ed3": {
     "en": ", then click",
     "pages": [
@@ -4672,6 +4736,12 @@
     "en": "Varies",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.942ae9ed": {
+    "en": "The same Pro covers Horaire, so Omnivox, Mio and LÉA come with it.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.94408e41": {
@@ -4728,6 +4798,12 @@
     "pages": [
       "app.html",
       "generator.html"
+    ]
+  },
+  "t.96ee66d6": {
+    "en": "Saved to your Bazinet Vault and filled in the next time you sign in.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.971de244": {
@@ -4830,7 +4906,6 @@
   "t.9a1fc173": {
     "en": "Questions",
     "pages": [
-      "index.html",
       "valorant.html",
       "vault.html"
     ]
@@ -4896,12 +4971,6 @@
       "horaire.html"
     ]
   },
-  "t.9c6e694c": {
-    "en": "zero-knowledge",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.9cde002f": {
     "en": "Open the Monitor while you play, then review your match breakdown and coaching.",
     "pages": [
@@ -4950,6 +5019,12 @@
       "valorant.html"
     ]
   },
+  "t.9dd6be0c": {
+    "en": "Friends see your schedule or edit tasks with you, live. Your Omnivox sign in is never shared.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.9df02064": {
     "en": "without leaving the page",
     "pages": [
@@ -4966,18 +5041,6 @@
     "en": "Bank",
     "pages": [
       "app.html"
-    ]
-  },
-  "t.9fb9dcd8": {
-    "en": "IDEAL",
-    "pages": [
-      "index.html"
-    ]
-  },
-  "t.9ffd1ae1": {
-    "en": "241",
-    "pages": [
-      "index.html"
     ]
   },
   "t.a02107c3": {
@@ -5033,12 +5096,6 @@
     "en": "Open my agenda",
     "pages": [
       "horaire.html"
-    ]
-  },
-  "t.a1a8e418": {
-    "en": "Each tool does one job well instead of a hundred things poorly. No upsell popups, no dark patterns, no nagging.",
-    "pages": [
-      "index.html"
     ]
   },
   "t.a1bee30e": {
@@ -5146,7 +5203,8 @@
   "t.a6eaaa0f": {
     "en": "Cancelled classes, crossed out",
     "pages": [
-      "horaire.html"
+      "horaire.html",
+      "index.html"
     ]
   },
   "t.a7419509": {
@@ -5221,6 +5279,12 @@
       "vault.html"
     ]
   },
+  "t.aa7b9330": {
+    "en": "One plan for both",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.aaaccddb": {
     "en": "AES-256-GCM on every entry",
     "pages": [
@@ -5245,12 +5309,6 @@
       "account.html"
     ]
   },
-  "t.ab50bff5": {
-    "en": "$2.99/month, $24.99/year or $9.99 a term · Family $5.99/month or $59.99/year for 5",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.ab59d5aa": {
     "en": "The coach watches your A/D presses and your clicks, and tells you whether each shot landed inside the 65–220 ms window where you’ve actually stopped moving.",
     "pages": [
@@ -5261,6 +5319,12 @@
     "en": "Bazinet Aim Trainer",
     "pages": [
       "about.html"
+    ]
+  },
+  "t.ac8a0036": {
+    "en": "Horaire reads Omnivox’s cancelled classes and crosses yours out on the timetable, with the teacher’s note, so you know before you leave home.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.aca6a6ca": {
@@ -5311,12 +5375,6 @@
     "en": "Code",
     "pages": [
       "account.html"
-    ]
-  },
-  "t.addcfaa7": {
-    "en": "Do I need an account to use the tools?",
-    "pages": [
-      "index.html"
     ]
   },
   "t.ae088a0a": {
@@ -5383,12 +5441,6 @@
       "about.html"
     ]
   },
-  "t.b0d74f1b": {
-    "en": "Fracture · 6 — 4",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.b136609f": {
     "en": "Invite",
     "pages": [
@@ -5435,6 +5487,12 @@
     "en": "Chrome, Edge, Brave · Manifest V3 ·",
     "pages": [
       "extension.html"
+    ]
+  },
+  "t.b1b4ff51": {
+    "en": "Web, Chrome extension and Mac",
+    "pages": [
+      "index.html"
     ]
   },
   "t.b1ea6cbd": {
@@ -5527,12 +5585,6 @@
       "app.html"
     ]
   },
-  "t.b47f363e": {
-    "en": "is",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.b4aef54f": {
     "en": "in one agenda you’ll actually open.",
     "pages": [
@@ -5605,10 +5657,22 @@
       "valorant.html"
     ]
   },
+  "t.b6ef1c1d": {
+    "en": "Argon2id turns it into a key",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.b724706c": {
     "en": "Sign in to GitHub",
     "pages": [
       "extension.html"
+    ]
+  },
+  "t.b72ca7c5": {
+    "en": "Mio, without opening Omnivox",
+    "pages": [
+      "index.html"
     ]
   },
   "t.b73cdaab": {
@@ -5645,6 +5709,18 @@
     "en": "— the student agenda for Cégep du Vieux Montréal: classes, homework, exams and due dates in one place.",
     "pages": [
       "about.html"
+    ]
+  },
+  "t.b86fd50c": {
+    "en": "Horaire CVM is not made by or affiliated with the Cégep du Vieux Montréal or Omnivox.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.b875c661": {
+    "en": "You type your master password",
+    "pages": [
+      "index.html"
     ]
   },
   "t.b8a1a737": {
@@ -5727,12 +5803,6 @@
       "horaire.html"
     ]
   },
-  "t.bd4cc1d3": {
-    "en": "Everyday tools,",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.bd527cd9": {
     "en": "Ideal · 176 ms",
     "pages": [
@@ -5743,18 +5813,6 @@
     "en": "Up and running in a minute",
     "pages": [
       "valorant.html"
-    ]
-  },
-  "t.bd7907e4": {
-    "en": "Actually free",
-    "pages": [
-      "index.html"
-    ]
-  },
-  "t.bd8b61d1": {
-    "en": "Live agent overlay",
-    "pages": [
-      "index.html"
     ]
   },
   "t.bd9773dd": {
@@ -5792,6 +5850,12 @@
     "en": "Security status",
     "pages": [
       "account.html"
+    ]
+  },
+  "t.bf26bfb6": {
+    "en": "The same account opens Horaire, where Omnivox, Mio and LÉA are free right now.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.bf7c0411": {
@@ -5843,16 +5907,16 @@
       "horaire.html"
     ]
   },
-  "t.c245b715": {
-    "en": "Who makes Bazinet?",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.c24bf517": {
     "en": "Week, day and month views",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.c2e88165": {
+    "en": "No card, no time limit.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.c31d3f01": {
@@ -5877,6 +5941,18 @@
     "en": "filled",
     "pages": [
       "extension.html"
+    ]
+  },
+  "t.c3e922c1": {
+    "en": "Export your classes to Google Calendar, Apple Calendar or Outlook, or print a clean copy of the week.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.c41fbd0f": {
+    "en": "Chrome extension",
+    "pages": [
+      "index.html"
     ]
   },
   "t.c42e0ca0": {
@@ -5904,14 +5980,8 @@
       "app.html"
     ]
   },
-  "t.c510d6c0": {
-    "en": "See more",
-    "pages": [
-      "index.html"
-    ]
-  },
-  "t.c52fa923": {
-    "en": "For Valorant players",
+  "t.c5443ae8": {
+    "en": "Term pass",
     "pages": [
       "index.html"
     ]
@@ -5994,18 +6064,6 @@
       "horaire.html"
     ]
   },
-  "t.c928b735": {
-    "en": "Breach scanning",
-    "pages": [
-      "index.html"
-    ]
-  },
-  "t.c9936be6": {
-    "en": "Will the Aim Trainer get my Valorant account banned?",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.c9bfade0": {
     "en": "Back to my agenda",
     "pages": [
@@ -6048,6 +6106,12 @@
       "horaire.html"
     ]
   },
+  "t.cbd369d3": {
+    "en": "Horaire opens the plan de cours of each course in LÉA and finds the exams and assignments with their weight. It places them on your own class times, and you tick the ones to add.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.cc65b1f3": {
     "en": ", with no account needed.",
     "pages": [
@@ -6077,14 +6141,7 @@
     "pages": [
       "about.html",
       "extension.html",
-      "index.html",
       "vault.html"
-    ]
-  },
-  "t.cced5b53": {
-    "en": "off by default",
-    "pages": [
-      "index.html"
     ]
   },
   "t.ccffc414": {
@@ -6123,6 +6180,12 @@
       "app.html"
     ]
   },
+  "t.cdfb88ed": {
+    "en": "Offline, on the web and on Mac",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.ce052306": {
     "en": "SHA-256 of their public key",
     "pages": [
@@ -6135,6 +6198,12 @@
       "vault.html"
     ]
   },
+  "t.ceea4f51": {
+    "en": "Paste a site’s setup key and its six digit code shows under the password, with the seconds left. The codes are made on your device.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.cf04df27": {
     "en": "↻ New",
     "pages": [
@@ -6145,6 +6214,12 @@
     "en": "Sign in with a passkey",
     "pages": [
       "account.html"
+    ]
+  },
+  "t.cf51c3ca": {
+    "en": "Every Horaire feature is free. Pro adds the Vault extras.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.cf678cab": {
@@ -6213,8 +6288,8 @@
       "horaire.html"
     ]
   },
-  "t.d17bb082": {
-    "en": "HS",
+  "t.d186ef73": {
+    "en": "Your class schedule and your passwords,",
     "pages": [
       "index.html"
     ]
@@ -6228,7 +6303,6 @@
   "t.d22ce133": {
     "en": "Web Crypto API",
     "pages": [
-      "index.html",
       "vault.html"
     ]
   },
@@ -6236,6 +6310,12 @@
     "en": "— there is no reset, no support override, and no copy anywhere else. If you forget it, the vault is gone.",
     "pages": [
       "app.html"
+    ]
+  },
+  "t.d25743e9": {
+    "en": "2FA codes next to the login",
+    "pages": [
+      "index.html"
     ]
   },
   "t.d26d55c7": {
@@ -6248,6 +6328,12 @@
     "en": "Updates are verified against an embedded key before they install — a spoofed or tampered update is rejected.",
     "pages": [
       "download.html"
+    ]
+  },
+  "t.d2f5df12": {
+    "en": "Not just passwords",
+    "pages": [
+      "index.html"
     ]
   },
   "t.d392751d": {
@@ -6265,7 +6351,6 @@
   "t.d3e633f2": {
     "en": "Counter-strafe coach",
     "pages": [
-      "index.html",
       "valorant.html"
     ]
   },
@@ -6329,12 +6414,6 @@
       "valorant.html"
     ]
   },
-  "t.d673d941": {
-    "en": "ACS",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.d70076db": {
     "en": "Can edit tasks",
     "pages": [
@@ -6396,12 +6475,6 @@
       "horaire.html"
     ]
   },
-  "t.d8ba636e": {
-    "en": "Focused, not bloated",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.d8d25ff5": {
     "en": "Strafe left, tap right",
     "pages": [
@@ -6412,18 +6485,6 @@
     "en": "Download the PDF that opens, or print it and choose “Save as PDF”.",
     "pages": [
       "horaire.html"
-    ]
-  },
-  "t.d933efb9": {
-    "en": "No. The vault is",
-    "pages": [
-      "index.html"
-    ]
-  },
-  "t.d93af79f": {
-    "en": "Every Horaire feature is free.",
-    "pages": [
-      "index.html"
     ]
   },
   "t.d97d1ee3": {
@@ -6481,12 +6542,6 @@
       "valorant.html"
     ]
   },
-  "t.dba6a081": {
-    "en": "Can you read my passwords or vault data?",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.dc1649a1": {
     "en": "Sign out",
     "pages": [
@@ -6511,12 +6566,6 @@
     "en": "Lock this agenda",
     "pages": [
       "horaire.html"
-    ]
-  },
-  "t.dd7c5c96": {
-    "en": "The password generator and the breach check need nothing at all. Horaire, the vault and the Aim Trainer use one free Bazinet account (email, Google or a passkey) that works on the website, the browser extension and the desktop apps.",
-    "pages": [
-      "index.html"
     ]
   },
   "t.dda6ac27": {
@@ -6553,6 +6602,12 @@
     "en": "offline guessing",
     "pages": [
       "app.html"
+    ]
+  },
+  "t.de6df00e": {
+    "en": "In your browser, and slow on purpose, so guessing a master password costs real time for each try.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.dedcf993": {
@@ -6627,12 +6682,6 @@
       "app.html"
     ]
   },
-  "t.e1c24cd9": {
-    "en": "No download, runs in your browser",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.e1e734fa": {
     "en": "Toggle a sleek always-on-top overlay that reads your running client — locally and read-only — to show the map, the live score, and the agents + player names on both teams. Perfect for calling out the enemy composition before the round starts.",
     "pages": [
@@ -6643,12 +6692,6 @@
     "en": "!@#",
     "pages": [
       "app.html"
-    ]
-  },
-  "t.e2c04cdf": {
-    "en": "Built the way tools should be",
-    "pages": [
-      "index.html"
     ]
   },
   "t.e2ebd42b": {
@@ -6729,28 +6772,22 @@
       "app.html"
     ]
   },
-  "t.e6310f3d": {
-    "en": ": your data is encrypted in your browser with a key derived from your master password (Argon2id → AES-256-GCM) before anything is sent. We only ever store ciphertext, so we have no technical way to read it — even if compelled to.",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.e68ec371": {
     "en": "The core app is read-only and never touches the game process — match data comes from the official Riot API and the live view only reads your own running client, exactly like public rank-trackers. The single exception is the optional",
     "pages": [
       "valorant.html"
     ]
   },
+  "t.e6cc8ea1": {
+    "en": "Bring passwords in from 1Password, Bitwarden, LastPass or a CSV file, or download an encrypted backup whenever you want.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.e708b087": {
     "en": "Light or dark, English or French.",
     "pages": [
       "horaire.html"
-    ]
-  },
-  "t.e7196b23": {
-    "en": "The principles",
-    "pages": [
-      "index.html"
     ]
   },
   "t.e73ea3fa": {
@@ -6781,6 +6818,12 @@
     "en": "Your Omnivox session ended. Omnivox may email you a code to sign back in: start when you can check your email, since the code only lasts a few minutes.",
     "pages": [
       "horaire.html"
+    ]
+  },
+  "t.e8597325": {
+    "en": "It works without a connection and syncs when you are back online.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.e87d86d2": {
@@ -6936,14 +6979,20 @@
       "valorant.html"
     ]
   },
+  "t.ed348775": {
+    "en": "Share your week",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.ed54d86f": {
     "en": "K#9mX@qzL!p2Rw$v",
     "pages": [
       "vault.html"
     ]
   },
-  "t.ed5c43a8": {
-    "en": "Native apps for Apple Silicon:",
+  "t.ed824bb0": {
+    "en": "Emergency access",
     "pages": [
       "index.html"
     ]
@@ -7022,12 +7071,6 @@
       "valorant.html"
     ]
   },
-  "t.f12d91b7": {
-    "en": "Workload view",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.f1702b46": {
     "en": "Messages",
     "pages": [
@@ -7050,6 +7093,12 @@
     "en": "Every update is checked.",
     "pages": [
       "download.html"
+    ]
+  },
+  "t.f222edb4": {
+    "en": "One school term, no subscription.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.f258818e": {
@@ -7085,7 +7134,8 @@
   "t.f402ac0a": {
     "en": "Password health",
     "pages": [
-      "app.html"
+      "app.html",
+      "index.html"
     ]
   },
   "t.f409d800": {
@@ -7100,8 +7150,14 @@
       "extension.html"
     ]
   },
-  "t.f5167793": {
-    "en": "Yes. Horaire, the vault, the quick tools and the Aim Trainer are free to start, with no credit card. An optional Pro plan adds extras to Horaire and the vault and helps cover server costs: $2.99 a month or $24.99 a year (7 days free), a $9.99 term pass with no subscription, or Family at $5.99 a month or $59.99 a year for up to 5 people.",
+  "t.f4dcb7fe": {
+    "en": "Locks itself",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.f54e1f15": {
+    "en": "Stay signed in on your phone, your laptop and the desktop app at the same time.",
     "pages": [
       "index.html"
     ]
@@ -7124,12 +7180,6 @@
       "valorant.html"
     ]
   },
-  "t.f5f2e31b": {
-    "en": "No. Horaire CVM is an independent app built for Cégep du Vieux Montréal students. It isn't affiliated with or endorsed by the Cégep, Omnivox or Skytech — always check Omnivox for anything that matters, like an exam date.",
-    "pages": [
-      "index.html"
-    ]
-  },
   "t.f60d4319": {
     "en": "Generate one here, then store it (and the rest of your logins) in your free",
     "pages": [
@@ -7140,12 +7190,6 @@
     "en": "Your Bazinet account signs you in to Horaire CVM and Bazinet Vault.",
     "pages": [
       "account.html"
-    ]
-  },
-  "t.f6570a58": {
-    "en": "It's an independent project — small tools built and maintained by one person, not a company chasing your data. Questions or bugs go straight to",
-    "pages": [
-      "index.html"
     ]
   },
   "t.f6a88090": {
@@ -7176,6 +7220,12 @@
     "en": "— a",
     "pages": [
       "about.html"
+    ]
+  },
+  "t.f7ab34ab": {
+    "en": "Notes and file attachments, encrypted the same way as everything else.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.f7f1997c": {
@@ -7242,8 +7292,7 @@
   "t.f9f1a974": {
     "en": "Browser extension",
     "pages": [
-      "account.html",
-      "index.html"
+      "account.html"
     ]
   },
   "t.fa22f804": {
@@ -7252,23 +7301,28 @@
       "horaire.html"
     ]
   },
+  "t.fa42fa54": {
+    "en": "Masked @bazinet.net addresses that forward to your inbox, so a site never sees your real email.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.fa92e135": {
     "en": "Tampered ones never install.",
     "pages": [
       "download.html"
     ]
   },
+  "t.faf56aa9": {
+    "en": "Omnivox password in the Vault",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.fb0d5f0d": {
     "en": "AES-256-GCM",
     "pages": [
-      "index.html",
       "vault.html"
-    ]
-  },
-  "t.fb449e23": {
-    "en": "See the products ↓",
-    "pages": [
-      "index.html"
     ]
   },
   "t.fb67ba41": {
@@ -7300,6 +7354,12 @@
     "en": "Mandatory email verification and trusted sign-up keep accounts clean",
     "pages": [
       "vault.html"
+    ]
+  },
+  "t.fce65343": {
+    "en": "From LÉA",
+    "pages": [
+      "index.html"
     ]
   },
   "t.fcffad35": {
@@ -7342,8 +7402,7 @@
     "en": "Products",
     "pages": [
       "about.html",
-      "account.html",
-      "index.html"
+      "account.html"
     ]
   },
   "t.fe12b16b": {
@@ -7356,6 +7415,12 @@
     "en": "Family vault (everyone in your family plan)",
     "pages": [
       "app.html"
+    ]
+  },
+  "t.fe270064": {
+    "en": "Make a strong password right where you save it, with the length and characters you choose.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.fe3af23b": {
@@ -7372,8 +7437,8 @@
       "valorant.html"
     ]
   },
-  "t.ff089fde": {
-    "en": "; don't enable that one for Valorant. Everything else is safe by design.",
+  "t.fe6115e1": {
+    "en": "Import and export",
     "pages": [
       "index.html"
     ]
