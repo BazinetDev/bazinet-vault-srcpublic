@@ -837,6 +837,66 @@
       "app.html"
     ]
   },
+  "shot.2fa": {
+    "en": "Vault entries for GitHub, Omnivox, Desjardins, Discord, Gmail and Hydro-Québec, three of them with a live 2FA code.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "shot.card": {
+    "en": "Add entry dialog with eight kinds of entry, filling in a card.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "shot.crsa": {
+    "en": "A warning that Chimie générale on Friday is cancelled, and that class crossed out on the week view.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "shot.health": {
+    "en": "Password health page.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "shot.lea": {
+    "en": "New in LÉA: four items to tick, Devoir 7 in Calcul différentiel, Rapport de laboratoire 5 in Chimie générale, a dissertation plan in Philosophie and Examen 2 in Mécanique.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "shot.mio": {
+    "en": "Horaire Messages view: a Mio inbox with six messages and one open from a chemistry teacher.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "shot.plans": {
+    "en": "Course plans found in LÉA: Calcul différentiel and Mécanique, with Quiz 3, Examen 2, Examen final, Laboratoire 4 and Examen 3, each with a date and a class time.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "shot.tasks": {
+    "en": "Horaire task list with upcoming work.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "shot.vault": {
+    "en": "Bazinet Vault with nine saved logins.",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "shot.week": {
+    "en": "Horaire CVM week view with six courses.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.0070a2ab": {
     "en": "In the Services adaptés room",
     "pages": [
