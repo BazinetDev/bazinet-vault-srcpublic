@@ -90,7 +90,7 @@
         
         <section id="hz-ox" class="hz-oxshow" aria-labelledby="hz-ox-title">
           <div class="hz-ox-head">
-            <span class="hz-ox-tag"><span class="hz-pro-badge">PRO</span><span data-i18n="t.503c35e7">Connected to Omnivox</span><span class="hz-ox-auto"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7"/><path d="M21 12a9 9 0 0 1-15 6.7"/><path d="M18 3v3h-3"/><path d="M6 21v-3h3"/></svg><span data-i18n="t.084644b2">Automatic sync</span></span></span>
+            <span class="hz-ox-tag"><span class="hz-pro-badge" data-horaire-pro>PRO</span><span data-i18n="t.503c35e7">Connected to Omnivox</span><span class="hz-ox-auto"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7"/><path d="M21 12a9 9 0 0 1-15 6.7"/><path d="M18 3v3h-3"/><path d="M6 21v-3h3"/></svg><span data-i18n="t.084644b2">Automatic sync</span></span></span>
             <h2 id="hz-ox-title" class="hz-ox-h2"><span data-i18n="t.11df9461">Horaire fetches everything from Omnivox.</span> <span class="hz-grad" data-i18n="t.14ee8a15">Automatically.</span></h2>
             <p class="hz-ox-lead" data-i18n="t.009485b3">Sign in once and you’re done. Every time you open Horaire, it checks Omnivox for you and brings back what’s new. Nothing to download, nothing to copy, no plan de cours to add one by one.</p>
           </div>
@@ -136,7 +136,8 @@
               </div>
             </div>
             <div class="hz-welcome-ctas">
-              <a class="hz-pro-cta hz-cta-big" href="/account?signup&amp;next=/horaire" data-i18n="t.ae088a0a">Try it free for 7 days</a>
+              <a class="hz-pro-cta hz-cta-big" href="/account?signup&amp;next=/horaire" data-i18n="t.ae088a0a" data-horaire-pro>Try it free for 7 days</a>
+              <a class="hz-pro-cta hz-cta-big" href="/account?signup&amp;next=/horaire" data-i18n="t.65e5b31c" data-horaire-free>Create a free account</a>
             </div>
             <p class="hz-welcome-fine"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-i18n="t.6d00202f">Your Omnivox password is used to sign in, then forgotten. Our servers never store it.</span></p>
           </div>
@@ -412,6 +413,8 @@
 
       
       
+      
+      <div id="cegep-alert" class="hz-crsa hz-alert hidden" role="alert"></div>
       <div id="crsa-bar" class="hz-crsa hidden" role="alert"></div>
       
       <div id="crsa-health" class="hz-crsa hz-crsa-warn hidden" role="status"></div>
@@ -760,11 +763,11 @@
                     </li>
                     <li>
                       <svg class="bz-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.4-4.4"/><path d="m8.4 11 1.8 1.8 3.4-3.4"/></svg>
-                      <span><strong><span data-i18n="t.f9ee5ebc">Your requests, checked</span> <span class="hz-pro-badge">PRO</span></strong><small data-i18n="t.301fc031">Horaire reads your requests on Omnivox, so an exam you already requested is never reminded again.</small></span>
+                      <span><strong><span data-i18n="t.f9ee5ebc">Your requests, checked</span> <span class="hz-pro-badge" data-horaire-pro>PRO</span></strong><small data-i18n="t.301fc031">Horaire reads your requests on Omnivox, so an exam you already requested is never reminded again.</small></span>
                     </li>
                     <li>
                       <svg class="bz-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 10.5 13.5"/><path d="M21 3l-6.5 18-4-7.5L3 9.5 21 3Z"/></svg>
-                      <span><strong><span data-i18n="t.70d220c3">Requests sent for you</span> <span class="hz-pro-badge">PRO</span></strong><small data-i18n="t.c87eda14">With your extra time already counted, as soon as the exam is in your agenda.</small></span>
+                      <span><strong><span data-i18n="t.70d220c3">Requests sent for you</span> <span class="hz-pro-badge" data-horaire-pro>PRO</span></strong><small data-i18n="t.c87eda14">With your extra time already counted, as soon as the exam is in your agenda.</small></span>
                     </li>
                   </ul>
                 </div>
@@ -784,7 +787,7 @@
                     </div>
                     <label class="hz-setrow" for="saide-auto">
                       <span class="hz-setrow-text">
-                        <strong><span data-i18n="t.eff5437e">Send the requests for me</span> <span class="hz-pro-badge">PRO</span></strong>
+                        <strong><span data-i18n="t.eff5437e">Send the requests for me</span> <span class="hz-pro-badge" data-horaire-pro>PRO</span></strong>
                         <small data-i18n="t.15fd3070">When an exam falls on one of your classes, Horaire requests that class's time plus your extra time. Other exams stay in the reminder until you send them.</small>
                       </span>
                       <span class="hz-switch">

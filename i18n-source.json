@@ -1842,6 +1842,12 @@
       "app.html"
     ]
   },
+  "t.254e31a5": {
+    "en": "Yes. Horaire is free, every feature of it. The vault, the quick tools and the Aim Trainer are free to start, with no credit card. An optional Pro plan adds extras to the vault and helps cover server costs: $2.99 a month or $24.99 a year (7 days free), a $9.99 term pass with no subscription, or Family at $5.99 a month or $59.99 a year for up to 5 people.",
+    "pages": [
+      "index.html"
+    ]
+  },
   "t.257806d8": {
     "en": "Sign in with your Omnivox account and Horaire reads your schedule for you. Your password is used for this one sign-in and is not saved.",
     "pages": [
@@ -3207,6 +3213,12 @@
     "en": "Verify & continue",
     "pages": [
       "account.html"
+    ]
+  },
+  "t.5ff70034": {
+    "en": "Bazinet Pro adds more devices, file attachments, email aliases and emergency access to the Vault.",
+    "pages": [
+      "index.html"
     ]
   },
   "t.602522e5": {
@@ -6404,6 +6416,12 @@
   },
   "t.d933efb9": {
     "en": "No. The vault is",
+    "pages": [
+      "index.html"
+    ]
+  },
+  "t.d93af79f": {
+    "en": "Every Horaire feature is free.",
     "pages": [
       "index.html"
     ]
