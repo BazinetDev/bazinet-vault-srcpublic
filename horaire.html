@@ -28,6 +28,7 @@
   <script src="/console-warn.js" defer="defer"></script>
   <link rel="stylesheet" href="/styles.css"/>
   <link rel="stylesheet" href="/horaire.css"/>
+  <link rel="stylesheet" href="/home.css"/>
 </head>
 <body class="horaire is-booting">
   
@@ -59,120 +60,102 @@
     
     <section id="screen-signin" class="hz-wrap hidden">
       
-      <div id="si-signedout" class="hz-welcome hidden">
-        <div class="hz-hero">
-          <div class="hz-hero-copy">
-            <span class="hz-eyebrow" data-i18n="t.4950babb">Horaire CVM · made for Cégep du Vieux Montréal</span>
-            <h1 class="hz-h1 hz-hero-h1"><span data-i18n="t.17835e2c">Your whole term,</span> <span class="hz-grad" data-i18n="t.b4aef54f">in one agenda you’ll actually open.</span></h1>
-            <p class="hz-lead" data-i18n="t.18f45500">Classes, rooms, homework, exams and what’s due next, laid out the way your week really goes. Ready in under a minute.</p>
-            <div class="hz-welcome-ctas">
-              <a class="primary hz-cta-big" href="/account?signup&amp;next=/horaire" data-i18n="t.65e5b31c">Create a free account</a>
-              <a class="ghost-btn hz-cta-big" href="/account?next=/horaire" data-i18n="t.4377f512">I already have an account</a>
+      <div id="si-signedout" class="hz-welcome hz-land home hidden">
+        <div class="h-notebook h-bleed">
+          <section class="h-wrap h-intro">
+            <div>
+              <p class="h-for" data-i18n="t.4950babb">Horaire CVM · made for Cégep du Vieux Montréal</p>
+              <h1><span data-i18n="t.17835e2c">Your whole term,</span> <mark class="h-mark"><span data-i18n="t.b4aef54f">in one agenda you’ll actually open.</span></mark></h1>
             </div>
-            <p class="hz-welcome-fine"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-i18n="t.3ebe5155">Free for every student. Encrypted on your device.</span></p>
-            <a class="hz-mac-dl" href="/horaire-desktop/latest/mac" download><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg><span data-i18n="t.de2eddb2">Also on your Mac: download the desktop app</span></a>
-            <a class="hz-ox-chip" href="#hz-ox"><span class="hz-ox-chip-led"></span><span data-i18n="t.18707151">New: Horaire syncs with Omnivox automatically</span><span aria-hidden="true">↓</span></a>
-          </div>
-          <div class="hz-hero-art" aria-hidden="true">
-            <div class="hz-pv">
-              <div class="hz-pv-head"><span>Lun</span><span>Mar</span><span>Mer</span><span>Jeu</span><span>Ven</span></div>
-              <div class="hz-pv-grid">
-                <span class="hz-mb b1">Français</span><span class="hz-mb b2">Maths</span><span class="hz-mb b3">Philo</span>
-                <span class="hz-mb b4">Anglais</span><span class="hz-mb b5">Maths</span><span class="hz-mb b6">Chimie</span>
-                <span class="hz-mb b7">Éduc.</span><span class="hz-mb b8">Français</span><span class="hz-pv-now"></span>
+            <div>
+              <p data-i18n="t.18f45500">Classes, rooms, homework, exams and what’s due next, laid out the way your week really goes. Ready in under a minute.</p>
+              <div class="h-go">
+                <a class="h-btn" href="/account?signup&amp;next=/horaire" data-i18n="t.65e5b31c">Create a free account</a>
+                <a href="/account?next=/horaire" data-i18n="t.4377f512">I already have an account</a>
               </div>
+              <p class="h-fine"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-i18n="t.3ebe5155">Free for every student. Encrypted on your device.</span></p>
+              <p class="h-fine"><a href="/horaire-desktop/latest/mac" download><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg><span data-i18n="t.de2eddb2">Also on your Mac: download the desktop app</span></a></p>
             </div>
-            <div class="hz-float f1"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v15H4z"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><b>Maths</b> · 934 · 14 h 25</div>
-            <div class="hz-float f2"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M9 12h6M9 16h4"/></svg><b>Labo 3</b> · ven.</div>
-          </div>
+          </section>
         </div>
 
-        
-        <section id="hz-ox" class="hz-oxshow" aria-labelledby="hz-ox-title">
-          <div class="hz-ox-head">
-            <span class="hz-ox-tag"><span class="hz-pro-badge" data-horaire-pro>PRO</span><span data-i18n="t.503c35e7">Connected to Omnivox</span><span class="hz-ox-auto"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7"/><path d="M21 12a9 9 0 0 1-15 6.7"/><path d="M18 3v3h-3"/><path d="M6 21v-3h3"/></svg><span data-i18n="t.084644b2">Automatic sync</span></span></span>
-            <h2 id="hz-ox-title" class="hz-ox-h2"><span data-i18n="t.11df9461">Horaire fetches everything from Omnivox.</span> <span class="hz-grad" data-i18n="t.14ee8a15">Automatically.</span></h2>
-            <p class="hz-ox-lead" data-i18n="t.009485b3">Sign in once and you’re done. Every time you open Horaire, it checks Omnivox for you and brings back what’s new. Nothing to download, nothing to copy, no plan de cours to add one by one.</p>
-          </div>
-          <div class="hz-ox-art" aria-hidden="true">
-            <div class="hz-ox-portal">
-              <div class="hz-ox-bar"><span class="hz-ox-led"></span>Omnivox · CVM</div>
-              <div class="hz-ox-row r1"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M9 12h6"/><path d="M9 16h4"/></svg><b>LÉA</b><em>3 nouveaux travaux</em></div>
-              <div class="hz-ox-row r2"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg><b>Mio</b><em>2 messages</em></div>
-              <div class="hz-ox-row r3"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12v16H6z"/><path d="M9 9l6 6"/><path d="M15 9l-6 6"/></svg><b>Absences</b><em>1 cours annulé</em></div>
-              <div class="hz-ox-row r4"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v15H4z"/><path d="M4 10h16"/><path d="M9 3v4"/><path d="M15 3v4"/><path d="m9 15 2 2 4-4"/></svg><b>Plans de cours</b><em>6 sur 6 lus pour vous</em></div>
-            </div>
-            <div class="hz-ox-pipe"><span class="hz-ox-pk p1"></span><span class="hz-ox-pk p2"></span><span class="hz-ox-pk p3"></span><span class="hz-ox-hubcap">Automatique</span><span class="hz-ox-hub"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7"/><path d="M21 12a9 9 0 0 1-15 6.7"/><path d="M18 3v3h-3"/><path d="M6 21v-3h3"/></svg></span></div>
-            <div class="hz-ox-agenda">
-              <div class="hz-ox-ahead"><b>Horaire</b><span><i class="hz-ox-led"></i>Synchro auto · à l’instant</span></div>
-              <div class="hz-ox-item i1 it-lea"><span class="hz-ox-kind">LÉA</span><b>TP 2 · Chimie</b><span>Remise ven. 23 h 59</span></div>
-              <div class="hz-ox-item i2 it-mio"><span class="hz-ox-kind">Mio</span><b>Mme Gagnon</b><span>Le labo est déplacé au A-3.12.</span></div>
-              <div class="hz-ox-item i3 it-can"><span class="hz-ox-kind">Annulé</span><b class="hz-ox-strike">Philosophie · 8 h 15</b><span>« Je suis malade, lisez le ch. 4. »</span></div>
-              <div class="hz-ox-item i4 it-plan"><span class="hz-ox-kind">Plan de cours</span><b>Examen intra · Maths</b><span>Mar. 14 oct.</span></div>
-            </div>
-          </div>
-          <div class="hz-ox-foot">
-            <ul class="hz-ox-list">
-              <li><span class="hz-ox-ico it-lea"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M9 12h6"/><path d="M9 16h4"/></svg></span><div><strong data-i18n="t.eb97906e">New homework, all by itself</strong><span data-i18n="t.0eb7008d">Each new assignment shows up in your agenda with its due date. You don’t lift a finger.</span></div></li>
-              <li><span class="hz-ox-ico it-mio"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span><div><strong data-i18n="t.7bae6665">Your Mio messages</strong><span data-i18n="t.09620453">Read your teachers’ messages and reply, right from Horaire.</span></div></li>
-              <li><span class="hz-ox-ico it-can"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12v16H6z"/><path d="M9 9l6 6"/><path d="M15 9l-6 6"/></svg></span><div><strong data-i18n="t.a6eaaa0f">Cancelled classes, crossed out</strong><span data-i18n="t.556f5195">Know before you leave home. The teacher’s note comes with it.</span></div></li>
-              <li><span class="hz-ox-ico it-plan"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v15H4z"/><path d="M4 10h16"/><path d="M9 3v4"/><path d="M15 3v4"/><path d="m9 15 2 2 4-4"/></svg></span><div><strong data-i18n="t.114f60b0">Every plan de cours, read for you</strong><span data-i18n="t.cba409dd">Horaire finds the plan for each of your courses on its own and pulls out every exam and deadline. You just confirm.</span></div></li>
-            </ul>
-            <div class="hz-ox-vs">
-              <div class="hz-ox-vs-col without">
-                <strong data-i18n="t.48dad762">Without Horaire</strong>
+        <section class="h-prod is-h h-bleed" aria-labelledby="hz-week-title">
+          <div class="h-wrap">
+            <div class="h-top">
+              <div class="h-text">
+                <p class="h-for" data-i18n="t.89af1eb3">Your timetable, done right</p>
+                <h2 id="hz-week-title" data-i18n="t.5f82c5b2">Horaire CVM turns your Omnivox schedule into an agenda.</h2>
+                <p data-i18n="t.81aaa1d3">Sign in with Omnivox once a term, or drop in the schedule PDF. Horaire builds the session with the room, group and teacher for every class.</p>
                 <ul>
-                  <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg><span data-i18n="t.9af5addc">Open Omnivox, then LÉA, course by course</span></li>
-                  <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg><span data-i18n="t.88a0b037">Download each plan de cours</span></li>
-                  <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg><span data-i18n="t.b4e0ba56">Copy every exam date by hand</span></li>
+                  <li data-i18n="t.24f2ac90">Homework and exams on the class they belong to</li>
+                  <li data-i18n="t.2d060d29">Day, week, month and year views</li>
+                  <li data-i18n="t.0b4595b6">On the web and on Mac</li>
                 </ul>
+                <div class="h-go"><a class="h-btn" href="/account?signup&amp;next=/horaire" data-i18n="t.65e5b31c">Create a free account</a></div>
               </div>
-              <div class="hz-ox-vs-col with">
-                <strong data-i18n="t.4e0ea3f4">With Horaire</strong>
-                <ul>
-                  <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span data-i18n="t.7a353787">Sign in to Omnivox once</span></li>
-                  <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span data-i18n="t.8d679447">Everything else happens automatically</span></li>
-                </ul>
+              <figure class="h-pic is-duo">
+                <img data-shot data-i18n-attr="alt:shot.week" class="h-light" src="/img/home/horaire-week-light.jpg" width="1800" height="1056" alt="Horaire CVM week view with six courses.">
+                <img data-shot data-i18n-attr="alt:shot.week" class="h-dark" src="/img/home/horaire-week-dark.jpg" width="1800" height="1056" loading="lazy" alt="Horaire CVM week view with six courses.">
+                <img data-shot data-i18n-attr="alt:shot.tasks" class="h-back h-light" src="/img/home/horaire-tasks-light.jpg" width="1800" height="1056" loading="lazy" alt="Horaire task list with upcoming work.">
+                <img data-shot data-i18n-attr="alt:shot.tasks" class="h-back h-dark" src="/img/home/horaire-tasks-dark.jpg" width="1800" height="1056" loading="lazy" alt="Horaire task list with upcoming work.">
+              </figure>
+            </div>
+
+            <div class="h-feat" id="hz-ox">
+              <div class="h-group"><h3><span class="hz-pro-badge" data-horaire-pro>PRO</span> <span data-i18n="t.11df9461">Horaire fetches everything from Omnivox.</span></h3><span data-i18n="t.009485b3">Sign in once and you’re done. Every time you open Horaire, it checks Omnivox for you and brings back what’s new. Nothing to download, nothing to copy, no plan de cours to add one by one.</span></div>
+              <div class="h-shows">
+                <article class="h-show">
+                  <div class="h-t"><span class="h-tag" data-i18n="t.fce65343">From LÉA</span><h4 data-i18n="t.114f60b0">Every plan de cours, read for you</h4><p data-i18n="t.cbd369d3">Horaire opens the plan de cours of each course in LÉA and finds the exams and assignments with their weight. It places them on your own class times, and you tick the ones to add.</p></div>
+                  <figure class="h-shot"><img data-shot data-i18n-attr="alt:shot.plans" src="/img/home/pro-plans.jpg" width="1200" height="1320" loading="lazy" alt="Course plans found in LÉA: Calcul différentiel and Mécanique, with Quiz 3, Examen 2, Examen final, Laboratoire 4 and Examen 3, each with a date and a class time."></figure>
+                </article>
+                <article class="h-show">
+                  <div class="h-t"><span class="h-tag" data-i18n="t.fce65343">From LÉA</span><h4 data-i18n="t.eb97906e">New homework, all by itself</h4><p data-i18n="t.7d645d65">When a teacher posts work in LÉA, Horaire asks if it belongs in your agenda, already on the right class with its due date.</p></div>
+                  <figure class="h-shot"><img data-shot data-i18n-attr="alt:shot.lea" src="/img/home/pro-lea.jpg" width="1200" height="960" loading="lazy" alt="New in LÉA: four items to tick, Devoir 7 in Calcul différentiel, Rapport de laboratoire 5 in Chimie générale, a dissertation plan in Philosophie and Examen 2 in Mécanique."></figure>
+                </article>
+                <article class="h-show is-wide">
+                  <div class="h-t"><span class="h-tag" data-i18n="t.4268035c">From Mio</span><h4 data-i18n="t.7bae6665">Your Mio messages</h4><p data-i18n="t.2991c779">Your inbox sits next to your agenda. Read your teachers’ messages, open attachments and reply from Horaire.</p></div>
+                  <figure class="h-shot"><img data-shot data-i18n-attr="alt:shot.mio" src="/img/home/pro-mio.jpg" width="2560" height="1200" loading="lazy" alt="Horaire Messages view: a Mio inbox with six messages and one open from a chemistry teacher."></figure>
+                </article>
+                <article class="h-show is-wide is-flip">
+                  <div class="h-t"><span class="h-tag" data-i18n="t.62eaf977">From Omnivox</span><h4 data-i18n="t.a6eaaa0f">Cancelled classes, crossed out</h4><p data-i18n="t.556f5195">Know before you leave home. The teacher’s note comes with it.</p></div>
+                  <figure class="h-shot"><img data-shot data-i18n-attr="alt:shot.crsa" src="/img/home/pro-crsa.jpg" width="2560" height="880" loading="lazy" alt="A warning that Chimie générale on Friday is cancelled, and that class crossed out on the week view."></figure>
+                </article>
+              </div>
+              <div class="h-go h-ox-go">
+                <a class="h-btn" href="/account?signup&amp;next=/horaire" data-i18n="t.ae088a0a" data-horaire-pro>Try it free for 7 days</a>
+                <a class="h-btn" href="/account?signup&amp;next=/horaire" data-i18n="t.65e5b31c" data-horaire-free>Create a free account</a>
+              </div>
+              <p class="h-fine"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-i18n="t.6d00202f">Your Omnivox password is used to sign in, then forgotten. Our servers never store it.</span></p>
+
+              <div class="h-group"><h3 data-i18n="t.9503c9e4">Ready in under a minute</h3><span data-i18n="t.99116fdc">Once a term, and you’re set.</span></div>
+              <ol class="h-cards h-steps">
+                <li class="h-card"><span class="h-n">1</span><h4 data-i18n="t.d634af03">Create your free account</h4><p data-i18n="t.832f1e9b">It takes 30 seconds. Use any email you like.</p></li>
+                <li class="h-card"><span class="h-n">2</span><h4 data-i18n="t.cd447955">Get your schedule PDF from Omnivox</h4><p data-i18n="t.05a698ad">Horaire de cours → Consulter mon horaire → Version imprimable. We show you every click.</p></li>
+                <li class="h-card"><span class="h-n">3</span><h4 data-i18n="t.77488bf0">Drop it into Horaire</h4><p data-i18n="t.eae1b241">Every class, room and teacher of your term appears, week by week.</p></li>
+              </ol>
+
+              <div class="h-group"><h3 data-i18n="t.ff8cbc05">Everything your week needs</h3><span data-i18n="t.5366ba0e">Free, for good.</span></div>
+              <div class="h-cards">
+                <div class="h-card"><h4 data-i18n="t.2cbf3341">Tasks on their class</h4><p data-i18n="t.2a0cae6f">Homework, readings and exams sit on the class they are for, each marked by how much work it is.</p></div>
+                <div class="h-card"><h4 data-i18n="t.4f187923">R score and absences</h4><p data-i18n="t.445fe32c">Type in your grades and each group’s average for an R score estimate. Mark your absences and see how close you are to a course’s limit.</p></div>
+                <div class="h-card"><h4 data-i18n="t.7aca3bf3">The next class, at a glance</h4><p data-i18n="t.7b854507">The room and how long until your next class sit under the date, and what is due next stays in view.</p></div>
+                <div class="h-card"><h4 data-i18n="t.b19159f1">Works offline, on every device</h4><p data-i18n="t.7b4f6712">Phone, laptop or the desktop app. It works without a connection and syncs when you’re back.</p></div>
+                <div class="h-card"><h4 data-i18n="t.7f5a6512">End-to-end encrypted</h4><p data-i18n="t.602522e5">Your schedule is encrypted on your device first. We store it; we can’t read it.</p></div>
+                <div class="h-card"><h4 data-i18n="t.3a0f3eab">Calendar file and print</h4><p data-i18n="t.c3e922c1">Export your classes to Google Calendar, Apple Calendar or Outlook, or print a clean copy of the week.</p></div>
               </div>
             </div>
-            <div class="hz-welcome-ctas">
-              <a class="hz-pro-cta hz-cta-big" href="/account?signup&amp;next=/horaire" data-i18n="t.ae088a0a" data-horaire-pro>Try it free for 7 days</a>
-              <a class="hz-pro-cta hz-cta-big" href="/account?signup&amp;next=/horaire" data-i18n="t.65e5b31c" data-horaire-free>Create a free account</a>
-            </div>
-            <p class="hz-welcome-fine"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-i18n="t.6d00202f">Your Omnivox password is used to sign in, then forgotten. Our servers never store it.</span></p>
           </div>
         </section>
 
-        <div class="hz-howto-head">
-          <h2 class="hz-howto-title" data-i18n="t.9503c9e4">Ready in under a minute</h2>
-          <span class="hz-note" data-i18n="t.99116fdc">Once a term, and you’re set.</span>
-        </div>
-        <ol class="hz-steps3">
-          <li class="hz-step3"><span class="hz-stepnum">1</span><div class="hz-stepbody"><strong data-i18n="t.d634af03">Create your free account</strong><span class="hz-stepsub" data-i18n="t.832f1e9b">It takes 30 seconds. Use any email you like.</span></div></li>
-          <li class="hz-step3"><span class="hz-stepnum">2</span><div class="hz-stepbody"><strong data-i18n="t.cd447955">Get your schedule PDF from Omnivox</strong><span class="hz-stepsub" data-i18n="t.05a698ad">Horaire de cours → Consulter mon horaire → Version imprimable. We show you every click.</span></div></li>
-          <li class="hz-step3"><span class="hz-stepnum">3</span><div class="hz-stepbody"><strong data-i18n="t.77488bf0">Drop it into Horaire</strong><span class="hz-stepsub" data-i18n="t.eae1b241">Every class, room and teacher of your term appears, week by week.</span></div></li>
-        </ol>
-
-        <div class="hz-howto-head">
-          <h2 class="hz-howto-title" data-i18n="t.ff8cbc05">Everything your week needs</h2>
-          <span class="hz-note" data-i18n="t.5366ba0e">Free, for good.</span>
-        </div>
-        <div class="hz-featgrid">
-          <div class="hz-feat"><span class="hz-profeat-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v15H4z"/><path d="M4 10h16"/><path d="M9 3v4"/><path d="M15 3v4"/></svg></span><div class="hz-profeat-body"><strong data-i18n="t.89af1eb3">Your timetable, done right</strong><span data-i18n="t.0b3278e1">Week, day and month views, with the room, the teacher and how long until your next class.</span></div></div>
-          <div class="hz-feat"><span class="hz-profeat-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11"/><path d="M9 12h11"/><path d="M9 18h11"/><path d="M4 6h.01"/><path d="M4 12h.01"/><path d="M4 18h.01"/></svg></span><div class="hz-profeat-body"><strong data-i18n="t.618c69f5">Your own tasks, by effort</strong><span data-i18n="t.173d236c">Add anything you need to do and colour it by how much work it is.</span></div></div>
-          <div class="hz-feat"><span class="hz-profeat-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3"/><path d="M12 18v3"/><path d="M3 12h3"/><path d="M18 12h3"/><path d="M12 7a5 5 0 1 0 0 10a5 5 0 1 0 0-10"/></svg></span><div class="hz-profeat-body"><strong data-i18n="t.d701709a">Exams and due dates at a glance</strong><span data-i18n="t.d61d5a0c">What’s due next is always in view, so nothing sneaks up on you.</span></div></div>
-          <div class="hz-feat"><span class="hz-profeat-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7"/><path d="M21 12a9 9 0 0 1-15 6.7"/><path d="M18 3v3h-3"/><path d="M6 21v-3h3"/></svg></span><div class="hz-profeat-body"><strong data-i18n="t.b19159f1">Works offline, on every device</strong><span data-i18n="t.7b4f6712">Phone, laptop or the desktop app. It works without a connection and syncs when you’re back.</span></div></div>
-          <div class="hz-feat"><span class="hz-profeat-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><div class="hz-profeat-body"><strong data-i18n="t.7f5a6512">End-to-end encrypted</strong><span data-i18n="t.602522e5">Your schedule is encrypted on your device first. We store it; we can’t read it.</span></div></div>
-          <div class="hz-feat"><span class="hz-profeat-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M4 20h16"/></svg></span><div class="hz-profeat-body"><strong data-i18n="t.2cc4bce5">Take it anywhere</strong><span data-i18n="t.433ab97b">Export to Google Calendar or Apple Calendar, or print a clean copy.</span></div></div>
-        </div>
-
-        <div class="hz-welcome-end">
-          <strong data-i18n="t.1be5092b">Your term starts now.</strong>
-          <div class="hz-welcome-ctas">
-            <a class="primary hz-cta-big" href="/account?signup&amp;next=/horaire" data-i18n="t.65e5b31c">Create a free account</a>
-            <a class="ghost-btn hz-cta-big" href="/account?next=/horaire" data-i18n="t.3259090c">Sign in to Bazinet</a>
+        <section class="h-end h-bleed">
+          <div class="h-wrap">
+            <h2 data-i18n="t.1be5092b">Your term starts now.</h2>
+            <div class="h-go">
+              <a class="h-btn" href="/account?signup&amp;next=/horaire" data-i18n="t.65e5b31c">Create a free account</a>
+              <a href="/account?next=/horaire" data-i18n="t.3259090c">Sign in to Bazinet</a>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
       <div id="si-unlock" class="hidden">
         <h1 class="hz-h1" data-i18n="t.2393466b">Your CVM schedule, on every device</h1>
@@ -966,5 +949,6 @@
   <script src="/signout-reason.js" defer="defer"></script>
   <script src="/bz-loader.js" defer="defer"></script>
   <script src="/horaire-app.js" defer="defer"></script>
+  <script src="/shots.js"></script>
 </body>
 </html>

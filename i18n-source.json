@@ -852,6 +852,7 @@
   "shot.crsa": {
     "en": "A warning that Chimie générale on Friday is cancelled, and that class crossed out on the week view.",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -864,24 +865,28 @@
   "shot.lea": {
     "en": "New in LÉA: four items to tick, Devoir 7 in Calcul différentiel, Rapport de laboratoire 5 in Chimie générale, a dissertation plan in Philosophie and Examen 2 in Mécanique.",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
   "shot.mio": {
     "en": "Horaire Messages view: a Mio inbox with six messages and one open from a chemistry teacher.",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
   "shot.plans": {
     "en": "Course plans found in LÉA: Calcul différentiel and Mécanique, with Quiz 3, Examen 2, Examen final, Laboratoire 4 and Examen 3, each with a date and a class time.",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
   "shot.tasks": {
     "en": "Horaire task list with upcoming work.",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -894,6 +899,7 @@
   "shot.week": {
     "en": "Horaire CVM week view with six courses.",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -1102,12 +1108,6 @@
       "horaire.html"
     ]
   },
-  "t.084644b2": {
-    "en": "Automatic sync",
-    "pages": [
-      "horaire.html"
-    ]
-  },
   "t.085e9eca": {
     "en": "Panic taps caught",
     "pages": [
@@ -1140,12 +1140,6 @@
   },
   "t.09180189": {
     "en": "Your courses are checked every time you open your agenda — the Bazinet extension reads LÉA in your own browser, on the session you are already signed in to. Your Omnivox password is never involved, and nothing is added here until you say so.",
-    "pages": [
-      "horaire.html"
-    ]
-  },
-  "t.09620453": {
-    "en": "Read your teachers’ messages and reply, right from Horaire.",
     "pages": [
       "horaire.html"
     ]
@@ -1229,15 +1223,10 @@
       "support.html"
     ]
   },
-  "t.0b3278e1": {
-    "en": "Week, day and month views, with the room, the teacher and how long until your next class.",
-    "pages": [
-      "horaire.html"
-    ]
-  },
   "t.0b4595b6": {
     "en": "On the web and on Mac",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -1336,12 +1325,6 @@
     "en": "Which platforms are supported?",
     "pages": [
       "valorant.html"
-    ]
-  },
-  "t.0eb7008d": {
-    "en": "Each new assignment shows up in your agenda with its due date. You don’t lift a finger.",
-    "pages": [
-      "horaire.html"
     ]
   },
   "t.0ece2df5": {
@@ -1464,12 +1447,6 @@
       "valorant.html"
     ]
   },
-  "t.14ee8a15": {
-    "en": "Automatically.",
-    "pages": [
-      "horaire.html"
-    ]
-  },
   "t.15141eab": {
     "en": "Edit profile",
     "pages": [
@@ -1522,12 +1499,6 @@
     "en": "Replaces the encryption key itself and re-encrypts every entry. Use after a key you no longer trust.",
     "pages": [
       "app.html"
-    ]
-  },
-  "t.173d236c": {
-    "en": "Add anything you need to do and colour it by how much work it is.",
-    "pages": [
-      "horaire.html"
     ]
   },
   "t.1758356d": {
@@ -1600,12 +1571,6 @@
     "en": "once",
     "pages": [
       "index.html"
-    ]
-  },
-  "t.18707151": {
-    "en": "New: Horaire syncs with Omnivox automatically",
-    "pages": [
-      "horaire.html"
     ]
   },
   "t.18e9bf1d": {
@@ -1919,6 +1884,7 @@
   "t.24f2ac90": {
     "en": "Homework and exams on the class they belong to",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -2015,6 +1981,7 @@
   "t.2991c779": {
     "en": "Your inbox sits next to your agenda. Read your teachers’ messages, open attachments and reply from Horaire.",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -2027,6 +1994,7 @@
   "t.2a0cae6f": {
     "en": "Homework, readings and exams sit on the class they are for, each marked by how much work it is.",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -2111,13 +2079,8 @@
   "t.2cbf3341": {
     "en": "Tasks on their class",
     "pages": [
+      "horaire.html",
       "index.html"
-    ]
-  },
-  "t.2cc4bce5": {
-    "en": "Take it anywhere",
-    "pages": [
-      "horaire.html"
     ]
   },
   "t.2ce5dd0d": {
@@ -2135,6 +2098,7 @@
   "t.2d060d29": {
     "en": "Day, week, month and year views",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -2441,6 +2405,7 @@
   "t.3a0f3eab": {
     "en": "Calendar file and print",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -2612,6 +2577,7 @@
   "t.4268035c": {
     "en": "From Mio",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -2645,12 +2611,6 @@
       "app.html"
     ]
   },
-  "t.433ab97b": {
-    "en": "Export to Google Calendar or Apple Calendar, or print a clean copy.",
-    "pages": [
-      "horaire.html"
-    ]
-  },
   "t.4377f512": {
     "en": "I already have an account",
     "pages": [
@@ -2666,6 +2626,7 @@
   "t.445fe32c": {
     "en": "Type in your grades and each group’s average for an R score estimate. Mark your absences and see how close you are to a course’s limit.",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -2770,12 +2731,6 @@
     "en": "AES 256 locks every entry",
     "pages": [
       "index.html"
-    ]
-  },
-  "t.48dad762": {
-    "en": "Without Horaire",
-    "pages": [
-      "horaire.html"
     ]
   },
   "t.48f4bbdd": {
@@ -2956,12 +2911,6 @@
       "valorant.html"
     ]
   },
-  "t.4e0ea3f4": {
-    "en": "With Horaire",
-    "pages": [
-      "horaire.html"
-    ]
-  },
   "t.4e21a124": {
     "en": "Use the button above, or open the listing in the store. Chrome asks you to confirm, then it's installed.",
     "pages": [
@@ -3001,6 +2950,7 @@
   "t.4f187923": {
     "en": "R score and absences",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -3038,12 +2988,6 @@
     "en": "Windows · coming soon",
     "pages": [
       "download.html"
-    ]
-  },
-  "t.503c35e7": {
-    "en": "Connected to Omnivox",
-    "pages": [
-      "horaire.html"
     ]
   },
   "t.50d6325b": {
@@ -3365,6 +3309,7 @@
   "t.5f82c5b2": {
     "en": "Horaire CVM turns your Omnivox schedule into an agenda.",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -3398,12 +3343,6 @@
       "index.html"
     ]
   },
-  "t.618c69f5": {
-    "en": "Your own tasks, by effort",
-    "pages": [
-      "horaire.html"
-    ]
-  },
   "t.61ae3348": {
     "en": "Your schedule from Omnivox",
     "pages": [
@@ -3431,6 +3370,7 @@
   "t.62eaf977": {
     "en": "From Omnivox",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -4080,12 +4020,6 @@
       "index.html"
     ]
   },
-  "t.7a353787": {
-    "en": "Sign in to Omnivox once",
-    "pages": [
-      "horaire.html"
-    ]
-  },
   "t.7ab94b08": {
     "en": "Loading the survey…",
     "pages": [
@@ -4095,6 +4029,7 @@
   "t.7aca3bf3": {
     "en": "The next class, at a glance",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -4113,6 +4048,7 @@
   "t.7b854507": {
     "en": "The room and how long until your next class sit under the date, and what is due next stays in view.",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -4167,6 +4103,7 @@
   "t.7d645d65": {
     "en": "When a teacher posts work in LÉA, Horaire asks if it belongs in your agenda, already on the right class with its due date.",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -4270,6 +4207,7 @@
   "t.81aaa1d3": {
     "en": "Sign in with Omnivox once a term, or drop in the schedule PDF. Horaire builds the session with the room, group and teacher for every class.",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -4480,12 +4418,6 @@
       "horaire.html"
     ]
   },
-  "t.88a0b037": {
-    "en": "Download each plan de cours",
-    "pages": [
-      "horaire.html"
-    ]
-  },
   "t.891ebccd": {
     "en": "Lock",
     "pages": [
@@ -4618,12 +4550,6 @@
   },
   "t.8d5e22ed": {
     "en": "Tick what belongs in your agenda. You can change this any time in Settings.",
-    "pages": [
-      "horaire.html"
-    ]
-  },
-  "t.8d679447": {
-    "en": "Everything else happens automatically",
     "pages": [
       "horaire.html"
     ]
@@ -4992,12 +4918,6 @@
     "en": "Signed by Bazinet",
     "pages": [
       "download.html"
-    ]
-  },
-  "t.9af5addc": {
-    "en": "Open Omnivox, then LÉA, course by course",
-    "pages": [
-      "horaire.html"
     ]
   },
   "t.9afad26f": {
@@ -5657,12 +5577,6 @@
       "vault.html"
     ]
   },
-  "t.b4e0ba56": {
-    "en": "Copy every exam date by hand",
-    "pages": [
-      "horaire.html"
-    ]
-  },
   "t.b52b36b7": {
     "en": "Back",
     "pages": [
@@ -6006,6 +5920,7 @@
   "t.c3e922c1": {
     "en": "Export your classes to Google Calendar, Apple Calendar or Outlook, or print a clean copy of the week.",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -6160,15 +6075,10 @@
       "app.html"
     ]
   },
-  "t.cba409dd": {
-    "en": "Horaire finds the plan for each of your courses on its own and pulls out every exam and deadline. You just confirm.",
-    "pages": [
-      "horaire.html"
-    ]
-  },
   "t.cbd369d3": {
     "en": "Horaire opens the plan de cours of each course in LÉA and finds the exams and assignments with their weight. It places them on your own class times, and you tick the ones to add.",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
@@ -6448,12 +6358,6 @@
     "en": "Keys are wiped when the browser closes and after 10 minutes idle.",
     "pages": [
       "extension.html"
-    ]
-  },
-  "t.d61d5a0c": {
-    "en": "What’s due next is always in view, so nothing sneaks up on you.",
-    "pages": [
-      "horaire.html"
     ]
   },
   "t.d6218f66": {
@@ -7419,6 +7323,7 @@
   "t.fce65343": {
     "en": "From LÉA",
     "pages": [
+      "horaire.html",
       "index.html"
     ]
   },
